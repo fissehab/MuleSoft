@@ -35,3 +35,5 @@
 13.  [Automatic and Manual Watermarking in Mule 4](https://youtu.be/LmHrjUMslhs)
 
 14.  [Using Application Properties](https://youtu.be/28eo-4MgYv0)
+
+15.  [Return Data in Requested Format: Mule 4](https://www.youtube.com/watch?v=XFH-g_wp6sU)
