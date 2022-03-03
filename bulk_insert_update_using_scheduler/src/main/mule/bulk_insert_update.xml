@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<file:config name="File_Config" doc:name="File Config" doc:id="8896f59e-6b70-4074-9aa1-f6de0e4f57cc" >
+		<file:connection workingDir="C:\Fish\mulesoft\Tutorials\interacting_with_databases\bulk_insert_update\data" />
+	</file:config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="9ee8c133-cecb-4e55-92e8-8939aee5512d" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="a1b2c3d4!" database="northwind" />
+	</db:config>
+	<db:config name="Database_Config1" doc:name="Database Config" doc:id="20ca2a40-71d7-46fd-93c7-b52ce3f75bb5" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="a1b2c3d4!" database="northwind" />
+	</db:config>
+	<flow name="bulk_insert_updateFlow" doc:id="6044384b-fa43-401c-b6e1-a2e607a94995" >
+		<scheduler doc:name="Scheduler" doc:id="aa0ab0e7-7186-4183-8a00-52cea7d0c490" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="5" timeUnit="HOURS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<file:read doc:name="Read" doc:id="80def676-78da-43bd-9a02-8e7639f93239" config-ref="File_Config" path="C:\Fish\mulesoft\Tutorials\interacting_with_databases\bulk_insert_update\data\orderDetail_update.csv" outputMimeType='text/csv; separator=","'/>
+		<ee:transform doc:name="Transform Message" doc:id="98361e34-fbec-4f73-a401-fb4aa9a0c557" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="9b70afc1-5463-4a9b-97e0-4fdece29ef03" />
+		<db:bulk-update doc:name="Bulk update" doc:id="dd1d790f-79e8-4065-8e67-49fdb7ee6516" config-ref="Database_Config1">
+			<db:sql ><![CDATA[UPDATE orderdetail_bulk_insert
+SET discount = :discount
+WHERE orderDetailId = :orderDetailId
+ AND  orderId = :orderId
+ AND productId = :productId]]></db:sql>
+		</db:bulk-update>
+	</flow>
+</mule>
