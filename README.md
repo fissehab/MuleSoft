@@ -36,4 +36,6 @@
 
 14.  [Using Application Properties](https://youtu.be/28eo-4MgYv0)
 
-15.  [Return Data in Requested Format: Mule 4](https://www.youtube.com/watch?v=XFH-g_wp6sU)
+15.  [Return Data in Requested Format in Mule 4](https://www.youtube.com/watch?v=XFH-g_wp6sU)
+
+16. [Integrating AWS Services in Mule 4 Part 2: reading data in different formats from S3 ](https://www.youtube.com/watch?v=OBKKYs8LVE8)
