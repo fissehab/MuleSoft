@@ -1,0 +1,12 @@
+mysql:
+  username: "root"
+  password: "a1b2c3d4!"
+  dbase: "Northwind"
+  host: "localhost"
+  port: "3306"
+  
+postgres:
+  username: "postgres"
+  password: "a1b2c3d4!"
+  dclass: "org.postgresql.Driver"
+  url: "jdbc:postgresql://localhost:5432/Northwind"

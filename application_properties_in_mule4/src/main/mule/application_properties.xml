@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="b612bd2e-3596-4d9f-8fd2-92fca6e0d883" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="application_propertiesFlow" doc:id="24bf7faf-f0a3-4ad4-ba90-38483b4290ac" >
+		<http:listener doc:name="Listener" doc:id="47850c19-1e8b-4877-bfa6-46ad3cd0dc2b" path="db" config-ref="HTTP_Listener_config"/>
+		<scatter-gather doc:name="Scatter-Gather" doc:id="32e03bbe-1e16-4200-8bdb-c1aebf3ef8f4" >
+			<route >
+				<db:select doc:name="Postgres" doc:id="5dbe709d-bff0-40df-b30d-599d7e0781c5" config-ref="Postgres_Database_Config">
+					<db:sql ><![CDATA[SELECT * FROM employee]]></db:sql>
+				</db:select>
+			</route>
+			<route >
+				<db:select doc:name="MySQL" doc:id="9e2d330c-8114-47c0-9f4e-31a6cdb2caa9" config-ref="MySQL_Database_Config">
+					<db:sql ><![CDATA[SELECT * FROM employee]]></db:sql>
+				</db:select>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="Transform Message" doc:id="59fb5707-d8bb-43c4-9851-b1ec596163c8" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload."0".payload ++ payload."1".payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="ee1d1c43-7ed9-49f3-b977-07e0c688d0a1" message="#[sizeOf(payload)]"/>
+	</flow>
+</mule>
