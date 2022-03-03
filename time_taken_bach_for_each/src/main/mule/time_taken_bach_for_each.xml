@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd">
+	<flow name="Time_Taken_for_each_parallel_for_each" doc:id="9916be6f-37b3-42dd-8481-5b547454e6e9">
+		<set-variable value="#[%dw 2.0&#10;output application/json&#10;---&#10;now()]" doc:name="Start_time_variable" doc:id="d63c46d0-e7df-4c48-88e1-af267f53473c" variableName="start_time" />
+		<ee:transform doc:name="Transform Message" doc:id="c6e98b0c-efac-4f5d-a7db-f97c71c05c35">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="0d9f2f22-b9aa-4aa3-98e4-d719519245d2" name="ParallelForEachFlow" />
+		<ee:transform doc:name="Time Taken" doc:id="e41d1acd-97be-459e-9080-2ead1656bc81">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+var start = vars.start_time
+var end = now()
+---
+
+{
+	"total time taken in seconds": (end-start).seconds
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="67604428-1b11-4c24-9e9a-84b423d9b9af" message="#[payload]" />
+	</flow>
+	<flow name="ForEachFlow" doc:id="623da4ab-bd0d-473d-b93e-364493fcedad" >
+		<foreach doc:name="For Each" doc:id="19382d43-f764-4d04-849e-738b398e2c1b">
+			<db:insert doc:name="Insert into MySQL" doc:id="b3b5ffcc-c7ce-49e4-a7c9-464a684155ef" config-ref="MySQL_Database_Config">
+				<db:sql><![CDATA[INSERT INTO crashes (objectid,jurisdiction,number_of_lanes,fatal_count,young,deer,crash_id,lighting,occupants,b_level_count,pedestrian,dis_ctrl_i,datetime,road_condition,number_of_units,school_bus,speed_limit,hour,hit_and_run,bicycle,motorcycle,a_level_count,c_level_count,most_severe_injury,red_light_running,weekday,intersecting_road,highway_classification,crash_type,train,weather,property_damage,lane_departure,primary_road,alcohol,drug,elderly)
+VALUES (:objectid,:jurisdiction,:number_of_lanes,:fatal_count,:young,:deer,:crash_id,:lighting,:occupants,:b_level_count,:pedestrian,:dis_ctrl_i,:datetime,:road_condition,:number_of_units,:school_bus,:speed_limit,:hour,:hit_and_run,:bicycle,:motorcycle,:a_level_count,:c_level_count,:most_severe_injury,:red_light_running,:weekday,:intersecting_road,:highway_classification,:crash_type,:train,:weather,:property_damage,:lane_departure,:primary_road,:alcohol,:drug,:elderly)]]></db:sql>
+				<db:input-parameters><![CDATA[#[{'objectid': payload.OBJECTID,
+ 'jurisdiction': payload.jurisdiction,
+ 'number_of_lanes': payload.number_of_lanes,
+ 'fatal_count': payload.fatal_count,
+ 'young': payload.young,
+ 'deer': payload.deer,
+ 'crash_id': payload.crash_id,
+ 'lighting': payload.lighting,
+ 'occupants': payload.occupants,
+ 'b_level_count': payload.b_level_count,
+ 'pedestrian': payload.pedestrian,
+ 'dis_ctrl_i': payload.dis_ctrl_i,
+ 'datetime': payload.datetime,
+ 'road_condition': payload.road_condition,
+ 'number_of_units': payload.number_of_units,
+ 'school_bus': payload.school_bus,
+ 'speed_limit': payload.speed_limit,
+ 'hour': payload.hour,
+ 'hit_and_run': payload.hit_and_run,
+ 'bicycle': payload.bicycle,
+ 'motorcycle': payload.motorcycle,
+ 'a_level_count': payload.a_level_count,
+ 'c_level_count': payload.c_level_count,
+ 'most_severe_injury': payload.most_severe_injury,
+ 'red_light_running': payload.red_light_running,
+ 'weekday': payload.weekday,
+ 'intersecting_road': payload.intersecting_road,
+ 'highway_classification': payload.highway_classification,
+ 'crash_type': payload.crash_type,
+ 'train': payload.train,
+ 'weather': payload.weather,
+ 'property_damage': payload.property_damage,
+ 'lane_departure': payload.lane_departure,
+ 'primary_road': payload.primary_road,
+ 'alcohol': payload.alcohol,
+ 'drug': payload.drug,
+ 'elderly': payload.elderly}]]]></db:input-parameters>
+			</db:insert>
+		</foreach>
+	</flow>
+	<flow name="ParallelForEachFlow" doc:id="42d71b12-48a1-46d5-80da-10b7c74b85ee" >
+		<parallel-foreach doc:name="Parallel For Each" doc:id="9a9252ab-1645-464b-a84a-2bc410f3a77c" >
+			<db:insert doc:name="Insert into MySQL" doc:id="663ae50c-d59c-4e15-851d-df51fe55af65" config-ref="MySQL_Database_Config">
+				<db:sql ><![CDATA[INSERT INTO crashes (objectid,jurisdiction,number_of_lanes,fatal_count,young,deer,crash_id,lighting,occupants,b_level_count,pedestrian,dis_ctrl_i,datetime,road_condition,number_of_units,school_bus,speed_limit,hour,hit_and_run,bicycle,motorcycle,a_level_count,c_level_count,most_severe_injury,red_light_running,weekday,intersecting_road,highway_classification,crash_type,train,weather,property_damage,lane_departure,primary_road,alcohol,drug,elderly)
+VALUES (:objectid,:jurisdiction,:number_of_lanes,:fatal_count,:young,:deer,:crash_id,:lighting,:occupants,:b_level_count,:pedestrian,:dis_ctrl_i,:datetime,:road_condition,:number_of_units,:school_bus,:speed_limit,:hour,:hit_and_run,:bicycle,:motorcycle,:a_level_count,:c_level_count,:most_severe_injury,:red_light_running,:weekday,:intersecting_road,:highway_classification,:crash_type,:train,:weather,:property_damage,:lane_departure,:primary_road,:alcohol,:drug,:elderly)]]></db:sql>
+				<db:input-parameters ><![CDATA[#[{'objectid': payload.OBJECTID,
+ 'jurisdiction': payload.jurisdiction,
+ 'number_of_lanes': payload.number_of_lanes,
+ 'fatal_count': payload.fatal_count,
+ 'young': payload.young,
+ 'deer': payload.deer,
+ 'crash_id': payload.crash_id,
+ 'lighting': payload.lighting,
+ 'occupants': payload.occupants,
+ 'b_level_count': payload.b_level_count,
+ 'pedestrian': payload.pedestrian,
+ 'dis_ctrl_i': payload.dis_ctrl_i,
+ 'datetime': payload.datetime,
+ 'road_condition': payload.road_condition,
+ 'number_of_units': payload.number_of_units,
+ 'school_bus': payload.school_bus,
+ 'speed_limit': payload.speed_limit,
+ 'hour': payload.hour,
+ 'hit_and_run': payload.hit_and_run,
+ 'bicycle': payload.bicycle,
+ 'motorcycle': payload.motorcycle,
+ 'a_level_count': payload.a_level_count,
+ 'c_level_count': payload.c_level_count,
+ 'most_severe_injury': payload.most_severe_injury,
+ 'red_light_running': payload.red_light_running,
+ 'weekday': payload.weekday,
+ 'intersecting_road': payload.intersecting_road,
+ 'highway_classification': payload.highway_classification,
+ 'crash_type': payload.crash_type,
+ 'train': payload.train,
+ 'weather': payload.weather,
+ 'property_damage': payload.property_damage,
+ 'lane_departure': payload.lane_departure,
+ 'primary_road': payload.primary_road,
+ 'alcohol': payload.alcohol,
+ 'drug': payload.drug,
+ 'elderly': payload.elderly}]]]></db:input-parameters>
+			</db:insert>
+		</parallel-foreach>
+	</flow>
+	<flow name="Time_Taken_BatchJob" doc:id="a6008e04-f77c-4172-bf07-46ff722eb4b3" >
+		<set-variable value="#[%dw 2.0&#10;output application/json&#10;---&#10;now()]" doc:name="Start_time_variable" doc:id="b1a1e024-0246-45c1-af7a-7fc48550982b" variableName="start_time" />
+		<ee:transform doc:name="Transform Message" doc:id="498b957d-5ff3-4483-a9e6-6e4e290cebe0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<batch:job jobName="time_taken_Batch_Job" doc:id="518b1345-04e0-4f55-8eaa-80ef3acee58e" >
+			<batch:process-records >
+				<batch:step name="Batch_Step1" doc:id="6ee38a5e-2644-4963-83b5-0c050973a5d4" >
+					<db:insert doc:name="Insert" doc:id="0bdd8c29-1712-4a49-b411-f6f2ffafc9d8" config-ref="MySQL_Database_Config">
+						<db:sql><![CDATA[INSERT INTO crashes (objectid,jurisdiction,number_of_lanes,fatal_count,young,deer,crash_id,lighting,occupants,b_level_count,pedestrian,dis_ctrl_i,datetime,road_condition,number_of_units,school_bus,speed_limit,hour,hit_and_run,bicycle,motorcycle,a_level_count,c_level_count,most_severe_injury,red_light_running,weekday,intersecting_road,highway_classification,crash_type,train,weather,property_damage,lane_departure,primary_road,alcohol,drug,elderly)
+VALUES (:objectid,:jurisdiction,:number_of_lanes,:fatal_count,:young,:deer,:crash_id,:lighting,:occupants,:b_level_count,:pedestrian,:dis_ctrl_i,:datetime,:road_condition,:number_of_units,:school_bus,:speed_limit,:hour,:hit_and_run,:bicycle,:motorcycle,:a_level_count,:c_level_count,:most_severe_injury,:red_light_running,:weekday,:intersecting_road,:highway_classification,:crash_type,:train,:weather,:property_damage,:lane_departure,:primary_road,:alcohol,:drug,:elderly)]]></db:sql>
+						<db:input-parameters><![CDATA[#[{'objectid': payload.OBJECTID,
+ 'jurisdiction': payload.jurisdiction,
+ 'number_of_lanes': payload.number_of_lanes,
+ 'fatal_count': payload.fatal_count,
+ 'young': payload.young,
+ 'deer': payload.deer,
+ 'crash_id': payload.crash_id,
+ 'lighting': payload.lighting,
+ 'occupants': payload.occupants,
+ 'b_level_count': payload.b_level_count,
+ 'pedestrian': payload.pedestrian,
+ 'dis_ctrl_i': payload.dis_ctrl_i,
+ 'datetime': payload.datetime,
+ 'road_condition': payload.road_condition,
+ 'number_of_units': payload.number_of_units,
+ 'school_bus': payload.school_bus,
+ 'speed_limit': payload.speed_limit,
+ 'hour': payload.hour,
+ 'hit_and_run': payload.hit_and_run,
+ 'bicycle': payload.bicycle,
+ 'motorcycle': payload.motorcycle,
+ 'a_level_count': payload.a_level_count,
+ 'c_level_count': payload.c_level_count,
+ 'most_severe_injury': payload.most_severe_injury,
+ 'red_light_running': payload.red_light_running,
+ 'weekday': payload.weekday,
+ 'intersecting_road': payload.intersecting_road,
+ 'highway_classification': payload.highway_classification,
+ 'crash_type': payload.crash_type,
+ 'train': payload.train,
+ 'weather': payload.weather,
+ 'property_damage': payload.property_damage,
+ 'lane_departure': payload.lane_departure,
+ 'primary_road': payload.primary_road,
+ 'alcohol': payload.alcohol,
+ 'drug': payload.drug,
+ 'elderly': payload.elderly}]]]></db:input-parameters>
+					</db:insert>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete >
+				<ee:transform doc:name="Time Taken" doc:id="82d6653c-5b2b-4668-ad6e-e87733687d6d">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+var start = vars.start_time
+var end = now()
+---
+
+{
+	"total time taken in seconds": (end-start).seconds
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="b775a030-2a9e-450a-8432-ea6ed8c36c23" message="#[payload]" />
+			</batch:on-complete>
+		</batch:job>
+	</flow>
+	<flow name="Time_Taken_BatchJob_Bulk_insert" doc:id="d99c5de1-e26a-447d-afa1-3dcca1aaf32a" >
+		<file:listener doc:name="On New or Updated File" doc:id="9593a137-0411-47db-a309-c3a4bf9bdf28" directory="C:\Fish\mulesoft\Tutorials\scopes\data\input" autoDelete="true" moveToDirectory="C:\Fish\mulesoft\Tutorials\scopes\data\backup" outputMimeType='application/csv; separator=","' config-ref="File_Config">
+			<scheduling-strategy>
+				<fixed-frequency frequency="10" timeUnit="SECONDS" />
+			</scheduling-strategy>
+			<file:matcher filenamePattern="*.csv" />
+		</file:listener>
+		<set-variable value="#[%dw 2.0&#10;output application/json&#10;---&#10;now()]" doc:name="Start_time_variable" doc:id="7d7a4013-d939-48db-86f2-2cea721d9422" variableName="start_time" />
+		<ee:transform doc:name="Transform Message" doc:id="a2922f08-2995-47fa-b9b1-5cf5b383d547" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<batch:job jobName="time_taken_bach_for_Batch_Job_bulk_insert" doc:id="edaf7db2-3321-4a4a-b510-561f8e58ea20" >
+			<batch:process-records >
+				<batch:step name="Batch_Step1" doc:id="44469480-06da-49ca-942a-59ef8cff99eb" >
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="e1efbcf7-b6ef-4ed2-89ac-3b9dbecc03ce" size="100">
+						<db:bulk-insert doc:name="Bulk insert" doc:id="880c84a2-3dcc-4397-a544-a5251f502724" config-ref="MySQL_Database_Config">
+							<db:sql ><![CDATA[INSERT INTO crashes (objectid,jurisdiction,number_of_lanes,fatal_count,young,deer,crash_id,lighting,occupants,b_level_count,pedestrian,dis_ctrl_i,datetime,road_condition,number_of_units,school_bus,speed_limit,hour,hit_and_run,bicycle,motorcycle,a_level_count,c_level_count,most_severe_injury,red_light_running,weekday,intersecting_road,highway_classification,crash_type,train,weather,property_damage,lane_departure,primary_road,alcohol,drug,elderly)
+VALUES (:OBJECTID,:jurisdiction,:number_of_lanes,:fatal_count,:young,:deer,:crash_id,:lighting,:occupants,:b_level_count,:pedestrian,:dis_ctrl_i,:datetime,:road_condition,:number_of_units,:school_bus,:speed_limit,:hour,:hit_and_run,:bicycle,:motorcycle,:a_level_count,:c_level_count,:most_severe_injury,:red_light_running,:weekday,:intersecting_road,:highway_classification,:crash_type,:train,:weather,:property_damage,:lane_departure,:primary_road,:alcohol,:drug,:elderly)]]></db:sql>
+						</db:bulk-insert>
+					</batch:aggregator>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete >
+				<ee:transform doc:name="Time Taken" doc:id="3e5333f0-e019-4f23-ad83-481b5c7d2355" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var start = vars.start_time
+var end = now()
+---
+
+{
+	"total time taken in seconds": (end-start).seconds
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="ded275c4-3981-4828-8fec-440d4767657e" message="#[payload]" />
+			</batch:on-complete>
+		</batch:job>
+	</flow>
+</mule>

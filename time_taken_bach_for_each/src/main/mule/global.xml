@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	
+<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c651e638-bd8e-41ad-9996-2b24750a23c5" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="f1122af2-83db-458d-8181-c7bf988ee0a1" >
+		<http:request-connection host="localhost" port="8081" />
+	</http:request-config>
+	<file:config name="File_Config" doc:name="File Config" doc:id="c6de2a28-ad30-4b5c-8ad8-3bfdf5b9f0ae" >
+		<file:connection workingDir="C:\Fish\mulesoft\Tutorials\scopes\data" />
+	</file:config>	
+	
+	<configuration-properties doc:name="Configuration properties" doc:id="830144c4-c230-4e37-ab8d-6675d8570dbc" file="config.yaml" />
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="ab2feb66-bc8e-4c5d-a9f6-c659ac08ca59" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.username}" password="${mysql.password}" database="${mysql.dbase}"/>
+	</db:config>
+	
+	
+</mule>
