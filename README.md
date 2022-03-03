@@ -3,7 +3,6 @@
 
 1. [Processing Continuously Coming Data Using File Connector in Mule 4 Part 1: process, rename and backup](https://github.com/fissehab/mulesoft/blob/main/Processing%20Continuously%20Coming%20Data%20Using%20File%20Connector%20in%20Mule%204.ipynb)
 
-  <br/>
 
 2.  [Processing Continuously Coming Data Using File Connector in Mule 4 part 2: inserting data into a database](https://github.com/fissehab/mulesoft/blob/main/Processing%20Continuously%20Coming%20Data%20%20Using%20File%20Connector%20and%20in%20Mule%204-Part%202.ipynb)
 
