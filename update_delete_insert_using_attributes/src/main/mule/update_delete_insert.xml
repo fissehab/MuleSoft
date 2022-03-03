@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="9e070f73-67ce-4092-b4ce-0ac0ebafbc92" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="1c2a3fe3-acd6-4659-bfd4-6057906dd155" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="a1b2c3d4!" database="northwind" />
+	</db:config>
+	<flow name="update_delete_insertFlow" doc:id="b6744671-d67b-4d12-b5b9-529a5b5e0000" >
+		<http:listener doc:name="Data insertion, deletion and updating" doc:id="0029be57-84a0-4bc1-aec7-a348c8b02f4c" config-ref="HTTP_Listener_config" path="my_db/{regionId}/{regiondescription}" allowedMethods="PUT"/>
+		<logger level="INFO" doc:name="Logger" doc:id="c294f237-1e4b-4f0d-adab-007d119123da" message='#["You submitted regionId and region description of the following: " ++  attributes.uriParams.regionId ++ ", " ++ attributes.uriParams.regiondescription]'/>
+		<db:delete doc:name="Delete records" doc:id="2e912f5b-259d-493e-a973-51ed03cea17a" config-ref="Database_Config">
+			<db:sql ><![CDATA[DELETE FROM region WHERE regionId = :regionId AND regiondescription = :regiondescription]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{"regionId": attributes.uriParams.regionId, "regiondescription": attributes.uriParams.regiondescription}]]]></db:input-parameters>
+		</db:delete>
+	</flow>
+</mule>
