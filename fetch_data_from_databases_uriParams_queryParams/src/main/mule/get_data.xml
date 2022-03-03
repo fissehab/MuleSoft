@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c7a93c21-6717-4379-b9d2-2dc76bde8b02" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="8439ad30-122f-4672-abed-03a7fd8ad844" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="a1b2c3d4!" database="northwind" />
+	</db:config>
+	<file:config name="File_Config" doc:name="File Config" doc:id="a5f2bc47-4d71-422a-9c74-56ca61ae2962" >
+		<file:connection workingDir="C:\Fish\mulesoft\Tutorials\file_module\data" />
+	</file:config>
+	<flow name="get_dataFlow" doc:id="c4399c0c-1023-4b3c-ae4e-ededffa65fb1" >
+		<http:listener doc:name="Listener" doc:id="fdada0cb-986c-4912-acbf-3c6d353d1973" config-ref="HTTP_Listener_config" path="get_data/{titleOfCourtesy}/{city}/{country}"/>
+		<set-variable value="#[attributes.uriParams.titleOfCourtesy]" doc:name="titleOfCourtesy" doc:id="5c9d3344-e496-46ce-ac3a-f643cd6c609b" variableName="titleOfCourtesy"/>
+		<set-variable value="#[attributes.uriParams.city]" doc:name="city" doc:id="77f8f958-4897-4361-a312-52819d83a04f" variableName="city"/>
+		<set-variable value="#[attributes.uriParams.country]" doc:name="country" doc:id="7be790a3-42fb-4935-b3db-bff1025dee7e" variableName="country"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6c9798b0-4a21-4ade-bbac-bc8eff314cf3" message="#[&quot;titleOfCourtesy: &quot; ++ attributes.uriParams.titleOfCourtesy ++ ', city: ' ++ attributes.uriParams.city ++ &quot;, country: &quot; ++ attributes.uriParams.country]"/>
+		<db:select doc:name="Get data from MySQL" doc:id="a8af3fc1-22c4-4ee1-b681-10833fc23834" config-ref="Database_Config">
+			<db:sql ><![CDATA[SELECT * FROM employee WHERE titleOfCourtesy = :titleOfCourtesy and country = :country and city = :city]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{'titleOfCourtesy': attributes.uriParams.titleOfCourtesy,
+'city': attributes.uriParams.city, 
+'country': attributes.uriParams.country, 
+}]]]></db:input-parameters>
+		</db:select>
+		<ee:transform doc:name="Transform Message" doc:id="56030666-573b-419e-84c7-dae3ade3d983" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<file:write doc:name="Write to disk" doc:id="6f4f5f6c-d72b-4666-a26f-6ab329826d4e" config-ref="File_Config" path='#[vars.titleOfCourtesy ++  "_" ++ vars.city ++ "_" ++ vars.country ++ ".csv"]'/>
+	</flow>
+</mule>
