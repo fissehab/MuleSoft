@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="Manual_WaterMarking:MySQL_2_Postgres_partial_data" doc:id="bd238ccd-fe67-4827-baab-2308376f6eaf" >
+		<scheduler doc:name="Scheduler" doc:id="ce6e3f24-0df7-42f3-a7a4-abaa282b9a3d" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="5" timeUnit="SECONDS" />
+			</scheduling-strategy>
+		</scheduler>
+		<os:retrieve doc:name="maxID" doc:id="53bc1896-d1d1-4f09-83d9-5506ad175c94" key="maxID" target="maxID" >
+			<os:default-value ><![CDATA[0]]></os:default-value>
+		</os:retrieve>
+		<db:select doc:name="Select" doc:id="102c08d8-f34e-4075-b351-c40769bdca13" config-ref="MySQL_Database_Config" >
+			<db:sql ><![CDATA[SELECT PersonID, LastNamE, FirstName, Address, State FROM persons
+WHERE PersonID > :max_id AND State IN ('Connecticut', 'Maine', 'Massachusetts', 'New Hampshire', 'Rhode Island', 'Vermont')]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{'max_id':vars.maxID}]]]></db:input-parameters>
+		</db:select>
+		<set-variable value="#[sizeOf(payload)]" doc:name="Size of Payload" doc:id="90fc4a20-caa1-4c23-adb1-112ef735aef8" variableName="size_var" />
+		<choice doc:name="Choice" doc:id="df111ab2-6dfb-46fb-b583-468ae81051ac" >
+			<when expression="#[not isEmpty(payload)]" >
+				<os:store doc:name="maxID" doc:id="7bc2f6cf-fa83-44fa-b348-26565a970736" key="maxID">
+			<os:value><![CDATA[#[max(payload.*PersonID)]]]></os:value>
+		</os:store>
+				<foreach doc:name="For Each" doc:id="e0583bb3-4306-47fc-8988-1aea3773b049" >
+					<db:insert doc:name="Insert into Postgres" doc:id="7c59362b-fdb0-4968-bb3a-420673a14776" config-ref="Postgres_Database_Config" >
+						<db:sql ><![CDATA[INSERT INTO newengland(personid, lastName, firstName, address, state)
+VALUES (:personID, :lastName, :firstName, :address, :state)]]></db:sql>
+						<db:input-parameters ><![CDATA[#[{
+	'personID':payload.PersonID, 
+	'lastName':payload.LastName, 
+	 'firstName':payload.FirstName,
+	 'address': payload.Address,
+	 "state":payload.State
+}]]]></db:input-parameters>
+					</db:insert>
+					<ee:transform doc:name="Transform Message" doc:id="712e2b19-3a5f-4263-939b-b93903266a55" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": vars.size_var as String ++ " records inserted into Postgres."
+}]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+					<logger level="INFO" doc:name="Logger" doc:id="8c2b08f6-b74e-42da-8855-8188fb9aac57" message="========================================================================================================================================" />
+					<logger level="INFO" doc:name="Logger" doc:id="8a3759e8-5a38-4f8b-a10b-41f052f666f7" message="#[payload]" />
+				</foreach>
+			</when>
+			<otherwise >
+				<logger level="INFO" doc:name="Logger" doc:id="811d8503-e48a-4678-9f19-7918affe395c" message="No new records found!" />
+				<logger level="INFO" doc:name="Logger" doc:id="e2077866-b258-4d4f-9a01-03f0814170fd" message="============================================================================================" />
+			</otherwise>
+		</choice>
+	</flow>
+</mule>

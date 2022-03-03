@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="e3fdba7c-cdf6-40ea-94c1-16c1c9e79786" file="config.yaml" />
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="855feaa1-71ae-48df-bef5-6fa7646dbbfd" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.username}" password="${mysql.password}" database="${mysql.dbase}" >
+			<db:connection-properties >
+				<db:connection-property key="useSSL" value="false" />
+			</db:connection-properties>
+		</db:my-sql-connection>
+	</db:config>
+	<file:config name="File_Config" doc:name="File Config" doc:id="a01da834-f75e-4173-8574-370b92f29058" >
+		<file:connection workingDir="C:\Fish\mulesoft\Tutorials\watermarking\data" />
+	</file:config>
+	<db:config name="Postgres_Database_Config" doc:name="Database Config" doc:id="8aa6d5b7-1084-4d0f-846c-0cf8825fcbcc" >
+		<db:generic-connection url="${postgres.url}" driverClassName="${postgres.dclass}" user="${postgres.username}" password="${postgres.password}" />
+	</db:config>
+</mule>

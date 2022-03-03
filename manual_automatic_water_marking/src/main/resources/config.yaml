@@ -1,0 +1,15 @@
+http:
+  port: "8081"
+
+mysql:
+  username: "root"
+  password: "a1b2c3d4!"
+  dbase: "watermarking"
+  host: "localhost"
+  port: "3306"
+  
+postgres:
+  username: "postgres"
+  password: "a1b2c3d4!"
+  dclass: "org.postgresql.Driver"
+  url: "jdbc:postgresql://localhost:5432/watermarking"
