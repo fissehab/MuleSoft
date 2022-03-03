@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6683538f-3d85-4c7d-9a49-1c1eb3cc5581" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="based_on_request_media_typeFlow" doc:id="84b62407-b015-4fa9-942d-e9ab37a17e91" >
+		<http:listener doc:name="Listener" doc:id="d0fa6742-e5ca-4f55-8a82-56fef250dc8a" config-ref="HTTP_Listener_config" path="get_data"/>
+		<set-variable value="#[attributes.queryParams.response]" doc:name="data_type" doc:id="38d9591b-96b7-4bf1-9c6a-156dc5335d96" variableName="data_type" />
+		<file:read doc:name="Read" doc:id="e7d43f81-1b51-4ede-a7f9-a4332b8495d8" path="C:\Fish\mulesoft\fre\input.csv" outputMimeType="application/csv" target="fish"/>
+		<choice doc:name="Choice" doc:id="8e38bb38-c99e-4f61-b5d8-c815e2d8ce6c" >
+			<when expression="#[vars.data_type == 'json']">
+				<ee:transform doc:name="JSON" doc:id="aa2acf90-2f24-487b-9794-e00aa7f6d143" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression="#[vars.data_type == 'xml']">
+				<ee:transform doc:name="XML" doc:id="bb34102b-2324-4779-a29f-55e4d2e4d0d4" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+data:{(payload map $)}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression="#[vars.data_type == 'csv']">
+				<ee:transform doc:name="CSV" doc:id="b31dc6be-63c0-44f4-8373-7cef0d0321c1" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="JSON default" doc:id="00b2b139-2ef7-4825-a3ad-0a5b962f6feb" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+		<logger level="INFO" doc:name="Logger" doc:id="0ab81505-2dbe-418e-82d7-aa43ddf629d2" />
+	</flow>
+</mule>
