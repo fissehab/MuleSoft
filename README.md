@@ -6,15 +6,12 @@
 
 2.  [Processing Continuously Coming Data Using File Connector in Mule 4 part 2: inserting data into a database](https://github.com/fissehab/mulesoft/blob/main/Processing%20Continuously%20Coming%20Data%20%20Using%20File%20Connector%20and%20in%20Mule%204-Part%202.ipynb)
 
-<br/>
 
 3.  [Processing Continuously Coming Data Using File Connector in Mule 4 part 3: inserting data into multiple databases in parallel](https://github.com/fissehab/mulesoft/blob/main/Processing%20Continuously%20Coming%20Data%20%20Using%20File%20Connector%20and%20in%20Mule%204-Part%203.ipynb)
 
-<br/>
 
 4.  [Processing Continuously Coming Data Using File Connector in Mule 4 part 4: sending data to different destinations based on the data type](https://github.com/fissehab/mulesoft/blob/main/Processing%20Continuously%20Coming%20Data%20%20Using%20File%20Connector%20and%20in%20Mule%204-Part%204.ipynb)
 
-<br/>
 
 5.  [Integrating AWS Services in Mule 4-Part 1: S3 Automated Read and Write ](https://github.com/fissehab/mulesoft/blob/main/Integrating%20AWS%20Services%20in%20Mule%204-Part%201.ipynb)
 6.  
