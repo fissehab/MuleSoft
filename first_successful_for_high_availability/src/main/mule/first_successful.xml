@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6553aee8-f0c7-4ee7-8fdb-be4f39b4d741" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="8bf5845e-c28c-48dd-8a5f-6361149a4934" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="a1b2c3d4!" database="northwind" />
+	</db:config>
+	<db:config name="Postgres_Database_Config" doc:name="Database Config" doc:id="0e3d1e1f-f202-428d-9485-00e6fdde9e8e" >
+		<db:generic-connection url=" jdbc:postgresql://localhost:5432/Northwind" driverClassName="org.postgresql.Driver" user="postgres" password="a1b2c3d4!" />
+	</db:config>
+	<flow name="first_successfulFlow" doc:id="d72f4fcc-4a4f-4f54-a705-a546e58c359d" >
+		<http:listener doc:name="Listener" doc:id="d7db31c0-83ec-4952-9816-56f412bff145" config-ref="HTTP_Listener_config" path="first_successful"/>
+		<first-successful doc:name="First Successful" doc:id="9b0f9b39-5cbd-4f36-88fb-b63a829cefba" >
+			<route >
+				<db:select doc:name="MySQL" doc:id="c62f4c68-e727-4361-b860-3db2aa93215b" config-ref="MySQL_Database_Config">
+					<db:sql ><![CDATA[select * from category;]]></db:sql>
+				</db:select>
+				<ee:transform doc:name="Transform Message" doc:id="aee3e012-dac2-4602-bf1a-dfb33c790e59" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="42eecc78-3428-452c-b645-6baa1c886fb7" message="MySQL success!"/>
+			</route>
+			<route >
+				<db:select doc:name="postgres" doc:id="dab7d539-0888-4d38-a35e-ec5fceb16383" config-ref="Postgres_Database_Config">
+					<db:sql ><![CDATA[select * from category;]]></db:sql>
+				</db:select>
+				<ee:transform doc:name="Transform Message" doc:id="bd3ac3f5-65fa-4ef3-acaf-78387f0bf991" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="32ccaa4c-7a33-4c1c-a523-d6db73f64d8a" message="Postgres success!"/>
+			</route>
+		</first-successful>
+	</flow>
+</mule>
