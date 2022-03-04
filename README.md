@@ -39,3 +39,6 @@
 15.  [Return Data in Requested Format in Mule 4](https://www.youtube.com/watch?v=XFH-g_wp6sU)
 
 16. [Integrating AWS Services in Mule 4 Part 2: reading data in different formats from S3 ](https://www.youtube.com/watch?v=OBKKYs8LVE8)
+
+17. [Integrating AWS Redshift and Google BigQuery in Mule 4](https://www.youtube.com/watch?v=cD1gMBWYZaQ)
+
