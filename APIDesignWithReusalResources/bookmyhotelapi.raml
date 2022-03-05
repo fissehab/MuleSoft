@@ -1,0 +1,56 @@
+#%RAML 1.0
+title: BookMyHotelAPI
+baseUri: http://bookmyhotel.com
+mediaType: 
+  - application/json
+
+resourceTypes:
+  collection: !include resourceTypes/collection.raml
+  member: !include resourceTypes/member.raml
+
+types:
+  Error: !include datatypes/Error.raml
+  Hotel: !include datatypes/Hotel.raml
+  Registration: !include datatypes/Registration.raml
+  Booking: !include datatypes/Booking.raml
+  Status: !include datatypes/Status.raml   
+
+/registrations:
+  type: collection
+  get:
+  post:
+  /{registrationId}:
+    type: member
+    get:
+    patch:
+    delete:
+/hotels:
+  type: collection
+  get:
+    queryParameters:
+      city:
+        required: false
+      state:
+        required: false
+      country:
+        required: false
+  post:
+  /{hotelId}:
+    type: member
+    get:
+    patch:
+    delete:
+    /bookings:
+      description: Bookings of specific Hotel
+      type: collection
+      get:
+        
+/bookings:
+  type: collection
+  get:
+  post:
+  /{bookingId}:
+    type: member
+    get:
+    patch:
+    delete:

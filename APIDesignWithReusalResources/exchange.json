@@ -1,0 +1,6 @@
+{
+  "main": "bookmyhotelapi.raml",
+  "name": "BookMyHotelAPI",
+  "classifier": "raml",
+  "tags": []
+}

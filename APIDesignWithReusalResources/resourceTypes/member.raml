@@ -1,0 +1,47 @@
+#%RAML 1.0 ResourceType
+displayName: <<resourcePathName | !uppercamelcase | !singularize>>  
+description: Specific <<resourcePathName | !uppercamelcase | !singularize>> 
+get?:
+      displayName: GET <<resourcePathName | !uppercamelcase | !singularize>> 
+      description: Retrieve a specific <<resourcePathName | !uppercamelcase | !singularize>>
+      headers:
+        Accept?: 
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            <<resourcePathName | !uppercamelcase | !singularize>>
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+patch?:
+      displayName: PATCH <<resourcePathName | !uppercamelcase | !singularize>> 
+      description: Update a specific <<resourcePathName | !uppercamelcase | !singularize>>
+      body:
+        <<resourcePathName | !uppercamelcase | !singularize>>
+      responses:
+        204:
+        500:
+          headers:
+            Content-Type: 
+          body:
+            Error
+delete?:
+      displayName: DELETE <<resourcePathName | !uppercamelcase | !singularize>> 
+      description: Delete a specific <<resourcePathName | !uppercamelcase | !singularize>>
+      headers:
+        Accept?:
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Status
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error

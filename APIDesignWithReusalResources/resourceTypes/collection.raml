@@ -1,0 +1,38 @@
+#%RAML 1.0 ResourceType
+displayName: <<resourcePathName | !uppercamelcase>> 
+description: All <<resourcePathName | !uppercamelcase>>
+get?: 
+    displayName: GET <<resourcePathName | !uppercamelcase>>
+    description: Retrieve a list of all <<resourcePathName | !uppercamelcase>>
+    headers:
+      Accept?: 
+    responses:
+      200: 
+        headers:
+         Content-Type: 
+        body:
+          <<resourcePathName | !uppercamelcase | !singularize>>[]
+      404:
+        headers:
+          Content-Type: 
+        body:
+          Error
+     
+      
+post?:
+    displayName: POST <<resourcePathName | !uppercamelcase | !singularize>>
+    description: Add a new <<resourcePathName | !uppercamelcase | !singularize>>
+    headers:
+      Content-Type: 
+    body:
+      <<resourcePathName | !uppercamelcase | !singularize>>
+    responses:
+      201:
+        headers:
+          Location:
+            example: http://bookmyhotel.com/<<resourcePathName>>/r1     
+      500:
+        headers:
+          Content-Type: 
+        body:
+          Error
