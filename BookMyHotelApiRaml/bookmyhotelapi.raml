@@ -1,0 +1,299 @@
+#%RAML 1.0
+title: BookMyHotelAPI
+baseUri: http://bookmyhotel.com
+mediaType: 
+- application/json
+
+documentation:
+  - !include documentation/BookMyHotelDoc.raml
+
+types:
+  Error: !include datatypes/Error.raml
+  Hotel: !include datatypes/Hotel.raml
+  Registration: !include datatypes/Registration.raml
+  Booking: !include datatypes/Booking.raml
+  Status: !include datatypes/Status.raml   
+
+/registrations:
+  displayName: Registrations 
+  description: All Registrations
+  get: 
+    displayName: GET Registrations
+    description: Retrieve a list of all Registrations
+    headers:
+      Accept?:   
+    responses:
+      200: 
+        headers:
+         Content-Type: 
+        body:
+          Registration[]
+      404: 
+        headers:
+         Content-Type: 
+        body:
+          Error
+      
+  post:
+    displayName: POST Registration
+    description: Add a new Registration
+    headers:
+      Content-Type: 
+    body:
+      Registration
+    responses:
+      201:
+        headers:
+          Location:
+            example: http://bookmyhotel.com/registrations/r1     
+      500:
+        headers:
+          Content-Type: 
+        body:
+          Error
+  /{registrationId}:
+    displayName: Registration 
+    description: Specific Registration
+    get:
+      displayName: GET Registration
+      description: Retrieve a specific Registration
+      headers:
+        Accept?:
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Registration
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    patch:
+      displayName: PATCH Registration
+      description: Update a specific Registration
+      headers:
+        Content-Type: 
+      body:
+        Registration
+      responses:
+        204:
+        500:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    delete:
+      displayName: DELETE Registration
+      description: Delete a specific Registration
+      headers:
+        Accept?: 
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Status
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+/hotels:
+  displayName: Hotels 
+  description: All Hotels
+  get:
+    displayName: GET Hotels
+    description: Retrieve a list of all Hotels
+    headers:
+      Accept?: 
+        example: application/json
+    queryParameters:
+      city:
+        required: false
+      state:
+        required: false
+      country:
+        required: false
+    responses:
+      200:
+        headers:
+          Content-Type: 
+        body:
+          Hotel[]
+      404:
+        headers:
+          Content-Type: 
+        body:
+          Error
+  post:
+    displayName: POST Hotel
+    description: Add a new Hotel
+    headers:
+      Content-Type: 
+    body:
+      Hotel
+    responses:
+      201:
+        headers:
+          Location: 
+            example: http://bookmyhotel.com/hotels/h1
+      500:
+        headers:
+          Content-Type: 
+        body:
+          Error
+  /{hotelId}:
+    displayName: Hotel 
+    description: Specific Hotel
+    get:
+      displayName: GET Hotel
+      description: Retrieve a specific Hotel
+      headers:
+        Accept?:
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:   
+            Hotel
+        404:
+          headers:
+            Content-Type: 
+          body: 
+            Error
+    patch:
+      displayName: PATCH Hotel
+      description: Update a specific Hotel
+      headers:
+        Content-Type: 
+      body:
+        Hotel
+      responses:
+        204:
+        500:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    delete:
+      displayName: DELETE Hotel
+      description: Delete a specific Hotel
+      headers:
+        Accept?:
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Status
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    /bookings:
+      displayName: Bookings 
+      description: Bookings of specific Hotel
+      get:
+        displayName: GET Bookings
+        description: Retrieve a list of all Bookings for specific hotel
+        headers:
+          Accept?:
+        responses:
+          200:
+            headers:
+              Content-Type: 
+            body:
+              Booking[]
+          404:
+            headers:
+              Content-Type: 
+            body:
+              Error
+/bookings:
+  displayName: Bookings 
+  description: All Bookings
+  get:
+    displayName: GET Bookings
+    description: Retrieve a list of all Bookings
+    headers:
+      Accept?: 
+    responses:
+      200:
+        headers:
+          Content-Type: 
+        body:
+          Booking[]
+      404:
+        headers:
+          Content-Type: 
+        body:
+          Error
+  post:
+    displayName: POST Booking
+    description: Add a new Booking
+    headers:
+      Content-Type: 
+    body:
+      Booking
+    responses:
+      201:
+        headers:
+          Location:
+            example: http://bookmyhotel.com/bookings/b1
+      500:
+        headers:
+          Content-Type: 
+        body:
+          Error
+  /{bookingId}:
+    displayName: Booking 
+    description: Specific Booking
+    get:
+      displayName: GET Booking 
+      description: Retrieve a specific Booking
+      headers:
+        Accept?: 
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Booking
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    patch:
+      displayName: PATCH Booking 
+      description: Update a specific Booking
+      body:
+        Booking
+      responses:
+        204:
+        500:
+          headers:
+            Content-Type: 
+          body:
+            Error
+    delete:
+      displayName: DELETE Booking 
+      description: Delete a specific Booking
+      headers:
+        Accept?:
+      responses:
+        200:
+          headers:
+            Content-Type: 
+          body:
+            Status
+        404:
+          headers:
+            Content-Type: 
+          body:
+            Error
+
+
