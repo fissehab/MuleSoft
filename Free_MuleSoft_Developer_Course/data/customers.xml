@@ -1,0 +1,1458 @@
+<DATA>
+
+	<ROW>
+		<custId>1</custId>
+		<companyName>Customer NRZBB</companyName>
+		<contactName>Allen, Michael</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Obere Str. 0123</address>
+		<city>Berlin</city>
+		<region>NULL</region>
+		<postalCode>10092</postalCode>
+		<country>Germany</country>
+		<phone>030-3456789</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>030-0123456</fax>
+	</ROW>
+
+	<ROW>
+		<custId>2</custId>
+		<companyName>Customer MLTDN</companyName>
+		<contactName>Hassall, Mark</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Avda. de la Constitución 5678</address>
+		<city>México D.F.</city>
+		<region>NULL</region>
+		<postalCode>10077</postalCode>
+		<country>Mexico</country>
+		<phone>(5) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(5) 456-7890</fax>
+	</ROW>
+
+	<ROW>
+		<custId>3</custId>
+		<companyName>Customer KBUDE</companyName>
+		<contactName>Peoples, John</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Mataderos  7890</address>
+		<city>México D.F.</city>
+		<region>NULL</region>
+		<postalCode>10097</postalCode>
+		<country>Mexico</country>
+		<phone>(5) 123-4567</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>4</custId>
+		<companyName>Customer HFBZG</companyName>
+		<contactName>Arndt, Torsten</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>7890 Hanover Sq.</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10046</postalCode>
+		<country>UK</country>
+		<phone>(171) 456-7890</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(171) 456-7891</fax>
+	</ROW>
+
+	<ROW>
+		<custId>5</custId>
+		<companyName>Customer HGVLZ</companyName>
+		<contactName>Higginbotham, Tom</contactName>
+		<contactTitle>Order Administrator</contactTitle>
+		<address>Berguvsvägen  5678</address>
+		<city>Luleå</city>
+		<region>NULL</region>
+		<postalCode>10112</postalCode>
+		<country>Sweden</country>
+		<phone>0921-67 89 01</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0921-23 45 67</fax>
+	</ROW>
+
+	<ROW>
+		<custId>6</custId>
+		<companyName>Customer XHXJV</companyName>
+		<contactName>Poland, Carole</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Forsterstr. 7890</address>
+		<city>Mannheim</city>
+		<region>NULL</region>
+		<postalCode>10117</postalCode>
+		<country>Germany</country>
+		<phone>0621-67890</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0621-12345</fax>
+	</ROW>
+
+	<ROW>
+		<custId>7</custId>
+		<companyName>Customer QXVLA</companyName>
+		<contactName>Bansal, Dushyant</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>2345, place Kléber</address>
+		<city>Strasbourg</city>
+		<region>NULL</region>
+		<postalCode>10089</postalCode>
+		<country>France</country>
+		<phone>67.89.01.23</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>67.89.01.24</fax>
+	</ROW>
+
+	<ROW>
+		<custId>8</custId>
+		<companyName>Customer QUHWH</companyName>
+		<contactName>Ilyina, Julia</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>C/ Araquil, 0123</address>
+		<city>Madrid</city>
+		<region>NULL</region>
+		<postalCode>10104</postalCode>
+		<country>Spain</country>
+		<phone>(91) 345 67 89</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(91) 012 34 56</fax>
+	</ROW>
+
+	<ROW>
+		<custId>9</custId>
+		<companyName>Customer RTXGC</companyName>
+		<contactName>Raghav, Amritansh</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>6789, rue des Bouchers</address>
+		<city>Marseille</city>
+		<region>NULL</region>
+		<postalCode>10105</postalCode>
+		<country>France</country>
+		<phone>23.45.67.89</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>23.45.67.80</fax>
+	</ROW>
+
+	<ROW>
+		<custId>10</custId>
+		<companyName>Customer EEALV</companyName>
+		<contactName>Bassols, Pilar Colome</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>8901 Tsawassen Blvd.</address>
+		<city>Tsawassen</city>
+		<region>BC</region>
+		<postalCode>10111</postalCode>
+		<country>Canada</country>
+		<phone>(604) 901-2345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(604) 678-9012</fax>
+	</ROW>
+
+	<ROW>
+		<custId>11</custId>
+		<companyName>Customer UBHAU</companyName>
+		<contactName>Jaffe, David</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Fauntleroy Circus 4567</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10064</postalCode>
+		<country>UK</country>
+		<phone>(171) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>12</custId>
+		<companyName>Customer PSNMQ</companyName>
+		<contactName>Ray, Mike</contactName>
+		<contactTitle>Sales Agent</contactTitle>
+		<address>Cerrito 3456</address>
+		<city>Buenos Aires</city>
+		<region>NULL</region>
+		<postalCode>10057</postalCode>
+		<country>Argentina</country>
+		<phone>(1) 890-1234</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 567-8901</fax>
+	</ROW>
+
+	<ROW>
+		<custId>13</custId>
+		<companyName>Customer VMLOG</companyName>
+		<contactName>Benito, Almudena</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Sierras de Granada 7890</address>
+		<city>México D.F.</city>
+		<region>NULL</region>
+		<postalCode>10056</postalCode>
+		<country>Mexico</country>
+		<phone>(5) 456-7890</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(5) 123-4567</fax>
+	</ROW>
+
+	<ROW>
+		<custId>14</custId>
+		<companyName>Customer WNMAF</companyName>
+		<contactName>Jelitto, Jacek</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Hauptstr. 0123</address>
+		<city>Bern</city>
+		<region>NULL</region>
+		<postalCode>10065</postalCode>
+		<country>Switzerland</country>
+		<phone>0452-678901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>15</custId>
+		<companyName>Customer JUWXK</companyName>
+		<contactName>Richardson, Shawn</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>Av. dos Lusíadas, 6789</address>
+		<city>Sao Paulo</city>
+		<region>SP</region>
+		<postalCode>10087</postalCode>
+		<country>Brazil</country>
+		<phone>(11) 012-3456</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>16</custId>
+		<companyName>Customer GYBBY</companyName>
+		<contactName>Birkby, Dana</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Berkeley Gardens 0123 Brewery</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10039</postalCode>
+		<country>UK</country>
+		<phone>(171) 234-5678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(171) 234-5679</fax>
+	</ROW>
+
+	<ROW>
+		<custId>17</custId>
+		<companyName>Customer FEVNN</companyName>
+		<contactName>Jones, TiAnna</contactName>
+		<contactTitle>Order Administrator</contactTitle>
+		<address>Walserweg 4567</address>
+		<city>Aachen</city>
+		<region>NULL</region>
+		<postalCode>10067</postalCode>
+		<country>Germany</country>
+		<phone>0241-789012</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0241-345678</fax>
+	</ROW>
+
+	<ROW>
+		<custId>18</custId>
+		<companyName>Customer BSVAR</companyName>
+		<contactName>Rizaldy, Arif</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>3456, rue des Cinquante Otages</address>
+		<city>Nantes</city>
+		<region>NULL</region>
+		<postalCode>10041</postalCode>
+		<country>France</country>
+		<phone>89.01.23.45</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>89.01.23.46</fax>
+	</ROW>
+
+	<ROW>
+		<custId>19</custId>
+		<companyName>Customer RFNQC</companyName>
+		<contactName>Boseman, Randall</contactName>
+		<contactTitle>Sales Agent</contactTitle>
+		<address>5678 King George</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10110</postalCode>
+		<country>UK</country>
+		<phone>(171) 345-6789</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(171) 345-6780</fax>
+	</ROW>
+
+	<ROW>
+		<custId>20</custId>
+		<companyName>Customer THHDP</companyName>
+		<contactName>Kane, John</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Kirchgasse 9012</address>
+		<city>Graz</city>
+		<region>NULL</region>
+		<postalCode>10059</postalCode>
+		<country>Austria</country>
+		<phone>1234-5678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>9012-3456</fax>
+	</ROW>
+
+	<ROW>
+		<custId>21</custId>
+		<companyName>Customer KIdPX</companyName>
+		<contactName>Russo, Giuseppe</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>Rua Orós, 3456</address>
+		<city>Sao Paulo</city>
+		<region>SP</region>
+		<postalCode>10096</postalCode>
+		<country>Brazil</country>
+		<phone>(11) 456-7890</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>22</custId>
+		<companyName>Customer DTDMN</companyName>
+		<contactName>Bueno, Janaina Burdan, Neville</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>C/ Moralzarzal, 5678</address>
+		<city>Madrid</city>
+		<region>NULL</region>
+		<postalCode>10080</postalCode>
+		<country>Spain</country>
+		<phone>(91) 890 12 34</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(91) 567 89 01</fax>
+	</ROW>
+
+	<ROW>
+		<custId>23</custId>
+		<companyName>Customer WVFAF</companyName>
+		<contactName>Khanna, Karan</contactName>
+		<contactTitle>Assistant Sales Agent</contactTitle>
+		<address>4567, chaussée de Tournai</address>
+		<city>Lille</city>
+		<region>NULL</region>
+		<postalCode>10048</postalCode>
+		<country>France</country>
+		<phone>45.67.89.01</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>45.67.89.02</fax>
+	</ROW>
+
+	<ROW>
+		<custId>24</custId>
+		<companyName>Customer CYZTN</companyName>
+		<contactName>San Juan, Patricia</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Åkergatan 5678</address>
+		<city>Bräcke</city>
+		<region>NULL</region>
+		<postalCode>10114</postalCode>
+		<country>Sweden</country>
+		<phone>0695-67 89 01</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>25</custId>
+		<companyName>Customer AZJED</companyName>
+		<contactName>Carlson, Jason</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Berliner Platz 9012</address>
+		<city>München</city>
+		<region>NULL</region>
+		<postalCode>10091</postalCode>
+		<country>Germany</country>
+		<phone>089-8901234</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>089-5678901</fax>
+	</ROW>
+
+	<ROW>
+		<custId>26</custId>
+		<companyName>Customer USDBG</companyName>
+		<contactName>Koch, Paul</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>9012, rue Royale</address>
+		<city>Nantes</city>
+		<region>NULL</region>
+		<postalCode>10101</postalCode>
+		<country>France</country>
+		<phone>34.56.78.90</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>34.56.78.91</fax>
+	</ROW>
+
+	<ROW>
+		<custId>27</custId>
+		<companyName>Customer WMFEA</companyName>
+		<contactName>Schmöllerl, Martin</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Via Monte Bianco 4567</address>
+		<city>Torino</city>
+		<region>NULL</region>
+		<postalCode>10099</postalCode>
+		<country>Italy</country>
+		<phone>011-2345678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>011-9012345</fax>
+	</ROW>
+
+	<ROW>
+		<custId>28</custId>
+		<companyName>Customer XYUFB</companyName>
+		<contactName>Cavaglieri, Giorgio</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Jardim das rosas n. 8901</address>
+		<city>Lisboa</city>
+		<region>NULL</region>
+		<postalCode>10054</postalCode>
+		<country>Portugal</country>
+		<phone>(1) 456-7890</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 123-4567</fax>
+	</ROW>
+
+	<ROW>
+		<custId>29</custId>
+		<companyName>Customer MDLWA</companyName>
+		<contactName>Kolesnikova, Katerina</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Rambla de Cataluña, 8901</address>
+		<city>Barcelona</city>
+		<region>NULL</region>
+		<postalCode>10081</postalCode>
+		<country>Spain</country>
+		<phone>(93) 789 0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(93) 456 7890</fax>
+	</ROW>
+
+	<ROW>
+		<custId>30</custId>
+		<companyName>Customer KSLQF</companyName>
+		<contactName>Shabalin, Rostislav</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>C/ Romero, 1234</address>
+		<city>Sevilla</city>
+		<region>NULL</region>
+		<postalCode>10075</postalCode>
+		<country>Spain</country>
+		<phone>(95) 901 23 45</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>31</custId>
+		<companyName>Customer YJCBX</companyName>
+		<contactName>Cheng, Yao-Qiang</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>Av. Brasil, 5678</address>
+		<city>Campinas</city>
+		<region>SP</region>
+		<postalCode>10128</postalCode>
+		<country>Brazil</country>
+		<phone>(11) 567-8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>32</custId>
+		<companyName>Customer YSIQX</companyName>
+		<contactName>Krishnan, Venky</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>6789 Baker Blvd.</address>
+		<city>Eugene</city>
+		<region>OR</region>
+		<postalCode>10070</postalCode>
+		<country>USA</country>
+		<phone>(503) 555-0122</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>33</custId>
+		<companyName>Customer FVXPQ</companyName>
+		<contactName>Sigurdarson, Hallur </contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>5ª Ave. Los Palos Grandes 3456</address>
+		<city>Caracas</city>
+		<region>DF</region>
+		<postalCode>10043</postalCode>
+		<country>Venezuela</country>
+		<phone>(2) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(2) 456-7890</fax>
+	</ROW>
+
+	<ROW>
+		<custId>34</custId>
+		<companyName>Customer IBVRG</companyName>
+		<contactName>Cohen, Shy</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Rua do Paço, 7890</address>
+		<city>Rio de Janeiro</city>
+		<region>RJ</region>
+		<postalCode>10076</postalCode>
+		<country>Brazil</country>
+		<phone>(21) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(21) 789-0124</fax>
+	</ROW>
+
+	<ROW>
+		<custId>35</custId>
+		<companyName>Customer UMTLM</companyName>
+		<contactName>Langohr, Kris</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Carrera 1234 con Ave. Carlos Soublette #8-35</address>
+		<city>San Cristóbal</city>
+		<region>Táchira</region>
+		<postalCode>10066</postalCode>
+		<country>Venezuela</country>
+		<phone>(5) 567-8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(5) 234-5678</fax>
+	</ROW>
+
+	<ROW>
+		<custId>36</custId>
+		<companyName>Customer LVJSO</companyName>
+		<contactName>Smith, Denise</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>City Center Plaza 2345 Main St.</address>
+		<city>Elgin</city>
+		<region>OR</region>
+		<postalCode>10103</postalCode>
+		<country>USA</country>
+		<phone>(503) 555-0126</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(503) 555-0135</fax>
+	</ROW>
+
+	<ROW>
+		<custId>37</custId>
+		<companyName>Customer FRXZL</companyName>
+		<contactName>Crăciun, Ovidiu V.</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>9012 Johnstown Road</address>
+		<city>Cork</city>
+		<region>Co. Cork</region>
+		<postalCode>10051</postalCode>
+		<country>Ireland</country>
+		<phone>8901 234</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>5678 9012</fax>
+	</ROW>
+
+	<ROW>
+		<custId>38</custId>
+		<companyName>Customer LJUCA</companyName>
+		<contactName>Lee, Frank</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Garden House Crowther Way 3456</address>
+		<city>Cowes</city>
+		<region>Isle of Wight</region>
+		<postalCode>10063</postalCode>
+		<country>UK</country>
+		<phone>(198) 567-8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>39</custId>
+		<companyName>Customer GLLAG</companyName>
+		<contactName>Song, Lolan</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>Maubelstr. 8901</address>
+		<city>Brandenburg</city>
+		<region>NULL</region>
+		<postalCode>10060</postalCode>
+		<country>Germany</country>
+		<phone>0555-34567</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>40</custId>
+		<companyName>Customer EFFTC</companyName>
+		<contactName>De Oliveira, Jose</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>2345, avenue de l'Europe</address>
+		<city>Versailles</city>
+		<region>NULL</region>
+		<postalCode>10108</postalCode>
+		<country>France</country>
+		<phone>12.34.56.78</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>12.34.56.79</fax>
+	</ROW>
+
+	<ROW>
+		<custId>41</custId>
+		<companyName>Customer XIIWM</companyName>
+		<contactName>Litton, Tim</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>3456 rue Alsace-Lorraine</address>
+		<city>Toulouse</city>
+		<region>NULL</region>
+		<postalCode>10053</postalCode>
+		<country>France</country>
+		<phone>90.12.34.56</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>90.12.34.57</fax>
+	</ROW>
+
+	<ROW>
+		<custId>42</custId>
+		<companyName>Customer IAIJK</companyName>
+		<contactName>Steiner, Dominik</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>2345 Oak St.</address>
+		<city>Vancouver</city>
+		<region>BC</region>
+		<postalCode>10098</postalCode>
+		<country>Canada</country>
+		<phone>(604) 567-8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(604) 234-5678</fax>
+	</ROW>
+
+	<ROW>
+		<custId>43</custId>
+		<companyName>Customer UISOJ</companyName>
+		<contactName>Deshpande, Anu</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>8901 Orchestra Terrace</address>
+		<city>Walla Walla</city>
+		<region>WA</region>
+		<postalCode>10069</postalCode>
+		<country>USA</country>
+		<phone>(509) 555-0119</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(509) 555-0130</fax>
+	</ROW>
+
+	<ROW>
+		<custId>44</custId>
+		<companyName>Customer OXFRU</companyName>
+		<contactName>Louverdis, George</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Magazinweg 8901</address>
+		<city>Frankfurt a.M.</city>
+		<region>NULL</region>
+		<postalCode>10095</postalCode>
+		<country>Germany</country>
+		<phone>069-7890123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>069-4567890</fax>
+	</ROW>
+
+	<ROW>
+		<custId>45</custId>
+		<companyName>Customer QXPPT</companyName>
+		<contactName>Sunkammurali,  Krishna</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>1234 Polk St. Suite 5</address>
+		<city>San Francisco</city>
+		<region>CA</region>
+		<postalCode>10062</postalCode>
+		<country>USA</country>
+		<phone>(415) 555-0118</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>46</custId>
+		<companyName>Customer XPNIK</companyName>
+		<contactName>Dressler, Marlies</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Carrera 7890 con Ave. Bolívar #65-98 Llano Largo</address>
+		<city>Barquisimeto</city>
+		<region>Lara</region>
+		<postalCode>10093</postalCode>
+		<country>Venezuela</country>
+		<phone>(9) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(9) 456-7890</fax>
+	</ROW>
+
+	<ROW>
+		<custId>47</custId>
+		<companyName>Customer PSQUZ</companyName>
+		<contactName>Lupu, Cornel</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Ave. 5 de Mayo Porlamar 5678</address>
+		<city>I. de Margarita</city>
+		<region>Nueva Esparta</region>
+		<postalCode>10121</postalCode>
+		<country>Venezuela</country>
+		<phone>(8) 01-23-45</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(8) 67-89-01</fax>
+	</ROW>
+
+	<ROW>
+		<custId>48</custId>
+		<companyName>Customer DVFMB</companyName>
+		<contactName>Szymczak, Radosław</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>9012 Chiaroscuro Rd.</address>
+		<city>Portland</city>
+		<region>OR</region>
+		<postalCode>10073</postalCode>
+		<country>USA</country>
+		<phone>(503) 555-0117</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(503) 555-0129</fax>
+	</ROW>
+
+	<ROW>
+		<custId>49</custId>
+		<companyName>Customer CQRAA</companyName>
+		<contactName>Duerr, Bernard</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Via Ludovico il Moro 6789</address>
+		<city>Bergamo</city>
+		<region>NULL</region>
+		<postalCode>10106</postalCode>
+		<country>Italy</country>
+		<phone>035-345678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>035-901234</fax>
+	</ROW>
+
+	<ROW>
+		<custId>50</custId>
+		<companyName>Customer JYPSC</companyName>
+		<contactName>Mace, Donald</contactName>
+		<contactTitle>Sales Agent</contactTitle>
+		<address>Rue Joseph-Bens 0123</address>
+		<city>Bruxelles</city>
+		<region>NULL</region>
+		<postalCode>10074</postalCode>
+		<country>Belgium</country>
+		<phone>(02) 890 12 34</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(02) 567 89 01</fax>
+	</ROW>
+
+	<ROW>
+		<custId>51</custId>
+		<companyName>Customer PVDZC</companyName>
+		<contactName>Taylor, Maurice</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>8901 rue St. Laurent</address>
+		<city>Montréal</city>
+		<region>Québec</region>
+		<postalCode>10040</postalCode>
+		<country>Canada</country>
+		<phone>(514) 345-6789</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(514) 012-3456</fax>
+	</ROW>
+
+	<ROW>
+		<custId>52</custId>
+		<companyName>Customer PZNLA</companyName>
+		<contactName>Dupont-Roc, Patrice</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>Heerstr. 4567</address>
+		<city>Leipzig</city>
+		<region>NULL</region>
+		<postalCode>10125</postalCode>
+		<country>Germany</country>
+		<phone>0342-12345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>53</custId>
+		<companyName>Customer GCJSG</companyName>
+		<contactName>Mallit, Ken</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>South House 1234 Queensbridge</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10061</postalCode>
+		<country>UK</country>
+		<phone>(171) 890-1234</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(171) 890-1235</fax>
+	</ROW>
+
+	<ROW>
+		<custId>54</custId>
+		<companyName>Customer TDKEG</companyName>
+		<contactName>Tiano, Mike</contactName>
+		<contactTitle>Sales Agent</contactTitle>
+		<address>Ing. Gustavo Moncada 0123 Piso 20-A</address>
+		<city>Buenos Aires</city>
+		<region>NULL</region>
+		<postalCode>10094</postalCode>
+		<country>Argentina</country>
+		<phone>(1) 123-4567</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 890-1234</fax>
+	</ROW>
+
+	<ROW>
+		<custId>55</custId>
+		<companyName>Customer KZQZT</companyName>
+		<contactName>Egelund-Muller, Anja</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>7890 Bering St.</address>
+		<city>Anchorage</city>
+		<region>AK</region>
+		<postalCode>10050</postalCode>
+		<country>USA</country>
+		<phone>(907) 555-0115</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(907) 555-0128</fax>
+	</ROW>
+
+	<ROW>
+		<custId>56</custId>
+		<companyName>Customer QNIVZ</companyName>
+		<contactName>Marinova, Nadejda</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Mehrheimerstr. 9012</address>
+		<city>Köln</city>
+		<region>NULL</region>
+		<postalCode>10047</postalCode>
+		<country>Germany</country>
+		<phone>0221-0123456</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0221-7890123</fax>
+	</ROW>
+
+	<ROW>
+		<custId>57</custId>
+		<companyName>Customer WVAXS</companyName>
+		<contactName>Tollevsen, Bjørn</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>5678, boulevard Charonne</address>
+		<city>Paris</city>
+		<region>NULL</region>
+		<postalCode>10085</postalCode>
+		<country>France</country>
+		<phone>(1) 89.01.23.45</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 89.01.23.46</fax>
+	</ROW>
+
+	<ROW>
+		<custId>58</custId>
+		<companyName>Customer AHXHT</companyName>
+		<contactName>Fakhouri, Fadi</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Calle Dr. Jorge Cash 8901</address>
+		<city>México D.F.</city>
+		<region>NULL</region>
+		<postalCode>10116</postalCode>
+		<country>Mexico</country>
+		<phone>(5) 890-1234</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(5) 567-8901</fax>
+	</ROW>
+
+	<ROW>
+		<custId>59</custId>
+		<companyName>Customer LOLJO</companyName>
+		<contactName>Meston, Tosh</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Geislweg 2345</address>
+		<city>Salzburg</city>
+		<region>NULL</region>
+		<postalCode>10127</postalCode>
+		<country>Austria</country>
+		<phone>4567-8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>2345-6789</fax>
+	</ROW>
+
+	<ROW>
+		<custId>60</custId>
+		<companyName>Customer QZURI</companyName>
+		<contactName>Uppal, Sunil</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Estrada da saúde n. 6789</address>
+		<city>Lisboa</city>
+		<region>NULL</region>
+		<postalCode>10083</postalCode>
+		<country>Portugal</country>
+		<phone>(1) 789-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>61</custId>
+		<companyName>Customer WULWD</companyName>
+		<contactName>Florczyk, Krzysztof</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Rua da Panificadora, 1234</address>
+		<city>Rio de Janeiro</city>
+		<region>RJ</region>
+		<postalCode>10115</postalCode>
+		<country>Brazil</country>
+		<phone>(21) 678-9012</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(21) 678-9013</fax>
+	</ROW>
+
+	<ROW>
+		<custId>62</custId>
+		<companyName>Customer WFIZJ</companyName>
+		<contactName>Misiec, Anna</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>Alameda dos Canàrios, 1234</address>
+		<city>Sao Paulo</city>
+		<region>SP</region>
+		<postalCode>10102</postalCode>
+		<country>Brazil</country>
+		<phone>(11) 901-2345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>63</custId>
+		<companyName>Customer IRRVL</companyName>
+		<contactName>Veronesi, Giorgio</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Taucherstraße 1234</address>
+		<city>Cunewalde</city>
+		<region>NULL</region>
+		<postalCode>10126</postalCode>
+		<country>Germany</country>
+		<phone>0372-12345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>64</custId>
+		<companyName>Customer LWGMD</companyName>
+		<contactName>Gaffney, Lawrie</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Av. del Libertador 3456</address>
+		<city>Buenos Aires</city>
+		<region>NULL</region>
+		<postalCode>10124</postalCode>
+		<country>Argentina</country>
+		<phone>(1) 234-5678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 901-2345</fax>
+	</ROW>
+
+	<ROW>
+		<custId>65</custId>
+		<companyName>Customer NYUHS</companyName>
+		<contactName>Moore, Michael</contactName>
+		<contactTitle>Assistant Sales Representative</contactTitle>
+		<address>6789 Milton Dr.</address>
+		<city>Albuquerque</city>
+		<region>NM</region>
+		<postalCode>10109</postalCode>
+		<country>USA</country>
+		<phone>(505) 555-0125</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(505) 555-0134</fax>
+	</ROW>
+
+	<ROW>
+		<custId>66</custId>
+		<companyName>Customer LHANT</companyName>
+		<contactName>Voss, Florian</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>Strada Provinciale 7890</address>
+		<city>Reggio Emilia</city>
+		<region>NULL</region>
+		<postalCode>10038</postalCode>
+		<country>Italy</country>
+		<phone>0522-012345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0522-678901</fax>
+	</ROW>
+
+	<ROW>
+		<custId>67</custId>
+		<companyName>Customer QVEPD</companyName>
+		<contactName>Garden, Euan</contactName>
+		<contactTitle>Assistant Sales Agent</contactTitle>
+		<address>Av. Copacabana, 6789</address>
+		<city>Rio de Janeiro</city>
+		<region>RJ</region>
+		<postalCode>10052</postalCode>
+		<country>Brazil</country>
+		<phone>(21) 345-6789</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>68</custId>
+		<companyName>Customer CCKOT</companyName>
+		<contactName>Myrcha, Jacek</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Grenzacherweg 0123</address>
+		<city>Genève</city>
+		<region>NULL</region>
+		<postalCode>10122</postalCode>
+		<country>Switzerland</country>
+		<phone>0897-012345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>69</custId>
+		<companyName>Customer SIUIH</companyName>
+		<contactName>Watters, Jason M.</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Gran Vía, 4567</address>
+		<city>Madrid</city>
+		<region>NULL</region>
+		<postalCode>10071</postalCode>
+		<country>Spain</country>
+		<phone>(91) 567 8901</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(91) 234 5678</fax>
+	</ROW>
+
+	<ROW>
+		<custId>70</custId>
+		<companyName>Customer TMXGN</companyName>
+		<contactName>Ginters, Kaspars</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Erling Skakkes gate 2345</address>
+		<city>Stavern</city>
+		<region>NULL</region>
+		<postalCode>10123</postalCode>
+		<country>Norway</country>
+		<phone>07-89 01 23</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>07-45 67 89</fax>
+	</ROW>
+
+	<ROW>
+		<custId>71</custId>
+		<companyName>Customer LCOUJ</companyName>
+		<contactName>Navarro, Tomás</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>9012 Suffolk Ln.</address>
+		<city>Boise</city>
+		<region>Id</region>
+		<postalCode>10078</postalCode>
+		<country>USA</country>
+		<phone>(208) 555-0116</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>72</custId>
+		<companyName>Customer AHPOP</companyName>
+		<contactName>Welcker, Brian</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>4567 Wadhurst Rd.</address>
+		<city>London</city>
+		<region>NULL</region>
+		<postalCode>10088</postalCode>
+		<country>UK</country>
+		<phone>(171) 901-2345</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(171) 901-2346</fax>
+	</ROW>
+
+	<ROW>
+		<custId>73</custId>
+		<companyName>Customer JMIKW</companyName>
+		<contactName>Gonzalez, Nuria</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Vinbæltet 3456</address>
+		<city>Kobenhavn</city>
+		<region>NULL</region>
+		<postalCode>10079</postalCode>
+		<country>Denmark</country>
+		<phone>12 34 56 78</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>90 12 34 56</fax>
+	</ROW>
+
+	<ROW>
+		<custId>74</custId>
+		<companyName>Customer YSHXL</companyName>
+		<contactName>O’Brien, Dave</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>9012, rue Lauriston</address>
+		<city>Paris</city>
+		<region>NULL</region>
+		<postalCode>10058</postalCode>
+		<country>France</country>
+		<phone>(1) 23.45.67.89</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(1) 23.45.67.80</fax>
+	</ROW>
+
+	<ROW>
+		<custId>75</custId>
+		<companyName>Customer XOJYP</companyName>
+		<contactName>Wojciechowska, Agnieszka</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>P.O. Box 1234</address>
+		<city>Lander</city>
+		<region>WY</region>
+		<postalCode>10113</postalCode>
+		<country>USA</country>
+		<phone>(307) 555-0114</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(307) 555-0127</fax>
+	</ROW>
+
+	<ROW>
+		<custId>76</custId>
+		<companyName>Customer SFOGW</companyName>
+		<contactName>Gulbis, Katrin</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Boulevard Tirou, 2345</address>
+		<city>Charleroi</city>
+		<region>NULL</region>
+		<postalCode>10100</postalCode>
+		<country>Belgium</country>
+		<phone>(071) 56 78 90 12</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(071) 34 56 78 90</fax>
+	</ROW>
+
+	<ROW>
+		<custId>77</custId>
+		<companyName>Customer LCYBZ</companyName>
+		<contactName>Osorio, Cristian</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>2345 Jefferson Way Suite 2</address>
+		<city>Portland</city>
+		<region>OR</region>
+		<postalCode>10042</postalCode>
+		<country>USA</country>
+		<phone>(503) 555-0120</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>78</custId>
+		<companyName>Customer NLTYP</companyName>
+		<contactName>Young, Robin</contactName>
+		<contactTitle>Marketing Assistant</contactTitle>
+		<address>0123 Grizzly Peak Rd.</address>
+		<city>Butte</city>
+		<region>MT</region>
+		<postalCode>10107</postalCode>
+		<country>USA</country>
+		<phone>(406) 555-0121</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(406) 555-0131</fax>
+	</ROW>
+
+	<ROW>
+		<custId>79</custId>
+		<companyName>Customer FAPSM</companyName>
+		<contactName>Wickham, Jim</contactName>
+		<contactTitle>Marketing Manager</contactTitle>
+		<address>Luisenstr. 0123</address>
+		<city>Münster</city>
+		<region>NULL</region>
+		<postalCode>10118</postalCode>
+		<country>Germany</country>
+		<phone>0251-456789</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0251-012345</fax>
+	</ROW>
+
+	<ROW>
+		<custId>80</custId>
+		<companyName>Customer VONTK</companyName>
+		<contactName>Geschwandtner, Jens</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>Avda. Azteca 4567</address>
+		<city>México D.F.</city>
+		<region>NULL</region>
+		<postalCode>10044</postalCode>
+		<country>Mexico</country>
+		<phone>(5) 678-9012</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>81</custId>
+		<companyName>Customer YQQWW</companyName>
+		<contactName>Nagel, Jean-Philippe</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Av. Inês de Castro, 1234</address>
+		<city>Sao Paulo</city>
+		<region>SP</region>
+		<postalCode>10120</postalCode>
+		<country>Brazil</country>
+		<phone>(11) 123-4567</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(11) 234-5678</fax>
+	</ROW>
+
+	<ROW>
+		<custId>82</custId>
+		<companyName>Customer EYHKM</companyName>
+		<contactName>Veninga, Tjeerd</contactName>
+		<contactTitle>Sales Associate</contactTitle>
+		<address>1234 DaVinci Blvd.</address>
+		<city>Kirkland</city>
+		<region>WA</region>
+		<postalCode>10119</postalCode>
+		<country>USA</country>
+		<phone>(206) 555-0124</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(206) 555-0133</fax>
+	</ROW>
+
+	<ROW>
+		<custId>83</custId>
+		<companyName>Customer ZRNDE</companyName>
+		<contactName>Fonteneau, Karl</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Smagsloget 3456</address>
+		<city>Århus</city>
+		<region>NULL</region>
+		<postalCode>10090</postalCode>
+		<country>Denmark</country>
+		<phone>23 45 67 89</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>01 23 45 67</fax>
+	</ROW>
+
+	<ROW>
+		<custId>84</custId>
+		<companyName>Customer NRCSK</companyName>
+		<contactName>Tuntisangaroon, Sittichai</contactName>
+		<contactTitle>Sales Agent</contactTitle>
+		<address>6789, rue du Commerce</address>
+		<city>Lyon</city>
+		<region>NULL</region>
+		<postalCode>10072</postalCode>
+		<country>France</country>
+		<phone>78.90.12.34</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>78.90.12.35</fax>
+	</ROW>
+
+	<ROW>
+		<custId>85</custId>
+		<companyName>Customer ENQZT</companyName>
+		<contactName>McLin, Nkenge</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>5678 rue de l'Abbaye</address>
+		<city>Reims</city>
+		<region>NULL</region>
+		<postalCode>10082</postalCode>
+		<country>France</country>
+		<phone>56.78.90.12</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>56.78.90.13</fax>
+	</ROW>
+
+	<ROW>
+		<custId>86</custId>
+		<companyName>Customer SNXOJ</companyName>
+		<contactName>Syamala, Manoj</contactName>
+		<contactTitle>Sales Representative</contactTitle>
+		<address>Adenauerallee 7890</address>
+		<city>Stuttgart</city>
+		<region>NULL</region>
+		<postalCode>10086</postalCode>
+		<country>Germany</country>
+		<phone>0711-345678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>0711-901234</fax>
+	</ROW>
+
+	<ROW>
+		<custId>87</custId>
+		<companyName>Customer ZHYOS</companyName>
+		<contactName>Ludwig, Michael</contactName>
+		<contactTitle>Accounting Manager</contactTitle>
+		<address>Torikatu 9012</address>
+		<city>Oulu</city>
+		<region>NULL</region>
+		<postalCode>10045</postalCode>
+		<country>Finland</country>
+		<phone>981-123456</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>981-789012</fax>
+	</ROW>
+
+	<ROW>
+		<custId>88</custId>
+		<companyName>Customer SRQVM</companyName>
+		<contactName>Li, Yan</contactName>
+		<contactTitle>Sales Manager</contactTitle>
+		<address>Rua do Mercado, 4567</address>
+		<city>Resende</city>
+		<region>SP</region>
+		<postalCode>10084</postalCode>
+		<country>Brazil</country>
+		<phone>(14) 234-5678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>NULL</fax>
+	</ROW>
+
+	<ROW>
+		<custId>89</custId>
+		<companyName>Customer YBQTI</companyName>
+		<contactName>Smith Jr., Ronaldo</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>8901 - 14th Ave. S. Suite 3B</address>
+		<city>Seattle</city>
+		<region>WA</region>
+		<postalCode>10049</postalCode>
+		<country>USA</country>
+		<phone>(206) 555-0123</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(206) 555-0132</fax>
+	</ROW>
+
+	<ROW>
+		<custId>90</custId>
+		<companyName>Customer XBBVR</companyName>
+		<contactName>Larsson, Katarina</contactName>
+		<contactTitle>Owner/Marketing Assistant</contactTitle>
+		<address>Keskuskatu 2345</address>
+		<city>Helsinki</city>
+		<region>NULL</region>
+		<postalCode>10055</postalCode>
+		<country>Finland</country>
+		<phone>90-012 3456</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>90-789 0123</fax>
+	</ROW>
+
+	<ROW>
+		<custId>91</custId>
+		<companyName>Customer CCFIZ</companyName>
+		<contactName>Conn, Steve</contactName>
+		<contactTitle>Owner</contactTitle>
+		<address>ul. Filtrowa 6789</address>
+		<city>Warszawa</city>
+		<region>NULL</region>
+		<postalCode>10068</postalCode>
+		<country>Poland</country>
+		<phone>(26) 234-5678</phone>
+		<mobile>NULL</mobile>
+		<email>NULL</email>
+		<fax>(26) 901-2345</fax>
+	</ROW>
+</DATA>

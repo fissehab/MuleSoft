@@ -1,0 +1,1308 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "ebbj-sh54",
+      "name" : "Impaired Driving Death Rate, by Age and Gender, 2012 & 2014, All States",
+      "assetType" : "dataset",
+      "attribution" : "National Center for Injury Prevention and Control, Division of Unintentional Injury Prevention",
+      "attributionLink" : "http://www.cdc.gov/motorvehiclesafety",
+      "averageRating" : 0,
+      "category" : "Motor Vehicle",
+      "createdAt" : 1418657153,
+      "description" : "Rate of deaths by age/gender (per 100,000 population) for people killed in crashes involving a driver with BAC =>0.08%, 2012. 2012 Source: Fatality Analysis Reporting System (FARS)Note: Blank cells indicate data are suppressed. 2014 Source: Source: National Highway Traffic Administration's (NHTSA) Fatality Analysis Reporting System (FARS), 2014 Annual Report File. Fatality rates based on fewer than 20 deaths are suppressed.",
+      "displayType" : "table",
+      "downloadCount" : 29108,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1508779137,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 24096911,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1474917437,
+      "publicationGroup" : 1979129,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1474914605,
+      "rowsUpdatedBy" : "cg4e-25jx",
+      "tableId" : 13325641,
+      "totalTimesRated" : 0,
+      "viewCount" : 126333,
+      "viewLastModified" : 1474917437,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1474917437,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 740590,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1474917437,
+        "workflowId" : 2100,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "cg4e-25jx",
+          "displayName" : "CDC NCIPC Division of Unintentional Injury Prevention"
+        }
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ]
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 271108120,
+        "name" : "State ",
+        "dataTypeName" : "text",
+        "description" : "Not geocoded",
+        "fieldName" : "state_not_geocoded",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 23363205,
+        "width" : 118,
+        "cachedContents" : {
+          "largest" : "Wyoming",
+          "non_null" : 52,
+          "null" : "0",
+          "top" : [ {
+            "item" : "Alabama",
+            "count" : "1"
+          }, {
+            "item" : "Indiana",
+            "count" : "1"
+          }, {
+            "item" : "Minnesota",
+            "count" : "1"
+          }, {
+            "item" : "Louisiana",
+            "count" : "1"
+          }, {
+            "item" : "South Carolina",
+            "count" : "1"
+          }, {
+            "item" : "California",
+            "count" : "1"
+          }, {
+            "item" : "New Mexico",
+            "count" : "1"
+          }, {
+            "item" : "New Hampshire",
+            "count" : "1"
+          }, {
+            "item" : "Connecticut",
+            "count" : "1"
+          }, {
+            "item" : "Alaska",
+            "count" : "1"
+          }, {
+            "item" : "Oklahoma",
+            "count" : "1"
+          }, {
+            "item" : "Nevada",
+            "count" : "1"
+          }, {
+            "item" : "Maryland",
+            "count" : "1"
+          }, {
+            "item" : "Idaho",
+            "count" : "1"
+          }, {
+            "item" : "Ohio",
+            "count" : "1"
+          }, {
+            "item" : "Delaware",
+            "count" : "1"
+          }, {
+            "item" : "Maine",
+            "count" : "1"
+          }, {
+            "item" : "Florida",
+            "count" : "1"
+          }, {
+            "item" : "Illinois",
+            "count" : "1"
+          }, {
+            "item" : "Montana",
+            "count" : "1"
+          } ],
+          "smallest" : "Alabama",
+          "not_null" : "52",
+          "cardinality" : "52"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 271108133,
+        "name" : "Location",
+        "dataTypeName" : "location",
+        "description" : "Geocoded",
+        "fieldName" : "state_geocoded",
+        "position" : 2,
+        "renderTypeName" : "location",
+        "tableColumnId" : 23363212,
+        "width" : 110,
+        "format" : {
+          "view" : "coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 271108121,
+        "name" : "All Ages, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "all_ages",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363209,
+        "width" : 104,
+        "cachedContents" : {
+          "largest" : "11.3",
+          "non_null" : 50,
+          "average" : "3.916000000000000",
+          "null" : "2",
+          "top" : [ {
+            "item" : "3.6",
+            "count" : "4"
+          }, {
+            "item" : "3.8",
+            "count" : "3"
+          }, {
+            "item" : "2.5",
+            "count" : "3"
+          }, {
+            "item" : "1.8",
+            "count" : "2"
+          }, {
+            "item" : "4",
+            "count" : "2"
+          }, {
+            "item" : "4.8",
+            "count" : "2"
+          }, {
+            "item" : "2.1",
+            "count" : "2"
+          }, {
+            "item" : "2.4",
+            "count" : "2"
+          }, {
+            "item" : "5.6",
+            "count" : "2"
+          }, {
+            "item" : "2.7",
+            "count" : "2"
+          }, {
+            "item" : "3.3",
+            "count" : "2"
+          }, {
+            "item" : "3.4",
+            "count" : "2"
+          }, {
+            "item" : "3.5",
+            "count" : "1"
+          }, {
+            "item" : "4.9000000000000004",
+            "count" : "1"
+          }, {
+            "item" : "7.6",
+            "count" : "1"
+          }, {
+            "item" : "5.5",
+            "count" : "1"
+          }, {
+            "item" : "4.2",
+            "count" : "1"
+          }, {
+            "item" : "3.2",
+            "count" : "1"
+          }, {
+            "item" : "6.1",
+            "count" : "1"
+          }, {
+            "item" : "5.7",
+            "count" : "1"
+          } ],
+          "smallest" : "1.2",
+          "not_null" : "50",
+          "sum" : "195.7999999999999996",
+          "cardinality" : "34"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108122,
+        "name" : "All Ages, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "all_ages_2014",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379323,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "8.2",
+          "non_null" : 49,
+          "average" : "3.624489795918367",
+          "null" : "3",
+          "top" : [ {
+            "item" : "2.2",
+            "count" : "4"
+          }, {
+            "item" : "2.7",
+            "count" : "4"
+          }, {
+            "item" : "3.3",
+            "count" : "4"
+          }, {
+            "item" : "1.9",
+            "count" : "3"
+          }, {
+            "item" : "3",
+            "count" : "3"
+          }, {
+            "item" : "2.4",
+            "count" : "2"
+          }, {
+            "item" : "5.4",
+            "count" : "2"
+          }, {
+            "item" : "2.5",
+            "count" : "2"
+          }, {
+            "item" : "2",
+            "count" : "1"
+          }, {
+            "item" : "5.8",
+            "count" : "1"
+          }, {
+            "item" : "7.2",
+            "count" : "1"
+          }, {
+            "item" : "3.5",
+            "count" : "1"
+          }, {
+            "item" : "1.6",
+            "count" : "1"
+          }, {
+            "item" : "4.7",
+            "count" : "1"
+          }, {
+            "item" : "5.5",
+            "count" : "1"
+          }, {
+            "item" : "3.1",
+            "count" : "1"
+          }, {
+            "item" : "5.6",
+            "count" : "1"
+          }, {
+            "item" : "3.2",
+            "count" : "1"
+          }, {
+            "item" : "1.8",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          } ],
+          "smallest" : "1.6",
+          "not_null" : "49",
+          "sum" : "177.6",
+          "cardinality" : "33"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108123,
+        "name" : "Ages 0-20, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_0_20",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363206,
+        "width" : 85,
+        "cachedContents" : {
+          "largest" : "2.8",
+          "non_null" : 24,
+          "average" : "1.620833333333333",
+          "null" : "28",
+          "top" : [ {
+            "item" : "1.6",
+            "count" : "4"
+          }, {
+            "item" : "1.2",
+            "count" : "4"
+          }, {
+            "item" : "2.8",
+            "count" : "2"
+          }, {
+            "item" : "0.7",
+            "count" : "1"
+          }, {
+            "item" : "2.2999999999999998",
+            "count" : "1"
+          }, {
+            "item" : "2.1",
+            "count" : "1"
+          }, {
+            "item" : "1.4",
+            "count" : "1"
+          }, {
+            "item" : "1.8",
+            "count" : "1"
+          }, {
+            "item" : "1.1000000000000001",
+            "count" : "1"
+          }, {
+            "item" : "1.3",
+            "count" : "1"
+          }, {
+            "item" : "0.9",
+            "count" : "1"
+          }, {
+            "item" : "0.6",
+            "count" : "1"
+          }, {
+            "item" : "2.7",
+            "count" : "1"
+          }, {
+            "item" : "1.7",
+            "count" : "1"
+          }, {
+            "item" : "1.9",
+            "count" : "1"
+          }, {
+            "item" : "1",
+            "count" : "1"
+          }, {
+            "item" : "2.6",
+            "count" : "1"
+          } ],
+          "smallest" : "0.6",
+          "not_null" : "24",
+          "sum" : "38.8999999999999999",
+          "cardinality" : "17"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108124,
+        "name" : "Ages 0-20, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_0_20_2014",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379326,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "2.8",
+          "non_null" : 18,
+          "average" : "1.411111111111111",
+          "null" : "34",
+          "top" : [ {
+            "item" : "1.2",
+            "count" : "3"
+          }, {
+            "item" : "0.7",
+            "count" : "3"
+          }, {
+            "item" : "1",
+            "count" : "2"
+          }, {
+            "item" : "0.8",
+            "count" : "2"
+          }, {
+            "item" : "2",
+            "count" : "2"
+          }, {
+            "item" : "2.3",
+            "count" : "1"
+          }, {
+            "item" : "2.8",
+            "count" : "1"
+          }, {
+            "item" : "1.7",
+            "count" : "1"
+          }, {
+            "item" : "2.1",
+            "count" : "1"
+          }, {
+            "item" : "1.4",
+            "count" : "1"
+          }, {
+            "item" : "1.8",
+            "count" : "1"
+          } ],
+          "smallest" : "0.7",
+          "not_null" : "18",
+          "sum" : "25.4",
+          "cardinality" : "11"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108125,
+        "name" : "Ages 21-34, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_21_34",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363207,
+        "width" : 116,
+        "cachedContents" : {
+          "largest" : "21.4",
+          "non_null" : 42,
+          "average" : "7.971428571428571",
+          "null" : "10",
+          "top" : [ {
+            "item" : "8",
+            "count" : "3"
+          }, {
+            "item" : "7.2",
+            "count" : "3"
+          }, {
+            "item" : "3.3",
+            "count" : "2"
+          }, {
+            "item" : "6",
+            "count" : "2"
+          }, {
+            "item" : "6.5",
+            "count" : "2"
+          }, {
+            "item" : "5.9",
+            "count" : "2"
+          }, {
+            "item" : "4.5999999999999996",
+            "count" : "2"
+          }, {
+            "item" : "6.8",
+            "count" : "2"
+          }, {
+            "item" : "5.8",
+            "count" : "2"
+          }, {
+            "item" : "4.5",
+            "count" : "2"
+          }, {
+            "item" : "10.5",
+            "count" : "2"
+          }, {
+            "item" : "14.2",
+            "count" : "1"
+          }, {
+            "item" : "12",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          }, {
+            "item" : "8.6",
+            "count" : "1"
+          }, {
+            "item" : "3.7",
+            "count" : "1"
+          }, {
+            "item" : "12.9",
+            "count" : "1"
+          }, {
+            "item" : "6.7",
+            "count" : "1"
+          }, {
+            "item" : "10",
+            "count" : "1"
+          }, {
+            "item" : "17.3",
+            "count" : "1"
+          } ],
+          "smallest" : "3.3",
+          "not_null" : "42",
+          "sum" : "334.7999999999999985",
+          "cardinality" : "29"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108126,
+        "name" : "Ages 21-34, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_21_34_2014",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379327,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "15.4",
+          "non_null" : 41,
+          "average" : "7.173170731707317",
+          "null" : "11",
+          "top" : [ {
+            "item" : "5.5",
+            "count" : "3"
+          }, {
+            "item" : "7.4",
+            "count" : "3"
+          }, {
+            "item" : "10",
+            "count" : "3"
+          }, {
+            "item" : "5.6",
+            "count" : "2"
+          }, {
+            "item" : "6.3",
+            "count" : "2"
+          }, {
+            "item" : "4.6",
+            "count" : "2"
+          }, {
+            "item" : "5.1",
+            "count" : "2"
+          }, {
+            "item" : "6.9",
+            "count" : "1"
+          }, {
+            "item" : "6.4",
+            "count" : "1"
+          }, {
+            "item" : "7.8",
+            "count" : "1"
+          }, {
+            "item" : "5.2",
+            "count" : "1"
+          }, {
+            "item" : "11.2",
+            "count" : "1"
+          }, {
+            "item" : "15.2",
+            "count" : "1"
+          }, {
+            "item" : "3.5",
+            "count" : "1"
+          }, {
+            "item" : "7.7",
+            "count" : "1"
+          }, {
+            "item" : "5.4",
+            "count" : "1"
+          }, {
+            "item" : "4.2",
+            "count" : "1"
+          }, {
+            "item" : "6.2",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          }, {
+            "item" : "15.4",
+            "count" : "1"
+          } ],
+          "smallest" : "3",
+          "not_null" : "41",
+          "sum" : "294.1",
+          "cardinality" : "31"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108127,
+        "name" : "Ages 35+, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_35",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363208,
+        "width" : 85,
+        "cachedContents" : {
+          "largest" : "12",
+          "non_null" : 46,
+          "average" : "3.584782608695652",
+          "null" : "6",
+          "top" : [ {
+            "item" : "3.5",
+            "count" : "3"
+          }, {
+            "item" : "2",
+            "count" : "3"
+          }, {
+            "item" : "3.3",
+            "count" : "3"
+          }, {
+            "item" : "1.8",
+            "count" : "2"
+          }, {
+            "item" : "1.7",
+            "count" : "2"
+          }, {
+            "item" : "4",
+            "count" : "2"
+          }, {
+            "item" : "2.2000000000000002",
+            "count" : "2"
+          }, {
+            "item" : "2.8",
+            "count" : "2"
+          }, {
+            "item" : "4.4000000000000004",
+            "count" : "2"
+          }, {
+            "item" : "2.1",
+            "count" : "2"
+          }, {
+            "item" : "2.9",
+            "count" : "2"
+          }, {
+            "item" : "3.1",
+            "count" : "2"
+          }, {
+            "item" : "3.2",
+            "count" : "2"
+          }, {
+            "item" : "5.7",
+            "count" : "1"
+          }, {
+            "item" : "3.7",
+            "count" : "1"
+          }, {
+            "item" : "2.7",
+            "count" : "1"
+          }, {
+            "item" : "4.5",
+            "count" : "1"
+          }, {
+            "item" : "1.9",
+            "count" : "1"
+          }, {
+            "item" : "2.6",
+            "count" : "1"
+          }, {
+            "item" : "3",
+            "count" : "1"
+          } ],
+          "smallest" : "1.4",
+          "not_null" : "46",
+          "sum" : "164.9000000000000012",
+          "cardinality" : "30"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108128,
+        "name" : "Ages 35+, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "ages_35_2014",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379328,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "8.1",
+          "non_null" : 46,
+          "average" : "3.536956521739130",
+          "null" : "6",
+          "top" : [ {
+            "item" : "3",
+            "count" : "3"
+          }, {
+            "item" : "2.3",
+            "count" : "3"
+          }, {
+            "item" : "3.1",
+            "count" : "3"
+          }, {
+            "item" : "2.6",
+            "count" : "3"
+          }, {
+            "item" : "1.8",
+            "count" : "3"
+          }, {
+            "item" : "5.3",
+            "count" : "2"
+          }, {
+            "item" : "3.2",
+            "count" : "2"
+          }, {
+            "item" : "3.4",
+            "count" : "2"
+          }, {
+            "item" : "2.7",
+            "count" : "2"
+          }, {
+            "item" : "3.9",
+            "count" : "1"
+          }, {
+            "item" : "2.1",
+            "count" : "1"
+          }, {
+            "item" : "2",
+            "count" : "1"
+          }, {
+            "item" : "5.8",
+            "count" : "1"
+          }, {
+            "item" : "5.5",
+            "count" : "1"
+          }, {
+            "item" : "5.4",
+            "count" : "1"
+          }, {
+            "item" : "6.2",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          }, {
+            "item" : "6.1",
+            "count" : "1"
+          }, {
+            "item" : "5.7",
+            "count" : "1"
+          }, {
+            "item" : "2.5",
+            "count" : "1"
+          } ],
+          "smallest" : "1.5",
+          "not_null" : "46",
+          "sum" : "162.7",
+          "cardinality" : "32"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108129,
+        "name" : "Male, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "male",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363210,
+        "width" : 91,
+        "cachedContents" : {
+          "largest" : "17.399999999999999",
+          "non_null" : 48,
+          "average" : "6.270833333333333",
+          "null" : "4",
+          "top" : [ {
+            "item" : "4.0999999999999996",
+            "count" : "3"
+          }, {
+            "item" : "2.7",
+            "count" : "2"
+          }, {
+            "item" : "6",
+            "count" : "2"
+          }, {
+            "item" : "6.6",
+            "count" : "2"
+          }, {
+            "item" : "9.3000000000000007",
+            "count" : "2"
+          }, {
+            "item" : "5.4",
+            "count" : "2"
+          }, {
+            "item" : "3.2",
+            "count" : "2"
+          }, {
+            "item" : "5.7",
+            "count" : "2"
+          }, {
+            "item" : "8.4",
+            "count" : "1"
+          }, {
+            "item" : "6.9",
+            "count" : "1"
+          }, {
+            "item" : "2.9",
+            "count" : "1"
+          }, {
+            "item" : "6.5",
+            "count" : "1"
+          }, {
+            "item" : "8.3000000000000007",
+            "count" : "1"
+          }, {
+            "item" : "6.4",
+            "count" : "1"
+          }, {
+            "item" : "17.399999999999999",
+            "count" : "1"
+          }, {
+            "item" : "7.8",
+            "count" : "1"
+          }, {
+            "item" : "5.2",
+            "count" : "1"
+          }, {
+            "item" : "5.0999999999999996",
+            "count" : "1"
+          }, {
+            "item" : "3.9",
+            "count" : "1"
+          }, {
+            "item" : "5.8",
+            "count" : "1"
+          } ],
+          "smallest" : "1.7",
+          "not_null" : "48",
+          "sum" : "301.0000000000000006",
+          "cardinality" : "39"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108130,
+        "name" : "Male, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "male_2014",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379329,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "13.1",
+          "non_null" : 48,
+          "average" : "5.658333333333333",
+          "null" : "4",
+          "top" : [ {
+            "item" : "4.8",
+            "count" : "3"
+          }, {
+            "item" : "5.1",
+            "count" : "2"
+          }, {
+            "item" : "3.7",
+            "count" : "2"
+          }, {
+            "item" : "2.9",
+            "count" : "2"
+          }, {
+            "item" : "4.9",
+            "count" : "2"
+          }, {
+            "item" : "4.6",
+            "count" : "2"
+          }, {
+            "item" : "8.6",
+            "count" : "2"
+          }, {
+            "item" : "3",
+            "count" : "2"
+          }, {
+            "item" : "5",
+            "count" : "1"
+          }, {
+            "item" : "3.3",
+            "count" : "1"
+          }, {
+            "item" : "9.1",
+            "count" : "1"
+          }, {
+            "item" : "6.5",
+            "count" : "1"
+          }, {
+            "item" : "6.3",
+            "count" : "1"
+          }, {
+            "item" : "3.9",
+            "count" : "1"
+          }, {
+            "item" : "5.8",
+            "count" : "1"
+          }, {
+            "item" : "10.7",
+            "count" : "1"
+          }, {
+            "item" : "7.2",
+            "count" : "1"
+          }, {
+            "item" : "3.5",
+            "count" : "1"
+          }, {
+            "item" : "9",
+            "count" : "1"
+          }, {
+            "item" : "4.4",
+            "count" : "1"
+          } ],
+          "smallest" : "2.4",
+          "not_null" : "48",
+          "sum" : "271.6",
+          "cardinality" : "39"
+        },
+        "format" : { }
+      }, {
+        "id" : 271108131,
+        "name" : "Female, 2012",
+        "dataTypeName" : "number",
+        "fieldName" : "female",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 23363211,
+        "width" : 83,
+        "cachedContents" : {
+          "largest" : "4",
+          "non_null" : 35,
+          "average" : "1.662857142857143",
+          "null" : "17",
+          "top" : [ {
+            "item" : "1.3",
+            "count" : "3"
+          }, {
+            "item" : "0.9",
+            "count" : "3"
+          }, {
+            "item" : "1.7",
+            "count" : "3"
+          }, {
+            "item" : "1.2",
+            "count" : "3"
+          }, {
+            "item" : "1.4",
+            "count" : "2"
+          }, {
+            "item" : "2.9",
+            "count" : "2"
+          }, {
+            "item" : "1.1000000000000001",
+            "count" : "2"
+          }, {
+            "item" : "1.5",
+            "count" : "2"
+          }, {
+            "item" : "1.8",
+            "count" : "2"
+          }, {
+            "item" : "2.4",
+            "count" : "2"
+          }, {
+            "item" : "1",
+            "count" : "2"
+          }, {
+            "item" : "1.6",
+            "count" : "2"
+          }, {
+            "item" : "1.9",
+            "count" : "1"
+          }, {
+            "item" : "0.7",
+            "count" : "1"
+          }, {
+            "item" : "2.2000000000000002",
+            "count" : "1"
+          }, {
+            "item" : "3.2",
+            "count" : "1"
+          }, {
+            "item" : "4",
+            "count" : "1"
+          }, {
+            "item" : "0.8",
+            "count" : "1"
+          }, {
+            "item" : "2.7",
+            "count" : "1"
+          } ],
+          "smallest" : "0.7",
+          "not_null" : "35",
+          "sum" : "58.2000000000000004",
+          "cardinality" : "19"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 271108132,
+        "name" : "Female, 2014",
+        "dataTypeName" : "number",
+        "fieldName" : "female_2014",
+        "position" : 18,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379330,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "4.3",
+          "non_null" : 35,
+          "average" : "1.6",
+          "null" : "17",
+          "top" : [ {
+            "item" : "1.3",
+            "count" : "6"
+          }, {
+            "item" : "0.9",
+            "count" : "5"
+          }, {
+            "item" : "1.1",
+            "count" : "3"
+          }, {
+            "item" : "1.4",
+            "count" : "3"
+          }, {
+            "item" : "1.5",
+            "count" : "3"
+          }, {
+            "item" : "1.7",
+            "count" : "2"
+          }, {
+            "item" : "1.2",
+            "count" : "2"
+          }, {
+            "item" : "0.8",
+            "count" : "2"
+          }, {
+            "item" : "2.8",
+            "count" : "2"
+          }, {
+            "item" : "2.2",
+            "count" : "1"
+          }, {
+            "item" : "4.3",
+            "count" : "1"
+          }, {
+            "item" : "2.6",
+            "count" : "1"
+          }, {
+            "item" : "2.7",
+            "count" : "1"
+          }, {
+            "item" : "2.1",
+            "count" : "1"
+          }, {
+            "item" : "1.9",
+            "count" : "1"
+          }, {
+            "item" : "2.9",
+            "count" : "1"
+          } ],
+          "smallest" : "0.8",
+          "not_null" : "35",
+          "sum" : "56.0",
+          "cardinality" : "16"
+        },
+        "format" : { }
+      }, {
+        "id" : 270191773,
+        "name" : "States",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_hjsp_umg2",
+        "position" : 19,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379837,
+        "computationStrategy" : {
+          "source_columns" : [ "state_geocoded" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_hjsp-umg2",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 270191774,
+        "name" : "Counties",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_skr5_azej",
+        "position" : 20,
+        "renderTypeName" : "number",
+        "tableColumnId" : 38379838,
+        "computationStrategy" : {
+          "source_columns" : [ "state_geocoded" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_skr5-azej",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "custom_fields" : {
+          "Common Core" : {
+            "Contact Email" : "cdcinfo@cdc.gov",
+            "Contact Name" : "CDC INFO",
+            "Program Code" : "009:020",
+            "Bureau Code" : "009:00"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "Row",
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "cg4e-25jx",
+        "disabledAt" : 1582650603,
+        "displayName" : "CDC NCIPC Division of Unintentional Injury Prevention",
+        "screenName" : "CDC NCIPC Division of Unintentional Injury Prevention",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "cg4e-25jx",
+        "disabledAt" : 1582650603,
+        "displayName" : "CDC NCIPC Division of Unintentional Injury Prevention",
+        "screenName" : "CDC NCIPC Division of Unintentional Injury Prevention",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "centers for disease control and prevention", "cdc" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType", "unsaved" ]
+    }
+  },
+  "data" : [ [ "row-k5y6_6ejw~j7i3", "00000000-0000-0000-4EE9-FA744771ABD8", 0, 1474914177, null, 1474914177, null, "{ }", "Connecticut", [ "{\"address\": \"Connecticut\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "41.562661", "-72.64984", null, false ], "2.4", "2.7", null, null, "5.9", "6.1", "2.1", "2.5", "3.7", "4.6", "1.1000000000000001", null, "24", "1043" ]
+, [ "row-ugg5.8d3m~c6sb", "00000000-0000-0000-B7B1-D26228E61C7C", 0, 1474914177, null, 1474914177, null, "{ }", "Kentucky", [ "{\"address\": \"Kentucky\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "37.645973", "-84.774968", null, false ], "4", "3.9", "1.8", "2", "7.2", "7.8", "3.7", "3.4", "6.5", "6.5", "1.5", "1.3", "36", "235" ]
+, [ "row-6kg8.zu68.kqz2", "00000000-0000-0000-A20F-EA249927BBBA", 0, 1474914177, null, 1474914177, null, "{ }", "South Dakota", [ "{\"address\": \"South Dakota\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "44.35313", "-100.373529", null, false ], "5.7", "5.6", null, null, null, null, null, "6.2", "7.4", "8.7", null, null, "21", "2732" ]
+, [ "row-dxb8_292t-xdia", "00000000-0000-0000-F99B-87EBF4912870", 0, 1474914177, null, 1474914177, null, "{ }", "Oklahoma", [ "{\"address\": \"Oklahoma\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "35.472031", "-97.521068", null, false ], "5.6", "4", null, null, "10.5", "7.4", "5.8", "3.9", "9.3000000000000007", "6", "1.9", "2.1", "20", "712" ]
+, [ "row-jspj-4tse.f3qc", "00000000-0000-0000-49ED-BC92BF716E9B", 0, 1474914177, null, 1474914177, null, "{ }", "West Virginia", [ "{\"address\": \"\", \"city\": \"West\", \"state\": \"Virginia\", \"zip\": \"\"}", "38.665511", "-80.712638", null, false ], "5.6", "4.7", null, null, "12.9", "10", "4.4000000000000004", "4", "9.3000000000000007", "7.1", null, null, "42", "2749" ]
+, [ "row-rwwd-i3i5-i6hm", "00000000-0000-0000-D4DC-D8CBC90309AB", 0, 1474914177, null, 1474914177, null, "{ }", "Virginia", [ "{\"address\": \"Virginia\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "37.542681", "-78.457889", null, false ], "2.5", "2.5", "1.2", "1.2", "4.5", "5.1", "2.6", "2.3", "4.0999999999999996", "3.9", "0.9", "1.2", "40", "2758" ]
+, [ "row-tg39~cw5i_zycx", "00000000-0000-0000-06E0-A812AC48D509", 0, 1474914177, null, 1474914177, null, "{ }", "Iowa", [ "{\"address\": \"Iowa\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "42.469401", "-93.816487", null, false ], "3.2", "3", null, null, "5.9", "4.6", "2.9", "3.4", "5.0999999999999996", "4.8", null, null, "16", "281" ]
+, [ "row-qkni_i47w.ydif", "00000000-0000-0000-BD3A-09B364B89A3F", 0, 1474914177, null, 1474914177, null, "{ }", "Louisiana", [ "{\"address\": \"Louisiana\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "31.312663", "-92.445678", null, false ], "5.2", "5.4", "2.8", "1.8", "8.6", "9.4", "5.0999999999999996", "5.7", "8.3000000000000007", "9.1", "2.4", "1.9", "22", "1697" ]
+, [ "row-nfvz_77zz~2gyd", "00000000-0000-0000-C814-F343074D0A80", 0, 1474914177, null, 1474914177, null, "{ }", "Tennessee", [ "{\"address\": \"Tennessee\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "35.680941", "-85.774487", null, false ], "4.5999999999999996", "4.1", "1.6", null, "8", "8.2", "4.9000000000000004", "4.1", "7.5", "6.8", "1.8", "1.5", "39", "2159" ]
+, [ "row-4qj6_bfpt_852e", "00000000-0000-0000-1C9C-9E11F025E763", 0, 1474914177, null, 1474914177, null, "{ }", "Missouri", [ "{\"address\": \"Missouri\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "38.635791", "-92.566299", null, false ], "4.8", "3.4", "1.9", null, "9.5", "6.9", "4.4000000000000004", "3.2", "7.8", "5.6", "1.8", "1.3", "18", "532" ]
+, [ "row-rx7z~p5hg_qpqy", "00000000-0000-0000-EA9C-1B2432DCB06F", 0, 1474914177, null, 1474914177, null, "{ }", "Georgia", [ "{\"address\": \"Georgia\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "32.839683", "-83.627579", null, false ], "3", "2.7", "1", "0.8", "5.8", "5.2", "3.1", "2.9", "4.9000000000000004", "4.7", "1.2", "0.9", "31", "1149" ]
+, [ "row-dqv9-7ta4.8rpb", "00000000-0000-0000-4CB1-9BE422DBAB6C", 0, 1474914177, null, 1474914177, null, "{ }", "Texas", [ "{\"address\": \"Texas\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "31.82724", "-99.426768", null, false ], "4.9000000000000004", "5.4", "2.1", "2.3", "10", "10", "4.7", "5.3", "7.6", "8.1", "2.4", "2.7", "23", "3109" ]
+, [ "row-d7fm~n8q2~37en", "00000000-0000-0000-8B69-922DFED4FE6A", 0, 1474914177, null, 1474914177, null, "{ }", "Maine", [ "{\"address\": \"Maine\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "45.254229", "-68.985026", null, false ], "3.8", "3.3", null, null, null, null, "2.8", "3.1", "6.6", "5.1", null, null, "49", "1725" ]
+, [ "row-ptt3_a3ce-84uv", "00000000-0000-0000-3080-73D503C73DDD", 0, 1474914177, null, 1474914177, null, "{ }", "Mississippi", [ "{\"address\": \"Mississippi\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "32.745513", "-89.538027", null, false ], "6.1", "6", "2.6", "2.8", "12", "10.8", "5.7", "5.8", "9.8000000000000007", "9.4", "2.7", "2.8", "32", "494" ]
+, [ "row-p3vd.nkz8-bkyt", "00000000-0000-0000-ACF8-A648A67FBB87", 0, 1474914177, null, 1474914177, null, "{ }", "Colorado", [ "{\"address\": \"Colorado\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "38.843843", "-106.133609", null, false ], "2.5", "3", null, "1.7", "5.6", "5.6", "2", "2.6", "3.9", "4.6", "1.1000000000000001", "1.3", "9", "1398" ]
+, [ "row-t7xh-4rdu~kfc8", "00000000-0000-0000-A3C6-FC45D3CDCEE9", 0, 1474914177, null, 1474914177, null, "{ }", "Alabama", [ "{\"address\": \"Alabama\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "32.840572", "-86.631857", null, false ], "5.5", "5.5", "2.7", "2.1", "10.3", "10", "5", "5.5", "8.4", "8.6", "2.9", "2.6", "29", "94" ]
+, [ "row-uzdj~bgvp-pzcf", "00000000-0000-0000-4276-C56433B329ED", 0, 1474914177, null, 1474914177, null, "{ }", "Maryland", [ "{\"address\": \"Maryland\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.290583", "-76.60926", null, false ], "2.7", "2.2", "1.6", null, "5.8", "5.4", "2.2000000000000002", "1.8", "4.0999999999999996", "3.5", "1.4", "0.9", "45", "1857" ]
+, [ "row-c83y.dxzs.fc4z", "00000000-0000-0000-6488-BAD81A05EB31", 0, 1474914177, null, 1474914177, null, "{ }", "California", [ "{\"address\": \"California\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "37.638642", "-120.999996", null, false ], "2", "2.2", "0.9", "1", "4.5", "4.6", "1.8", "2", "3.2", "3.4", "1", "1.1", "8", "1340" ]
+, [ "row-8hc5~rrx8-3m5i", "00000000-0000-0000-C491-E3C0AD15C501", 0, 1474914177, null, 1474914177, null, "{ }", "Idaho", [ "{\"address\": \"Idaho\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "43.682632", "-114.363727", null, false ], "3.6", "3.3", null, null, "8.6999999999999993", null, "2.7", "3", "5.8", "4.8", null, null, "5", "1687" ]
+, [ "row-w8ig_c6g7-zf3n", "00000000-0000-0000-2F5F-4210B7943008", 0, 1474914177, null, 1474914177, null, "{ }", "Vermont", [ "{\"address\": \"Vermont\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "43.625384", "-72.517637", null, false ], "3.4", null, null, null, null, null, null, null, null, null, null, null, "28", "3218" ]
+, [ "row-qpa6_c4w3_9497", "00000000-0000-0000-4E06-3DFDA3FEC78E", 0, 1474914177, null, 1474914177, null, "{ }", "District of Columbia", [ "{\"address\": \"District of Columbia\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "38.890373", "-77.031957", null, false ], null, null, null, null, null, null, null, null, null, null, null, null, "44", "1049" ]
+, [ "row-9zdk_vkvz~77wk", "00000000-0000-0000-C5AE-E1E65BD17872", 0, 1474914177, null, 1474914177, null, "{ }", "North Dakota", [ "{\"address\": \"North Dakota\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "47.475319", "-100.118428", null, false ], "11.3", "7.2", null, null, "15.3", "15.2", "12", "6.1", "17.399999999999999", "10.7", null, null, "3", "568" ]
+, [ "row-8qny.cn35-xkny", "00000000-0000-0000-3296-409285DF4A32", 0, 1474914177, null, 1474914177, null, "{ }", "Wisconsin", [ "{\"address\": \"Wisconsin\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "44.393191", "-89.816366", null, false ], "3.6", "2.9", "1.6", null, "6.5", "7.5", "3.5", "2.3", "5.6", "4.8", "1.6", "1.2", "41", "3078" ]
+, [ "row-i6de_3tr9-vj5j", "00000000-0000-0000-34D7-2BA519D9FB8C", 0, 1474914177, null, 1474914177, null, "{ }", "Oregon", [ "{\"address\": \"Oregon\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "44.56745", "-120.155029", null, false ], "2.2000000000000002", "2.5", null, null, "5.2", "4.2", "1.8", "2.6", "3.1", "3.7", "1.3", "1.4", "12", "2452" ]
+, [ "row-qqut_eetp~ghig", "00000000-0000-0000-0A27-0E4E71022873", 0, 1474914177, null, 1474914177, null, "{ }", "Hawaii", [ "{\"address\": \"Hawaii\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "21.304852", "-157.857748", null, false ], "3.8", "2.2", null, null, null, null, "3.2", null, "5.7", "3.6", null, null, "4", "1657" ]
+, [ "row-ub8f~gmtu_i84z", "00000000-0000-0000-B4EE-42A49E76F468", 0, 1474914177, null, 1474914177, null, "{ }", "Pennsylvania", [ "{\"address\": \"Pennsylvania\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "40.793734", "-77.860697", null, false ], "3.3", "2.7", "1.4", "0.7", "7.2", "5.5", "2.8", "2.7", "5.4", "4.4", "1.3", "1.1", "48", "2495" ]
+, [ "row-8dxu~w8bt.b6ig", "00000000-0000-0000-61AE-4186D6AD95F7", 0, 1474914177, null, 1474914177, null, "{ }", "Arizona", [ "{\"address\": \"Arizona\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "34.865974", "-111.763807", null, false ], "3.6", "3", "1.6", null, "6.9", "5.5", "3.3", "3.1", "5.4", "4.5", "1.7", "1.5", "7", "986" ]
+, [ "row-xnzf-5sbw-9pn7", "00000000-0000-0000-4A20-7AD8B11397A0", 0, 1474914177, null, 1474914177, null, "{ }", "Washington", [ "{\"address\": \"Washington\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "47.522288", "-120.470028", null, false ], "2.1", "1.9", null, null, "4", "3.4", "2", "1.9", "3.6", "2.9", "0.7", "0.9", "6", "2956" ]
+, [ "row-q2hr~3ei5.d9ht", "00000000-0000-0000-189C-67046A9F311D", 0, 1474914177, null, 1474914177, null, "{ }", "United States", [ "{\"address\": \"United States\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.759996", "-98.499999", null, false ], "3.3", "3.1", "1.3", "1.2", "6.7", "6.2", "3.1", "3", "5.2", "4.9", "1.5", "1.4", "17", "1236" ]
+, [ "row-ixk8.y5f5~6und", "00000000-0000-0000-265F-889BDADDF378", 0, 1474914177, null, 1474914177, null, "{ }", "Alaska", [ "{\"address\": \"Alaska\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "64.845078", "-147.72206", null, false ], null, "2.8", null, null, null, null, null, null, null, null, null, null, "51", "1673" ]
+, [ "row-9umm~cccc_63y4", "00000000-0000-0000-4247-A90899F57BEC", 0, 1474914177, null, 1474914177, null, "{ }", "New York", [ "{\"address\": \"New York\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "42.827004", "-75.543966", null, false ], "1.7", "1.6", "0.6", "0.7", "3.3", "3", "1.7", "1.5", "2.7", "2.4", "0.8", "0.8", "47", "2092" ]
+, [ "row-2xwv~jzzd-bxk3", "00000000-0000-0000-AA99-CCBBEEFB2990", 0, 1474914177, null, 1474914177, null, "{ }", "Illinois", [ "{\"address\": \"Illinois\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "40.485012", "-88.997709", null, false ], "2.5", "2.4", "0.7", "0.7", "6", "5.5", "2.1", "2.2", "4", "3.7", "1", "1.3", "34", "1795" ]
+, [ "row-ejbd.e8a8.ab36", "00000000-0000-0000-4C5C-C92650274C7B", 0, 1474914177, null, 1474914177, null, "{ }", "South Carolina", [ "{\"address\": \"South Carolina\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "33.998822", "-81.045366", null, false ], "7.6", "5.8", "2.8", "2", "14.2", "12.4", "7.6", "5.3", "12.3", "9", "3.2", "2.9", "33", "2581" ]
+, [ "row-yk3z~vezg-xjgb", "00000000-0000-0000-2AF8-06045EEF03F5", 0, 1474914177, null, 1474914177, null, "{ }", "Indiana", [ "{\"address\": \"Indiana\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.766913", "-86.149956", null, false ], "3.6", "3.2", "1.2", null, "7.2", "6.3", "3.5", "3.2", "6", "5.1", "1.3", "1.3", "35", "1904" ]
+, [ "row-eju2~7bbv-w934", "00000000-0000-0000-4CEA-7BF03886CFF8", 0, 1474914177, null, 1474914177, null, "{ }", "Utah", [ "{\"address\": \"Utah\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.360701", "-111.587128", null, false ], "1.2", "2", null, null, null, null, "1.9", "2.3", "1.7", "3", null, null, "13", "900" ]
+, [ "row-d9wz.ifjv-skhs", "00000000-0000-0000-22E6-8A9AD4E51E1B", 0, 1474914177, null, 1474914177, null, "{ }", "Nebraska", [ "{\"address\": \"Nebraska\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "41.641044", "-99.365719", null, false ], "4", "3.3", null, null, "6.5", "7", "3.5", "3", "6.4", "5", null, null, "19", "2243" ]
+, [ "row-y9d8~5pru.g8xm", "00000000-0000-0000-4DC4-6FBDDC387126", 0, 1474914177, null, 1474914177, null, "{ }", "Massachusetts", [ "{\"address\": \"Massachusetts\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "42.276874", "-72.082687", null, false ], "1.8", "1.9", null, null, "3.3", "4", "1.7", "1.8", "2.7", "3.1", "0.9", "0.9", "25", "1919" ]
+, [ "row-kvqg-kbik_iahg", "00000000-0000-0000-BB34-EEB0E7F06BC0", 0, 1474914177, null, 1474914177, null, "{ }", "Montana", [ "{\"address\": \"Montana\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "47.066528", "-109.424416", null, false ], "9.4", "7.3", null, null, "21.4", "15.4", "7.2", "6.9", "14.9", "10.2", "4", "4.3", "2", "2283" ]
+, [ "row-2kr5_344p.ug5m", "00000000-0000-0000-DCF7-0BA929753214", 0, 1474914177, null, 1474914177, null, "{ }", "New Mexico", [ "{\"address\": \"New Mexico\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "34.520881", "-106.240578", null, false ], "4.8", "5.7", null, null, "9.1", "11.2", "4.5", "5.1", "6.9", "8.6", "2.9", "2.8", "11", "616" ]
+, [ "row-hh8f-q3tu_tb9g", "00000000-0000-0000-007E-681F7254328F", 0, 1474914177, null, 1474914177, null, "{ }", "New Jersey", [ "{\"address\": \"New Jersey\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "40.130571", "-74.273688", null, false ], "1.8", "1.8", null, null, "4.5999999999999996", "3.6", "1.4", "1.7", "2.9", "2.9", "0.9", "0.8", "46", "489" ]
+, [ "row-8x6z~p5js.u8eh", "00000000-0000-0000-183D-00EA8C1E78AB", 0, 1474914177, null, 1474914177, null, "{ }", "Wyoming", [ "{\"address\": \"Wyoming\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "43.235541", "-108.109827", null, false ], "7.1", "8.2", null, null, "17.3", null, null, "8.1", "11.3", "13.1", null, null, "14", "3084" ]
+, [ "row-53yu_u3mj~jxwr", "00000000-0000-0000-4409-0AC15B07FE51", 0, 1474914177, null, 1474914177, null, "{ }", "North Carolina", [ "{\"address\": \"North Carolina\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "35.46622", "-79.15925", null, false ], "4.2", "3.8", "1.7", "1.4", "8", "7.7", "4", "3.6", "6.8", "6.3", "1.7", "1.5", "37", "2390" ]
+, [ "row-6ats-5mvn-e77y", "00000000-0000-0000-5456-AE23DE40E499", 0, 1474914177, null, 1474914177, null, "{ }", "Ohio", [ "{\"address\": \"Ohio\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "40.060212", "-82.404257", null, false ], "3.5", "2.7", "1.2", "0.8", "6.8", "5.6", "3.3", "2.6", "5.5", "4.2", "1.6", "1.3", "38", "587" ]
+, [ "row-kkqt-5tuc_w4hh", "00000000-0000-0000-8670-A7C78BE692BE", 0, 1474914177, null, 1474914177, null, "{ }", "Delaware", [ "{\"address\": \"Delaware\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.008834", "-75.577736", null, false ], "3.8", "5.2", null, null, null, "11.7", "4", "4.6", "6.6", "7.4", null, null, "43", "1046" ]
+, [ "row-7cb2~yifs~8n9n", "00000000-0000-0000-8F95-333428ADC90D", 0, 1474914177, null, 1474914177, null, "{ }", "Kansas", [ "{\"address\": \"Kansas\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "38.347743", "-98.200778", null, false ], "3.4", "3.6", "2.2999999999999998", null, "6", "7.4", "3", "3.3", "6", "5.8", null, "1.4", "17", "1287" ]
+, [ "row-n5sp.9xr5.w97u", "00000000-0000-0000-ADA4-59E04F014C9F", 0, 1474914177, null, 1474914177, null, "{ }", "Florida", [ "{\"address\": \"Florida\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "28.932043", "-81.928958", null, false ], "3.7", "3.5", "1.2", "1.2", "8", "7.4", "3.3", "3.1", "5.7", "5.4", "1.7", "1.7", "30", "1112" ]
+, [ "row-85nr~u55y-dcqt", "00000000-0000-0000-D958-D13D40100D47", 0, 1474914177, null, 1474914177, null, "{ }", "New Hampshire", [ "{\"address\": \"New Hampshire\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "43.655953", "-71.500357", null, false ], "2.4", "2.4", null, null, null, null, "2.9", null, "4.0999999999999996", "3.2", null, null, "26", "2405" ]
+, [ "row-trqm~f53u.24cs", "00000000-0000-0000-5525-A6B45DE905E2", 0, 1474914177, null, 1474914177, null, "{ }", "Minnesota", [ "{\"address\": \"Minnesota\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "46.355649", "-94.7942", null, false ], "2.1", "1.9", null, null, "3.7", "3.5", "2.2000000000000002", "2.1", "3.2", "3", "1.2", "0.9", "1", "392" ]
+, [ "row-t2ws~392r_tetv", "00000000-0000-0000-A5E3-9781A638C716", 0, 1474914177, null, 1474914177, null, "{ }", "Arkansas", [ "{\"address\": \"Arkansas\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "34.74865", "-92.27449", null, false ], "5.0999999999999996", "4.6", null, null, "10.5", "6.3", "4.3", "5.4", "8.1", "7.2", "2.2000000000000002", "2.2", "15", "998" ]
+, [ "row-wfhr-rxef-7c97", "00000000-0000-0000-3452-DBAE0458614D", 0, 1474914177, null, 1474914177, null, "{ }", "Michigan", [ "{\"address\": \"Michigan\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "44.661322", "-84.714386", null, false ], "2.7", "2.2", "1.1000000000000001", "1", "6.8", "5.1", "2", "1.8", "4.3", "3.3", "1.2", "1.1", "50", "436" ]
+, [ "row-9tzb~tq2x-rg74", "00000000-0000-0000-6B18-BBD5438EDDD4", 0, 1474914177, null, 1474914177, null, "{ }", "Rhode Island", [ "{\"address\": \"Rhode Island\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "41.708281", "-71.522466", null, false ], "2.2999999999999998", null, null, null, null, null, null, null, null, null, null, null, "27", "2658" ]
+, [ "row-mfhz-74ww.xwus", "00000000-0000-0000-8F5F-D93292F15A76", 0, 1474914177, null, 1474914177, null, "{ }", "Nevada", [ "{\"address\": \"Nevada\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}", "39.493242", "-117.071839", null, false ], "2.8", "3.3", null, null, "4.5999999999999996", "6.4", "3.2", "2.7", "4.2", "4.9", "1.4", "1.7", "10", "481" ]
+ ]
+}
