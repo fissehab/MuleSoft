@@ -1,0 +1,9002 @@
+<DATA>
+
+	<ROW>
+		<name>Lansdowne Airport</name>
+		<lat>41.1304722</lat>
+		<lon>-80.6195833</lon>
+		<alt>1044</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Moton Field Municipal Airport</name>
+		<lat>32.4605722</lat>
+		<lon>-85.6800278</lon>
+		<alt>264</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Schaumburg Regional</name>
+		<lat>41.9893408</lat>
+		<lon>-88.1012428</lon>
+		<alt>801</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Randall Airport</name>
+		<lat>41.431912</lat>
+		<lon>-74.3915611</lon>
+		<alt>523</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jekyll Island Airport</name>
+		<lat>31.0744722</lat>
+		<lon>-81.4277778</lon>
+		<alt>11</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elizabethton Municipal Airport</name>
+		<lat>36.3712222</lat>
+		<lon>-82.1734167</lon>
+		<alt>1593</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Williams County Airport</name>
+		<lat>41.4673056</lat>
+		<lon>-84.5067778</lon>
+		<alt>730</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Finger Lakes Regional Airport</name>
+		<lat>42.8835647</lat>
+		<lon>-76.7812318</lon>
+		<alt>492</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Shoestring Aviation Airfield</name>
+		<lat>39.7948244</lat>
+		<lon>-76.6471914</lon>
+		<alt>1000</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jefferson County Intl</name>
+		<lat>48.0538086</lat>
+		<lon>-122.8106436</lon>
+		<alt>108</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Harford County Airport</name>
+		<lat>39.5668378</lat>
+		<lon>-76.2024028</lon>
+		<alt>409</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Galt Field Airport</name>
+		<lat>42.4028889</lat>
+		<lon>-88.3751111</lon>
+		<alt>875</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Bucyrus-Crawford County Airport</name>
+		<lat>40.7815556</lat>
+		<lon>-82.9748056</lon>
+		<alt>1003</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jackson County Airport</name>
+		<lat>34.1758638</lat>
+		<lon>-83.5615972</lon>
+		<alt>951</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Martin Campbell Field Airport</name>
+		<lat>35.0158056</lat>
+		<lon>-84.3468333</lon>
+		<alt>1789</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mansfield Municipal</name>
+		<lat>42.0001331</lat>
+		<lon>-71.1967714</lon>
+		<alt>122</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Frazier Lake Airpark</name>
+		<lat>54.0133333333333</lat>
+		<lon>-124.768333333333</lon>
+		<alt>152</alt>
+		<tz>-8</tz>
+		<tzone>America/Vancouver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clow International Airport</name>
+		<lat>41.6959744</lat>
+		<lon>-88.1292306</lon>
+		<alt>670</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kent State Airport</name>
+		<lat>41.1513889</lat>
+		<lon>-81.4151111</lon>
+		<alt>1134</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Canyon West Airport</name>
+		<lat>35.899904</lat>
+		<lon>-113.815674</lon>
+		<alt>4813</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Effingham Memorial Airport</name>
+		<lat>39.07</lat>
+		<lon>-88.534</lon>
+		<alt>585</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fortman Airport</name>
+		<lat>40.5553253</lat>
+		<lon>-84.3866186</lon>
+		<alt>885</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Point Roberts Airpark</name>
+		<lat>48.9797222</lat>
+		<lon>-123.0788889</lon>
+		<alt>10</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clarke CO</name>
+		<lat>32.0517</lat>
+		<lon>-88.4434</lon>
+		<alt>320</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lowell City Airport</name>
+		<lat>42.95392</lat>
+		<lon>-85.3439058</lon>
+		<alt>681</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Suwannee County Airport</name>
+		<lat>30.300125</lat>
+		<lon>-83.0246944</lon>
+		<alt>104</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Forest Lake Airport</name>
+		<lat>45.2477456</lat>
+		<lon>-92.9943853</lon>
+		<alt>925</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grove City Airport</name>
+		<lat>41.1460278</lat>
+		<lon>-80.16775</lon>
+		<alt>1371</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mark Anton Airport</name>
+		<lat>35.48625</lat>
+		<lon>-84.9310833</lon>
+		<alt>718</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Plum Island Airport</name>
+		<lat>42.7953611</lat>
+		<lon>-70.8394444</lon>
+		<alt>11</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jefferson County Airpark</name>
+		<lat>40.3602179</lat>
+		<lon>-80.7008742</lon>
+		<alt>1196</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Somerset County Airport</name>
+		<lat>40.0388708</lat>
+		<lon>-79.0149951</lon>
+		<alt>2275</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Shelby County Airport</name>
+		<lat>39.410556</lat>
+		<lon>-88.845556</lon>
+		<alt>550</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Quincy Municipal Airport</name>
+		<lat>30.5978708</lat>
+		<lon>-84.557425</lon>
+		<alt>225</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Atmautluak Airport</name>
+		<lat>60.866667</lat>
+		<lon>-162.273056</lon>
+		<alt>18</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Heber City Municipal Airport</name>
+		<lat>40.4818056</lat>
+		<lon>-111.4288056</lon>
+		<alt>5637</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lynden Airport</name>
+		<lat>48.9558961</lat>
+		<lon>-122.4581183</lon>
+		<alt>106</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ephraim-Gibraltar Airport</name>
+		<lat>45.1354167</lat>
+		<lon>-87.1879444</lon>
+		<alt>773</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wadsworth Municipal</name>
+		<lat>41.0031572</lat>
+		<lon>-81.7564401</lon>
+		<alt>974</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ashland County Airport</name>
+		<lat>40.9029722</lat>
+		<lon>-82.2556389</lon>
+		<alt>1206</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ridgeland Airport</name>
+		<lat>32.4934167</lat>
+		<lon>-80.99175</lon>
+		<alt>79</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Put-in-Bay Airport</name>
+		<lat>41.3521</lat>
+		<lon>-82.497</lon>
+		<alt>595</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Perry-Foley Airport</name>
+		<lat>30.0692778</lat>
+		<lon>-83.5805833</lon>
+		<alt>44</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Braceville Airport</name>
+		<lat>41.2111675</lat>
+		<lon>-80.9692572</lon>
+		<alt>900</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cherokee County Airport</name>
+		<lat>34.3122175</lat>
+		<lon>-84.4221556</lon>
+		<alt>1219</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gilmer County Airport</name>
+		<lat>34.6282222</lat>
+		<lon>-84.5265833</lon>
+		<alt>1486</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chemehuevi Valley</name>
+		<lat>34.528889</lat>
+		<lon>-114.431971</lon>
+		<alt>638</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Polk County Airport - Cornelius Moore Field</name>
+		<lat>34.0186944</lat>
+		<lon>-85.1464722</lon>
+		<alt>974</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clayton County Tara Field</name>
+		<lat>33.389099</lat>
+		<lon>-84.332397</lon>
+		<alt>874</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Isbell Field Airport</name>
+		<lat>34.4736944</lat>
+		<lon>-85.7213889</lon>
+		<alt>877</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Robertson Field</name>
+		<lat>41.6893333</lat>
+		<lon>-72.8646944</lon>
+		<alt>202</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pittsburgh-Monroeville Airport</name>
+		<lat>40.4526389</lat>
+		<lon>-79.7749167</lon>
+		<alt>1187</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hamburg Inc Airport</name>
+		<lat>42.7008925</lat>
+		<lon>-78.9147569</lon>
+		<alt>751</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Youngstown Elser Metro Airport</name>
+		<lat>40.9617953</lat>
+		<lon>-80.6773264</lon>
+		<alt>1070</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Putnam County Airport</name>
+		<lat>39.6335556</lat>
+		<lon>-86.8138056</lon>
+		<alt>842</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dell Flight Strip</name>
+		<lat>44.7357483</lat>
+		<lon>-112.7200133</lon>
+		<alt>6007</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Madison GA Municipal Airport</name>
+		<lat>33.612125</lat>
+		<lon>-83.4604444</lon>
+		<alt>694</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>DeFuniak Springs Airport</name>
+		<lat>30.7311111</lat>
+		<lon>-86.1537778</lon>
+		<alt>289</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fernandina Beach Municipal Airport</name>
+		<lat>30.6118333</lat>
+		<lon>-81.4611944</lon>
+		<alt>16</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Packwood</name>
+		<lat>46.3625</lat>
+		<lon>-121.4067</lon>
+		<alt>1057</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>East Troy Municipal Airport</name>
+		<lat>42.7971667</lat>
+		<lon>-88.3726111</lon>
+		<alt>860</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Saratoga County Airport</name>
+		<lat>43.050722</lat>
+		<lon>-73.861638</lon>
+		<alt>433</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ocean Isle Beach Airport</name>
+		<lat>33.9085056</lat>
+		<lon>-78.4366722</lon>
+		<alt>32</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Griffin-Spalding County Airport</name>
+		<lat>33.2269722</lat>
+		<lon>-84.2749444</lon>
+		<alt>958</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Saluda County</name>
+		<lat>33.5561</lat>
+		<lon>-81.4768</lon>
+		<alt>539</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tok Junction Airport</name>
+		<lat>63.329444</lat>
+		<lon>-142.953611</lon>
+		<alt>1639</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Big Timber Airport</name>
+		<lat>45.8063889</lat>
+		<lon>-109.9811111</lon>
+		<alt>4492</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Florence</name>
+		<lat>43.9828168</lat>
+		<lon>-124.1113687</lon>
+		<alt>51</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Welke Airport</name>
+		<lat>45.721111</lat>
+		<lon>-85.520278</lon>
+		<alt>664</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cairo-Grady County Airport</name>
+		<lat>30.8879767</lat>
+		<lon>-84.1547353</lon>
+		<alt>265</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Spring Hill Airport</name>
+		<lat>41.3473569</lat>
+		<lon>-75.4158972</lon>
+		<alt>1729</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Foster Field</name>
+		<lat>42.4664444</lat>
+		<lon>-90.1693889</lon>
+		<alt>990</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Germack Airport</name>
+		<lat>41.7778322</lat>
+		<lon>-80.9039797</lon>
+		<alt>820</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Spitfire Aerodrome</name>
+		<lat>39.7355633</lat>
+		<lon>-75.3977211</lon>
+		<alt>40</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Garland Airport</name>
+		<lat>44.8065278</lat>
+		<lon>-84.2761944</lon>
+		<alt>1218</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Richland Airport</name>
+		<lat>43.2833575</lat>
+		<lon>-90.2982819</lon>
+		<alt>742</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bamberg County Airport</name>
+		<lat>33.3045278</lat>
+		<lon>-81.1084167</lon>
+		<alt>231</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Covington Municipal Airport</name>
+		<lat>33.6323083</lat>
+		<lon>-83.8474472</lon>
+		<alt>809</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barwick Lafayette Airport</name>
+		<lat>34.6884792</lat>
+		<lon>-85.2903319</lon>
+		<alt>777</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Rock Airport</name>
+		<lat>40.6035463</lat>
+		<lon>-79.8261189</lon>
+		<alt>1063</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Phoenix Regional Airport</name>
+		<lat>32.99169921875</lat>
+		<lon>-111.920997619629</lon>
+		<alt>1300</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Colorado Springs East</name>
+		<lat>38.87</lat>
+		<lon>-104.41</lon>
+		<alt>6145</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Apalachicola Regional Airport</name>
+		<lat>29.7276066</lat>
+		<lon>-85.0274416</lon>
+		<alt>20</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Andrau Airport</name>
+		<lat>29.43</lat>
+		<lon>-95.35</lon>
+		<alt>80</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lehigh Valley Intl</name>
+		<lat>40.652083</lat>
+		<lon>-75.440806</lon>
+		<alt>393</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Abilene Rgnl</name>
+		<lat>32.411319</lat>
+		<lon>-99.681897</lon>
+		<alt>1791</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ambler Airport</name>
+		<lat>67.106389</lat>
+		<lon>-157.8575</lon>
+		<alt>334</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Albuquerque International Sunport</name>
+		<lat>35.0402222</lat>
+		<lon>-106.6091944</lon>
+		<alt>5355</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Aberdeen Regional Airport</name>
+		<lat>45.4491</lat>
+		<lon>-98.4218</lon>
+		<alt>1302</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Southwest Georgia Regional Airport</name>
+		<lat>31.5355</lat>
+		<lon>-84.1945</lon>
+		<alt>197</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jimmy Carter Regional</name>
+		<lat>32.0665</lat>
+		<lon>-84.1133</lon>
+		<alt>468</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nantucket Mem</name>
+		<lat>41.253053</lat>
+		<lon>-70.060181</lon>
+		<alt>48</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Waco Rgnl</name>
+		<lat>31.611289</lat>
+		<lon>-97.230519</lon>
+		<alt>516</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Arcata</name>
+		<lat>40.978111</lat>
+		<lon>-124.108611</lon>
+		<alt>221</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Atlantic City Intl</name>
+		<lat>39.457583</lat>
+		<lon>-74.577167</lon>
+		<alt>75</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Adak Airport</name>
+		<lat>51.878</lat>
+		<lon>-176.646</lon>
+		<alt>18</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ardmore Muni</name>
+		<lat>34.300833</lat>
+		<lon>-97.008889</lon>
+		<alt>762</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kodiak</name>
+		<lat>57.749967</lat>
+		<lon>-152.493856</lon>
+		<alt>78</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Addison</name>
+		<lat>32.9685594</lat>
+		<lon>-96.8364478</lon>
+		<alt>644</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Andrews Afb</name>
+		<lat>38.810806</lat>
+		<lon>-76.867028</lon>
+		<alt>280</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Allakaket Airport</name>
+		<lat>66.5519</lat>
+		<lon>-152.6222</lon>
+		<alt>441</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alexandria Intl</name>
+		<lat>31.3274</lat>
+		<lon>-92.549833</lon>
+		<alt>89</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kake Airport</name>
+		<lat>56.961389</lat>
+		<lon>-133.910278</lon>
+		<alt>172</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Worth Alliance Airport</name>
+		<lat>32.987778</lat>
+		<lon>-97.318889</lon>
+		<alt>722</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Allegheny County Airport</name>
+		<lat>40.3544</lat>
+		<lon>-79.9302</lon>
+		<alt>1252</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Angoon Seaplane Base</name>
+		<lat>57.503611</lat>
+		<lon>-134.585</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Augusta Rgnl At Bush Fld</name>
+		<lat>33.369944</lat>
+		<lon>-81.9645</lon>
+		<alt>144</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Athens Ben Epps Airport</name>
+		<lat>33.9486</lat>
+		<lon>-83.3263</lon>
+		<alt>808</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alliance Municipal Airport</name>
+		<lat>42.053333</lat>
+		<lon>-102.803889</lon>
+		<alt>3931</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Municipal Airport</name>
+		<lat>33.6493889</lat>
+		<lon>-81.6850278</lon>
+		<alt>529</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wainwright Airport</name>
+		<lat>70.638056</lat>
+		<lon>-159.994722</lon>
+		<alt>41</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lee C Fine Memorial Airport</name>
+		<lat>38.096035</lat>
+		<lon>-92.5494875</lon>
+		<alt>869</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Atka Airport</name>
+		<lat>52.220278</lat>
+		<lon>-174.206389</lon>
+		<alt>56</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Akron Fulton Intl</name>
+		<lat>41.0375</lat>
+		<lon>-81.466917</lon>
+		<alt>1067</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Akiak Airport</name>
+		<lat>60.902778</lat>
+		<lon>-161.230556</lon>
+		<alt>30</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Akhiok Airport</name>
+		<lat>56.938611</lat>
+		<lon>-154.1825</lon>
+		<alt>44</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>King Salmon</name>
+		<lat>58.676778</lat>
+		<lon>-156.649278</lon>
+		<alt>68</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Anaktuvuk Pass Airport</name>
+		<lat>68.1336</lat>
+		<lon>-151.743</lon>
+		<alt>2103</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Albany Intl</name>
+		<lat>42.748267</lat>
+		<lon>-73.801692</lon>
+		<alt>285</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alice Intl</name>
+		<lat>27.740889</lat>
+		<lon>-98.026944</lon>
+		<alt>178</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alamogordo White Sands Regional Airport</name>
+		<lat>32.8399</lat>
+		<lon>-105.991</lon>
+		<alt>4200</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Waterloo Regional Airport</name>
+		<lat>42.5571</lat>
+		<lon>-92.4003</lon>
+		<alt>873</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>San Luis Valley Regional Airport</name>
+		<lat>37.435</lat>
+		<lon>-105.866667</lon>
+		<alt>7539</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Walla Walla Regional Airport</name>
+		<lat>46.0949</lat>
+		<lon>-118.288</lon>
+		<alt>1191</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alexandria</name>
+		<lat>38.806346</lat>
+		<lon>-77.0621</lon>
+		<alt>1</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alitak Seaplane Base</name>
+		<lat>56.899444</lat>
+		<lon>-154.247778</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Rick Husband Amarillo Intl</name>
+		<lat>35.219369</lat>
+		<lon>-101.705931</lon>
+		<alt>3607</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Anniston Metro</name>
+		<lat>33.588167</lat>
+		<lon>-85.858111</lon>
+		<alt>612</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ted Stevens Anchorage Intl</name>
+		<lat>61.174361</lat>
+		<lon>-149.996361</lon>
+		<alt>152</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Anderson Rgnl</name>
+		<lat>34.494583</lat>
+		<lon>-82.709389</lon>
+		<alt>782</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Aniak Airport</name>
+		<lat>61.5816</lat>
+		<lon>-159.543</lon>
+		<alt>88</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Annette Island</name>
+		<lat>55.042436</lat>
+		<lon>-131.572233</lon>
+		<alt>119</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lee Airport</name>
+		<lat>38.942778</lat>
+		<lon>-76.568333</lon>
+		<alt>34</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tri-State Steuben County Airport</name>
+		<lat>41.6396983</lat>
+		<lon>-85.0834933</lon>
+		<alt>995</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Anvik Airport</name>
+		<lat>62.6467</lat>
+		<lon>-160.191</lon>
+		<alt>309</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lima Allen County Airport</name>
+		<lat>40.707478</lat>
+		<lon>-84.0270781</lon>
+		<alt>975</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Altoona Blair Co</name>
+		<lat>40.296372</lat>
+		<lon>-78.320022</lon>
+		<alt>1504</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Amook Bay Seaplane Base</name>
+		<lat>57.471389</lat>
+		<lon>-153.815278</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Centennial</name>
+		<lat>39.570129</lat>
+		<lon>-104.849294</lon>
+		<alt>5883</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Napa County Airport</name>
+		<lat>38.2131944</lat>
+		<lon>-122.2806944</lon>
+		<alt>35</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Naples Muni</name>
+		<lat>26.152619</lat>
+		<lon>-81.775294</lon>
+		<alt>8</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Phillips Aaf</name>
+		<lat>39.466219</lat>
+		<lon>-76.168808</lon>
+		<alt>57</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alpena County Regional Airport</name>
+		<lat>45.0781</lat>
+		<lon>-83.5603</lon>
+		<alt>689</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Klawock Seaplane Base</name>
+		<lat>55.554658</lat>
+		<lon>-133.101693</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Acadiana Rgnl</name>
+		<lat>30.037758</lat>
+		<lon>-91.883896</lon>
+		<alt>24</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ann Arbor Municipal Airport</name>
+		<lat>42.132274</lat>
+		<lon>-83.444418</lon>
+		<alt>839</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Arctic Village Airport</name>
+		<lat>68.1147</lat>
+		<lon>-145.579</lon>
+		<alt>2092</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Watertown Intl</name>
+		<lat>43.991922</lat>
+		<lon>-76.021739</lon>
+		<alt>325</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lakeland</name>
+		<lat>45.927778</lat>
+		<lon>-89.730833</lon>
+		<alt>1629</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Aspen Pitkin County Sardy Field</name>
+		<lat>39.2232</lat>
+		<lon>-106.869</lon>
+		<alt>7820</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boire Field Airport</name>
+		<lat>42.78175</lat>
+		<lon>-71.5147778</lon>
+		<alt>199</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Astoria Regional Airport</name>
+		<lat>46.157972</lat>
+		<lon>-123.878694</lon>
+		<alt>15</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Atqasuk Edward Burnell Sr Memorial Airport</name>
+		<lat>70.4673</lat>
+		<lon>-157.436</lon>
+		<alt>96</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hartsfield Jackson Atlanta Intl</name>
+		<lat>33.636719</lat>
+		<lon>-84.428067</lon>
+		<alt>1026</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Camp Mabry Austin City</name>
+		<lat>30.31666</lat>
+		<lon>-97.7666</lon>
+		<alt>0</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Appleton</name>
+		<lat>44.257526</lat>
+		<lon>-88.507576</lon>
+		<alt>680</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Watertown Regional Airport</name>
+		<lat>44.914</lat>
+		<lon>-97.1547</lon>
+		<alt>1748</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Augusta State</name>
+		<lat>44.320647</lat>
+		<lon>-69.797317</lon>
+		<alt>352</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alakanuk Airport</name>
+		<lat>62.68</lat>
+		<lon>-164.66</lon>
+		<alt>10</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Auburn University Regional</name>
+		<lat>32.3691</lat>
+		<lon>-85.2604</lon>
+		<alt>777</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Austin Bergstrom Intl</name>
+		<lat>30.194528</lat>
+		<lon>-97.669889</lon>
+		<alt>542</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wausau Downtown Airport</name>
+		<lat>44.9262845</lat>
+		<lon>-89.6270018</lon>
+		<alt>1201</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Asheville Regional Airport</name>
+		<lat>35.436194</lat>
+		<lon>-82.541806</lon>
+		<alt>2165</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Executive</name>
+		<lat>27.591389</lat>
+		<lon>-81.528889</lon>
+		<alt>160</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wilkes Barre Scranton Intl</name>
+		<lat>41.338478</lat>
+		<lon>-75.723403</lon>
+		<alt>962</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marana Regional</name>
+		<lat>32.409556</lat>
+		<lon>-111.218388</lon>
+		<alt>2031</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Avalon</name>
+		<lat>33.405</lat>
+		<lon>-118.415833</lon>
+		<alt>1602</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Phoenix-Mesa Gateway</name>
+		<lat>33.307833</lat>
+		<lon>-111.655</lon>
+		<alt>1382</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kalamazoo</name>
+		<lat>42.234875</lat>
+		<lon>-85.552058</lon>
+		<alt>874</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beale Afb</name>
+		<lat>39.136089</lat>
+		<lon>-121.436567</lon>
+		<alt>113</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barksdale Afb</name>
+		<lat>32.50182</lat>
+		<lon>-93.662674</lon>
+		<alt>166</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barnes Municipal</name>
+		<lat>42.1579472</lat>
+		<lon>-72.715875</lon>
+		<alt>270</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wings Field</name>
+		<lat>40.1375</lat>
+		<lon>-75.265</lon>
+		<alt>302</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bryce Canyon</name>
+		<lat>37.706444</lat>
+		<lon>-112.145806</lon>
+		<alt>7590</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boca Raton</name>
+		<lat>26.3785</lat>
+		<lon>-80.107694</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Baudette Intl</name>
+		<lat>48.728444</lat>
+		<lon>-94.612222</lon>
+		<alt>1086</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bradley Intl</name>
+		<lat>41.938889</lat>
+		<lon>-72.683222</lon>
+		<alt>173</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Igor I Sikorsky Mem</name>
+		<lat>41.163472</lat>
+		<lon>-73.126167</lon>
+		<alt>9</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beech Factory Airport</name>
+		<lat>37.6939167</lat>
+		<lon>-97.2149167</lon>
+		<alt>1409</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Laurence G Hanscom Fld</name>
+		<lat>42.469953</lat>
+		<lon>-71.289031</lon>
+		<alt>133</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Southwest Michigan Regional Airport</name>
+		<lat>42.1285833</lat>
+		<lon>-86.4285</lon>
+		<alt>643</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bethel</name>
+		<lat>60.779778</lat>
+		<lon>-161.838</lon>
+		<alt>121</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bradford Regional Airport</name>
+		<lat>41.8031</lat>
+		<lon>-78.6401</lon>
+		<alt>2143</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Western Nebraska Regional Airport</name>
+		<lat>41.874</lat>
+		<lon>-103.596</lon>
+		<alt>3967</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boeing Fld King Co Intl</name>
+		<lat>47.53</lat>
+		<lon>-122.301947</lon>
+		<alt>21</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Meadows Fld</name>
+		<lat>35.433598</lat>
+		<lon>-119.05677</lon>
+		<alt>507</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mobile Downtown</name>
+		<lat>30.626783</lat>
+		<lon>-88.068092</lon>
+		<alt>26</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beaver Falls</name>
+		<lat>40.7724722</lat>
+		<lon>-80.3914444</lon>
+		<alt>1253</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beaufort</name>
+		<lat>32.477411</lat>
+		<lon>-80.723161</lon>
+		<alt>37</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Decatur County Industrial Air Park</name>
+		<lat>30.9715981</lat>
+		<lon>-84.6369278</lon>
+		<alt>141</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greater Binghamton Edwin A Link Fld</name>
+		<lat>42.208689</lat>
+		<lon>-75.979839</lon>
+		<alt>1636</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bangor Intl</name>
+		<lat>44.807444</lat>
+		<lon>-68.828139</lon>
+		<alt>192</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hancock County - Bar Harbor</name>
+		<lat>44.4497689</lat>
+		<lon>-68.3615653</lon>
+		<alt>83</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Birmingham Intl</name>
+		<lat>33.562942</lat>
+		<lon>-86.75355</lon>
+		<alt>644</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Block Island State Airport</name>
+		<lat>41.168056</lat>
+		<lon>-71.577778</lon>
+		<alt>108</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Biggs Aaf</name>
+		<lat>31.849528</lat>
+		<lon>-106.380039</lon>
+		<alt>3948</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Allen Aaf</name>
+		<lat>63.994547</lat>
+		<lon>-145.721642</lon>
+		<alt>1291</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Billings Logan International Airport</name>
+		<lat>45.80921</lat>
+		<lon>-108.537654</lon>
+		<alt>3652</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bismarck Municipal Airport</name>
+		<lat>46.775842</lat>
+		<lon>-100.757931</lon>
+		<alt>1661</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tulip City Airport</name>
+		<lat>42.7427778</lat>
+		<lon>-86.1078333</lon>
+		<alt>698</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Keesler Afb</name>
+		<lat>30.410425</lat>
+		<lon>-88.924433</lon>
+		<alt>33</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Rocky Mountain Metropolitan Airport</name>
+		<lat>39.90888888</lat>
+		<lon>-105.11722222</lon>
+		<alt>5670</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bemidji Regional Airport</name>
+		<lat>47.510722</lat>
+		<lon>-94.934722</lon>
+		<alt>1391</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Buckland Airport</name>
+		<lat>65.981667</lat>
+		<lon>-161.149167</lon>
+		<alt>31</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Stephens Co</name>
+		<lat>32.719047</lat>
+		<lon>-98.891</lon>
+		<alt>1284</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Buckley Afb</name>
+		<lat>39.701668</lat>
+		<lon>-104.75166</lon>
+		<alt>5662</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Branson LLC</name>
+		<lat>36.531994</lat>
+		<lon>-93.200556</lon>
+		<alt>1302</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barking Sands Pmrf</name>
+		<lat>22.022833</lat>
+		<lon>-159.785</lon>
+		<alt>23</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Burke Lakefront Airport</name>
+		<lat>41.5175</lat>
+		<lon>-81.683333</lon>
+		<alt>583</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Raleigh County Memorial Airport</name>
+		<lat>37.7873</lat>
+		<lon>-81.1242</lon>
+		<alt>2504</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brookings Regional Airport</name>
+		<lat>44.3048</lat>
+		<lon>-96.8169</lon>
+		<alt>1648</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boulder City Municipal Airport</name>
+		<lat>35.5651</lat>
+		<lon>-114.514</lon>
+		<alt>2201</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mercer County Airport</name>
+		<lat>37.2958</lat>
+		<lon>-81.2077</lon>
+		<alt>2857</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Blythe Airport</name>
+		<lat>33.619167</lat>
+		<lon>-114.716889</lon>
+		<alt>399</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bellingham Intl</name>
+		<lat>48.792694</lat>
+		<lon>-122.537528</lon>
+		<alt>170</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Scott Afb Midamerica</name>
+		<lat>38.545178</lat>
+		<lon>-89.835183</lon>
+		<alt>459</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brigham City</name>
+		<lat>41.552</lat>
+		<lon>-112.062</lon>
+		<alt>4229</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Monroe County Airport</name>
+		<lat>39.1460208</lat>
+		<lon>-86.6166805</lon>
+		<alt>846</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Central Illinois Rgnl</name>
+		<lat>40.477111</lat>
+		<lon>-88.915917</lon>
+		<alt>871</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beaumont Municipal</name>
+		<lat>30.0702044</lat>
+		<lon>-94.2150967</lon>
+		<alt>32</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Big Mountain Afs</name>
+		<lat>59.361247</lat>
+		<lon>-155.258822</lon>
+		<alt>663</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nashville Intl</name>
+		<lat>36.124472</lat>
+		<lon>-86.678194</lon>
+		<alt>599</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boise Air Terminal</name>
+		<lat>43.564361</lat>
+		<lon>-116.222861</lon>
+		<alt>2871</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>General Edward Lawrence Logan Intl</name>
+		<lat>42.364347</lat>
+		<lon>-71.005181</lon>
+		<alt>19</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bartow Municipal Airport</name>
+		<lat>27.9434</lat>
+		<lon>-81.7834</lon>
+		<alt>125</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Southeast Texas Rgnl</name>
+		<lat>29.950833</lat>
+		<lon>-94.020694</lon>
+		<alt>15</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brunswick Golden Isles Airport</name>
+		<lat>31.2588</lat>
+		<lon>-81.4665</lon>
+		<alt>26</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brainerd Lakes Rgnl</name>
+		<lat>46.398308</lat>
+		<lon>-94.138078</lon>
+		<alt>1226</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Southeast Iowa Regional Airport</name>
+		<lat>40.7832</lat>
+		<lon>-91.1255</lon>
+		<alt>698</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brownsville South Padre Island Intl</name>
+		<lat>25.906833</lat>
+		<lon>-97.425861</lon>
+		<alt>22</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wiley Post Will Rogers Mem</name>
+		<lat>71.285446</lat>
+		<lon>-156.766003</lon>
+		<alt>44</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bradshaw Aaf</name>
+		<lat>19.760056</lat>
+		<lon>-155.553717</lon>
+		<alt>6190</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barter Island Lrrs</name>
+		<lat>70.133989</lat>
+		<lon>-143.581867</lon>
+		<alt>2</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bert Mooney Airport</name>
+		<lat>45.954806</lat>
+		<lon>-112.497472</lon>
+		<alt>5550</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Baton Rouge Metro Ryan Fld</name>
+		<lat>30.533167</lat>
+		<lon>-91.149639</lon>
+		<alt>70</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bettles</name>
+		<lat>66.913944</lat>
+		<lon>-151.529056</lon>
+		<alt>644</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Burlington Intl</name>
+		<lat>44.471861</lat>
+		<lon>-73.153278</lon>
+		<alt>335</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Buffalo Niagara Intl</name>
+		<lat>42.940525</lat>
+		<lon>-78.732167</lon>
+		<alt>724</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bob Hope</name>
+		<lat>34.200667</lat>
+		<lon>-118.358667</lon>
+		<alt>778</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Municipal Airport</name>
+		<lat>42.6907171</lat>
+		<lon>-88.3046825</lon>
+		<alt>780</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Burlington-Alamance Regional Airport</name>
+		<lat>36.0485433</lat>
+		<lon>-79.4748892</lon>
+		<alt>617</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beverly Municipal Airport</name>
+		<lat>42.584141</lat>
+		<lon>-70.9161444</lon>
+		<alt>107</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>KBWD</name>
+		<lat>31.7936111</lat>
+		<lon>-98.9565</lon>
+		<alt>1387</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bowling Green-Warren County Regional Airport</name>
+		<lat>36.9645278</lat>
+		<lon>-86.4196667</lon>
+		<alt>547</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Baltimore Washington Intl</name>
+		<lat>39.175361</lat>
+		<lon>-76.668333</lon>
+		<alt>146</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Buckeye Municipal Airport</name>
+		<lat>33.420417</lat>
+		<lon>-112.68618</lon>
+		<alt>1033</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Borrego Valley Airport</name>
+		<lat>33.2590278</lat>
+		<lon>-116.3209722</lon>
+		<alt>520</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Arkansas Intl</name>
+		<lat>35.964347</lat>
+		<lon>-89.943956</lon>
+		<alt>254</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bicycle Lake Aaf</name>
+		<lat>35.280531</lat>
+		<lon>-116.630031</lon>
+		<alt>2350</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Blakely Island Airport</name>
+		<lat>48.56025</lat>
+		<lon>-122.80243</lon>
+		<alt>0</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gallatin Field</name>
+		<lat>45.777643</lat>
+		<lon>-111.160151</lon>
+		<alt>4500</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Geneva Resort Airport</name>
+		<lat>42.6149167</lat>
+		<lon>-88.3895833</lon>
+		<alt>835</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Frasca Field</name>
+		<lat>40.144979</lat>
+		<lon>-88.200197</lon>
+		<alt>735</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Portage Municipal Airport</name>
+		<lat>43.5603136</lat>
+		<lon>-89.4828607</lon>
+		<alt>825</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Plymouth Municipal Airport</name>
+		<lat>41.3651307</lat>
+		<lon>-86.3002574</lon>
+		<alt>800</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sylvania Airport</name>
+		<lat>42.70325</lat>
+		<lon>-87.9589722</lon>
+		<alt>785</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dowagiac Municipal Airport</name>
+		<lat>41.9929342</lat>
+		<lon>-86.1280125</lon>
+		<alt>748</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Columbia Metropolitan</name>
+		<lat>33.938833</lat>
+		<lon>-81.119528</lon>
+		<alt>236</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Akron Canton Regional Airport</name>
+		<lat>40.9160833</lat>
+		<lon>-81.4421944</lon>
+		<alt>1228</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Caribou Muni</name>
+		<lat>46.8715</lat>
+		<lon>-68.017917</lon>
+		<alt>626</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greater Cumberland Rgnl.</name>
+		<lat>39.615278</lat>
+		<lon>-78.760556</lon>
+		<alt>775</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Columbus Afb</name>
+		<lat>33.643833</lat>
+		<lon>-88.443833</lon>
+		<alt>219</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Coweta County Airport</name>
+		<lat>33.3115656</lat>
+		<lon>-84.7697554</lon>
+		<alt>970</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Buchanan Field Airport</name>
+		<lat>37.9896667</lat>
+		<lon>-122.0568889</lon>
+		<alt>26</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cold Bay</name>
+		<lat>55.206061</lat>
+		<lon>-162.725436</lon>
+		<alt>96</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cedar City Rgnl</name>
+		<lat>37.700967</lat>
+		<lon>-113.098847</lon>
+		<alt>5622</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cambridge Municipal Airport</name>
+		<lat>39.9750278</lat>
+		<lon>-81.5775833</lon>
+		<alt>799</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>CedarKey</name>
+		<lat>29.1342222</lat>
+		<lon>-83.0504722</lon>
+		<alt>11</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Woodward Field</name>
+		<lat>34.2835833</lat>
+		<lon>-80.5648611</lon>
+		<alt>302</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chadron Municipal Airport</name>
+		<lat>42.8375</lat>
+		<lon>-103.095556</lon>
+		<alt>3297</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Childress Muni</name>
+		<lat>34.433781</lat>
+		<lon>-100.287992</lon>
+		<alt>1954</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Merle K Mudhole Smith</name>
+		<lat>60.491778</lat>
+		<lon>-145.477556</lon>
+		<alt>48</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Caldwell Essex County Airport</name>
+		<lat>40.8752222</lat>
+		<lon>-74.2813611</lon>
+		<alt>172</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Del Norte County Airport</name>
+		<lat>41.7802</lat>
+		<lon>-124.237</lon>
+		<alt>57</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Westover Arb Metropolitan</name>
+		<lat>42.194014</lat>
+		<lon>-72.534783</lon>
+		<alt>241</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Central Airport</name>
+		<lat>65.573889</lat>
+		<lon>-144.780833</lon>
+		<alt>937</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clemson</name>
+		<lat>34.6722222</lat>
+		<lon>-82.8858889</lon>
+		<alt>891</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bob Sikes</name>
+		<lat>30.778833</lat>
+		<lon>-86.522111</lon>
+		<alt>213</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cortez Muni</name>
+		<lat>37.303</lat>
+		<lon>-108.628056</lon>
+		<alt>5918</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Coulter Fld</name>
+		<lat>30.715694</lat>
+		<lon>-96.331361</lon>
+		<alt>367</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Craig Seaplane Base</name>
+		<lat>55.478889</lat>
+		<lon>-133.147778</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Crystal River</name>
+		<lat>28.8676111</lat>
+		<lon>-82.5741111</lon>
+		<alt>9</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cuyahoga County</name>
+		<lat>41.565124</lat>
+		<lon>-81.4863555</lon>
+		<alt>879</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cape Girardeau Regional Airport</name>
+		<lat>37.2253</lat>
+		<lon>-89.5708</lon>
+		<alt>342</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Meigs Field</name>
+		<lat>41.860278</lat>
+		<lon>-87.609722</lon>
+		<alt>585</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Casa Grande Municipal Airport</name>
+		<lat>32.954889</lat>
+		<lon>-111.766832</lon>
+		<alt>1464</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lovell Fld</name>
+		<lat>35.035278</lat>
+		<lon>-85.203808</lon>
+		<alt>683</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>All Airports</name>
+		<lat>41.883611</lat>
+		<lon>-87.631667</lon>
+		<alt>596</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Charlottesville-Albemarle</name>
+		<lat>38.138639</lat>
+		<lon>-78.452861</lon>
+		<alt>639</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Charleston Afb Intl</name>
+		<lat>32.898647</lat>
+		<lon>-80.040528</lon>
+		<alt>45</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chuathbaluk Airport</name>
+		<lat>61.579167</lat>
+		<lon>-159.215556</lon>
+		<alt>243</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chico Muni</name>
+		<lat>39.795383</lat>
+		<lon>-121.858422</lon>
+		<alt>238</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cedar Rapids</name>
+		<lat>41.884694</lat>
+		<lon>-91.710806</lon>
+		<alt>869</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chalkyitsik Airport</name>
+		<lat>66.645</lat>
+		<lon>-143.74</lon>
+		<alt>544</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Council Airport</name>
+		<lat>64.897778</lat>
+		<lon>-163.703333</lon>
+		<alt>85</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chippewa County International Airport</name>
+		<lat>46.2508</lat>
+		<lon>-84.4724</lon>
+		<alt>800</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Harrison Marion Regional Airport</name>
+		<lat>39.2966</lat>
+		<lon>-80.2281</lon>
+		<alt>1217</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Crooked Creek Airport</name>
+		<lat>61.867778</lat>
+		<lon>-158.135</lon>
+		<alt>178</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Crisp County Cordele Airport</name>
+		<lat>31.9888333</lat>
+		<lon>-83.7739167</lon>
+		<alt>310</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clarksville-Montgomery County Regional Airport</name>
+		<lat>36.621944</lat>
+		<lon>-87.415</lon>
+		<alt>550</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clear Lake Metroport</name>
+		<lat>29.5569</lat>
+		<lon>-95.137497</lon>
+		<alt>35</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McClellan-Palomar Airport</name>
+		<lat>33.0742</lat>
+		<lon>-117.1648</lon>
+		<alt>328</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cleveland Hopkins Intl</name>
+		<lat>41.411689</lat>
+		<lon>-81.849794</lon>
+		<alt>791</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Easterwood Fld</name>
+		<lat>30.588583</lat>
+		<lon>-96.363833</lon>
+		<alt>321</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>William R Fairchild International Airport</name>
+		<lat>48.1202</lat>
+		<lon>-123.5</lon>
+		<alt>291</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chehalis-Centralia</name>
+		<lat>46.4062</lat>
+		<lon>-122.5897</lon>
+		<alt>177</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Charlotte Douglas Intl</name>
+		<lat>35.214</lat>
+		<lon>-80.943139</lon>
+		<alt>748</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clearwater Air Park</name>
+		<lat>27.9764722</lat>
+		<lon>-82.7586667</lon>
+		<alt>70</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Columbus Intl</name>
+		<lat>39.997972</lat>
+		<lon>-82.891889</lon>
+		<alt>815</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Champaign</name>
+		<lat>40.03925</lat>
+		<lon>-88.278056</lon>
+		<alt>754</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Houghton County Memorial Airport</name>
+		<lat>47.1684</lat>
+		<lon>-88.4891</lon>
+		<alt>1095</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cavern City Air Terminal</name>
+		<lat>32.337472</lat>
+		<lon>-104.263278</lon>
+		<alt>3295</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tstc Waco</name>
+		<lat>31.637831</lat>
+		<lon>-97.074139</lon>
+		<alt>470</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Canyonlands Field</name>
+		<lat>38.755</lat>
+		<lon>-109.754722</lon>
+		<alt>4555</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yellowstone Rgnl</name>
+		<lat>44.520194</lat>
+		<lon>-109.023806</lon>
+		<alt>5102</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pappy Boyington</name>
+		<lat>47.7743056</lat>
+		<lon>-116.8195833</lon>
+		<alt>2320</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Patrick Afb</name>
+		<lat>28.234922</lat>
+		<lon>-80.610125</lon>
+		<alt>8</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Merritt Island Airport</name>
+		<lat>28.3416111</lat>
+		<lon>-80.6854722</lon>
+		<alt>6</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Concord Municipal</name>
+		<lat>43.20267</lat>
+		<lon>-71.50233</lon>
+		<alt>342</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>City Of Colorado Springs Muni</name>
+		<lat>38.805805</lat>
+		<lon>-104.700778</lon>
+		<alt>6187</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cotulla Lasalle Co</name>
+		<lat>28.456694</lat>
+		<lon>-99.220294</lon>
+		<alt>474</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Columbia Rgnl</name>
+		<lat>38.818094</lat>
+		<lon>-92.219631</lon>
+		<alt>889</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Natrona Co Intl</name>
+		<lat>42.908</lat>
+		<lon>-106.464417</lon>
+		<alt>5347</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>St. Louis Downtown Airport</name>
+		<lat>38.5707244</lat>
+		<lon>-90.1562211</lon>
+		<alt>413</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Strand Airport</name>
+		<lat>33.81175</lat>
+		<lon>-78.7239444</lon>
+		<alt>31</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Corpus Christi Intl</name>
+		<lat>27.770361</lat>
+		<lon>-97.501222</lon>
+		<alt>44</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yeager</name>
+		<lat>38.373147</lat>
+		<lon>-81.593189</lon>
+		<alt>981</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Columbus Metropolitan Airport</name>
+		<lat>32.5163333</lat>
+		<lon>-84.9388611</lon>
+		<alt>397</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cut Bank Muni</name>
+		<lat>48.608353</lat>
+		<lon>-112.376144</lon>
+		<alt>3854</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chester County G O Carlson Airport</name>
+		<lat>39.9789</lat>
+		<lon>-75.8654</lon>
+		<alt>660</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>West Georgia Regional Airport - O V Gray Field</name>
+		<lat>33.6316964</lat>
+		<lon>-85.1522641</lon>
+		<alt>1165</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cross City</name>
+		<lat>29.6355278</lat>
+		<lon>-83.10475</lon>
+		<alt>42</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cincinnati Northern Kentucky Intl</name>
+		<lat>39.048836</lat>
+		<lon>-84.667822</lon>
+		<alt>896</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clovis Muni</name>
+		<lat>34.425139</lat>
+		<lon>-103.079278</lon>
+		<alt>4216</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Corvallis Muni</name>
+		<lat>44.5067</lat>
+		<lon>-123.2915</lon>
+		<alt>250</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cannon Afb</name>
+		<lat>34.382775</lat>
+		<lon>-103.322147</lon>
+		<alt>4295</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Charlevoix Municipal Airport</name>
+		<lat>45.3047778</lat>
+		<lon>-85.2753333</lon>
+		<alt>669</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Central Wisconsin</name>
+		<lat>44.772726</lat>
+		<lon>-89.646635</lon>
+		<alt>840</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Clinton Municipal</name>
+		<lat>41.83075</lat>
+		<lon>-90.3289722</lon>
+		<alt>708</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chatsworth Station</name>
+		<lat>34.256944</lat>
+		<lon>-118.598889</lon>
+		<alt>978</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Coldfoot Airport</name>
+		<lat>67.251389</lat>
+		<lon>-150.176111</lon>
+		<alt>1014</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Calexico Intl</name>
+		<lat>32.669502</lat>
+		<lon>-115.51333</lon>
+		<alt>4</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lone Star Executive</name>
+		<lat>30.351833</lat>
+		<lon>-95.414467</lon>
+		<alt>245</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Capital City Airport</name>
+		<lat>40.2171389</lat>
+		<lon>-76.8513611</lon>
+		<alt>347</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chefornak Airport</name>
+		<lat>60.149167</lat>
+		<lon>-164.285556</lon>
+		<alt>40</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chatham Seaplane Base</name>
+		<lat>57.515</lat>
+		<lon>-134.946111</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cheyenne Rgnl Jerry Olson Fld</name>
+		<lat>41.155722</lat>
+		<lon>-104.811839</lon>
+		<alt>6156</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yakataga Airport</name>
+		<lat>60.081901</lat>
+		<lon>-142.493611</lon>
+		<alt>12</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cape Romanzof Lrrs</name>
+		<lat>61.780297</lat>
+		<lon>-166.038747</lon>
+		<alt>457</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tri-Cities</name>
+		<lat>42.0471</lat>
+		<lon>-76.0578</lon>
+		<alt>833</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chisana Airport</name>
+		<lat>62.071111</lat>
+		<lon>-142.048333</lon>
+		<alt>1011</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Daytona Beach Intl</name>
+		<lat>29.179917</lat>
+		<lon>-81.058056</lon>
+		<alt>34</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dallas Love Fld</name>
+		<lat>32.847111</lat>
+		<lon>-96.851778</lon>
+		<alt>487</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Skyhaven Airport</name>
+		<lat>43.2840556</lat>
+		<lon>-70.9292778</lon>
+		<alt>321</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>James M Cox Dayton Intl</name>
+		<lat>39.902375</lat>
+		<lon>-84.219375</lon>
+		<alt>1009</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>W H Barron Field</name>
+		<lat>32.3388</lat>
+		<lon>-82.591</lon>
+		<alt>311</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dubuque Rgnl</name>
+		<lat>42.402</lat>
+		<lon>-90.709472</lon>
+		<alt>1076</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ronald Reagan Washington Natl</name>
+		<lat>38.852083</lat>
+		<lon>-77.037722</lon>
+		<alt>15</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dodge City Regional Airport</name>
+		<lat>37.7634</lat>
+		<lon>-99.9656</lon>
+		<alt>2594</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Decatur</name>
+		<lat>39.834564</lat>
+		<lon>-88.865689</lon>
+		<alt>682</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Denver Intl</name>
+		<lat>39.861656</lat>
+		<lon>-104.673178</lon>
+		<alt>5431</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Coleman A Young Muni</name>
+		<lat>42.409195</lat>
+		<lon>-83.009861</lon>
+		<alt>626</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dallas Fort Worth Intl</name>
+		<lat>32.896828</lat>
+		<lon>-97.037997</lon>
+		<alt>607</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Douglas Municipal Airport</name>
+		<lat>31.3426028</lat>
+		<lon>-109.5064544</lon>
+		<alt>4173</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Deer Harbor Seaplane</name>
+		<lat>48.618397</lat>
+		<lon>-123.00596</lon>
+		<alt>0</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dothan Rgnl</name>
+		<lat>31.321339</lat>
+		<lon>-85.449628</lon>
+		<alt>401</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dalhart Muni</name>
+		<lat>36.022586</lat>
+		<lon>-102.547278</lon>
+		<alt>3991</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dickinson Theodore Roosevelt Regional Airport</name>
+		<lat>46.7975</lat>
+		<lon>-102.801944</lon>
+		<alt>2592</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>De Kalb Taylor Municipal Airport</name>
+		<lat>41.9338342</lat>
+		<lon>-88.7056864</lon>
+		<alt>914</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chautauqua County-Dunkirk Airport</name>
+		<lat>42.4933353</lat>
+		<lon>-79.2720417</lon>
+		<alt>693</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Knoxville Downtown Island Airport</name>
+		<lat>35.9638333</lat>
+		<lon>-83.8736667</lon>
+		<alt>833</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Laughlin Afb</name>
+		<lat>29.359486</lat>
+		<lon>-100.777975</lon>
+		<alt>1082</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dillingham</name>
+		<lat>59.044667</lat>
+		<lon>-158.5055</lon>
+		<alt>74</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Duluth Intl</name>
+		<lat>46.842091</lat>
+		<lon>-92.193649</lon>
+		<alt>1428</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Baraboo Wisconsin Dells Airport</name>
+		<lat>43.5217843</lat>
+		<lon>-89.7709266</lon>
+		<alt>979</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Davis Monthan Afb</name>
+		<lat>32.166467</lat>
+		<lon>-110.883144</lon>
+		<alt>2704</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Daniel Field Airport</name>
+		<lat>33.4665028</lat>
+		<lon>-82.0393808</lon>
+		<alt>423</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dalton Municipal Airport</name>
+		<lat>34.7229444</lat>
+		<lon>-84.87025</lon>
+		<alt>709</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Vermilion Regional</name>
+		<lat>40.1996944</lat>
+		<lon>-87.5955278</lon>
+		<alt>696</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dover Afb</name>
+		<lat>39.129539</lat>
+		<lon>-75.465958</lon>
+		<alt>28</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dupage</name>
+		<lat>41.907778</lat>
+		<lon>-88.248611</lon>
+		<alt>758</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Douglas Municipal Airport</name>
+		<lat>31.4767385</lat>
+		<lon>-82.8605664</lon>
+		<alt>257</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Deering Airport</name>
+		<lat>66.0696</lat>
+		<lon>-162.766</lon>
+		<alt>21</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Beauregard Rgnl</name>
+		<lat>30.831722</lat>
+		<lon>-93.339917</lon>
+		<alt>202</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Drummond Island Airport</name>
+		<lat>46.0093114</lat>
+		<lon>-83.7439342</lon>
+		<alt>668</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Durango La Plata Co</name>
+		<lat>37.151516</lat>
+		<lon>-107.75377</lon>
+		<alt>6685</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Del Rio Intl</name>
+		<lat>29.374208</lat>
+		<lon>-100.927158</lon>
+		<alt>1002</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Des Moines Intl</name>
+		<lat>41.533972</lat>
+		<lon>-93.663083</lon>
+		<alt>958</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Delta Municipal Airport</name>
+		<lat>39.3806386</lat>
+		<lon>-112.5077147</lon>
+		<alt>4759</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Destin</name>
+		<lat>30.4000611</lat>
+		<lon>-86.4714772</lon>
+		<alt>23</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Detroit Metro Wayne Co</name>
+		<lat>42.212444</lat>
+		<lon>-83.353389</lon>
+		<alt>645</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Halliburton Field Airport</name>
+		<lat>34.4713056</lat>
+		<lon>-97.9598611</lon>
+		<alt>1114</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bisbee Douglas Intl</name>
+		<lat>31.469028</lat>
+		<lon>-109.603667</lon>
+		<alt>4154</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>DuBois Regional Airport</name>
+		<lat>41.1783</lat>
+		<lon>-78.8987</lon>
+		<alt>1817</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Unalaska</name>
+		<lat>53.900139</lat>
+		<lon>-166.5435</lon>
+		<alt>22</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Devils Lake Regional Airport</name>
+		<lat>48.114444</lat>
+		<lon>-98.908611</lon>
+		<alt>1445</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Deer Valley Municipal Airport</name>
+		<lat>33.4117</lat>
+		<lon>112.457</lon>
+		<alt>1478</alt>
+		<tz>8</tz>
+		<tzone>Asia/Chongqing</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yolo County Airport</name>
+		<lat>38.5793889</lat>
+		<lon>-121.8569444</lon>
+		<alt>100</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>David Wayne Hooks Field</name>
+		<lat>30.063746</lat>
+		<lon>-95.554276</lon>
+		<alt>152</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Orlando</name>
+		<lat>28.398</lat>
+		<lon>-81.57</lon>
+		<alt>340</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Danbury Municipal Airport</name>
+		<lat>41.3715353</lat>
+		<lon>-73.4821906</lon>
+		<alt>458</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dyess Afb</name>
+		<lat>32.420756</lat>
+		<lon>-99.8546</lon>
+		<alt>1789</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wickenburg Municipal Airport</name>
+		<lat>33.96889877</lat>
+		<lon>-112.7990036</lon>
+		<alt>2377</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bagdad Airport</name>
+		<lat>34.5958528</lat>
+		<lon>-113.170195</lon>
+		<alt>4183</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ocean Ridge Airport</name>
+		<lat>38.8016111</lat>
+		<lon>-123.5306389</lon>
+		<alt>940</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gila Bend Municipal Airport</name>
+		<lat>32.960169</lat>
+		<lon>-112.673636</lon>
+		<alt>789</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chinle Municipal Airport</name>
+		<lat>36.1108806</lat>
+		<lon>-109.5754222</lon>
+		<alt>5547</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eagle Airport</name>
+		<lat>64.778056</lat>
+		<lon>-141.149722</lon>
+		<alt>908</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kearney Municipal Airport</name>
+		<lat>40.727</lat>
+		<lon>-99.0068</lon>
+		<alt>2131</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pangborn Field</name>
+		<lat>47.398</lat>
+		<lon>-120.206</lon>
+		<alt>1249</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chippewa Valley Regional Airport</name>
+		<lat>44.8658</lat>
+		<lon>-91.4843</lon>
+		<alt>913</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Iosco County</name>
+		<lat>44.311</lat>
+		<lon>-83.422</lon>
+		<alt>606</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elizabeth City Cgas Rgnl</name>
+		<lat>36.260581</lat>
+		<lon>-76.174572</lon>
+		<alt>12</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Panama City-NW Florida Bea.</name>
+		<lat>30.3417</lat>
+		<lon>-85.7973</lon>
+		<alt>69</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elmendorf Afb</name>
+		<lat>61.250986</lat>
+		<lon>-149.806503</lon>
+		<alt>212</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Edwards Afb</name>
+		<lat>34.905417</lat>
+		<lon>-117.883739</lon>
+		<alt>2302</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eek Airport</name>
+		<lat>60.213611</lat>
+		<lon>-162.043889</lon>
+		<alt>15</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dillant Hopkins Airport</name>
+		<lat>72.270833</lat>
+		<lon>42.898333</lon>
+		<alt>149</alt>
+		<tz>-5</tz>
+		<tzone>\N</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Shelby County Airport</name>
+		<lat>33.1777778</lat>
+		<lon>-86.7832222</lon>
+		<alt>586</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ellington Fld</name>
+		<lat>29.607333</lat>
+		<lon>-95.15875</lon>
+		<alt>32</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eagle County Airport</name>
+		<lat>39.6427611</lat>
+		<lon>-106.9159347</lon>
+		<alt>6548</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eagle Co Rgnl</name>
+		<lat>39.642556</lat>
+		<lon>-106.917694</lon>
+		<alt>6540</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wellington Municipal</name>
+		<lat>37.39411</lat>
+		<lon>-97.423225</lon>
+		<alt>1277</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eagle River</name>
+		<lat>45.932333</lat>
+		<lon>-89.268283</lon>
+		<alt>1642</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Egegik Airport</name>
+		<lat>58.185556</lat>
+		<lon>-157.375556</lon>
+		<alt>92</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cape Newenham Lrrs</name>
+		<lat>58.646428</lat>
+		<lon>-162.062778</lon>
+		<alt>541</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eielson Afb</name>
+		<lat>64.665667</lat>
+		<lon>-147.1015</lon>
+		<alt>548</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elkhart Municipal</name>
+		<lat>41.719444</lat>
+		<lon>-86.003333</lon>
+		<alt>778</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elkins Randolph Co Jennings Randolph</name>
+		<lat>38.889444</lat>
+		<lon>-79.857139</lon>
+		<alt>1987</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elko Regional Airport</name>
+		<lat>40.8249</lat>
+		<lon>-115.792</lon>
+		<alt>5140</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bessemer</name>
+		<lat>33.1876</lat>
+		<lon>-86.5558</lon>
+		<alt>700</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>South Arkansas Rgnl At Goodwin Fld</name>
+		<lat>33.220972</lat>
+		<lon>-92.813278</lon>
+		<alt>277</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elim Airport</name>
+		<lat>64.615</lat>
+		<lon>-162.270556</lon>
+		<alt>162</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elmira Corning Rgnl</name>
+		<lat>42.159889</lat>
+		<lon>-76.891611</lon>
+		<alt>954</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>El Paso Intl</name>
+		<lat>31.80725</lat>
+		<lon>-106.377583</lon>
+		<alt>3958</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Elfin Cove Seaplane Base</name>
+		<lat>58.195278</lat>
+		<lon>-136.3475</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ely Airport</name>
+		<lat>39.299722</lat>
+		<lon>-114.841944</lon>
+		<alt>6259</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Emmonak Airport</name>
+		<lat>62.786111</lat>
+		<lon>-164.490833</lon>
+		<alt>13</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Emporia Municipal Airport</name>
+		<lat>38.3321</lat>
+		<lon>-96.1912</lon>
+		<alt>1208</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kenai Muni</name>
+		<lat>60.573111</lat>
+		<lon>-151.245</lon>
+		<alt>99</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Vance Afb</name>
+		<lat>36.339167</lat>
+		<lon>-97.9165</lon>
+		<alt>1307</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wendover</name>
+		<lat>40.718694</lat>
+		<lon>-114.030889</lon>
+		<alt>4237</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kenosha Regional Airport</name>
+		<lat>42.5956944</lat>
+		<lon>-87.9278056</lon>
+		<alt>742</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Keokuk Municipal Airport</name>
+		<lat>40.4599078</lat>
+		<lon>-91.4285011</lon>
+		<alt>671</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eastport Municipal Airport</name>
+		<lat>44.9101111</lat>
+		<lon>-67.0126944</lon>
+		<alt>45</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Monroe Reqional Airport</name>
+		<lat>35.01833</lat>
+		<lon>-80.62001</lon>
+		<alt>679</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Erie Intl Tom Ridge Fld</name>
+		<lat>42.082022</lat>
+		<lon>-80.176217</lon>
+		<alt>733</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kerrville Municipal Airport</name>
+		<lat>29.9766667</lat>
+		<lon>-99.0854722</lon>
+		<alt>1617</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Luce County Airport</name>
+		<lat>46.311199</lat>
+		<lon>-85.457298</lon>
+		<alt>869</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Delta County Airport</name>
+		<lat>45.722778</lat>
+		<lon>-87.093611</lon>
+		<alt>609</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Orcas Island Airport</name>
+		<lat>48.708056</lat>
+		<lon>-122.910556</lon>
+		<alt>31</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Esler Rgnl</name>
+		<lat>31.394903</lat>
+		<lon>-92.295772</lon>
+		<alt>112</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Easton-Newnam Field Airport</name>
+		<lat>38.8041667</lat>
+		<lon>-76.069</lon>
+		<alt>72</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Weedon Field</name>
+		<lat>31.5708</lat>
+		<lon>-85.0774</lon>
+		<alt>285</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mahlon Sweet Fld</name>
+		<lat>44.124583</lat>
+		<lon>-123.211972</lon>
+		<alt>374</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Evansville Regional</name>
+		<lat>38.036997</lat>
+		<lon>-87.532364</lon>
+		<alt>418</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Evanston-Uinta CO Burns Fld</name>
+		<lat>41.1649</lat>
+		<lon>-111.0208</lon>
+		<alt>7143</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>New Bedford Regional Airport</name>
+		<lat>41.6761</lat>
+		<lon>-70.9569</lon>
+		<alt>80</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Newton City-County Airport</name>
+		<lat>38.0570785</lat>
+		<lon>-97.2752278</lon>
+		<alt>1533</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Craven Co Rgnl</name>
+		<lat>35.072972</lat>
+		<lon>-77.042944</lon>
+		<alt>18</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Newark Liberty Intl</name>
+		<lat>40.6925</lat>
+		<lon>-74.168667</lon>
+		<alt>18</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Excursion Inlet Seaplane Base</name>
+		<lat>58.420556</lat>
+		<lon>-135.449167</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Key West Intl</name>
+		<lat>24.556111</lat>
+		<lon>-81.759556</lon>
+		<alt>3</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Seaplane Base</name>
+		<lat>28.0575</lat>
+		<lon>-81.7628056</lon>
+		<alt>140</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Felker Aaf</name>
+		<lat>37.1325</lat>
+		<lon>-76.608841</lon>
+		<alt>12</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fairbanks Intl</name>
+		<lat>64.815114</lat>
+		<lon>-147.856267</lon>
+		<alt>434</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hector International Airport</name>
+		<lat>46.92065</lat>
+		<lon>-96.8157639</lon>
+		<alt>902</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fresno Yosemite Intl</name>
+		<lat>36.776194</lat>
+		<lon>-119.71814</lon>
+		<alt>336</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fayetteville Regional Grannis Field</name>
+		<lat>34.9912</lat>
+		<lon>-78.8803</lon>
+		<alt>189</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fredericksburg Amtrak Station</name>
+		<lat>38.298416</lat>
+		<lon>-77.456875</lon>
+		<alt>130</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ladd Aaf</name>
+		<lat>64.8375</lat>
+		<lon>-147.614444</lon>
+		<alt>454</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Bridger</name>
+		<lat>41.236</lat>
+		<lon>-110.2436</lon>
+		<alt>7038</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Friday Harbor Seaplane Base</name>
+		<lat>48.537222</lat>
+		<lon>-123.009722</lon>
+		<alt>0</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Glacier Park Intl</name>
+		<lat>48.310472</lat>
+		<lon>-114.256</lon>
+		<alt>2977</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Flying Cloud Airport</name>
+		<lat>44.4938</lat>
+		<lon>-93.2726</lon>
+		<alt>906</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Butts Aaf</name>
+		<lat>38.678394</lat>
+		<lon>-104.756581</lon>
+		<alt>5838</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fairfield County Airport</name>
+		<lat>34.315472</lat>
+		<lon>-81.108806</lon>
+		<alt>577</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Findlay Airport</name>
+		<lat>41.0120278</lat>
+		<lon>-83.6686111</lon>
+		<alt>819</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>First Flight Airport</name>
+		<lat>36.02</lat>
+		<lon>-75.67</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Atlanta Regional Airport - Falcon Field</name>
+		<lat>33.35725</lat>
+		<lon>-84.5718333</lon>
+		<alt>808</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wright Patterson Afb</name>
+		<lat>39.826111</lat>
+		<lon>-84.048332</lon>
+		<alt>823</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Capital City Airport</name>
+		<lat>38.1819722</lat>
+		<lon>-84.9061389</lon>
+		<alt>812</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mesa Falcon Field</name>
+		<lat>33.4608001708984</lat>
+		<lon>-111.727996826172</lon>
+		<alt>1394</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sierra Vista Muni Libby Aaf</name>
+		<lat>31.588472</lat>
+		<lon>-110.344389</lon>
+		<alt>4719</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fitchburg Municipal Airport</name>
+		<lat>42.5541111</lat>
+		<lon>-71.7589722</lon>
+		<alt>348</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Franklin</name>
+		<lat>41.377874</lat>
+		<lon>-79.860362</lon>
+		<alt>1540</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fond Du Lac County Airport</name>
+		<lat>43.7711667</lat>
+		<lon>-88.4884167</lon>
+		<alt>808</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Flagstaff Pulliam Airport</name>
+		<lat>35.140318</lat>
+		<lon>-111.6692392</lon>
+		<alt>7015</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Lauderdale Hollywood Intl</name>
+		<lat>26.072583</lat>
+		<lon>-80.15275</lon>
+		<alt>9</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Florence Rgnl</name>
+		<lat>34.185361</lat>
+		<lon>-79.723889</lon>
+		<alt>146</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sherman Aaf</name>
+		<lat>39.368332</lat>
+		<lon>-94.914686</lon>
+		<alt>772</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tipton</name>
+		<lat>39.085386</lat>
+		<lon>-76.759414</lon>
+		<alt>150</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Otis Angb</name>
+		<lat>41.658439</lat>
+		<lon>-70.521417</lon>
+		<alt>131</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Four Corners Rgnl</name>
+		<lat>36.74125</lat>
+		<lon>-108.229944</lon>
+		<alt>5506</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Page Fld</name>
+		<lat>26.586611</lat>
+		<lon>-81.86325</lon>
+		<alt>17</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Collins Loveland Muni</name>
+		<lat>40.451828</lat>
+		<lon>-105.011336</lon>
+		<alt>5016</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Funter Bay Seaplane Base</name>
+		<lat>58.254444</lat>
+		<lon>-134.897778</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bishop International</name>
+		<lat>42.965424</lat>
+		<lon>-83.743629</lon>
+		<alt>782</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Dodge Rgnl</name>
+		<lat>42.5512</lat>
+		<lon>-94.191842</lon>
+		<alt>1157</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Forbes Fld</name>
+		<lat>38.950944</lat>
+		<lon>-95.663611</lon>
+		<alt>1078</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Francis S Gabreski</name>
+		<lat>40.843656</lat>
+		<lon>-72.631789</lon>
+		<alt>67</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Friday Harbor Airport</name>
+		<lat>48.521944</lat>
+		<lon>-123.024444</lon>
+		<alt>113</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marshall Aaf</name>
+		<lat>39.055275</lat>
+		<lon>-96.764453</lon>
+		<alt>1063</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bryant Ahp</name>
+		<lat>61.266381</lat>
+		<lon>-149.653119</lon>
+		<alt>378</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>St Lucie County International Airport</name>
+		<lat>27.497472</lat>
+		<lon>-80.372638</lon>
+		<alt>23</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sioux Falls</name>
+		<lat>43.582014</lat>
+		<lon>-96.741914</lon>
+		<alt>1429</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Henry Post Aaf</name>
+		<lat>34.649833</lat>
+		<lon>-98.402167</lon>
+		<alt>1189</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Smith Rgnl</name>
+		<lat>35.336583</lat>
+		<lon>-94.367444</lon>
+		<alt>469</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Stockton Pecos Co</name>
+		<lat>30.915667</lat>
+		<lon>-102.916139</lon>
+		<alt>3011</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Godman Aaf</name>
+		<lat>37.907058</lat>
+		<lon>-85.972106</lon>
+		<alt>756</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Worth Meacham Intl</name>
+		<lat>32.819778</lat>
+		<lon>-97.362444</lon>
+		<alt>710</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fulton County Airport Brown Field</name>
+		<lat>33.7791</lat>
+		<lon>-84.5214</lon>
+		<alt>841</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fullerton Municipal Airport</name>
+		<lat>33.521925</lat>
+		<lon>-117.584722</lon>
+		<alt>96</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Wayne</name>
+		<lat>40.978472</lat>
+		<lon>-85.195139</lon>
+		<alt>815</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Lauderdale Executive</name>
+		<lat>26.197281</lat>
+		<lon>-80.170706</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fort Yukon</name>
+		<lat>66.571492</lat>
+		<lon>-145.250417</lon>
+		<alt>433</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Drake Fld</name>
+		<lat>36.005094</lat>
+		<lon>-94.170059</lon>
+		<alt>1251</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fitzgerald Municipal Airport</name>
+		<lat>31.6839046</lat>
+		<lon>-83.2709036</lon>
+		<alt>365</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fostoria Metropolitan Airport</name>
+		<lat>41.1908333</lat>
+		<lon>-83.3930833</lon>
+		<alt>752</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Northeast Alabama Regional Airport</name>
+		<lat>33.9726489</lat>
+		<lon>-86.0890834</lon>
+		<alt>569</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Montgomery County Airpark</name>
+		<lat>39.1006</lat>
+		<lon>-77.09576</lon>
+		<alt>0</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Edward G Pitka Sr</name>
+		<lat>64.736178</lat>
+		<lon>-156.937417</lon>
+		<alt>152</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gambell Airport</name>
+		<lat>63.7668</lat>
+		<lon>-171.733</lon>
+		<alt>27</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Great Bend Municipal</name>
+		<lat>38.344167</lat>
+		<lon>-98.859167</lon>
+		<alt>1887</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gillette-Campbell County Airport</name>
+		<lat>44.3489167</lat>
+		<lon>-105.5393611</lon>
+		<alt>4365</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Garden City Rgnl</name>
+		<lat>37.927528</lat>
+		<lon>-100.724417</lon>
+		<alt>2891</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Canyon National Park Airport</name>
+		<lat>35.9523611</lat>
+		<lon>-112.1469722</lon>
+		<alt>6609</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Canyon West Airport</name>
+		<lat>35.5925</lat>
+		<lon>-113.4859</lon>
+		<alt>4825</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dawson Community Airport</name>
+		<lat>47.138611</lat>
+		<lon>-104.807222</lon>
+		<alt>749</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gladwin Zettel Memorial Airport</name>
+		<lat>43.9705893</lat>
+		<lon>-84.47502</lon>
+		<alt>774</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sussex Co</name>
+		<lat>38.689194</lat>
+		<lon>-75.358889</lon>
+		<alt>50</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Spokane Intl</name>
+		<lat>47.619861</lat>
+		<lon>-117.533833</lon>
+		<alt>2376</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Glendale Municipal Airport</name>
+		<lat>33.5269167</lat>
+		<lon>-112.2951389</lon>
+		<alt>1071</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Forks Intl</name>
+		<lat>47.949256</lat>
+		<lon>-97.176111</lon>
+		<alt>845</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Floyd Bennett Memorial Airport</name>
+		<lat>43.341222</lat>
+		<lon>-73.610305</lon>
+		<alt>328</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Georgetown County Airport</name>
+		<lat>33.3114018</lat>
+		<lon>-79.3203139</lon>
+		<alt>40</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>East Texas Rgnl</name>
+		<lat>32.384014</lat>
+		<lon>-94.711486</lon>
+		<alt>365</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wokal Field Glasgow International Airport</name>
+		<lat>48.2125</lat>
+		<lon>-106.615</lon>
+		<alt>2296</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marshfield Municipal Airport</name>
+		<lat>42.09825</lat>
+		<lon>-70.6721389</lon>
+		<alt>9</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gilbert Airport</name>
+		<lat>28.062778</lat>
+		<lon>-81.753333</lon>
+		<alt>145</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Junction Regional</name>
+		<lat>39.122413</lat>
+		<lon>-108.526735</lon>
+		<alt>4858</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gulkana</name>
+		<lat>62.154888</lat>
+		<lon>-145.456639</lon>
+		<alt>1580</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Arlington Municipal</name>
+		<lat>32.6638611</lat>
+		<lon>-97.0942778</lon>
+		<alt>628</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Renner Fld</name>
+		<lat>39.370621</lat>
+		<lon>-101.698992</lon>
+		<alt>3656</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mid Delta Regional Airport</name>
+		<lat>33.4829</lat>
+		<lon>-90.9856</lon>
+		<alt>131</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Scholes Intl At Galveston</name>
+		<lat>29.265322</lat>
+		<lon>-94.860406</lon>
+		<alt>6</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Golovin Airport</name>
+		<lat>64.550556</lat>
+		<lon>-163.007222</lon>
+		<alt>59</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grants Milan Muni</name>
+		<lat>35.167286</lat>
+		<lon>-107.901989</lon>
+		<alt>6537</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Goodnews Airport</name>
+		<lat>59.1175</lat>
+		<lon>-161.5775</lon>
+		<alt>15</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gainesville Rgnl</name>
+		<lat>29.690056</lat>
+		<lon>-82.271778</lon>
+		<alt>152</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Groton New London</name>
+		<lat>41.330056</lat>
+		<lon>-72.045139</lon>
+		<alt>9</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gulfport-Biloxi</name>
+		<lat>30.407278</lat>
+		<lon>-89.070111</lon>
+		<alt>28</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Rapids Itasca County</name>
+		<lat>47.211111</lat>
+		<lon>-93.509722</lon>
+		<alt>413</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Galion Municipal Airport</name>
+		<lat>40.7533889</lat>
+		<lon>-82.7238056</lon>
+		<alt>1224</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Austin Straubel Intl</name>
+		<lat>44.485072</lat>
+		<lon>-88.129589</lon>
+		<alt>695</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gray Aaf</name>
+		<lat>47.079217</lat>
+		<lon>-122.580783</lon>
+		<alt>302</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Central Nebraska Regional Airport</name>
+		<lat>40.9675</lat>
+		<lon>-98.3096</lon>
+		<alt>1847</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Robert Gray Aaf</name>
+		<lat>31.06725</lat>
+		<lon>-97.828917</lon>
+		<alt>1015</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Marais Cook County Airport</name>
+		<lat>47.8383333</lat>
+		<lon>-90.3829444</lon>
+		<alt>1799</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gerald R Ford Intl</name>
+		<lat>42.880833</lat>
+		<lon>-85.522806</lon>
+		<alt>794</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Seymour Johnson Afb</name>
+		<lat>35.339383</lat>
+		<lon>-77.960589</lon>
+		<alt>110</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Piedmont Triad</name>
+		<lat>36.09775</lat>
+		<lon>-79.937306</lon>
+		<alt>925</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greenville-Spartanburg International</name>
+		<lat>34.895556</lat>
+		<lon>-82.218889</lon>
+		<alt>964</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gustavus Airport</name>
+		<lat>58.4253</lat>
+		<lon>-135.707</lon>
+		<alt>34</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wheeler Sack Aaf</name>
+		<lat>44.055619</lat>
+		<lon>-75.719458</lon>
+		<alt>690</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Great Falls Intl</name>
+		<lat>47.482</lat>
+		<lon>-111.370689</lon>
+		<alt>3677</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Golden Triangle Regional Airport</name>
+		<lat>33.450333</lat>
+		<lon>-88.591361</lon>
+		<alt>264</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Georgetown Municipal Airport</name>
+		<lat>30.678809</lat>
+		<lon>-97.6793837</lon>
+		<alt>790</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gunnison - Crested Butte</name>
+		<lat>38.533889</lat>
+		<lon>-106.933056</lon>
+		<alt>7678</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gallup Muni</name>
+		<lat>35.511058</lat>
+		<lon>-108.789308</lon>
+		<alt>6472</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grissom Arb</name>
+		<lat>40.648094</lat>
+		<lon>-86.152119</lon>
+		<alt>812</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lee Gilmer Memorial Airport</name>
+		<lat>34.272627</lat>
+		<lon>-83.8302233</lon>
+		<alt>1276</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Genesee County Airport</name>
+		<lat>43.03175</lat>
+		<lon>-78.1696667</lon>
+		<alt>914</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Majors</name>
+		<lat>33.067839</lat>
+		<lon>-96.065333</lon>
+		<alt>535</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greenwood Leflore</name>
+		<lat>33.494328</lat>
+		<lon>-90.084706</lon>
+		<alt>162</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gary Chicago International Airport</name>
+		<lat>41.6163</lat>
+		<lon>-87.4128</lon>
+		<alt>591</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hattiesburg Bobby L. Chain Municipal Airport</name>
+		<lat>31.2649444</lat>
+		<lon>-89.2528889</lon>
+		<alt>151</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hobart Muni</name>
+		<lat>34.991308</lat>
+		<lon>-99.051353</lon>
+		<alt>1564</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Columbia County</name>
+		<lat>42.2913</lat>
+		<lon>-73.7103</lon>
+		<alt>198</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Holy Cross Airport</name>
+		<lat>62.1883</lat>
+		<lon>-159.775</lon>
+		<alt>70</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dillingham</name>
+		<lat>21.579475</lat>
+		<lon>-158.197281</lon>
+		<alt>14</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hardwick Field Airport</name>
+		<lat>35.2199994</lat>
+		<lon>-84.832369</lon>
+		<alt>874</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yampa Valley</name>
+		<lat>40.481181</lat>
+		<lon>-107.21766</lon>
+		<alt>6602</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hondo Municipal Airport</name>
+		<lat>29.3591</lat>
+		<lon>-99.1775</lon>
+		<alt>930</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hartford Brainard</name>
+		<lat>41.736722</lat>
+		<lon>-72.649444</lon>
+		<alt>18</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hagerstown Regional Richard A Henson Field</name>
+		<lat>39.7079</lat>
+		<lon>-77.7295</lon>
+		<alt>704</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hilton Head</name>
+		<lat>32.216</lat>
+		<lon>-80.752</lon>
+		<alt>10</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wheeler Aaf</name>
+		<lat>21.4835</lat>
+		<lon>-158.039667</lon>
+		<alt>837</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jack Northrop Fld Hawthorne Muni</name>
+		<lat>33.922839</lat>
+		<lon>-118.335186</lon>
+		<alt>66</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chisholm Hibbing</name>
+		<lat>47.3866</lat>
+		<lon>-92.838994</lon>
+		<alt>1353</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hill Afb</name>
+		<lat>41.123939</lat>
+		<lon>-111.973039</lon>
+		<alt>4789</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lake Havasu City Airport</name>
+		<lat>34.5711111</lat>
+		<lon>-114.3582778</lon>
+		<alt>783</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Portland Hillsboro</name>
+		<lat>45.540394</lat>
+		<lon>-122.949825</lon>
+		<alt>204</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Healy River Airport</name>
+		<lat>63.8675</lat>
+		<lon>-148.968889</lon>
+		<alt>1263</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hickory Rgnl</name>
+		<lat>35.741147</lat>
+		<lon>-81.38955</lon>
+		<alt>1189</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wheeling Ohio County Airport</name>
+		<lat>40.175</lat>
+		<lon>-80.6463</lon>
+		<alt>1195</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Helena Rgnl</name>
+		<lat>46.606806</lat>
+		<lon>-111.98275</lon>
+		<alt>3877</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hood Aaf</name>
+		<lat>31.138731</lat>
+		<lon>-97.714469</lon>
+		<alt>924</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Holloman Afb</name>
+		<lat>32.852519</lat>
+		<lon>-106.106525</lon>
+		<alt>4093</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hoonah Airport</name>
+		<lat>58.096111</lat>
+		<lon>-135.409722</lon>
+		<alt>19</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Honolulu Intl</name>
+		<lat>21.318681</lat>
+		<lon>-157.922428</lon>
+		<alt>13</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hana</name>
+		<lat>20.795636</lat>
+		<lon>-156.014439</lon>
+		<alt>78</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Haines Airport</name>
+		<lat>59.2438</lat>
+		<lon>-135.524</lon>
+		<alt>15</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lea Co Rgnl</name>
+		<lat>32.687528</lat>
+		<lon>-103.217028</lon>
+		<alt>3661</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Homer</name>
+		<lat>59.645556</lat>
+		<lon>-151.476583</lon>
+		<alt>84</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Huron Rgnl</name>
+		<lat>44.3852</lat>
+		<lon>-98.228542</lon>
+		<alt>1289</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Campbell Aaf</name>
+		<lat>36.668567</lat>
+		<lon>-87.496183</lon>
+		<alt>573</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Memorial Field</name>
+		<lat>34.478</lat>
+		<lon>-93.0962</lon>
+		<alt>540</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>William P Hobby</name>
+		<lat>29.645419</lat>
+		<lon>-95.278889</lon>
+		<alt>46</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hooper Bay Airport</name>
+		<lat>61.5239</lat>
+		<lon>-166.147</lon>
+		<alt>7</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Westchester Co</name>
+		<lat>41.066959</lat>
+		<lon>-73.707575</lon>
+		<alt>439</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bowerman Field</name>
+		<lat>46.9711944</lat>
+		<lon>-123.9365556</lon>
+		<alt>18</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McDuffie County Airport</name>
+		<lat>33.5297315</lat>
+		<lon>-82.5169509</lon>
+		<alt>501</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Valley Intl</name>
+		<lat>26.2285</lat>
+		<lon>-97.654389</lon>
+		<alt>36</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Boone Co</name>
+		<lat>36.261519</lat>
+		<lon>-93.154728</lon>
+		<alt>1365</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hurlburt Fld</name>
+		<lat>30.427803</lat>
+		<lon>-86.689278</lon>
+		<alt>38</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Henderson Executive Airport</name>
+		<lat>35.972778</lat>
+		<lon>-115.134444</lon>
+		<alt>1881</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Huslia Airport</name>
+		<lat>65.697778</lat>
+		<lon>-156.351389</lon>
+		<alt>213</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Homestead Arb</name>
+		<lat>25.48855</lat>
+		<lon>-80.383567</lon>
+		<alt>6</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Huntsville International Airport-Carl T Jones Field</name>
+		<lat>34.6371944</lat>
+		<lon>-86.7750556</lon>
+		<alt>629</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Roscommon Co</name>
+		<lat>44.359806</lat>
+		<lon>-84.671112</lon>
+		<alt>1150</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tri State Milton J Ferguson Field</name>
+		<lat>38.3667</lat>
+		<lon>-82.558</lon>
+		<alt>828</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Redstone Aaf</name>
+		<lat>34.678653</lat>
+		<lon>-86.684781</lon>
+		<alt>685</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Terre Haute Intl Hulman Fld</name>
+		<lat>39.451464</lat>
+		<lon>-87.307561</lon>
+		<alt>589</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Houlton Intl</name>
+		<lat>46.123083</lat>
+		<lon>-67.792056</lon>
+		<alt>489</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hughes Airport</name>
+		<lat>66.039167</lat>
+		<lon>-154.264722</lon>
+		<alt>299</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hutchinson Municipal Airport</name>
+		<lat>38.0655</lat>
+		<lon>-97.8606</lon>
+		<alt>1543</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tweed-New Haven Airport</name>
+		<lat>41.26375</lat>
+		<lon>-72.886806</lon>
+		<alt>14</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Havre City Co</name>
+		<lat>48.542983</lat>
+		<lon>-109.762342</lon>
+		<alt>2590</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hayward Executive Airport</name>
+		<lat>37.6588888888889</lat>
+		<lon>-122.121666666667</lon>
+		<alt>52</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>North Perry</name>
+		<lat>26.001222</lat>
+		<lon>-80.240722</lon>
+		<alt>8</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hilton Head Airport</name>
+		<lat>32.2243611</lat>
+		<lon>-80.6974722</lon>
+		<alt>19</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Barnstable Muni Boardman Polando Fld</name>
+		<lat>41.669336</lat>
+		<lon>-70.280356</lon>
+		<alt>55</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hydaburg Seaplane Base</name>
+		<lat>55.206389</lat>
+		<lon>-132.828333</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hollis Seaplane Base</name>
+		<lat>55.481667</lat>
+		<lon>-132.646111</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hays Regional Airport</name>
+		<lat>38.8422</lat>
+		<lon>-99.2732</lon>
+		<alt>1998</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hazleton Municipal</name>
+		<lat>40.989167</lat>
+		<lon>-76.0025</lon>
+		<alt>1603</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Connell Afb</name>
+		<lat>37.621853</lat>
+		<lon>-97.268192</lon>
+		<alt>1371</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Washington Dulles Intl</name>
+		<lat>38.944533</lat>
+		<lon>-77.455811</lon>
+		<alt>313</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Niagara Falls Intl</name>
+		<lat>43.107333</lat>
+		<lon>-78.946194</lon>
+		<alt>589</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>George Bush Intercontinental</name>
+		<lat>29.984433</lat>
+		<lon>-95.341442</lon>
+		<alt>97</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bob Baker Memorial Airport</name>
+		<lat>66.975833</lat>
+		<lon>-160.436667</lon>
+		<alt>166</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wichita Mid Continent</name>
+		<lat>37.649944</lat>
+		<lon>-97.433056</lon>
+		<alt>1333</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Icy Bay Airport</name>
+		<lat>59.968889</lat>
+		<lon>-141.661667</lon>
+		<alt>50</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Idaho Falls Rgnl</name>
+		<lat>43.514556</lat>
+		<lon>-112.07075</lon>
+		<alt>4744</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Idlewild Intl</name>
+		<lat>40.639751</lat>
+		<lon>-73.778924</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Laughlin-Bullhead Intl</name>
+		<lat>35.1574</lat>
+		<lon>-114.56</lon>
+		<alt>695</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Igiugig Airport</name>
+		<lat>59.324</lat>
+		<lon>-155.902</lon>
+		<alt>90</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kingman Airport</name>
+		<lat>35.2595</lat>
+		<lon>-113.938</lon>
+		<alt>3449</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lansing Municipal</name>
+		<lat>41.5349167</lat>
+		<lon>-87.5295278</lon>
+		<alt>620</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Windham Airport</name>
+		<lat>41.7440278</lat>
+		<lon>-72.1802222</lon>
+		<alt>246</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greater Kankakee</name>
+		<lat>41.071389</lat>
+		<lon>-87.846278</lon>
+		<alt>630</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nikolski Air Station</name>
+		<lat>52.941667</lat>
+		<lon>-168.848889</lon>
+		<alt>77</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kirtland Air Force Base</name>
+		<lat>35.040222</lat>
+		<lon>-106.609194</lon>
+		<alt>5355</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ankeny Regl Airport</name>
+		<lat>41.691389</lat>
+		<lon>-93.566389</lon>
+		<alt>910</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>New Castle</name>
+		<lat>39.678722</lat>
+		<lon>-75.606528</lon>
+		<alt>79</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Iliamna</name>
+		<lat>59.754356</lat>
+		<lon>-154.910961</lon>
+		<alt>186</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wilmington Intl</name>
+		<lat>34.270615</lat>
+		<lon>-77.902569</lon>
+		<alt>32</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wilmington Airborne Airpark</name>
+		<lat>39.42792</lat>
+		<lon>-83.792118</lon>
+		<alt>1077</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Immokalee</name>
+		<lat>26.433889</lat>
+		<lon>-81.401389</lon>
+		<alt>37</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ford Airport</name>
+		<lat>45.8183611</lat>
+		<lon>-88.1145556</lon>
+		<alt>1182</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Indianapolis Intl</name>
+		<lat>39.717331</lat>
+		<lon>-86.294383</lon>
+		<alt>797</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hillsboro Muni</name>
+		<lat>32.083486</lat>
+		<lon>-97.097228</lon>
+		<alt>685</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Winkler Co</name>
+		<lat>31.779628</lat>
+		<lon>-103.201361</lon>
+		<alt>2822</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Falls Intl</name>
+		<lat>48.566186</lat>
+		<lon>-93.403067</lon>
+		<alt>1185</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Creech Afb</name>
+		<lat>36.587183</lat>
+		<lon>-115.673353</lon>
+		<alt>3133</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Smith Reynolds</name>
+		<lat>36.133722</lat>
+		<lon>-80.222</lon>
+		<alt>969</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Winslow-Lindbergh Regional Airport</name>
+		<lat>35.0219167</lat>
+		<lon>-110.7225278</lon>
+		<alt>4941</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Iowa City Municipal Airport</name>
+		<lat>41.639244</lat>
+		<lon>-91.546503</lon>
+		<alt>668</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Imperial Co</name>
+		<lat>32.834219</lat>
+		<lon>-115.578744</lon>
+		<alt>-54</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Williamsport Rgnl</name>
+		<lat>41.241836</lat>
+		<lon>-76.921094</lon>
+		<alt>529</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Circle City Airport</name>
+		<lat>65.827778</lat>
+		<lon>-144.076111</lon>
+		<alt>613</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kirksville Regional Airport</name>
+		<lat>40.0935</lat>
+		<lon>-92.5449</lon>
+		<alt>966</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kissimmee Gateway Airport</name>
+		<lat>28.289806</lat>
+		<lon>-81.437083</lon>
+		<alt>82</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sloulin Fld Intl</name>
+		<lat>48.177939</lat>
+		<lon>-103.642347</lon>
+		<alt>1982</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kinston Regional Jetport</name>
+		<lat>35.331389</lat>
+		<lon>-77.608889</lon>
+		<alt>94</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Long Island Mac Arthur</name>
+		<lat>40.79525</lat>
+		<lon>-73.100222</lon>
+		<alt>99</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Alexander Field South Wood County Airport</name>
+		<lat>44.3606456</lat>
+		<lon>-89.8381412</lon>
+		<alt>1021</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ithaca Tompkins Rgnl</name>
+		<lat>42.491028</lat>
+		<lon>-76.458444</lon>
+		<alt>1099</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Hilo Intl</name>
+		<lat>19.721375</lat>
+		<lon>-155.048469</lon>
+		<alt>38</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gogebic Iron County Airport</name>
+		<lat>46.5274747</lat>
+		<lon>-90.1313967</lon>
+		<alt>1230</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>West Houston</name>
+		<lat>29.818194</lat>
+		<lon>-95.672611</lon>
+		<alt>111</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Inyokern Airport</name>
+		<lat>35.658889</lat>
+		<lon>-117.829444</lon>
+		<alt>2455</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eastern Slopes Regional</name>
+		<lat>43.9911389</lat>
+		<lon>-70.9478889</lon>
+		<alt>455</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jackson Hole Airport</name>
+		<lat>43.607333333</lat>
+		<lon>-110.73775</lon>
+		<alt>6451</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jackson Evers Intl</name>
+		<lat>32.311167</lat>
+		<lon>-90.075889</lon>
+		<alt>346</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jacksonville Intl</name>
+		<lat>30.494056</lat>
+		<lon>-81.687861</lon>
+		<alt>30</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jonesboro Muni</name>
+		<lat>35.831708</lat>
+		<lon>-90.646417</lon>
+		<alt>262</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>New Century AirCenter Airport</name>
+		<lat>38.8309167</lat>
+		<lon>-94.8903056</lon>
+		<alt>1087</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jefferson City Memorial Airport</name>
+		<lat>38.5912</lat>
+		<lon>-92.1561</lon>
+		<alt>549</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jesup-Wayne County Airport</name>
+		<lat>31.553889</lat>
+		<lon>-81.8825</lon>
+		<alt>107</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>John F Kennedy Intl</name>
+		<lat>40.639751</lat>
+		<lon>-73.778925</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grand Canyon Heliport</name>
+		<lat>35.96666666</lat>
+		<lon>-112.13333333</lon>
+		<alt>2500</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kapalua</name>
+		<lat>20.962936</lat>
+		<lon>-156.673031</lon>
+		<alt>256</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chautauqua County-Jamestown</name>
+		<lat>42.153333</lat>
+		<lon>-79.258056</lon>
+		<alt>525</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jack Edwards Airport</name>
+		<lat>30.2896389</lat>
+		<lon>-87.6717778</lon>
+		<alt>17</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Joplin Rgnl</name>
+		<lat>37.151814</lat>
+		<lon>-94.498269</lon>
+		<alt>981</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jamestown Regional Airport</name>
+		<lat>46.9297</lat>
+		<lon>-98.6782</lon>
+		<alt>1498</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Juneau Intl</name>
+		<lat>58.354972</lat>
+		<lon>-134.576278</lon>
+		<alt>21</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Regional Airport</name>
+		<lat>41.517778</lat>
+		<lon>-88.175556</lon>
+		<alt>582</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>West 30th St. Heliport</name>
+		<lat>40.7545</lat>
+		<lon>-74.0071</lon>
+		<alt>7</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wall Street Heliport</name>
+		<lat>40.701214</lat>
+		<lon>-74.009028</lon>
+		<alt>7</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>John Murtha Johnstown-Cambria County Airport</name>
+		<lat>40.316111</lat>
+		<lon>-78.833889</lon>
+		<alt>2284</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Southern Wisconsin Regional Airport</name>
+		<lat>42.62025</lat>
+		<lon>-89.0415556</lon>
+		<alt>808</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Reynolds Field</name>
+		<lat>42.260556</lat>
+		<lon>-84.460556</lon>
+		<alt>1001</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Plantation Airpark</name>
+		<lat>32.6452778</lat>
+		<lon>-81.5971111</lon>
+		<alt>188</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Leesburg Executive Airport</name>
+		<lat>39.078</lat>
+		<lon>-77.558</lon>
+		<alt>389</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pickens County Airport</name>
+		<lat>34.4534722</lat>
+		<lon>-84.4572222</lon>
+		<alt>1535</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Wainwright As</name>
+		<lat>70.613378</lat>
+		<lon>-159.86035</lon>
+		<alt>35</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Burrello-Mechanicville Airport</name>
+		<lat>42.893133</lat>
+		<lon>-73.66845</lon>
+		<alt>195</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sabetha Municipal</name>
+		<lat>39.5425</lat>
+		<lon>-95.4677</lon>
+		<alt>1330</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kake Seaplane Base</name>
+		<lat>56.973056</lat>
+		<lon>-133.945556</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kaltag Airport</name>
+		<lat>64.3191</lat>
+		<lon>-158.741</lon>
+		<alt>187</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Birch Creek Airport</name>
+		<lat>66.256708</lat>
+		<lon>-145.815319</lon>
+		<alt>450</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chignik Bay Seaplane Base</name>
+		<lat>56.295556</lat>
+		<lon>-158.401398</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Coffman Cove Seaplane Base</name>
+		<lat>56.014722</lat>
+		<lon>-132.833889</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chignik Lagoon Airport</name>
+		<lat>56.311111</lat>
+		<lon>-158.534167</lon>
+		<alt>25</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chignik Lake Airport</name>
+		<lat>56.255</lat>
+		<lon>-158.775278</lon>
+		<alt>50</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kenmore Air Harbor Inc Seaplane Base</name>
+		<lat>47.7548</lat>
+		<lon>-122.259</lon>
+		<alt>14</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ekwok Airport</name>
+		<lat>59.356944</lat>
+		<lon>-157.471111</lon>
+		<alt>135</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>False Pass Airport</name>
+		<lat>54.8475</lat>
+		<lon>-163.410278</lon>
+		<alt>20</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Koliganek Airport</name>
+		<lat>59.726667</lat>
+		<lon>-157.259444</lon>
+		<alt>269</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grayling Airport</name>
+		<lat>62.894444</lat>
+		<lon>-160.065</lon>
+		<alt>99</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Koyuk Alfred Adams Airport</name>
+		<lat>64.939444</lat>
+		<lon>-161.154167</lon>
+		<alt>154</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kitoi Bay Seaplane Base</name>
+		<lat>58.190833</lat>
+		<lon>-152.370556</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kongiganak Airport</name>
+		<lat>59.960833</lat>
+		<lon>-162.881111</lon>
+		<alt>30</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kalskag Airport</name>
+		<lat>61.5363</lat>
+		<lon>-160.341</lon>
+		<alt>55</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Levelock Airport</name>
+		<lat>59.128056</lat>
+		<lon>-156.858611</lon>
+		<alt>39</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Larsen Bay Airport</name>
+		<lat>57.535</lat>
+		<lon>-153.976667</lon>
+		<alt>87</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kelso Longview</name>
+		<lat>46.118</lat>
+		<lon>-122.898389</lon>
+		<alt>20</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Klawock Airport</name>
+		<lat>55.579167</lat>
+		<lon>-133.076111</lon>
+		<alt>80</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manokotak Airport</name>
+		<lat>58.990278</lat>
+		<lon>-159.05</lon>
+		<alt>51</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Moser Bay Seaplane Base</name>
+		<lat>57.025556</lat>
+		<lon>-154.145833</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>New Stuyahok Airport</name>
+		<lat>59.4499</lat>
+		<lon>-157.328</lon>
+		<alt>302</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kona Intl At Keahole</name>
+		<lat>19.738767</lat>
+		<lon>-156.045631</lon>
+		<alt>47</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kotlik Airport</name>
+		<lat>63.030556</lat>
+		<lon>-163.532778</lon>
+		<alt>15</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Olga Bay Seaplane Base</name>
+		<lat>57.161389</lat>
+		<lon>-154.229722</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ouzinkie Airport</name>
+		<lat>57.922876</lat>
+		<lon>-152.500511</lon>
+		<alt>55</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Point Baker Seaplane Base</name>
+		<lat>56.351944</lat>
+		<lon>-133.6225</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Clarence Coast Guard Station</name>
+		<lat>65.2537</lat>
+		<lon>-166.859</lon>
+		<alt>10</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kipnuk Airport</name>
+		<lat>59.933056</lat>
+		<lon>-164.030556</lon>
+		<alt>11</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Williams Seaplane Base</name>
+		<lat>58.49</lat>
+		<lon>-152.582222</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Perryville Airport</name>
+		<lat>55.906667</lat>
+		<lon>-159.160833</lon>
+		<alt>29</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Bailey Seaplane Base</name>
+		<lat>57.93</lat>
+		<lon>-153.040556</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Akutan Seaplane Base</name>
+		<lat>54.1325</lat>
+		<lon>-165.785</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>St Marys Airport</name>
+		<lat>62.0605</lat>
+		<lon>-163.302</lon>
+		<alt>311</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Thorne Bay Seaplane Base</name>
+		<lat>55.688056</lat>
+		<lon>-132.536667</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ketchikan Intl</name>
+		<lat>55.355556</lat>
+		<lon>-131.71375</lon>
+		<alt>88</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Brevig Mission Airport</name>
+		<lat>65.331389</lat>
+		<lon>-166.465833</lon>
+		<alt>35</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kasigluk Airport</name>
+		<lat>60.873333</lat>
+		<lon>-162.524444</lon>
+		<alt>40</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>King Cove Airport</name>
+		<lat>55.1163</lat>
+		<lon>-162.266</lon>
+		<alt>155</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kivalina Airport</name>
+		<lat>67.7362</lat>
+		<lon>-164.563</lon>
+		<alt>13</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kwigillingok Airport</name>
+		<lat>59.876389</lat>
+		<lon>-163.168611</lon>
+		<alt>18</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Quinhagak Airport</name>
+		<lat>59.755</lat>
+		<lon>-161.845278</lon>
+		<alt>42</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>West Point Village Seaplane Base</name>
+		<lat>57.77</lat>
+		<lon>-153.548889</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kwethluk Airport</name>
+		<lat>60.790278</lat>
+		<lon>-161.443611</lon>
+		<alt>30</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Karuluk Airport</name>
+		<lat>57.566944</lat>
+		<lon>-154.450278</lon>
+		<alt>137</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Koyukuk Airport</name>
+		<lat>64.875833</lat>
+		<lon>-157.730556</lon>
+		<alt>149</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Zachar Bay Seaplane Base</name>
+		<lat>57.55</lat>
+		<lon>-153.75</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Furnace Creek</name>
+		<lat>36.273</lat>
+		<lon>-116.515</lon>
+		<alt>0</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Big Bear City</name>
+		<lat>34.2637778</lat>
+		<lon>-116.8560278</lon>
+		<alt>6725</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Oceano County Airport</name>
+		<lat>35.10147222</lat>
+		<lon>-120.62236111</lon>
+		<alt>14</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lamar Muni</name>
+		<lat>38.069694</lat>
+		<lon>-102.6885</lon>
+		<alt>3706</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Purude University Airport</name>
+		<lat>40.4123056</lat>
+		<lon>-86.9368889</lon>
+		<alt>606</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lakeland Linder Regional Airport</name>
+		<lat>27.9889167</lat>
+		<lon>-82.0185556</lon>
+		<alt>142</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Los Alamos Airport</name>
+		<lat>35.8798019</lat>
+		<lon>-106.2694153</lon>
+		<alt>7171</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Capital City</name>
+		<lat>42.7787</lat>
+		<lon>-84.587357</lon>
+		<alt>861</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Laramie Regional Airport</name>
+		<lat>41.3121</lat>
+		<lon>-105.675</lon>
+		<alt>7284</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Carran Intl</name>
+		<lat>36.080056</lat>
+		<lon>-115.15225</lon>
+		<alt>2141</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lawton-Fort Sill Regional Airport</name>
+		<lat>34.5677144</lat>
+		<lon>-98.4166367</lon>
+		<alt>1110</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Los Angeles Intl</name>
+		<lat>33.942536</lat>
+		<lon>-118.408075</lon>
+		<alt>126</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lubbock Preston Smith Intl</name>
+		<lat>33.663639</lat>
+		<lon>-101.822778</lon>
+		<alt>3282</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Arnold Palmer Regional Airport</name>
+		<lat>40.2759</lat>
+		<lon>-79.4048</lon>
+		<alt>1185</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>North Platte Regional Airport Lee Bird Field</name>
+		<lat>41.1262</lat>
+		<lon>-100.684</lon>
+		<alt>2776</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Liberal Muni</name>
+		<lat>37.044222</lat>
+		<lon>-100.95986</lon>
+		<alt>2885</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Municipal Airport</name>
+		<lat>34.6098056</lat>
+		<lon>-79.0595556</lon>
+		<alt>125</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lake Charles Rgnl</name>
+		<lat>30.126112</lat>
+		<lon>-93.223335</lon>
+		<alt>15</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Rickenbacker Intl</name>
+		<lat>39.813786</lat>
+		<lon>-82.927822</lon>
+		<alt>744</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lake City Municipal Airport</name>
+		<lat>30.181944</lat>
+		<lon>-82.576944</lon>
+		<alt>201</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Linden Airport</name>
+		<lat>40.6174472</lat>
+		<lon>-74.2445942</lon>
+		<alt>23</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lebanon Municipal Airport</name>
+		<lat>43.6261</lat>
+		<lon>-72.3042</lon>
+		<alt>603</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lewiston Maine</name>
+		<lat>44.0484728</lat>
+		<lon>-70.2835075</lon>
+		<alt>288</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Blue Grass</name>
+		<lat>38.0365</lat>
+		<lon>-84.605889</lon>
+		<alt>979</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Langley Afb</name>
+		<lat>37.082881</lat>
+		<lon>-76.360547</lon>
+		<alt>11</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Angelina Co</name>
+		<lat>31.234014</lat>
+		<lon>-94.75</lon>
+		<alt>296</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lafayette Rgnl</name>
+		<lat>30.205278</lat>
+		<lon>-91.987611</lon>
+		<alt>43</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>La Guardia</name>
+		<lat>40.777245</lat>
+		<lon>-73.872608</lon>
+		<alt>22</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Long Beach</name>
+		<lat>33.817722</lat>
+		<lon>-118.151611</lon>
+		<alt>60</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>LaGrange-Callaway Airport</name>
+		<lat>33.0088611</lat>
+		<lon>-85.0726111</lon>
+		<alt>694</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Logan-Cache</name>
+		<lat>41.791</lat>
+		<lon>-111.852</lon>
+		<alt>4457</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lake Hood Seaplane Base</name>
+		<lat>61.1866382</lat>
+		<lon>-149.9653918</lon>
+		<alt>71</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lincoln Regional Airport Karl Harder Field</name>
+		<lat>38.9091667</lat>
+		<lon>-121.3513333</lon>
+		<alt>121</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>William T. Piper Mem.</name>
+		<lat>41.1357778</lat>
+		<lon>-77.4223056</lon>
+		<alt>556</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>La Junta Muni</name>
+		<lat>38.049719</lat>
+		<lon>-103.509431</lon>
+		<alt>4238</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lihue</name>
+		<lat>21.975983</lat>
+		<lon>-159.338958</lon>
+		<alt>153</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Adams Fld</name>
+		<lat>34.729444</lat>
+		<lon>-92.224306</lon>
+		<alt>262</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Livingood Airport</name>
+		<lat>65.531111</lat>
+		<lon>-148.541111</lon>
+		<alt>696</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kenmore Air Harbor Seaplane Base</name>
+		<lat>47.629</lat>
+		<lon>-122.339</lon>
+		<alt>14</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kulik Lake Airport</name>
+		<lat>58.96591</lat>
+		<lon>-155.108089</lon>
+		<alt>1000</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lake Placid Airport</name>
+		<lat>44.264444</lat>
+		<lon>-73.961944</lon>
+		<alt>1747</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Klamath Falls Airport</name>
+		<lat>42.1561</lat>
+		<lon>-121.733</lon>
+		<alt>4095</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Palm Beach Co Park</name>
+		<lat>26.593</lat>
+		<lon>-80.085056</lon>
+		<alt>14</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lincoln</name>
+		<lat>40.850971</lat>
+		<lon>-96.75925</lon>
+		<alt>1219</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lost Nation Municipal Airport</name>
+		<lat>41.6840278</lat>
+		<lon>-81.38975</lon>
+		<alt>626</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Tri-County Regional Airport</name>
+		<lat>43.211667</lat>
+		<lon>-90.181667</lon>
+		<alt>718</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lancaster Airport</name>
+		<lat>40.1217</lat>
+		<lon>-76.2961</lon>
+		<alt>403</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lanai</name>
+		<lat>20.785611</lat>
+		<lon>-156.951419</lon>
+		<alt>1308</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lewis University Airport</name>
+		<lat>41.606326</lat>
+		<lon>-88.083003</lon>
+		<alt>680</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Bowman Fld</name>
+		<lat>38.228</lat>
+		<lon>-85.663722</lon>
+		<alt>546</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>London-Corbin Airport-MaGee Field</name>
+		<lat>37.0868889</lat>
+		<lon>-84.0773889</lon>
+		<alt>1212</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lompoc Airport</name>
+		<lat>34.6656</lat>
+		<lon>-120.4675</lon>
+		<alt>88</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lorain County Regional Airport</name>
+		<lat>41.3442778</lat>
+		<lon>-82.1776389</lon>
+		<alt>793</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lopez Island Airport</name>
+		<lat>48.4839</lat>
+		<lon>-122.938</lon>
+		<alt>209</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Laredo Intl</name>
+		<lat>27.54375</lat>
+		<lon>-99.461556</lon>
+		<alt>508</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Little Rock Afb</name>
+		<lat>34.916944</lat>
+		<lon>-92.149722</lon>
+		<alt>311</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mount Pleasant Regional-Faison Field</name>
+		<lat>32.5387</lat>
+		<lon>-79.4697</lon>
+		<alt>12</alt>
+		<tz>-5</tz>
+		<tzone>\N</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Las Cruces Intl</name>
+		<lat>32.289417</lat>
+		<lon>-106.921972</lon>
+		<alt>4456</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>La Crosse Municipal</name>
+		<lat>43.878986</lat>
+		<lon>-91.256711</lon>
+		<alt>654</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lawson Aaf</name>
+		<lat>32.337322</lat>
+		<lon>-84.991283</lon>
+		<alt>232</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nellis Afb</name>
+		<lat>36.236197</lat>
+		<lon>-115.034253</lon>
+		<alt>1870</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Altus Afb</name>
+		<lat>34.667067</lat>
+		<lon>-99.266681</lon>
+		<alt>1382</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Luke Afb</name>
+		<lat>33.535</lat>
+		<lon>-112.38306</lon>
+		<alt>1085</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cincinnati Muni Lunken Fld</name>
+		<lat>39.103333</lat>
+		<lon>-84.418611</lon>
+		<alt>483</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kalaupapa Airport</name>
+		<lat>21.211</lat>
+		<lon>-156.974</lon>
+		<alt>24</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cape Lisburne Lrrs</name>
+		<lat>68.875133</lat>
+		<lon>-166.110022</lon>
+		<alt>12</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Livermore Municipal</name>
+		<lat>37.41362</lat>
+		<lon>-121.49133</lon>
+		<alt>400</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mission Field Airport</name>
+		<lat>45.6993889</lat>
+		<lon>-110.4483056</lon>
+		<alt>4660</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Las Vegas Muni</name>
+		<lat>35.654222</lat>
+		<lon>-105.142389</lon>
+		<alt>6877</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>South Haven Area Regional Airport</name>
+		<lat>42.3511944</lat>
+		<lon>-86.2556389</lon>
+		<alt>666</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Greenbrier Valley Airport</name>
+		<lat>37.858333</lat>
+		<lon>-80.399444</lon>
+		<alt>2302</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lawrence Municipal</name>
+		<lat>39.009167</lat>
+		<lon>-95.2175</lon>
+		<alt>833</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lawrence Municipal Airport</name>
+		<lat>42.7171944</lat>
+		<lon>-71.1234167</lon>
+		<alt>148</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lewiston Nez Perce Co</name>
+		<lat>46.3745</lat>
+		<lon>-117.015389</lon>
+		<alt>1442</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lewistown Municipal Airport</name>
+		<lat>47.0493</lat>
+		<lon>-109.467</lon>
+		<alt>4170</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mexia - Limestone County Airport</name>
+		<lat>31.6411783</lat>
+		<lon>-96.5144594</lon>
+		<alt>544</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lynchburg Regional Preston Glenn Field</name>
+		<lat>37.3267</lat>
+		<lon>-79.2004</lon>
+		<alt>938</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Ely Municipal</name>
+		<lat>47.824444</lat>
+		<lon>-91.830833</lon>
+		<alt>1456</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Gwinnett County Airport-Briscoe Field</name>
+		<lat>33.9780761</lat>
+		<lon>-83.9623772</lon>
+		<alt>1061</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Desert Aire</name>
+		<lat>46.4124</lat>
+		<lon>-119.5518</lon>
+		<alt>586</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Madera Municipal Airport</name>
+		<lat>36.9886111</lat>
+		<lon>-120.1124444</lon>
+		<alt>255</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Midland Intl</name>
+		<lat>31.942528</lat>
+		<lon>-102.201914</lon>
+		<alt>2871</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manistee County-Blacker Airport</name>
+		<lat>44.2725</lat>
+		<lon>-86.246944</lon>
+		<alt>621</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mbs Intl</name>
+		<lat>43.532913</lat>
+		<lon>-84.079647</lon>
+		<alt>668</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Clellan Afld</name>
+		<lat>38.667639</lat>
+		<lon>-121.400611</lon>
+		<alt>75</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mackinac Island Airport</name>
+		<lat>45.8649344</lat>
+		<lon>-84.637344</lon>
+		<alt>740</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Merced Municipal Airport</name>
+		<lat>37.284722</lat>
+		<lon>-120.513889</lon>
+		<alt>156</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Macdill Afb</name>
+		<lat>27.849339</lat>
+		<lon>-82.521214</lon>
+		<alt>14</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McGrath Airport</name>
+		<lat>62.9529</lat>
+		<lon>-155.606</lon>
+		<alt>338</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kansas City Intl</name>
+		<lat>39.297606</lat>
+		<lon>-94.713905</lon>
+		<alt>1026</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McCook Regional Airport</name>
+		<lat>40.206389</lat>
+		<lon>-100.592222</lon>
+		<alt>2583</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McKinley National Park Airport</name>
+		<lat>63.732757</lat>
+		<lon>-148.91129</lon>
+		<alt>1720</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Middle Georgia Rgnl</name>
+		<lat>32.69285</lat>
+		<lon>-83.649211</lon>
+		<alt>354</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Orlando Intl</name>
+		<lat>28.429394</lat>
+		<lon>-81.308994</lon>
+		<alt>96</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mason City Municipal</name>
+		<lat>43.2247</lat>
+		<lon>-93.4067</lon>
+		<alt>1243</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Harrisburg Intl</name>
+		<lat>40.193494</lat>
+		<lon>-76.763403</lon>
+		<alt>310</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chicago Midway Intl</name>
+		<lat>41.785972</lat>
+		<lon>-87.752417</lon>
+		<alt>620</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Banks Airport</name>
+		<lat>44.1653889</lat>
+		<lon>-68.4281667</lon>
+		<alt>100</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Key Field</name>
+		<lat>32.332624</lat>
+		<lon>-88.751868</lon>
+		<alt>297</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Memphis Intl</name>
+		<lat>35.042417</lat>
+		<lon>-89.976667</lon>
+		<alt>341</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Castle</name>
+		<lat>37.380481</lat>
+		<lon>-120.568189</lon>
+		<alt>189</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mansfield Lahm Regional</name>
+		<lat>40.8214167</lat>
+		<lon>-82.5166389</lon>
+		<alt>1297</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Allen Miller Intl</name>
+		<lat>26.175833</lat>
+		<lon>-98.238611</lon>
+		<alt>107</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marshfield Municipal Airport</name>
+		<lat>44.6368797</lat>
+		<lon>-90.1893267</lon>
+		<alt>1278</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Rogue Valley Intl Medford</name>
+		<lat>42.374228</lat>
+		<lon>-122.8735</lon>
+		<alt>1335</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Michigan City Municipal Airport</name>
+		<lat>41.7033</lat>
+		<lon>-86.8211</lon>
+		<alt>500</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dobbins Arb</name>
+		<lat>33.915382</lat>
+		<lon>-84.516319</lon>
+		<alt>1068</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Orange County Airport</name>
+		<lat>41.5099884</lat>
+		<lon>-74.2646444</lon>
+		<alt>364</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Montgomery Regional Airport</name>
+		<lat>32.3006389</lat>
+		<lon>-86.3939722</lon>
+		<alt>221</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Moultrie Municipal Airport</name>
+		<lat>31.0849167</lat>
+		<lon>-83.80325</lon>
+		<alt>294</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Morgantown Muni Walter L Bill Hart Fld</name>
+		<lat>39.642908</lat>
+		<lon>-79.916314</lon>
+		<alt>1248</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dayton-Wright Brothers Airport</name>
+		<lat>39.5889722</lat>
+		<lon>-84.2248611</lon>
+		<alt>957</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manhattan Reigonal</name>
+		<lat>39.140972</lat>
+		<lon>-96.670833</lon>
+		<alt>1057</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Minchumina Airport</name>
+		<lat>63.886111</lat>
+		<lon>-152.301944</lon>
+		<alt>678</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sacramento Mather</name>
+		<lat>38.553897</lat>
+		<lon>-121.297592</lon>
+		<alt>96</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manchester Regional Airport</name>
+		<lat>42.932556</lat>
+		<lon>-71.435667</lon>
+		<alt>266</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mojave</name>
+		<lat>35.059364</lat>
+		<lon>-118.151856</lon>
+		<alt>2791</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Miami Intl</name>
+		<lat>25.79325</lat>
+		<lon>-80.290556</lon>
+		<alt>8</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Minot Afb</name>
+		<lat>48.415572</lat>
+		<lon>-101.357661</lon>
+		<alt>1668</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Crystal Airport</name>
+		<lat>45.0343</lat>
+		<lon>-93.2114</lon>
+		<alt>869</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Delaware County Airport</name>
+		<lat>40.2424722</lat>
+		<lon>-85.39575</lon>
+		<alt>937</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Millville Muni</name>
+		<lat>39.367806</lat>
+		<lon>-75.072222</lon>
+		<alt>85</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Downtown</name>
+		<lat>39.1275</lat>
+		<lon>-94.598889</lon>
+		<alt>759</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>General Mitchell Intl</name>
+		<lat>42.947222</lat>
+		<lon>-87.896583</lon>
+		<alt>723</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Muskegon County Airport</name>
+		<lat>43.1695</lat>
+		<lon>-86.2382</lon>
+		<alt>628</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Molokai</name>
+		<lat>21.152886</lat>
+		<lon>-157.096256</lon>
+		<alt>454</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Kellar Sipes Rgnl</name>
+		<lat>35.599889</lat>
+		<lon>-88.915611</lon>
+		<alt>434</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Davis Fld</name>
+		<lat>35.656489</lat>
+		<lon>-95.366656</lon>
+		<alt>612</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Melbourne Intl</name>
+		<lat>28.102753</lat>
+		<lon>-80.645258</lon>
+		<alt>33</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Alester Rgnl</name>
+		<lat>34.882403</lat>
+		<lon>-95.783463</lon>
+		<alt>770</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Malad City</name>
+		<lat>42.17</lat>
+		<lon>-112.289</lon>
+		<alt>4503</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Quad City Intl</name>
+		<lat>41.448528</lat>
+		<lon>-90.507539</lon>
+		<alt>590</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Baldwin County Airport</name>
+		<lat>33.154225</lat>
+		<lon>-83.2414139</lon>
+		<alt>385</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marshall Don Hunter Sr. Airport</name>
+		<lat>61.8646418</lat>
+		<lon>-162.026111</lon>
+		<alt>103</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Frank Wiley Field</name>
+		<lat>46.428</lat>
+		<lon>-105.886</lon>
+		<alt>2630</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Millinocket Muni</name>
+		<lat>45.647836</lat>
+		<lon>-68.685561</lon>
+		<alt>408</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Monroe Rgnl</name>
+		<lat>32.510864</lat>
+		<lon>-92.037689</lon>
+		<alt>79</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manley Hot Springs Airport</name>
+		<lat>64.9975</lat>
+		<lon>-150.644167</lon>
+		<alt>270</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mammoth Yosemite Airport</name>
+		<lat>37.624049</lat>
+		<lon>-118.837772</lon>
+		<alt>7128</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McMinn Co</name>
+		<lat>35.39919</lat>
+		<lon>-84.56177</lon>
+		<alt>874</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Morristown Municipal Airport</name>
+		<lat>40.79935</lat>
+		<lon>-74.4148747</lon>
+		<alt>187</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mc Minnville Muni</name>
+		<lat>45.194444</lat>
+		<lon>-123.135944</lon>
+		<alt>163</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Menominee Marinette Twin Co</name>
+		<lat>45.12665</lat>
+		<lon>-87.638443</lon>
+		<alt>625</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Minto Airport</name>
+		<lat>65.143611</lat>
+		<lon>-149.37</lon>
+		<alt>460</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Manassas</name>
+		<lat>38.721389</lat>
+		<lon>-77.515556</lon>
+		<alt>192</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mobile Rgnl</name>
+		<lat>30.691231</lat>
+		<lon>-88.242814</lon>
+		<alt>219</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Modesto City Co Harry Sham</name>
+		<lat>37.625817</lat>
+		<lon>-120.954422</lon>
+		<alt>97</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Minot Intl</name>
+		<lat>48.259378</lat>
+		<lon>-101.280333</lon>
+		<alt>1716</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mountain Village Airport</name>
+		<lat>62.0954</lat>
+		<lon>-163.682</lon>
+		<alt>337</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Miami Seaplane Base</name>
+		<lat>25.7783</lat>
+		<lon>-80.1703</lon>
+		<alt>0</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>MariposaYosemite</name>
+		<lat>37.3039</lat>
+		<lon>-120.0222</lon>
+		<alt>2454</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Edward F Knapp State</name>
+		<lat>44.203503</lat>
+		<lon>-72.562328</lon>
+		<alt>1165</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Macomb Municipal Airport</name>
+		<lat>40.5200833</lat>
+		<lon>-90.6523889</lon>
+		<alt>707</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dare County Regional</name>
+		<lat>35.5514</lat>
+		<lon>-75.4173</lon>
+		<alt>13</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Sawyer International Airport</name>
+		<lat>46.353611</lat>
+		<lon>-87.395278</lon>
+		<alt>1221</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Eastern WV Regional Airport</name>
+		<lat>39.2407</lat>
+		<lon>-77.591</lon>
+		<alt>554</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Merrill Fld</name>
+		<lat>61.213544</lat>
+		<lon>-149.844447</lon>
+		<alt>137</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marco Islands</name>
+		<lat>25.9950278</lat>
+		<lon>-81.6725278</lon>
+		<alt>5</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Foothills Regional Airport</name>
+		<lat>35.8202336</lat>
+		<lon>-81.6115119</lon>
+		<alt>1270</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Monterey Peninsula</name>
+		<lat>36.587</lat>
+		<lon>-121.842944</lon>
+		<alt>257</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Northwest Alabama Regional Airport</name>
+		<lat>34.7453</lat>
+		<lon>-87.6102</lon>
+		<alt>550</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Dane Co Rgnl Truax Fld</name>
+		<lat>43.139858</lat>
+		<lon>-89.337514</lon>
+		<alt>887</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Missoula Intl</name>
+		<lat>46.916306</lat>
+		<lon>-114.090556</lon>
+		<alt>3205</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Minneapolis St Paul Intl</name>
+		<lat>44.881956</lat>
+		<lon>-93.221767</lon>
+		<alt>841</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Massena Intl Richards Fld</name>
+		<lat>44.935833</lat>
+		<lon>-74.845547</lon>
+		<alt>215</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Louis Armstrong New Orleans Intl</name>
+		<lat>29.993389</lat>
+		<lon>-90.258028</lon>
+		<alt>4</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Selfridge Angb</name>
+		<lat>42.608333</lat>
+		<lon>-82.8355</lon>
+		<alt>580</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Florida Keys Marathon Airport</name>
+		<lat>24.726111</lat>
+		<lon>-81.051389</lon>
+		<alt>7</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Montrose Regional Airport</name>
+		<lat>38.509794</lat>
+		<lon>-107.894242</lon>
+		<alt>5759</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Metlakatla Seaplane Base</name>
+		<lat>55.131111</lat>
+		<lon>-131.578056</lon>
+		<alt>0</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Martin State</name>
+		<lat>39.3256667</lat>
+		<lon>-76.4137778</lon>
+		<alt>22</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Waimea Kohala</name>
+		<lat>20.001328</lat>
+		<lon>-155.668108</lon>
+		<alt>2671</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Muir Aaf</name>
+		<lat>40.434811</lat>
+		<lon>-76.569411</lon>
+		<alt>489</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mountain Home Afb</name>
+		<lat>43.043603</lat>
+		<lon>-115.872431</lon>
+		<alt>2996</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Morrisville Stowe State Airport</name>
+		<lat>44.535</lat>
+		<lon>-72.614</lon>
+		<alt>732</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Martha\\'s Vineyard</name>
+		<lat>41.391667</lat>
+		<lon>-70.615278</lon>
+		<alt>67</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Williamson Country Regional Airport</name>
+		<lat>37.7549569</lat>
+		<lon>-89.0110936</lon>
+		<alt>472</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lawrence J Timmerman Airport</name>
+		<lat>43.1103889</lat>
+		<lon>-88.0344167</lon>
+		<alt>745</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Grant Co Intl</name>
+		<lat>47.207708</lat>
+		<lon>-119.32019</lon>
+		<alt>1185</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mineral Wells</name>
+		<lat>32.781606</lat>
+		<lon>-98.060175</lon>
+		<alt>974</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Windom Municipal Airport</name>
+		<lat>43.9134017</lat>
+		<lon>-95.1094083</lon>
+		<alt>1410</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Maxwell Afb</name>
+		<lat>32.382944</lat>
+		<lon>-86.365778</lon>
+		<alt>171</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McCarthy Airport</name>
+		<lat>61.4370608</lat>
+		<lon>-142.90307372</lon>
+		<alt>1531</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Montgomery Field</name>
+		<lat>32.4759</lat>
+		<lon>117.759</lon>
+		<alt>17</alt>
+		<tz>8</tz>
+		<tzone>Asia/Chongqing</tzone>
+	</ROW>
+
+	<ROW>
+		<name>McCall Municipal Airport</name>
+		<lat>44.889722</lat>
+		<lon>-116.101389</lon>
+		<alt>5021</alt>
+		<tz>-7</tz>
+		<tzone>America/Denver</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Myrtle Beach Intl</name>
+		<lat>33.67975</lat>
+		<lon>-78.928333</lon>
+		<alt>25</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Mekoryuk Airport</name>
+		<lat>60.3714</lat>
+		<lon>-166.271</lon>
+		<alt>48</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Yuba County Airport</name>
+		<lat>39.0553</lat>
+		<lon>-121.3411</lon>
+		<alt>62</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pinal Airpark</name>
+		<lat>32.509722</lat>
+		<lon>-111.325278</lon>
+		<alt>1893</alt>
+		<tz>-7</tz>
+		<tzone>America/Phoenix</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Stroudsburg-Pocono Airport</name>
+		<lat>41.0358717</lat>
+		<lon>-75.1606789</lon>
+		<alt>480</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Stormville Airport</name>
+		<lat>41.5769708</lat>
+		<lon>-73.7323514</lon>
+		<alt>358</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Trenton-Robbinsville Airport</name>
+		<lat>40.2139444</lat>
+		<lon>-74.6017778</lon>
+		<alt>118</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>New Orleans Nas Jrb</name>
+		<lat>29.825333</lat>
+		<lon>-90.035</lon>
+		<alt>3</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Naval Air Station</name>
+		<lat>42.090556</lat>
+		<lon>-87.8225</lon>
+		<alt>653</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Chenega Bay Airport</name>
+		<lat>60.077222</lat>
+		<lon>-147.991944</lon>
+		<alt>72</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lakehurst Naes</name>
+		<lat>40.033333</lat>
+		<lon>-74.353333</lon>
+		<alt>103</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lakefront</name>
+		<lat>30.0424167</lat>
+		<lon>-90.02825</lon>
+		<alt>7</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Fallon Nas</name>
+		<lat>39.416584</lat>
+		<lon>-118.70098</lon>
+		<alt>3934</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kaneohe Bay Mcaf</name>
+		<lat>21.450453</lat>
+		<lon>-157.768</lon>
+		<alt>24</alt>
+		<tz>-10</tz>
+		<tzone>Pacific/Honolulu</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Corpus Christi NAS</name>
+		<lat>27.692701</lat>
+		<lon>-97.290376</lon>
+		<alt>18</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Norfolk Ns</name>
+		<lat>36.937644</lat>
+		<lon>-76.289289</lon>
+		<alt>15</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>NAS Alameda</name>
+		<lat>37.7861</lat>
+		<lon>-122.3186</lon>
+		<alt>10</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Patuxent River Nas</name>
+		<lat>38.285981</lat>
+		<lon>-76.411781</lon>
+		<alt>39</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nikolai Airport</name>
+		<lat>63.010833</lat>
+		<lon>-154.383889</lon>
+		<alt>427</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>China Lake Naws</name>
+		<lat>35.685422</lat>
+		<lon>-117.692039</lon>
+		<alt>2283</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Jacksonville Nas</name>
+		<lat>30.235834</lat>
+		<lon>-81.680556</lon>
+		<alt>22</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>El Centro Naf</name>
+		<lat>32.829222</lat>
+		<lon>-115.671667</lon>
+		<alt>-42</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cherry Point Mcas</name>
+		<lat>34.900872</lat>
+		<lon>-76.880733</lon>
+		<alt>29</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Miramar Mcas</name>
+		<lat>32.867694</lat>
+		<lon>-117.14175</lon>
+		<alt>478</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Lemoore Nas</name>
+		<lat>36.333012</lat>
+		<lon>-119.95208</lon>
+		<alt>234</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nelson Lagoon</name>
+		<lat>56.0075</lat>
+		<lon>-161.160278</lon>
+		<alt>14</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nightmute Airport</name>
+		<lat>60.471111</lat>
+		<lon>-164.700833</lon>
+		<alt>4</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Meridian Nas</name>
+		<lat>32.552083</lat>
+		<lon>-88.555557</lon>
+		<alt>317</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nondalton Airport</name>
+		<lat>59.966944</lat>
+		<lon>-154.851667</lon>
+		<alt>262</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Port Angeles Cgas</name>
+		<lat>48.141481</lat>
+		<lon>-123.414075</lon>
+		<alt>13</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Pensacola Nas</name>
+		<lat>30.352656</lat>
+		<lon>-87.318647</lon>
+		<alt>28</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Porter County Municipal Airport</name>
+		<lat>41.4539722</lat>
+		<lon>-87.0070833</lon>
+		<alt>770</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Millington Rgnl Jetport</name>
+		<lat>35.356667</lat>
+		<lon>-89.870278</lon>
+		<alt>320</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Kingsville Nas</name>
+		<lat>27.507223</lat>
+		<lon>-97.809723</lon>
+		<alt>50</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Key West Nas</name>
+		<lat>24.575834</lat>
+		<lon>-81.688889</lon>
+		<alt>6</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Whiting Fld Nas North</name>
+		<lat>30.724167</lat>
+		<lon>-87.021944</lon>
+		<alt>199</alt>
+		<tz>-6</tz>
+		<tzone>America/Chicago</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Point Mugu Nas</name>
+		<lat>34.120285</lat>
+		<lon>-119.12094</lon>
+		<alt>13</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Oceana Nas</name>
+		<lat>36.820703</lat>
+		<lon>-76.033542</lon>
+		<alt>22</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nuiqsut Airport</name>
+		<lat>70.21</lat>
+		<lon>-151.005556</lon>
+		<alt>38</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nulato Airport</name>
+		<lat>64.729444</lat>
+		<lon>-158.074167</lon>
+		<alt>399</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Nunapitchuk Airport</name>
+		<lat>60.905833</lat>
+		<lon>-162.439167</lon>
+		<alt>12</alt>
+		<tz>-9</tz>
+		<tzone>America/Anchorage</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Moffett Federal Afld</name>
+		<lat>37.416142</lat>
+		<lon>-122.049139</lon>
+		<alt>32</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Whidbey Island Nas</name>
+		<lat>48.351803</lat>
+		<lon>-122.655906</lon>
+		<alt>47</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Twentynine Palms Eaf</name>
+		<lat>34.296161</lat>
+		<lon>-116.162203</lon>
+		<alt>2051</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Willow Grove Nas Jrb</name>
+		<lat>40.199833</lat>
+		<lon>-75.148167</lon>
+		<alt>358</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Long Lake</name>
+		<lat>43.9750617</lat>
+		<lon>-74.42044</lon>
+		<alt>1629</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>All Airports</name>
+		<lat>40.714167</lat>
+		<lon>-74.005833</lon>
+		<alt>31</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Quantico Mcaf</name>
+		<lat>38.501683</lat>
+		<lon>-77.305333</lon>
+		<alt>11</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Cecil Field</name>
+		<lat>30.2187</lat>
+		<lon>-81.8767</lon>
+		<alt>81</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>El Toro</name>
+		<lat>33.676132</lat>
+		<lon>-117.731164</lon>
+		<alt>383</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>North Island Nas</name>
+		<lat>32.699219</lat>
+		<lon>-117.21531</lon>
+		<alt>26</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Morgantown Airport</name>
+		<lat>40.1570414</lat>
+		<lon>-75.8704892</lon>
+		<alt>600</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Oakdale Airport</name>
+		<lat>37.7563333</lat>
+		<lon>-120.8001944</lon>
+		<alt>237</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Albert J Ellis</name>
+		<lat>34.829164</lat>
+		<lon>-77.612139</lon>
+		<alt>94</alt>
+		<tz>-5</tz>
+		<tzone>America/New_York</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Metropolitan Oakland Intl</name>
+		<lat>37.721278</lat>
+		<lon>-122.220722</lon>
+		<alt>9</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+
+	<ROW>
+		<name>Marina Muni</name>
+		<lat>36.681878</lat>
+		<lon>-121.762347</lon>
+		<alt>134</alt>
+		<tz>-8</tz>
+		<tzone>America/Los_Angeles</tzone>
+	</ROW>
+</DATA>
