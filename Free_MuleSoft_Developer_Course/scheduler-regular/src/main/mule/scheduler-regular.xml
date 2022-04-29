@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<flow name="scheduler-regularFlow" doc:id="46ebd453-0e4a-44a1-8ae5-e4a9debde9ee" >
+		<scheduler doc:name="Trigger every 10 seconds" doc:id="89c3b805-34ed-4a52-9be5-9134a290c75e" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<ee:transform doc:name="time flow was triggered at in json format" doc:id="c75f7528-7ed5-4f8d-a9a4-193696a984a0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'triggered at': now()
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<file:write doc:name="Write to file when flow was triggered" doc:id="fe62ffde-b79b-4451-a7e6-40a960c46843" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\scheduler_regular_frequency.json" mode="APPEND"/>
+		<logger level="INFO" doc:name="Logger" doc:id="ea2502a4-ab36-4a43-9517-abe097767b4b" message="Triggered at #[now()]"/>
+	</flow>
+</mule>
