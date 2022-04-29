@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="flow-subflow-scopeFlow" doc:id="01b1baca-64bf-4b1c-89cb-e0812ec27c8c" >
+		<scheduler doc:name="Scheduler" doc:id="3c00b5e4-948f-4aad-936a-b764040dde23" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<set-payload value="payload1" doc:name="Payload" doc:id="778d0abf-c1a3-44d5-a9d1-4346dabf575f" />
+		<set-variable value="my var1" doc:name="Variable" doc:id="36c55a2a-4094-4cea-aa74-ffa1056b6d2a" variableName="myVarA"/>
+		<flow-ref doc:name="Flow Reference" doc:id="9d661995-ad75-4947-abba-06ddde8e69a3" name="my-sub-flow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="916eadb5-7433-4b39-9364-ff1e30ab07ff" message="payload: #[payload] and variableA: #[vars.myVarA] and variableB: #[vars.myVarB]"/>
+	</flow>
+	<sub-flow name="my-sub-flow" doc:id="eeea17f1-5fdd-42e6-8ba5-7e1aa1f0a025" >
+		<set-payload value="payload2" doc:name="Payload" doc:id="b9a66813-519e-46e6-9d82-ffc04ca6bea4" />
+		<set-variable value="my var 2" doc:name="Set Variable" doc:id="a1e3cb79-364a-435f-ae8f-ff4560d8662e" variableName="myVarB"/>
+	</sub-flow>
+</mule>

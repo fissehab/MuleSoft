@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="a01a9e68-8573-4a0a-9e27-1804a860ad32" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quizesFlow" doc:id="6f1190a1-868a-4e8c-94bf-786182f3a104" >
+		<http:listener doc:name="Get/CSV data" doc:id="cfd6c799-f418-49d4-98d1-2c14bbc175c2" config-ref="HTTP_Listener_config" path="quiz1" doc:description="Refer to the exhibit. The application is debugged in Anypoint Studio and stops at the first breakpoint. What is the value of the payload displayed in the debugger at this breakpoint? what about when it stops at the second breakpoint?"/>
+		<set-payload value="Fisseha Berhane" doc:name='"Fisseha Berhane"' doc:id="aba86210-43a3-48a0-950b-5dfb248c71a5" />
+		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="b70ac74b-3b6a-40f4-b5f8-826dee8fdd19" variableName="var3"/>
+		<set-variable value="loves mulesoft" doc:name='"loves mulesoft"' doc:id="af9bb3a0-c36f-4001-a434-b64e44a57b10" variableName="var1"/>
+		<set-payload value="what about you?" doc:name="&quot;What about you?'" doc:id="80a025d4-f331-417d-8869-ef56db91b345" />
+		<set-variable value="Great to see you in the class" doc:name='"Great to see you in the class"' doc:id="e3854434-9ae8-419d-91a9-3c7b668df5c3" variableName="var2"/>
+	</flow>
+	<flow name="quizesFlow1" doc:id="a0644c9b-c86f-411b-b0e1-d36d4c087dca" >
+		<scheduler doc:name="Scheduler" doc:id="cb341db5-11e7-4f63-b405-5a095d28dfcb" doc:description="what is logged by the logger?">
+			<scheduling-strategy >
+				<fixed-frequency frequency="110" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<ee:transform doc:name="Transform Message" doc:id="78886690-de0c-484e-8ae5-221297dbba6a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+
+{
+		"name" : "Lansdowne Airport",
+		"lat" : 41.1304722,
+		"lon" : -80.6195833,
+		"alt" : 1044,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="typeOf(payload)" doc:id="994cd99f-c769-4634-81c2-3289a98bb525" message="#[typeOf(payload)]"/>
+	</flow>
+	<flow name="quizesFlow4" doc:id="e4b663a2-1a62-4d3d-af03-87459193c4ec" >
+		<file:read doc:name="Read" doc:id="26dc7967-0509-44c4-9ef7-69b9e37b3c72" />
+	</flow>
+	<flow name="quizesFlow2" doc:id="28f82107-1871-4a64-840f-80eafabd3a8b" >
+		<http:listener doc:name="Listener" doc:id="6242d744-5f92-45a6-807e-e941e2044f40" config-ref="HTTP_Listener_config" path="testvar" doc:description="what is the correct DataWeave expression to log the name of the airport?"/>
+		<set-variable value='#[%dw 2.0&#10;output application/json&#10;---&#10;&#10;{&#10;		"name" : "Moton Field Municipal Airport",&#10;		"lat" : 32.4605722,&#10;		"lon" : -85.6800278,&#10;		"alt" : 264,&#10;		"tz" : -6,&#10;		"tzone" : "America/Chicago"&#10;	}]' doc:name="Set Variable" doc:id="1951e7fb-3897-4593-9060-74ab33160a7f" variableName="airport"/>
+		<logger level="INFO" doc:name="How to log the name of the airport?" doc:id="bdded6c7-fdc0-4c28-a268-cde264e02390" message="#[vars.airport.name]"/>
+	</flow>
+	<flow name="quizesFlow3" doc:id="549a467b-507b-40b1-aaf0-99570de9195f" >
+		<http:listener doc:name="Listener" doc:id="b5dd3320-bec8-4cb0-aae8-07390c1e2124" config-ref="HTTP_Listener_config" path="test4" doc:description="what gets printed to the logger?"/>
+		<set-payload value="hello, how are you today?" doc:name="set to csv" doc:id="72fa79e7-5cf6-4d7e-8262-7bcfed4db87e" />
+		<logger level="INFO" doc:name="Logger" doc:id="387be302-a598-48ab-88f3-8f7bfbfd01df" message="#[typeOf(payload)]"/>
+	</flow>
+</mule>
