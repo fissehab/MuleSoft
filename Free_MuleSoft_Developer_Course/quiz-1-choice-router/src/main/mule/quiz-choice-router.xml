@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="85fa558c-b1c1-4455-9e1a-1cf9f191f458" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quiz-choice-routerFlow" doc:id="ea481a1b-dd72-42f1-b820-d63badf076fb" >
+		<http:listener doc:name="/GET" doc:id="dcf45241-e869-43f5-9b9d-b9b2310aa17c" config-ref="HTTP_Listener_config" path="first-choice-router-quiz" allowedMethods="GET" doc:description="If I send a request with /first-choice-router-quiz?city=Mekelle, what will I receive?&#10;&#10;https://help.mulesoft.com/s/article/Too-many-nested-child-contexts-error-in-Mule-4-APIs-while-using-flow-ref-for-each-async-or-policies&#10;&#10;https://mulesoftprm.force.com/s/article/Too-many-child-contexts-nested-errors-or-Dataweave-files-piling-up-due-to-infinite-loop-via-self-flow-refs"/>
+		<set-variable value="#[attributes.queryParams.city]" doc:name="city variable from queryParameter" doc:id="f50f4c8c-63a2-4648-a534-ca743bfcd16f" variableName="city"/>
+		<choice doc:name="Choice" doc:id="8033028c-555e-40c7-9e51-1b522ea52e6a" >
+			<when expression="#[vars.city =='Seattle']">
+				<ee:transform doc:name="About Seattle" doc:id="009faa59-65fd-428e-9ea0-dc18a86e991c" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"Seattle": "A city on Puget Sound in the Pacific Northwest, is surrounded by water, mountains and evergreen forests, and contains thousands of acres of parkland."
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression="#[vars.city == 'Chicago']">
+				<ee:transform doc:name="About Chicago" doc:id="710a90d6-929c-4c65-a52e-ac51fa1aa788" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"Chicago": "On Lake Michigan in Illinois, is among the largest cities in the U.S. Famed for its bold architecture."
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression="#[vars.city == 'Cairo']">
+				<ee:transform doc:name="About cairo" doc:id="cf39ce60-2b4f-4f55-a332-6c8a0252c69b" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"Cairo": "Egypt’s sprawling capital, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of antiquities including royal mummies and gilded King Tutankhamun artifacts"
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<logger level="INFO" doc:name="Logger" doc:id="aab05206-5d60-468b-a6ae-81d22e73b2c2" />
+				<flow-ref doc:name="first-choice-router-quiz" doc:id="a2898bef-7618-46da-a2ef-54c9937f3e4f" name="quiz-choice-routerFlow" />
+				<logger level="INFO" doc:name="Logger" doc:id="1a773f93-3f2a-4d69-974c-fd9f0e4ba3dd" />
+			</otherwise>
+		</choice>
+	</flow>
+</mule>

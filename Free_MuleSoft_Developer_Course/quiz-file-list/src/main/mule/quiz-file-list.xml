@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="9bfbd647-7c4c-48dc-8110-c7af172e5ae4" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quiz-file-listFlow" doc:id="59c12e6b-c52f-465c-830b-0f0e011762b8" >
+		<http:listener doc:name="Listener" doc:id="1f036183-d1c9-40c1-9b53-f2fa70c171f4" path="file-list" config-ref="HTTP_Listener_config"/>
+		<file:list doc:name="List" doc:id="52e35074-6e36-4b70-8fa7-b054ff4edb00" directoryPath="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6ffb8163-5b35-4193-8ed7-584f27e2b29f" />
+	</flow>
+</mule>

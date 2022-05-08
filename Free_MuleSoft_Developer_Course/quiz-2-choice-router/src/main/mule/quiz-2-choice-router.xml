@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="273adf9d-ee92-4220-801f-b167be7a5b43" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quiz-2-choice-routerFlow" doc:id="cef534dd-b364-40c2-a463-c6ea9a873686" >
+		<http:listener doc:name="is Odd?" doc:id="f0a57b81-4d66-4b07-90c0-fc0409187208" config-ref="HTTP_Listener_config" path="isodd" doc:description="If I send a request to /isodd?mynum=4, what will I get?" allowedMethods="GET"/>
+		<ee:transform doc:name="check if odd" doc:id="072a8c08-e539-4d59-9793-871bbc44ee04" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"is_odd":isOdd(attributes.queryParams.mynum)
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<choice doc:name="Choice" doc:id="1812d22c-9e00-40f8-9ee5-1cfdfdfc08ca" >
+			<when expression="#[payload.is_odd = true]">
+				<ee:transform doc:name="It is an odd number!" doc:id="30c50711-a089-4704-932d-28dc84ba3707" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": 'It is an odd number!'
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="It is an even number" doc:id="9823e580-680a-4886-8a9a-4ea162959f7e" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": 'It is an even number'
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+	</flow>
+</mule>
