@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1ffce915-f8e7-4ba7-b8c0-b2f5948e27f5" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<vm:config name="VM_Config" doc:name="VM Config" doc:id="cabc5643-76e3-48f6-857f-352143dd0d2a" >
+		<expiration-policy maxIdleTime="5" timeUnit="MINUTES" />
+		<vm:queues >
+			<vm:queue queueName="test1" maxOutstandingMessages="5"/>
+			<vm:queue queueName="test2" maxOutstandingMessages="5"/>
+			<vm:queue queueName="test3" maxOutstandingMessages="5"/>
+		</vm:queues>
+	</vm:config>
+	<flow name="publish-subscribeFlow" doc:id="94e2d4ab-e03d-4c94-9c4e-4b75e76d916d" >
+		<http:listener doc:name="Listener" doc:id="b616b8ab-0515-4e67-ad1a-f1910bfd9e2b" config-ref="HTTP_Listener_config" path="send-data" allowedMethods="POST"/>
+		<logger level="INFO" doc:name="Logger" doc:id="9d0f7f48-c7cc-4fad-a8c8-88fcadfd0e53" message="Before Publish"/>
+		<scatter-gather doc:name="Scatter-Gather" doc:id="b203c82c-c536-4122-a484-aeb173693524" >
+			<route >
+				<vm:publish doc:name="test1" doc:id="765ea435-8f61-4c5c-a1c0-00db8a8338c3" config-ref="VM_Config" queueName="test1" timeoutUnit="MINUTES"/>
+			</route>
+			<route >
+				<vm:publish doc:name="test2" doc:id="aed738ff-f00e-4ca2-b3ed-31469b9a3435" config-ref="VM_Config" queueName="test2" timeoutUnit="MINUTES"/>
+			</route>
+			<route >
+				<vm:publish doc:name="test3" doc:id="12be4b02-20e1-4401-ac64-bbc8dc5e1171" config-ref="VM_Config" queueName="test3" timeoutUnit="MINUTES"/>
+			</route>
+		</scatter-gather>
+		<logger level="INFO" doc:name="Logger" doc:id="8e846c9c-5cba-4d67-93e4-70dcaf8b033d" message="data sent to queue!"/>
+		<set-payload value="#[%dw 2.0
+output json
+---
+{
+	&quot;message&quot;: &quot;data sent to queue!&quot;,
+	&quot;code&quot;:200,
+	'sent at': now()
+}]" doc:name="response" doc:id="1df2f7c5-7fdf-492b-a2be-243a1a530d16" />
+	</flow>
+	<flow name="publish-subscribeFlow1" doc:id="ab7c8c77-5225-462f-bd87-22db110f4aa8" >
+		<vm:listener doc:name="Listener" doc:id="54d85639-a054-4b7d-9dae-a4b1d5b1c171" config-ref="VM_Config" queueName="test1" numberOfConsumers="1"/>
+		<logger level="INFO" doc:name="Logger" doc:id="4ca03649-bfe3-4a86-bd77-6b7045747aaa" message="consume1:#[now()]"/>
+		<ee:transform doc:name="to CSV" doc:id="6c87396f-b45e-4ee2-93ce-1ab5193ab64f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv header = false
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<file:write doc:name="to CSV" doc:id="d005f92d-e037-4a3c-8bed-1181521f571d" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\publish-subscribe\sent_data.csv" mode="APPEND"/>
+	</flow>
+	<flow name="publish-subscribeFlow2" doc:id="14b7b82d-f9ef-4f1a-8f49-133a9c400c32" >
+		<vm:listener doc:name="Listener" doc:id="53d9b784-3862-4c97-8d6b-14ebabab7e11" config-ref="VM_Config" queueName="test2" numberOfConsumers="1"/>
+		<logger level="INFO" doc:name="Logger" doc:id="c8250ad5-1bb2-4ff6-8951-ffedba02bfe5" message="consume2:#[now()]"/>
+		<ee:transform doc:name="to JSON" doc:id="5a232a90-d5e0-4d4e-a128-e875252be127" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<file:write doc:name="to JSON" doc:id="7f49ea95-a670-4667-9759-c893de851b0b" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\publish-subscribe\sent_data.json" mode="APPEND"/>
+	</flow>
+	<flow name="publish-subscribeFlow3" doc:id="32702ba8-b3e9-4604-8ff2-6dc208ccd450">
+		<vm:listener doc:name="Listener" doc:id="99209cd2-3089-4663-8e48-78cc1fa1ab2c" config-ref="VM_Config" queueName="test3" numberOfConsumers="1"/>
+		<logger level="INFO" doc:name="Logger" doc:id="60bef3b6-ae34-4ef7-bf1b-7c21304c1140" message="consume3:#[now()]"/>
+		<ee:transform doc:name="to XML" doc:id="5a1cb828-763a-4a96-ab4b-e9c8f67e13e4" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	"data":{
+		'row':payload
+	       }
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<file:write doc:name="to XML" doc:id="f31b44a6-40b7-473d-8fd0-2c381bd94ad4" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\publish-subscribe\sent_data.xml" mode="APPEND"/>
+	</flow>
+</mule>
