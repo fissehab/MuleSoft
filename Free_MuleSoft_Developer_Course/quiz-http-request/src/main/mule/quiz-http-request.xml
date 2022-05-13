@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="7a795799-72cb-4b8f-86ad-d9597b6f17e6" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="c70fae54-344d-4c6d-9acf-c9e7344d7df6" responseTimeout="600000">
+		<http:request-connection host="localhost" port="8081" />
+	</http:request-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="1805d287-fba0-4ce3-a681-f5bf41e43344" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="AtiHozi1011!" database="northwind" />
+	</db:config>
+	<flow name="quiz-http-requestFlow" doc:id="4030364d-67c6-4f6d-9396-db8c76397d2f" >
+		<http:listener doc:name="Default" doc:id="6dbf6de5-6988-4e5c-be69-2b530f98869d" config-ref="HTTP_Listener_config" path="get-employee-info"/>
+		<logger level="INFO" doc:name="Logger" doc:id="9dd2b88f-4081-4124-9b2b-be849b270ee4" message="#[attributes.queryParams.id]"/>
+		<set-variable value="#[attributes.queryParams.id]" doc:name="Parent ID" doc:id="2f18fb44-4c4e-4bac-b10b-bd703c6dec35" variableName="parent_id" />
+		<set-payload value='#[%dw 2.0&#10;output json&#10;---&#10;{&#10;		"employeeId" : 1,&#10;		"lastname" : "Davis",&#10;		"firstname" : "Sara",&#10;		"title" : "CEO",&#10;		"titleOfCourtesy" : "Ms.",&#10;		"birthDate" : "1958-12-08 00:00:00",&#10;		"hireDate" : "2002-05-01 00:00:00",&#10;		"address" : "7890 - 20th Ave. E., Apt. 2A",&#10;		"city" : "Seattle",&#10;		"region" : "WA",&#10;		"postalCode" : "10003",&#10;		"country" : "USA",&#10;		"phone" : "(206) 555-0101",&#10;		"extension" : null,&#10;		"mobile" : null,&#10;		"email" : null,&#10;		"photo" : null,&#10;		"notes" : null,&#10;		"mgrId" : null,&#10;		"photoPath" : null&#10;	}]' doc:name="myPayload" doc:id="7a410d8c-570e-4e5c-9a2f-d80727a4f4c0" />
+		<http:request method="POST" doc:name="What is the payload scope with GET and POST methods?" doc:id="fee508b0-7928-4ffc-83fe-e2bb6f4093a8" config-ref="HTTP_Request_configuration" path="/get-data">
+			<ee:repeatable-file-store-stream bufferUnit="MB" />
+			<http:query-params ><![CDATA[#[output application/java
+---
+{
+	"id" : vars.parent_id
+}]]]></http:query-params>
+		</http:request>
+		<logger level="INFO" doc:name="Logger" doc:id="c1eeaffa-26e5-495a-ba05-b5abfc437696" />
+	</flow>
+	<flow name="quiz-http-requestFlow1" doc:id="c82bbebf-d41d-4d70-9375-5eb2994ab914" >
+		<http:listener doc:name="Default" doc:id="287c163f-7366-4ccf-a053-9497a1c8a691" config-ref="HTTP_Listener_config" path="get-data"/>
+		<logger level="INFO" doc:name="Logger" doc:id="ce836f28-f99d-49b8-806a-c173bbd151da" message="#[attributes.queryParams.id]"/>
+		<set-variable value="#[attributes.queryParams.id]" doc:name="Child ID" doc:id="0eac791a-af79-436d-a343-3c321738312a" variableName="child_id"/>
+		<db:select doc:name="Select" doc:id="b2e88cd4-a6f8-40bc-858d-87324a534259" config-ref="Database_Config">
+			<db:sql ><![CDATA[select * from employee where employeeId = :employeeId]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{'employeeId':attributes.queryParams.id}]]]></db:input-parameters>
+		</db:select>
+		<ee:transform doc:name="to JSON" doc:id="6406a830-864d-4fec-b286-c0d5092f7fb6" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="66e4c271-f14b-4f7e-a06e-0d562da9bff0" />
+	</flow>
+</mule>
