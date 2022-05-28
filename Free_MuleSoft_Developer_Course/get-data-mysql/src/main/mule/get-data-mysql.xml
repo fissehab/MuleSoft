@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="97ca41b9-5424-42af-aac3-52cdecd808b1" >
-		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.user}" password="${mysql.password}" database="${mysql.database}" />
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="mulesoft2022" database="northwind" />
 	</db:config>
 	<configuration-properties doc:name="Configuration properties" doc:id="bbffaef6-71ec-4bd9-b744-2fb978838254" file="config.yaml" />
 	<flow name="get-data" doc:id="57e74f80-973b-413e-9d3d-46578581c853" >
@@ -19,8 +19,10 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 			<db:sql ><![CDATA[SELECT 
     *
 FROM
-    employee;]]></db:sql>
+    employee
+ WHERE employeeId = 100;]]></db:sql>
 		</db:select>
+		<logger level="INFO" doc:name="Logger" doc:id="4ccf2ef0-ebc1-44a3-8355-3f7d695790e3" />
 		<ee:transform doc:name="to CSV" doc:id="0ef23d0f-cbfd-4ce4-9409-4512ae3f81b1" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
@@ -31,8 +33,8 @@ payload]]></ee:set-payload>
 		</ee:transform>
 	</flow>
 	<flow name="get-data-URI-Parameter" doc:id="dc028e63-15a3-411b-9de0-a7e7bb763700" >
-		<http:listener doc:name="/GET" doc:id="30721aed-9dd9-47b1-8991-a31a6a45cc94" config-ref="HTTP_Listener_config" path="/get-employee/{employeeID}"/>
-		<set-variable value="#[attributes.uriParams.employeeID]" doc:name="ID" doc:id="d3a48ee6-17df-4e27-acad-bfdb4a450b7d" variableName="ID"/>
+		<http:listener doc:name="/GET" doc:id="30721aed-9dd9-47b1-8991-a31a6a45cc94" config-ref="HTTP_Listener_config" path="/get-employee/{employeeId}"/>
+		<set-variable value="#[attributes.uriParams.employeeId]" doc:name="ID" doc:id="d3a48ee6-17df-4e27-acad-bfdb4a450b7d" variableName="ID"/>
 		<db:select doc:name="Get Data for Supplied employeeId" doc:id="041d6b17-a784-4a9f-9056-dd8b6bc4bd67" config-ref="Database_Config">
 			<db:sql ><![CDATA[SELECT 
     *
@@ -74,7 +76,7 @@ payload]]></ee:set-payload>
 	</flow>
 	<flow name="get-data-Header" doc:id="83751685-afb4-47b3-8f2d-97f1ab1af1c7" >
 		<http:listener doc:name="/GET" doc:id="186583aa-5400-4d59-aa8d-4bbda43b02d4" config-ref="HTTP_Listener_config" path="/get-employee-header"/>
-		<set-variable value="#[attributes.headers.employeeID]" doc:name="ID" doc:id="2e2eae81-36a7-4f7f-9202-07cad044ad29" variableName="id"/>
+		<set-variable value="#[attributes.headers.employeeId]" doc:name="ID" doc:id="2e2eae81-36a7-4f7f-9202-07cad044ad29" variableName="ID"/>
 		<db:select doc:name="Get Data for Supplied employeeId" doc:id="957eb286-67fb-494c-aa8f-9d6a05e28b0c" config-ref="Database_Config">
 			<db:sql ><![CDATA[SELECT 
     *
