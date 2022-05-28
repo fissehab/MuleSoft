@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="b3e24e38-cfb3-4d43-9264-feb27c087675" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="aaec5795-d562-4d1e-8025-a8f6acf47fce" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="mulesoft2022" database="northwind" />
+	</db:config>
+	<flow name="quiz-1-database" doc:id="6f2048b7-f93f-4679-96d5-54e2bf45d82d" >
+		<http:listener doc:name="/GET" doc:id="a2e9fb7a-fa1c-41a4-86e7-217ea767760d" config-ref="HTTP_Listener_config" path="/get-data/{firstName}/{lastName}"/>
+		<db:select doc:name="Get data for the provided first name and last name" doc:id="f9e0a73e-9089-4a94-b67a-318a4afadbea" config-ref="Database_Config" doc:description="What should be provided in the Input Parameters box?">
+			<db:sql ><![CDATA[SELECT 
+    *
+FROM
+    employee
+WHERE
+     firstname = :firstname
+     AND lastname = :lastname]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{"firstname": attributes.uriParams.firstname,
+lastname: attributes.uriParams.lastname
+}]]]></db:input-parameters>
+		</db:select>
+		<ee:transform doc:name="to JSON" doc:id="9df70fe9-7617-4c3e-af47-3b8efbbe96b6" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="quiz-2-database" doc:id="2a99259c-00de-4fb4-aa78-ebc5cc7ae3bd" >
+		<http:listener doc:name="/GET" doc:id="b016ab4a-188a-49d0-b603-89a1e753763d" config-ref="HTTP_Listener_config" path="/get-data/{firstName}/{lastName}" />
+		<db:select doc:name="Get data for the provided first name and last name" doc:id="3c1b8f90-0b7a-4f2c-b7b8-857d56f16b38" doc:description="Complete the SQL Query Text box." config-ref="Database_Config" >
+			<db:sql ><![CDATA[SELECT 
+    *
+FROM
+    northwind.employee
+WHERE firstname = :firstname
+    AND lastname = :lastname]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{firstname: attributes.uriParams.firstname,
+ lastname: attributes.uriParams.lastname
+}]]]></db:input-parameters>
+		</db:select>
+		<ee:transform doc:name="to JSON" doc:id="8226d1a3-b486-469c-9017-a6801a1b6512" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
