@@ -22,7 +22,6 @@ FROM
     employee
  WHERE employeeId = 100;]]></db:sql>
 		</db:select>
-		<logger level="INFO" doc:name="Logger" doc:id="4ccf2ef0-ebc1-44a3-8355-3f7d695790e3" />
 		<ee:transform doc:name="to CSV" doc:id="0ef23d0f-cbfd-4ce4-9409-4512ae3f81b1" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
