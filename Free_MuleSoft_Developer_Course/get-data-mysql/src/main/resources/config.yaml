@@ -1,0 +1,6 @@
+mysql:
+ host: "localhost"
+ password: "mulesoft2022"
+ user: "root"
+ database: "northwind"
+ port: "3306"
