@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<db:generic-connection url="${postgresql.url}" driverClassName="${postgresql.driver_name}" user="${postgresql.user}" password="${postgresql.password}" />
 	</db:config>
 	<flow name="merge-data" doc:id="ca27969f-e400-469d-8cbc-e2d8c3d9bc07">
-		<http:listener doc:name="Listener" doc:id="98ad9a56-dc1c-4802-a2fe-2af8177a9893" config-ref="HTTP_Listener_config" path="combine-data/{employeeId}" />
+		<http:listener doc:name="/GET" doc:id="98ad9a56-dc1c-4802-a2fe-2af8177a9893" config-ref="HTTP_Listener_config" path="combine-data/{employeeId}" />
 		<set-variable value="#[attributes.uriParams.employeeId]" doc:name="ID" doc:id="0f8e882e-15d6-455d-9a31-d5ea8018ff1e" variableName="ID" />
 		<scatter-gather doc:name="Scatter-Gather" doc:id="b3a3723c-892c-4abd-9410-2cf66d66b34b">
 			<route>
@@ -45,7 +45,7 @@ payload."0".payload ++ payload."1".payload]]></ee:set-payload>
 		</ee:transform>
 	</flow>
 	<flow name="first-successful" doc:id="4a7e0e5f-fc94-4fda-9787-53be26493874" >
-		<http:listener doc:name="Listener" doc:id="765dbaa3-6d6f-4ae4-87d1-f8f3760f8a45" config-ref="HTTP_Listener_config" path="get-data/{employeeId}"/>
+		<http:listener doc:name="/GET" doc:id="765dbaa3-6d6f-4ae4-87d1-f8f3760f8a45" config-ref="HTTP_Listener_config" path="get-data/{employeeId}"/>
 		<set-variable value="#[attributes.uriParams.employeeId]" doc:name="ID" doc:id="116ec026-a569-468e-a713-475e03082d8a" variableName="ID"/>
 		<first-successful doc:name="First Successful" doc:id="d9ed34e8-1d0f-499e-bba7-b33b92405e09" >
 			<route >
