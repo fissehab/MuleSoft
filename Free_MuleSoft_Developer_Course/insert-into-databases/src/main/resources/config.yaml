@@ -1,0 +1,12 @@
+mysql:
+ host: "localhost"
+ password: "mulesoft2022"
+ user: "root"
+ dbase: "mulesoft"
+ port: "3306"
+postgresql:
+  url: "jdbc:postgresql://localhost:5432/mulesoft"
+  password: "mulesoft2022"
+  user: "postgres"
+  driver_name: "org.postgresql.Driver"
+ 
