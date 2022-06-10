@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:ftp="http://www.mulesoft.org/schema/mule/ftp"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/ftp http://www.mulesoft.org/schema/mule/ftp/current/mule-ftp.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="59d350fd-56a6-41f5-8534-cff138b3d8f7" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="4a18fa70-ddd6-4ec0-ba17-3c4b2569cb55" file="config.yaml" />
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="d85ce34c-a360-44c2-b558-4b7ca70bca49" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.user}" password="${mysql.password}" database="${mysql.dbase}" />
+	</db:config>
+	<file:config name="bulk-insert-File_Config" doc:name="File Config" doc:id="11c871ef-3a80-4800-97a7-d0ae17fcd7bb" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\bulk_insert\input" />
+	</file:config>
+	<file:config name="bulk-update-File_Config" doc:name="File Config" doc:id="928d9ae4-b004-41f3-8bfa-1478dbd04dce" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\bulk_update\input" />
+	</file:config>
+	<flow name="update" doc:id="c211f769-c492-48dc-bdde-5e91f3325d5a" >
+		<http:listener doc:name="/GET Update Product" doc:id="ba4d76eb-a70d-4ec9-af6d-bf795b99e000" config-ref="HTTP_Listener_config" path="/update-customer"/>
+		<logger level="INFO" doc:name="Logger" doc:id="ee59ccc2-fc1b-4865-a436-d8fad3438b17" />
+		<db:update doc:name="Update" doc:id="ad4d85fd-2c0b-4057-8f2c-a7c300daa482" config-ref="MySQL_Database_Config">
+			<db:sql ><![CDATA[UPDATE customers 
+SET 
+    City = :new_city,
+    Country = :new_country,
+    Address = :new_address,
+    PostalCode = :new_postal_code
+WHERE
+   CustomerID = :provided_CustomerID;
+
+]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{new_city: attributes.queryParams.City,
+new_country:attributes.queryParams.Country,
+new_address: attributes.queryParams.Address,
+new_postal_code:attributes.queryParams.PostalCode,
+provided_CustomerID: attributes.queryParams.CustomerID
+}]]]></db:input-parameters>
+		</db:update>
+		<ee:transform doc:name="Transform Message" doc:id="57c6b101-c96e-402f-81e0-859df5112010">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"Message": "Table successfully updated!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="delete" doc:id="872d6227-af9f-400a-bbba-5a39194b06e5" >
+		<http:listener doc:name="/GET delete order" doc:id="1bb60b9a-cd76-4375-a16e-72ed9d601b7b" config-ref="HTTP_Listener_config" path="/delete-customer"/>
+		<db:delete doc:name="Delete" doc:id="033d7061-6fe8-4dfd-9a30-ceeb8a15de84" config-ref="MySQL_Database_Config">
+			<db:sql ><![CDATA[DELETE FROM customers 
+WHERE
+    CustomerID = :provided_CustomerID;
+
+
+
+]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{provided_CustomerID: attributes.queryParams.CustomerID}]]]></db:input-parameters>
+		</db:delete>
+		<ee:transform doc:name="Transform Message" doc:id="4c2ca6f5-f00c-4b10-bb54-28547559f4b4" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'Message': "record successfully deleted form table!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="bulk-insert" doc:id="2f92e655-1694-4a51-9d5a-0a5baf62fd6b" >
+		<file:listener doc:name="On New or Updated File" doc:id="7b4d4122-0b94-4331-ac7c-ab47c93b5125" config-ref="bulk-insert-File_Config" autoDelete="true" moveToDirectory="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\bulk_insert\backup" outputMimeType="application/csv">
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS" />
+			</scheduling-strategy>
+			<file:matcher filenamePattern="*.csv" />
+		</file:listener>
+		<ee:transform doc:name="to JSON" doc:id="8d0027a5-cc32-4ce4-960c-67e08e722ddd" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<db:bulk-insert doc:name="Bulk insert" doc:id="f6f33b7f-89b4-42fb-ac6d-600d412111dd" config-ref="MySQL_Database_Config">
+			<db:sql ><![CDATA[INSERT INTO diamonds (productID, carat, cut, color, clarity, depth, `table`, price, x , y, z)
+VALUES (:productID, :carat, :cut, :color, :clarity, :depth, :table, :price, :x , :y, :z);]]></db:sql>
+		</db:bulk-insert>
+		<logger level="INFO" doc:name="Logger" doc:id="503add85-0c58-4e99-8855-5ffbef65b774" message="Data inseted into database successfully!"/>
+	</flow>
+	<flow name="bulk-update" doc:id="9a10c68f-3448-493e-b18c-0f7a5dd4b9d1" >
+		<file:listener doc:name="On New or Updated File" doc:id="a9fc0412-745c-4da5-81e6-b62d0f5f3ee8" config-ref="bulk-update-File_Config" autoDelete="true" moveToDirectory="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\bulk_update\backup">
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS" />
+			</scheduling-strategy>
+			<file:matcher filenamePattern="*.csv" />
+		</file:listener>
+		<ee:transform doc:name="to JSON" doc:id="d5e316a0-8ba8-4283-934f-10fe9cfc1286" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<db:bulk-update doc:name="Bulk update" doc:id="6e761b45-6370-4d48-a141-a7820733217c" config-ref="MySQL_Database_Config">
+			<db:sql ><![CDATA[UPDATE diamonds 
+SET price = :price
+WHERE
+productID = :productID]]></db:sql>
+		</db:bulk-update>
+		<logger level="INFO" doc:name="Logger" doc:id="32b1cf1c-1631-4113-90da-86d709783544" message="Table updated successfully!"/>
+	</flow>
+</mule>

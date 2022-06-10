@@ -1,0 +1,7 @@
+mysql:
+ host: "localhost"
+ password: "mulesoft2022"
+ user: "root"
+ dbase: "mulesoft"
+ port: "3306"
+ 
