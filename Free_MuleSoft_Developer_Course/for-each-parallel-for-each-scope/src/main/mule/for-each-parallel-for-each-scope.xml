@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="8ecd3b09-63ab-4d3f-8f7a-bdd860fe59fa" file="config.yaml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="4a6f095d-fd5a-4050-8dbb-f74996fa11d4" file="config.yaml" />
+	<db:config name="MySQL-Database_Config" doc:name="Database Config" doc:id="82cfd327-b361-4f8c-b3bc-d25700615701" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.user}" password="${mysql.password}" database="${mysql.dbase}" />
+	</db:config>
+	<db:config name="PostgreSQL-Database_Config" doc:name="Database Config" doc:id="91d36f92-559d-46dc-b419-3eb6cea3ca35" >
+		<db:generic-connection url="${postgresql.url}" driverClassName="${postgresql.driver_name}" user="${postgresql.user}" password="${postgresql.password}" />
+	</db:config>
+	<file:config name="File_Config" doc:name="File Config" doc:id="2356b596-c160-49a5-8023-ec84f7740392" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\insert_new_data_to_db\input" />
+	</file:config>
+	<flow name="flow-reference" doc:id="e86cfa47-76e1-4240-9bb6-c1c084939b3e" >
+		<file:listener doc:name="On New or Updated File" doc:id="5e28f128-e906-4a15-8fd8-938d5cc44811" config-ref="File_Config" autoDelete="true" moveToDirectory="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\insert_new_data_to_db\backup">
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+			<file:matcher filenamePattern="*.json" />
+		</file:listener>
+		<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="621910a2-f695-45e8-a187-bfaddd8cd76d" variableName="before_var"/>
+		<logger level="INFO" doc:name="Log payload" doc:id="a50688de-96d4-4340-a36b-b9247f1ec422" message="#[payload]"/>
+		<flow-ref doc:name="Flow Reference" doc:id="f73aa691-1175-437d-97ec-29746ce3f547" name="for-each"/>
+		<logger level="INFO" doc:name="Log payload" doc:id="e1dc39e1-f376-47f9-a80a-1dcf6b363ee8" message="#[payload]"/>
+		<logger level="INFO" doc:name="Log variable" doc:id="a7e02290-eb99-47e6-a444-85f939315329" message='#[vars."var"]'/>
+	</flow>
+	<flow name="for-each" doc:id="d47d0cbd-f421-414e-95df-9983dbf5de7f">
+		<foreach doc:name="For Each" doc:id="eaece2f0-8964-421a-9384-56fe654c075d">
+			<scatter-gather doc:name="Scatter-Gather" doc:id="1625b27f-6a66-4201-ac11-a60f50be4fd2">
+			<route>
+				<db:insert doc:name="PostgreSQL" doc:id="d674a98d-04c5-46b6-9a02-2db5bbaaeb15" config-ref="PostgreSQL-Database_Config">
+					<db:sql><![CDATA[INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (:CustomerID, :CustomerName, :ContactName, :Address, :City, :PostalCode, :Country);
+]]></db:sql>
+					<db:input-parameters><![CDATA[#[{CustomerID: payload.CustomerID,
+CustomerName:payload.CustomerName, 
+ContactName:payload.ContactName, 
+Address:payload.Address,
+ City:payload.City, 
+ PostalCode:payload.PostalCode, 
+ Country:payload.Country
+}]]]></db:input-parameters>
+				</db:insert>
+			</route>
+			<route>
+				<db:insert doc:name="MySQL" doc:id="e7f3d95f-a46e-4be9-b5e0-e6d6799547c4" config-ref="MySQL-Database_Config">
+					<db:sql><![CDATA[INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (:CustomerID, :CustomerName, :ContactName, :Address, :City, :PostalCode, :Country);
+]]></db:sql>
+					<db:input-parameters><![CDATA[#[{CustomerID: payload.CustomerID,
+CustomerName:payload.CustomerName, 
+ContactName:payload.ContactName, 
+Address:payload.Address,
+ City:payload.City, 
+ PostalCode:payload.PostalCode, 
+ Country:payload.Country
+}]]]></db:input-parameters>
+				</db:insert>
+			</route>
+		</scatter-gather>
+			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="fb4046f0-39bd-4f2a-900a-93b16bee2080" variableName="inside_var" />
+			<logger level="INFO" doc:name="Log payload" doc:id="8d962268-a923-4d65-b978-c47ed435165e" message="#[payload]" />
+		</foreach>
+	</flow>
+	<flow name="parallel-for-each" doc:id="e16b5423-5d60-487a-8104-8e7b728367df" >
+		<parallel-foreach doc:name="Parallel For Each" doc:id="ab5efca0-88a1-41d7-b36b-a9a308630d01" >
+			<scatter-gather doc:name="Scatter-Gather" doc:id="65ba1784-5a48-4e7d-ab19-2db3faa35192">
+			<route>
+				<db:insert doc:name="PostgreSQL" doc:id="4aee1459-f84a-4380-b4a1-6faa601821ed" config-ref="PostgreSQL-Database_Config">
+					<db:sql><![CDATA[INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (:CustomerID, :CustomerName, :ContactName, :Address, :City, :PostalCode, :Country);
+]]></db:sql>
+					<db:input-parameters><![CDATA[#[{CustomerID: payload.CustomerID,
+CustomerName:payload.CustomerName, 
+ContactName:payload.ContactName, 
+Address:payload.Address,
+ City:payload.City, 
+ PostalCode:payload.PostalCode, 
+ Country:payload.Country
+}]]]></db:input-parameters>
+				</db:insert>
+			</route>
+			<route>
+				<db:insert doc:name="MySQL" doc:id="09a1b360-2141-48f4-b1ce-dee7b8f153a0" config-ref="MySQL-Database_Config">
+					<db:sql><![CDATA[INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (:CustomerID, :CustomerName, :ContactName, :Address, :City, :PostalCode, :Country);
+]]></db:sql>
+					<db:input-parameters><![CDATA[#[{CustomerID: payload.CustomerID,
+CustomerName:payload.CustomerName, 
+ContactName:payload.ContactName, 
+Address:payload.Address,
+ City:payload.City, 
+ PostalCode:payload.PostalCode, 
+ Country:payload.Country
+}]]]></db:input-parameters>
+				</db:insert>
+			</route>
+		</scatter-gather>
+			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="1389e0e3-63ee-41ae-a1e0-bfbbec21ea5e" variableName="inside_var" />
+			<logger level="INFO" doc:name="Log payload" doc:id="f864ff38-0e34-4bdd-87fd-d4faefb361e2" message="#[payload]" />
+		</parallel-foreach>
+	</flow>
+</mule>
