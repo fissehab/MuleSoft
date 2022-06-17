@@ -17,9 +17,9 @@ http://www.mulesoft.org/schema/mule/xml-module http://www.mulesoft.org/schema/mu
 	<flow name="flowreference-main-flow" doc:id="4a121612-834f-4146-af2e-324e65d2eed1" >
 		<http:listener doc:name="/Get" doc:id="8a107c78-0f2d-4f11-a017-8e6f4e4c270c" config-ref="HTTP_Listener_config" path="get-data-flowreference" doc:description="save the fl"/>
 		<file:read doc:name="Read JSON Data" doc:id="a90735d4-72af-42a6-908f-92efcbb7130c" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\airports.json" outputMimeType="application/json" />
-		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME TYPE" doc:id="eae5203f-c30a-455e-b66c-c83166d52f1d" variableName="mimeType-mainFlow" />
+		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME TYPE" doc:id="eae5203f-c30a-455e-b66c-c83166d52f1d" variableName="mainflow-var" />
 		<logger level="INFO" doc:name="Log Payload MIME Type" doc:id="05445c42-3786-4193-ab32-f6ac417fe588" message="The main Flow payload MIME type is: #[payload.^mediaType]" />
-		<flow-ref doc:name="Flow Reference" doc:id="c91b8de4-4d12-4fd7-b4d6-e0be8709a708" name="flowreference-private-flow" doc:description="Save the payload from the private flow as a target. What changes?" />
+		<flow-ref doc:name="Flow Reference" doc:id="c91b8de4-4d12-4fd7-b4d6-e0be8709a708" name="flowreference-private-flow" doc:description="Save the payload from the private flow as a target. What changes?" target="child_payload"/>
 		<logger level="INFO" doc:name="Final Payload MIME Type" doc:id="f1ee398f-77a7-4c36-b305-5e9d463c26f4" message="The MIME type of the final payload is : #[payload.^mediaType]" />
 	
 </flow>
@@ -32,7 +32,8 @@ output application/csv
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME Type " doc:id="5c3ac164-f642-42df-b472-cd496201a144" variableName="mimeType-privateFlow" />
+		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME Type " doc:id="5c3ac164-f642-42df-b472-cd496201a144" variableName="privateflow-var" />
+		<set-variable value="100" doc:name="Set Variable" doc:id="224a4652-4d62-4610-88a6-117e897f7a40" variableName="testVar"/>
 		<logger level="INFO" doc:name="Log Payload MIME Type" doc:id="813c404e-89c4-4062-baf1-a72eb01063ab" message='The private Flow payload MIME type is: #[vars."mimeType-privateFlow"]' />
 	</flow>
 	<flow name="request-main-flow" doc:id="520586de-9e5c-4595-b88a-fd42f09b7883" >
@@ -40,12 +41,13 @@ payload]]></ee:set-payload>
 		<file:read doc:name="Read JSON Data" doc:id="af081d7c-ef21-4c30-b810-edfea0d7491f" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\airports.json" outputMimeType="application/json" />
 		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME TYPE" doc:id="4aa7a8b1-6772-4f39-8698-ba850fdc82af" variableName="mimeType-mainFlow" />
 		<logger level="INFO" doc:name="Log Payload MIME Type" doc:id="c0f008cc-830a-4174-ae94-22d471019146" message="The main Flow payload MIME type is: #[payload.^mediaType]" />
-		<http:request method="GET" doc:name="Request" doc:id="b8221e1c-98e0-42a6-b360-73e379c92792" config-ref="HTTP_Request_configuration" path="/read_data" doc:description="save the request payload as a target, what changes?">
+		<http:request method="POST" doc:name="Request" doc:id="b8221e1c-98e0-42a6-b360-73e379c92792" config-ref="HTTP_Request_configuration" path="/read_data" doc:description="save the request payload as a target, what changes?" target="requested_payload">
+			<repeatable-in-memory-stream />
 		</http:request>
 		<logger level="INFO" doc:name="Final Payload MIME Type" doc:id="1899ad43-5b69-46ff-a587-0989d4d853a0" message="The MIME type of the final payload is : #[payload.^mediaType]" />
 	</flow>
 	<flow name="requested-flow" doc:id="7f38a2cc-76b9-41c2-9ded-eec72c6f5700" >
-		<http:listener doc:name="Listener" doc:id="158902df-118f-4e61-b697-8a8f517e2dc6" config-ref="HTTP_Listener_config" path="read_data" allowedMethods="GET"/>
+		<http:listener doc:name="Listener" doc:id="158902df-118f-4e61-b697-8a8f517e2dc6" config-ref="HTTP_Listener_config" path="read_data"/>
 		<file:read doc:name="Read CSV Data" doc:id="98811786-5220-44d6-85ff-d9dbd5912a87" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\airports.csv" outputMimeType="application/csv"/>
 		<set-variable value="#[payload.^mediaType]" doc:name="Payload MIME Type " doc:id="edbab736-245a-450b-afc4-85521b6d9f0e" variableName="mimeType-requestedFlow" />
 		<logger level="INFO" doc:name="Log Payload MIME Type" doc:id="056c1fad-493e-42bb-9b3c-1843ffee35d6" message='The requested Flow payload MIME type is: #[vars."mimeType-requestedFlow"]' />
