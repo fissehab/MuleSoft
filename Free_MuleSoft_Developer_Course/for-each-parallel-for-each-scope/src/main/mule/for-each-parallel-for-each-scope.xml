@@ -24,11 +24,20 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 			</scheduling-strategy>
 			<file:matcher filenamePattern="*.json" />
 		</file:listener>
-		<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="621910a2-f695-45e8-a187-bfaddd8cd76d" variableName="before_var"/>
-		<logger level="INFO" doc:name="Log payload" doc:id="a50688de-96d4-4340-a36b-b9247f1ec422" message="#[payload]"/>
+		<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="621910a2-f695-45e8-a187-bfaddd8cd76d" variableName="my_var"/>
+		<logger level="INFO" doc:name="payload and variable" doc:id="a50688de-96d4-4340-a36b-b9247f1ec422" message="The payload is : #[payload] and the variable is : #[vars.my_var]"/>
 		<flow-ref doc:name="Flow Reference" doc:id="f73aa691-1175-437d-97ec-29746ce3f547" name="for-each"/>
-		<logger level="INFO" doc:name="Log payload" doc:id="e1dc39e1-f376-47f9-a80a-1dcf6b363ee8" message="#[payload]"/>
-		<logger level="INFO" doc:name="Log variable" doc:id="a7e02290-eb99-47e6-a444-85f939315329" message='#[vars."var"]'/>
+		<logger level="INFO" doc:name="payload and variable" doc:id="e1dc39e1-f376-47f9-a80a-1dcf6b363ee8" message="The payload is : #[payload] and the variable is : #[vars.my_var]"/>
+		<ee:transform doc:name="flow completed message" doc:id="634c3f1b-2f71-4198-8df1-f84a909cee9b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'message': 'flow completed successfully!'
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 	<flow name="for-each" doc:id="d47d0cbd-f421-414e-95df-9983dbf5de7f">
 		<foreach doc:name="For Each" doc:id="eaece2f0-8964-421a-9384-56fe654c075d">
@@ -64,8 +73,9 @@ Address:payload.Address,
 				</db:insert>
 			</route>
 		</scatter-gather>
-			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="fb4046f0-39bd-4f2a-900a-93b16bee2080" variableName="inside_var" />
-			<logger level="INFO" doc:name="Log payload" doc:id="8d962268-a923-4d65-b978-c47ed435165e" message="#[payload]" />
+			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="fb4046f0-39bd-4f2a-900a-93b16bee2080" variableName="my_var" />
+			<logger level="INFO" doc:name="payload and variable" doc:id="8d962268-a923-4d65-b978-c47ed435165e" message="The payload is : #[payload] and the variable is : #[vars.my_var]" />
+			<logger level="INFO" doc:name="---------" doc:id="020d5a4f-e351-4269-878d-5d103c24ca10" message="-------------------------------------------------------------------------------------------------------------------------"/>
 		</foreach>
 	</flow>
 	<flow name="parallel-for-each" doc:id="e16b5423-5d60-487a-8104-8e7b728367df" >
@@ -102,8 +112,9 @@ Address:payload.Address,
 				</db:insert>
 			</route>
 		</scatter-gather>
-			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="1389e0e3-63ee-41ae-a1e0-bfbbec21ea5e" variableName="inside_var" />
-			<logger level="INFO" doc:name="Log payload" doc:id="f864ff38-0e34-4bdd-87fd-d4faefb361e2" message="#[payload]" />
+			<set-variable value="#[sizeOf(payload)]" doc:name="variable" doc:id="1389e0e3-63ee-41ae-a1e0-bfbbec21ea5e" variableName="my_var" />
+			<logger level="INFO" doc:name="payload and variable" doc:id="f864ff38-0e34-4bdd-87fd-d4faefb361e2" message="The payload is : #[payload] and the variable is : #[vars.my_var]" />
+			<logger level="INFO" doc:name="-------" doc:id="da96fb15-37e4-4c89-9aec-42c4f21ff484" message="----------------------------------------------------------------------------------------------------------------------"/>
 		</parallel-foreach>
 	</flow>
 </mule>
