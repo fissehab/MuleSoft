@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="04a3b8ac-9374-4db3-9dda-d73f9901b4dc" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quiz1" doc:id="310c16c1-bcfd-40e2-adb9-a62b8d2a4960" >
+		<http:listener doc:name="Listener" doc:id="e8b7e8c3-b00e-417e-a905-388037cdaf51" config-ref="HTTP_Listener_config" path="/batch" doc:description="What gets logged to the console in each of the loggers?&#10;What is the scope of the variables?"/>
+		<set-payload value="#[[1, 2, 3]]" doc:name="[1, 2, 3]" doc:id="cfb360d6-e169-4212-a88e-2d6c02838afd" />
+		<set-variable value="#[max(payload)]" doc:name="var1" doc:id="39d45263-ca0c-479d-be03-5c8c8a228c42" variableName="var1"/>
+		<batch:job jobName="quiz1-batchBatch_Job" doc:id="f30ba9d2-011e-44e9-b000-3250fcc72660" >
+			<batch:process-records >
+				<batch:step name="Batch_Step" doc:id="c3f45707-92a6-4c76-b448-0c5ca0799282" >
+					<set-variable value="#[payload * 10]" doc:name="var2" doc:id="d52c39e0-1265-406d-92a5-def6b70ea6cb" variableName="var2"/>
+					<ee:transform doc:name="Add 1" doc:id="64fb4a85-d7f9-401d-91e2-83b76de82aff" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload + 1]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+					<logger level="INFO" doc:name="Logger" doc:id="be642dfe-0585-4cf1-a69f-afc41579a10a" doc:description="What gets logged to the console?" message="#[output application/json --- payload]"/>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete >
+				<logger level="INFO" doc:name="payload" doc:id="3dbc3fb1-f9e6-4fea-9935-147931c110a0" message="#[payload]" doc:description="What gets logged to the console?"/>
+			</batch:on-complete>
+		</batch:job>
+		<logger level="INFO" doc:name="Logger" doc:id="3c77f40a-f3d6-4f6a-9246-e8c02f1ecdee" message="End of Flow!"/>
+		<ee:transform doc:name="Transform Message" doc:id="d6fc6cd0-ced1-4c5a-b2bd-dbb8e1fbb8ad" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'Message': "Flow 2 completed successfully!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="quiz2" doc:id="4e886137-a812-42cb-a322-96ed4c7c251a" >
+		<http:listener doc:name="Listener" doc:id="eaea1d6b-0b2a-4646-96fd-74d9af19a8a1" config-ref="HTTP_Listener_config" path="/batch2"/>
+		<file:read doc:name="Read CSV" doc:id="815eca53-6495-4c1a-a698-71e52bcc8e7a" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\sample_diamonds_for_quiz.csv" outputMimeType="application/csv"/>
+		<ee:transform doc:name="to JSON" doc:id="e99169c6-d871-43ee-97f6-979c67b291af" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload map (object, index) ->{
+	carat: object.carat,	
+	cut: object.cut,	
+	color: object.color,	
+	clarity: object.clarity,	
+	depth: object.depth,	
+	table: object.table,	
+	price: object.price as Number,	
+	x: object.x,	
+	y:object.y,	
+	z: object.z
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<batch:job jobName="quiz2-batchBatch_Job" doc:id="c6207d5e-9a43-4182-8ea1-7bb71d0ecb6f" blockSize="1">
+			<batch:process-records >
+				<batch:step name="priceGreaterThan340" doc:id="a9f2c0e7-605c-44e6-a9a5-6f6249d0856b" acceptExpression="payload.price &gt; 340">
+					<set-payload value="#[{'price': payload.price * 0.9}]" doc:name="10% price discount" doc:id="880ba815-1653-4804-af7c-63203a1816f4" />
+					<logger level="INFO" doc:name="payload" doc:id="a9493754-da22-42fe-bf85-1d8c9260d241" message="#[payload]"/>
+				</batch:step>
+				<batch:step name="priceLessThan330" doc:id="51a95b4a-b4ae-4a42-b7eb-656916c10e7e" acceptExpression="payload.price &lt;= 330">
+					<set-payload value="#[{'final_price': payload.price}]" doc:name="{'final_price': payload.price}" doc:id="2b21332e-84cb-4eb9-bb63-93b31f7c060f" />
+					<logger level="INFO" doc:name="payload" doc:id="7969394c-b1b8-43a6-b2d7-001592a8bca0" message="#[payload]"/>
+				</batch:step>
+			</batch:process-records>
+		</batch:job>
+		<logger level="INFO" doc:name="Logger" doc:id="852d6f2b-940d-49ae-9908-66f607145644" message="End of Flow!"/>
+		<ee:transform doc:name="Transform Message" doc:id="cf10bb84-c61d-491f-be1d-16741eb7bade" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'Message': "Flow 2 completed successfully!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="quiz3" doc:id="03f48ace-be9a-4339-b7aa-ccf157820220" >
+		<http:listener doc:name="Listener" doc:id="f606dea5-8f52-44a8-a3ac-e69d608da3fe" config-ref="HTTP_Listener_config" path="/batch3" doc:description="what does the logger print to the console?"/>
+		<set-payload value="#[[1000, 2000, 3000, 400]]" doc:name="[1000, 2000, 3000, 400]" doc:id="7f1b457e-79e4-4fb7-b5e7-5dce474cb226" />
+		<batch:job jobName="quiz3-batchBatch_Job" doc:id="b48c2a5e-467c-4df0-b281-7add3cc15157" blockSize="1" >
+			<batch:process-records >
+				<batch:step name="step1" doc:id="b8bfdb1d-6844-4645-a666-3e4603c26618">
+					<set-payload value="#[payload * 0.9]" doc:name="10% discount" doc:id="d81b14e5-59c5-4964-aef3-ee13bb849275" />
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="ebbcb997-426d-49c2-82df-a62ed0c7958a" size="3">
+						<logger level="INFO" doc:name="payload" doc:id="24890218-8ef0-4a5d-af6a-133232c3b856" message="#[output application/json --- payload]" />
+					</batch:aggregator>
+				</batch:step>
+			</batch:process-records>
+		</batch:job>
+		<ee:transform doc:name="Transform Message" doc:id="2d91d444-80a4-41b0-8889-37a577428257" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'Message': "Flow 3 completed successfully!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
