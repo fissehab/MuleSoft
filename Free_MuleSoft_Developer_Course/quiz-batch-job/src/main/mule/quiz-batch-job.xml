@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="quiz1" doc:id="310c16c1-bcfd-40e2-adb9-a62b8d2a4960" >
-		<http:listener doc:name="Listener" doc:id="e8b7e8c3-b00e-417e-a905-388037cdaf51" config-ref="HTTP_Listener_config" path="/batch" doc:description="What gets logged to the console in each of the loggers?&#10;What is the scope of the variables?"/>
+		<http:listener doc:name="Listener" doc:id="e8b7e8c3-b00e-417e-a905-388037cdaf51" config-ref="HTTP_Listener_config" path="/batch1" doc:description="What gets logged to the console in each of the loggers?&#10;What is the scope of the variables?"/>
 		<set-payload value="#[[1, 2, 3]]" doc:name="[1, 2, 3]" doc:id="cfb360d6-e169-4212-a88e-2d6c02838afd" />
 		<set-variable value="#[max(payload)]" doc:name="var1" doc:id="39d45263-ca0c-479d-be03-5c8c8a228c42" variableName="var1"/>
 		<batch:job jobName="quiz1-batchBatch_Job" doc:id="f30ba9d2-011e-44e9-b000-3250fcc72660" >
@@ -26,7 +26,7 @@ output application/json
 payload + 1]]></ee:set-payload>
 						</ee:message>
 					</ee:transform>
-					<logger level="INFO" doc:name="Logger" doc:id="be642dfe-0585-4cf1-a69f-afc41579a10a" doc:description="What gets logged to the console?" message="#[output application/json --- payload]"/>
+					<logger level="INFO" doc:name="payload" doc:id="be642dfe-0585-4cf1-a69f-afc41579a10a" doc:description="What gets logged to the console?" message="#[output application/json --- payload]"/>
 				</batch:step>
 			</batch:process-records>
 			<batch:on-complete >
@@ -34,13 +34,13 @@ payload + 1]]></ee:set-payload>
 			</batch:on-complete>
 		</batch:job>
 		<logger level="INFO" doc:name="Logger" doc:id="3c77f40a-f3d6-4f6a-9246-e8c02f1ecdee" message="End of Flow!"/>
-		<ee:transform doc:name="Transform Message" doc:id="d6fc6cd0-ced1-4c5a-b2bd-dbb8e1fbb8ad" >
+		<ee:transform doc:name="Flow End Message" doc:id="d6fc6cd0-ced1-4c5a-b2bd-dbb8e1fbb8ad" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	'Message': "Flow 2 completed successfully!"
+	'Message': "Flow completed successfully!"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
@@ -80,22 +80,22 @@ payload map (object, index) ->{
 			</batch:process-records>
 		</batch:job>
 		<logger level="INFO" doc:name="Logger" doc:id="852d6f2b-940d-49ae-9908-66f607145644" message="End of Flow!"/>
-		<ee:transform doc:name="Transform Message" doc:id="cf10bb84-c61d-491f-be1d-16741eb7bade" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
+		<ee:transform doc:name="Flow End Message" doc:id="cf10bb84-c61d-491f-be1d-16741eb7bade">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	'Message': "Flow 2 completed successfully!"
+	'Message': "Flow completed successfully!"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>
-	<flow name="quiz3" doc:id="03f48ace-be9a-4339-b7aa-ccf157820220" >
-		<http:listener doc:name="Listener" doc:id="f606dea5-8f52-44a8-a3ac-e69d608da3fe" config-ref="HTTP_Listener_config" path="/batch3" doc:description="what does the logger print to the console?"/>
+	<flow name="quiz3" doc:id="03f48ace-be9a-4339-b7aa-ccf157820220">
+		<http:listener doc:name="Listener" doc:id="f606dea5-8f52-44a8-a3ac-e69d608da3fe" config-ref="HTTP_Listener_config" path="/batch3" doc:description="what does the logger print to the console?" />
 		<set-payload value="#[[1000, 2000, 3000, 400]]" doc:name="[1000, 2000, 3000, 400]" doc:id="7f1b457e-79e4-4fb7-b5e7-5dce474cb226" />
-		<batch:job jobName="quiz3-batchBatch_Job" doc:id="b48c2a5e-467c-4df0-b281-7add3cc15157" blockSize="1" >
-			<batch:process-records >
+		<batch:job jobName="quiz3-batchBatch_Job" doc:id="b48c2a5e-467c-4df0-b281-7add3cc15157" blockSize="1">
+			<batch:process-records>
 				<batch:step name="step1" doc:id="b8bfdb1d-6844-4645-a666-3e4603c26618">
 					<set-payload value="#[payload * 0.9]" doc:name="10% discount" doc:id="d81b14e5-59c5-4964-aef3-ee13bb849275" />
 					<batch:aggregator doc:name="Batch Aggregator" doc:id="ebbcb997-426d-49c2-82df-a62ed0c7958a" size="3">
@@ -104,15 +104,42 @@ output application/json
 				</batch:step>
 			</batch:process-records>
 		</batch:job>
-		<ee:transform doc:name="Transform Message" doc:id="2d91d444-80a4-41b0-8889-37a577428257" >
+		<ee:transform doc:name="Flow End Message" doc:id="2d91d444-80a4-41b0-8889-37a577428257">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'Message': "Flow completed successfully!"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="quiz4" doc:id="4471f1f8-8829-4400-9a24-8ce3575878b2" >
+		<http:listener doc:name="Listener" doc:id="1c04af46-178b-44f0-b6cf-63b7aa1a0ad7" doc:description="what gets saved?" config-ref="HTTP_Listener_config" path="/batch4" />
+		<set-payload value="#[[1000, 2000, 3000, 400, 'a', 'b']]" doc:name="[1000, 2000, 3000, 400, 'a', 'b']" doc:id="ce7dc750-46ee-43af-a896-6c965add8fab" />
+		<batch:job jobName="quiz4-batchBatch_Job" doc:id="7b20a884-5ea0-459d-8517-4c4d53a44801" blockSize="1" >
+			<batch:process-records >
+				<batch:step name="step1" doc:id="1b81a5bc-d9e9-4935-9281-abb620501dd0" acceptExpression="#[payload is Number]">
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="98dc62ec-f65b-40b5-9e8b-4ac57b7aff18" streaming="true">
+						<logger level="INFO" doc:name="Logger" doc:id="73959d24-2552-4755-8951-ecbfc48a3e0f" message="#[output application/json --- payload]"/>
+					
+</batch:aggregator>
+					<set-payload value="#[payload * 0.9]" doc:name="10% discount" doc:id="41445bf7-cd4f-4068-a020-f49aa4b755c0" />
+				</batch:step>
+			
+</batch:process-records>
+		</batch:job>
+		<ee:transform doc:name="Flow End Message" doc:id="5e5a1e13-81cd-45fa-b9cc-60b1f4a92d49" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	'Message': "Flow 3 completed successfully!"
+	'Message': "Flow completed successfully!"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-	</flow>
+	
+</flow>
 </mule>
