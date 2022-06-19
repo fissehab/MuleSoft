@@ -54,7 +54,7 @@ output application/json
 }]]></ee:set-payload>
 						</ee:message>
 					</ee:transform>
-					<batch:aggregator doc:name="Batch Aggregator" doc:id="437fd152-63cd-47be-a7cc-84a3a9fd411d" size="5">
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="437fd152-63cd-47be-a7cc-84a3a9fd411d" size="10">
 						<db:bulk-insert doc:name="Into MySQL" doc:id="3c8b33c6-e597-488d-b5a7-94f089345479" config-ref="MySQL_Database_Config">
 			<db:sql><![CDATA[INSERT INTO diamonds_discount (productID, carat, cut, color, clarity, depth, `table`, price_old, price_new, x , y, z)
 VALUES (:productID, :carat, :cut, :color, :clarity, :depth, :table, :price_old, :price_new, :x , :y, :z);]]></db:sql>
@@ -71,7 +71,7 @@ payload]]></ee:set-payload>
 				</batch:step>
 			</batch:process-records>
 			<batch:on-complete>
-				<logger level="INFO" doc:name="time taken" doc:id="6d05e53c-a337-43e2-8b7b-5c13ee862279" message='#["The time taken is " ++ (now() - vars.start_time).secs as String]' />
+				<logger level="INFO" doc:name="time taken" doc:id="6d05e53c-a337-43e2-8b7b-5c13ee862279" message='#["The time taken is " ++ (now() - vars.start_time) as String]' />
 			</batch:on-complete>
 		</batch:job>
 	</flow>
