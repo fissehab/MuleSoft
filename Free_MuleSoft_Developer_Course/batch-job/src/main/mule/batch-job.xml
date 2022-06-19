@@ -71,7 +71,7 @@ payload]]></ee:set-payload>
 				</batch:step>
 			</batch:process-records>
 			<batch:on-complete>
-				<logger level="INFO" doc:name="payload and variable" doc:id="6d05e53c-a337-43e2-8b7b-5c13ee862279" message="The variable before the scope is #[vars.var_before] and the variable from the scope is #[vars.var_after] and the payload is #[payload] and the time taken is #[now() - vars.start_time as String]" />
+				<logger level="INFO" doc:name="time taken" doc:id="6d05e53c-a337-43e2-8b7b-5c13ee862279" message='#["The time taken is " ++ (now() - vars.start_time).secs as String]' />
 			</batch:on-complete>
 		</batch:job>
 	</flow>
