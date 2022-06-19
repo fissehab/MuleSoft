@@ -54,7 +54,7 @@ output application/json
 }]]></ee:set-payload>
 						</ee:message>
 					</ee:transform>
-					<batch:aggregator doc:name="Batch Aggregator" doc:id="437fd152-63cd-47be-a7cc-84a3a9fd411d" size="10">
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="437fd152-63cd-47be-a7cc-84a3a9fd411d" size="2000">
 						<db:bulk-insert doc:name="Into MySQL" doc:id="3c8b33c6-e597-488d-b5a7-94f089345479" config-ref="MySQL_Database_Config">
 			<db:sql><![CDATA[INSERT INTO diamonds_discount (productID, carat, cut, color, clarity, depth, `table`, price_old, price_new, x , y, z)
 VALUES (:productID, :carat, :cut, :color, :clarity, :depth, :table, :price_old, :price_new, :x , :y, :z);]]></db:sql>
