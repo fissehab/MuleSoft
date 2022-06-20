@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="37d6d351-93e9-4a1c-b755-100fc92f96e0" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="quiz-for-each-add-odd-even-all-numbers" doc:id="a66ff4f2-5661-4d96-be7f-19ff3d718b7a" >
+		<http:listener doc:name="/GET" doc:id="422db718-48fc-4ab8-a008-1b7b70dbc700" path="/get-sum" config-ref="HTTP_Listener_config"/>
+		<set-payload value="#[attributes.queryParams.min as Number to attributes.queryParams.max as Number]" doc:name="array of numbers" doc:id="a218667b-b5f0-4ed4-871e-770193fd37ae" />
+		<ee:transform doc:name="variables with starting values=0" doc:id="cd917ffc-6f89-4aa7-811d-dffef6b44327" >
+			<ee:message >
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="sum_all" ><![CDATA[%dw 2.0
+output application/json
+---
+0]]></ee:set-variable>
+				<ee:set-variable variableName="sum_odd" ><![CDATA[%dw 2.0
+output application/json
+---
+0]]></ee:set-variable>
+				<ee:set-variable variableName="sum_even" ><![CDATA[%dw 2.0
+output application/json
+---
+0]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<foreach doc:name="For Each" doc:id="fb2cf4f8-33e4-4f35-bc2e-0c06a9cd2f71" >
+			<ee:transform doc:name="Transform Message" doc:id="05066900-84c5-425e-a5cd-671ea7559adb" >
+				<ee:message >
+				</ee:message>
+				<ee:variables >
+					<ee:set-variable variableName="sum_even" ><![CDATA[%dw 2.0
+output application/json
+---
+if(isEven(payload) == true) vars.sum_even + payload else vars.sum_even]]></ee:set-variable>
+					<ee:set-variable variableName="sum_all" ><![CDATA[%dw 2.0
+output application/json
+---
+ vars.sum_all + payload]]></ee:set-variable>
+					<ee:set-variable variableName="sum_odd" ><![CDATA[%dw 2.0
+output application/json
+---
+if(isOdd(payload) == true) vars.sum_odd + payload else vars.sum_odd]]></ee:set-variable>
+				</ee:variables>
+			</ee:transform>
+		</foreach>
+		<ee:transform doc:name="output" doc:id="d3e41e36-f52f-4b13-8b22-1568b8490a59" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'The sum of all odd numbers between the start and the end is': vars.sum_odd,
+	'The sum of all even numbers between the start and the end is': vars.sum_even,
+	'The sum of all numbers between the start and the end is': vars.sum_all
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
