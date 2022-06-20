@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="4691c8cd-a91d-4f1b-88d0-aaffcdcb81c1" file="config.yaml" />
+	<file:config name="File_Config" doc:name="File Config" doc:id="13f82b38-fd85-4273-8024-2ff734d1e3c1" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\batch_processing\input" />
+	</file:config>
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="044f1780-0c45-43cd-acb8-6845a9c75eb4" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.user}" password="${mysql.password}" database="${mysql.dbase}" />
+	</db:config>
+	<flow name="batch-job" doc:id="f80aa68c-d23e-4511-ac6b-827638e50cce" >
+		<file:listener doc:id="7b324b2a-2d8e-4b80-85e5-5efb1db9a752" config-ref="File_Config" autoDelete="true" moveToDirectory="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\batch_processing\backup" doc:name="Read csv files" outputMimeType="application/csv">
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS" />
+			</scheduling-strategy>
+			<file:matcher filenamePattern="*.csv" />
+		</file:listener>
+		<ee:transform doc:name="to JSON" doc:id="4eea3a8f-2921-4c71-860b-d76cbb79a5ae">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<set-variable value="#[now()]" doc:name="start time" doc:id="99d8fad7-a3f8-49f7-b9ae-b283f6e7976b" variableName="start_time"/>
+		<batch:job jobName="batch-jobBatch_Job" doc:id="2db3178a-0a4c-4cfd-bc36-af3f4d31541b" maxFailedRecords="-1">
+			<batch:process-records >
+				<batch:step name="priceGt400" doc:id="1224505f-39b6-47ab-a205-c80623205ab0" acceptExpression="payload.price &gt; 400">
+					<ee:transform doc:name="make 10% discount" doc:id="c434235b-54b2-4a3a-985d-c01cd49cc9fc" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+"productID": payload.productID,
+"carat": payload.carat,	
+"cut": payload.cut,
+"color":payload.color,
+"clarity":payload.clarity,
+"depth": payload.depth,	
+"table": payload.table,	
+"price_old":payload.price as Number,
+"price_new":(payload.price as Number) * 0.9,		
+"x":payload.x,		
+"y":payload.y,		
+"z": payload.z
+}]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+					<batch:aggregator doc:name="Batch Aggregator" doc:id="437fd152-63cd-47be-a7cc-84a3a9fd411d" streaming="true">
+						<db:bulk-insert doc:name="Into MySQL" doc:id="3c8b33c6-e597-488d-b5a7-94f089345479" config-ref="MySQL_Database_Config">
+			<db:sql><![CDATA[INSERT INTO diamonds_discount (productID, carat, cut, color, clarity, depth, `table`, price_old, price_new, x , y, z)
+VALUES (:productID, :carat, :cut, :color, :clarity, :depth, :table, :price_old, :price_new, :x , :y, :z);]]></db:sql>
+		</db:bulk-insert>
+					</batch:aggregator>
+					<ee:transform doc:name="Java format" doc:id="9c67df58-5c2f-4fd3-83ad-faa59065130d" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+payload]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete>
+				<logger level="INFO" doc:name="time taken" doc:id="6d05e53c-a337-43e2-8b7b-5c13ee862279" message='#["The time taken is " ++ (now() - vars.start_time) as String]' />
+			</batch:on-complete>
+		</batch:job>
+	</flow>
+</mule>
