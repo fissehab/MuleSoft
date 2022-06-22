@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="68a6ac14-4665-4521-96d3-6df9c7238e82" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="scatter-gather-variable-scope" doc:id="33649ca3-186d-47ce-a405-82771917740b" >
+		<http:listener doc:name="Listener" doc:id="63552d86-effe-4df7-ba7f-77a396eb7369" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value="#[[1, 2, 3, 4]]" doc:name="[1, 2, 3, 4]" doc:id="bcb8dde9-23e6-4abb-a36a-f12f490451a7" />
+		<set-variable value="#[0]" doc:name="var0 = 0" doc:id="54bafdc6-78c0-426e-ac1f-c6e181cacb12" variableName="var0"/>
+		<scatter-gather doc:name="Scatter-Gather" doc:id="9e41526b-af12-4431-9ef5-2eb6536c4b52" >
+			<route >
+				<ee:transform doc:name="var 1 = var0 + 10" doc:id="baaf1932-da00-47da-bdfd-87243ff45e8e" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="var2" ><![CDATA[%dw 2.0
+output application/json
+---
+vars.var0 + 10]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</route>
+			<route >
+				<ee:transform doc:name="var 2 = [var0] ++ [20, 30, 40]" doc:id="b401cddb-4637-4cf7-98ab-6f7b4973ebb3" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="var2" ><![CDATA[%dw 2.0
+output application/java
+---
+[vars.var0] ++ [20, 30, 40]]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</route>
+			<route >
+				<ee:transform doc:name="var 3= var0 + 40" doc:id="39be2add-f003-41ad-8aeb-73bce56c390c" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="var3" ><![CDATA[%dw 2.0
+output application/json
+---
+vars.var0 + 40]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="Transform Message" doc:id="e33decdf-6fff-4d47-ac1c-949d28181354" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'payload from the Scatter Gather': payload..payload,
+	'variables from the scatter Gather': vars
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="2f01650a-cf8e-49ca-a902-c11f16e7a8d8" />
+	</flow>
+</mule>
