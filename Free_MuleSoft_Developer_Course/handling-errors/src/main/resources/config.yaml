@@ -1,0 +1,19 @@
+mysql:
+ host: "localhost"
+ password: "mulesoft2022"
+ user: "root"
+ dbase: "mulesoft"
+ port: "3306"
+ 
+mysql_northwind:
+ host: "localhost"
+ password: "mulesoft2022"
+ user: "root"
+ dbase: "northwind"
+ port: "3306"
+ 
+postgresql_northwind:
+  url: "jdbc:postgresql://localhost:5432/Northwind"
+  password: "mulesoft2022"
+  user: "postgres"
+  driver_name: "org.postgresql.Driver"
