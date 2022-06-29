@@ -8,9 +8,10 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="e2b39560-2251-4868-b4fa-7c3ba6c0113d" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="add-only-numbers-error-continueFlow1" doc:id="31e06133-fbee-439b-b0ee-1819b5c73aac">
+	<flow name="add-only-numbers-error-continue" doc:id="31e06133-fbee-439b-b0ee-1819b5c73aac">
 		<http:listener doc:name="Listener" doc:id="8a025638-9d07-4c9e-9479-c06b7105bed6" config-ref="HTTP_Listener_config" path="add1" />
 		<set-variable value="#[0]" doc:name="var1=0" doc:id="bae85d3b-eef9-4bd9-ad17-e7565b631086" variableName="var1" />
+		<logger level="INFO" doc:name="Logger" doc:id="df52682d-deb6-4654-a183-14b1d60b4e14" />
 		<foreach doc:name="For Each" doc:id="302ca827-02de-40b9-897e-686e0473342c">
 			<try doc:name="Try" doc:id="05b432df-ed3b-4877-b009-2b36f21b37ef">
 			<ee:transform doc:name="add" doc:id="3c808164-31bf-4ef7-a5bd-5cad447c66ed">
@@ -23,6 +24,7 @@ output application/json
  payload + vars.var1]]></ee:set-variable>
 					</ee:variables>
 				</ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="34c5616c-236f-4282-a6dd-4de430fc31b8" />
 				<error-handler>
 					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="0ad51a1c-d785-41dd-97c8-0795e2c2127c">
 						<logger level="INFO" doc:name="Logger" doc:id="cd276f4b-83fb-4fea-9adf-0ff427f736bd" message="#[payload] is not numeric!" />
@@ -41,7 +43,7 @@ output application/json
 				</ee:message>
 			</ee:transform>
 	</flow>
-	<flow name="add-only-numbers-error-continueFlow" doc:id="96e1b0c9-0841-4f47-b76d-8a4495f59fa8" >
+	<flow name="add-only-numbers-if-else" doc:id="96e1b0c9-0841-4f47-b76d-8a4495f59fa8" >
 		<http:listener doc:name="Listener" doc:id="c86929f5-67e1-498b-a397-67177e1614f3" config-ref="HTTP_Listener_config" path="/add2"/>
 		<set-variable value="#[0]" doc:name="var1=0" doc:id="68e6565a-4a06-42e5-b683-5f4aecff2fbe" variableName="var1"/>
 		<logger level="INFO" doc:name="Logger" doc:id="80f3387c-f108-46c4-b4f5-c84d7cfdf26f" />
