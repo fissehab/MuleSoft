@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bfbdb9fe-b462-41e0-945d-8aa88bcc6930" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="88264627-262b-429b-a27e-ac604145eb1d" file="config.yaml" />
+	<validation:config name="Validation_Config" doc:name="Validation Config" doc:id="62479a30-150a-4f30-b019-52369fd8bd43" />
+	<db:config name="Database_Config-MySQL" doc:name="Database Config" doc:id="8b6fbf48-9a75-4bab-bdaa-bacaadf4e341" >
+		<db:my-sql-connection host="${mysql.host}" port="${mysql.port}" user="${mysql.user}" password="${mysql.password}" database="${mysql.dbase}" />
+	</db:config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="9a43b8e5-5420-431d-a24a-30ee757c3530" >
+		<db:generic-connection url="${postgresql.url}" driverClassName="${postgresql.driver_name}" user="${postgresql.user}" password="${postgresql.password}" />
+	</db:config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="83d42b2c-9c20-479d-8eca-d26222e294a2" basePath="/test" >
+		<http:request-connection host="test" port="4567" />
+	</http:request-config>
+	<flow name="merge-data" doc:id="bcb26b76-a6fe-49f8-a1dc-2b3679a5640a">
+		<http:listener doc:name="/GET" doc:id="e2bab8c2-c734-40eb-880f-461a2581a860" config-ref="HTTP_Listener_config" path="combine-data/{employeeId}">
+			<http:error-response>
+				<http:body><![CDATA[#[payload]]]></http:body>
+			</http:error-response>
+		</http:listener>
+		<set-variable value="#[attributes.uriParams.employeeId]" doc:name="ID" doc:id="7ddf7eae-9b85-4281-81c4-44bed8ea7f87" variableName="ID" />
+		<validation:is-number numberType="INTEGER" doc:name="Is ID an integer?" doc:id="a63e85bd-4895-49a3-b649-164c7396b87f" config-ref="Validation_Config" value="#[vars.ID]" />
+		<scatter-gather doc:name="Scatter-Gather" doc:id="66a1ecae-c003-418e-9bc5-defa68b8ed14">
+			<route>
+				<db:select doc:name="PostgreSQL" doc:id="1310fef6-3245-43c4-8157-085d54e34476" config-ref="Database_Config">
+					<error-mapping targetType="APP:failed" sourceType="DB:CONNECTIVITY"/>
+					<db:sql><![CDATA[SELECT * FROM employee
+WHERE empid = :empid]]></db:sql>
+					<db:input-parameters><![CDATA[#[{empid: vars.ID}]]]></db:input-parameters>
+				</db:select>
+			</route>
+			<route>
+				<db:select doc:name="MySQL" doc:id="37d9d8d7-a914-4ff6-aa7a-7084d21fefb3" config-ref="Database_Config-MySQL">
+					<error-mapping targetType="APP:failed" sourceType="DB:CONNECTIVITY"/>
+					<db:sql><![CDATA[SELECT territoryId FROM employeeterritory
+WHERE employeeId = :employeeId]]></db:sql>
+					<db:input-parameters><![CDATA[#[{employeeId: vars.ID}]]]></db:input-parameters>
+				</db:select>
+			</route>
+		
+</scatter-gather>
+		<ee:transform doc:name="Merge/JSON" doc:id="2190fb2e-6ebe-4867-a32e-919e3e0faa7d">
+			<ee:message>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable variableName="payload"><![CDATA[%dw 2.0
+output application/json
+---
+payload."0".payload ++ payload."1".payload]]></ee:set-variable>
+			</ee:variables>
+		
+</ee:transform>
+		<set-variable value="#[vars.payload[0].firstname]" doc:name="firstName" doc:id="bfb057fc-3227-4111-8b7e-2016939d10fa" variableName="firstName" />
+		<logger level="INFO" doc:name="Logger" doc:id="83a9af6d-877f-4a8e-991c-735ca6e80492" />
+		<flow-ref doc:name="Flow Reference" doc:id="60ccc281-9b56-4f22-bf39-fe861db8b4db" name="private-flow" />
+		<ee:transform doc:name="Combine" doc:id="71da552e-95e6-4a14-9d2d-c8aeac554268">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+"gender": payload."0".payload,
+"nationality": payload."1".payload,
+'employee':vars.payload
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="3546f63f-9549-4a4b-ba4a-65325d4adcc3" />
+		<error-handler>
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="1d198ea0-345c-4afe-9021-9d71af706139" type="DB:CONNECTIVITY">
+				<set-payload value="DB failed" doc:name="Set Payload" doc:id="46c7513c-3464-42ac-8f2d-0890ceed9701" />
+			</on-error-continue>
+			<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="59d643d9-efeb-4e27-85f0-f98a69462d68" when="#[error.errorType.namespace == 'VALIDATION']">
+				<set-payload value="please provide an integer ID" doc:name="Set Payload" doc:id="27603cf4-2995-4a97-858e-e310e465c18f" />
+			</on-error-propagate>
+			<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="bfb21e10-4965-4249-8bfb-39ed089e9f6f" type="APP:failed">
+				<set-payload value="mysql failed" doc:name="Set Payload" doc:id="dc543ba5-56f6-4034-87e3-0caf8963f017" />
+			</on-error-propagate>
+			<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="a5cdcd25-d021-4960-b6f3-6b0d0ea3d3f3" type="APP:failed">
+				<set-payload value="postgres failed" doc:name="Set Payload" doc:id="8ca7c797-e020-485d-beae-ee69e47f0cae" />
+			</on-error-propagate>
+			<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="03601460-bd69-4504-a553-d7fc8d487816" type="ANY">
+				<set-payload value="response from any type of error handling scope!" doc:name="Set Payload" doc:id="c329fe91-473f-49dd-aaf9-6413fe2126b7" />
+			</on-error-propagate>
+		</error-handler>
+	
+</flow>
+	<flow name="private-flow" doc:id="6f0ae07f-51b8-420b-ad04-7b346aeed244" >
+		<scatter-gather doc:name="Scatter-Gather" doc:id="2fb683e2-8b7f-4187-afcd-dc565d48f105">
+			<route>
+				<http:request method="GET" doc:name="Genderize" doc:id="d893a724-ae82-4ef4-a810-1656d7a8aed3" url='#["https://api.genderize.io?name=" ++ vars.firstName]'>
+					<reconnect />
+
+				</http:request>
+			</route>
+			<route>
+				<http:request method="GET" doc:name="Nationalize" doc:id="e6edb7a7-037d-4f9e-a96f-d84788abb598" url='#["https://api.nationalize.io?name="++ vars.firstName]'>
+				</http:request>
+			</route>
+		</scatter-gather>
+		<error-handler >
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="12dfcdc6-0af7-41d3-9aa2-3dd35a29b031" type="ANY">
+				<set-payload value="private flow error!" doc:name="Set Payload" doc:id="b142d7ba-985e-4859-ae20-ccf0718d5107" />
+			</on-error-continue>
+		</error-handler>
+	</flow>
+
+</mule>

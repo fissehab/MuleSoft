@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:validation="http://www.mulesoft.org/schema/mule/validation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="3ea44696-ffae-43ee-b527-fd13d0a892d9" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<validation:config name="Validation_Config" doc:name="Validation Config" doc:id="9273dabf-5cc7-437c-bb28-e00089ae50ec" />
+	<flow name="quiz-handling-errorsFlow" doc:id="27f14f05-fa3a-4c5c-bae3-6f20098de96e" >
+		<http:listener doc:name="/get" doc:id="51b1ea42-b38b-4856-920b-2c1559c08cea" config-ref="HTTP_Listener_config" path="/read"/>
+		<file:read doc:name="Read data" doc:id="0a69388d-65c1-4b58-8385-b44b12f929d5" path="tmp.csv" outputMimeType="application/csv">
+			<error-mapping sourceType="FILE:ILLEGAL_PATH" targetType="AIRPORTS:NOT_CREATED" />
+		</file:read>
+		<logger level="INFO" doc:name="Logger" doc:id="008b5f0f-db99-4cb5-9690-ebaf5dda2d2e" />
+		<ee:transform doc:name="to JSON" doc:id="0cfeca42-5c5a-4fda-adb0-a405f7c6ed06" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<error-handler >
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="95f2db9e-c5a8-4560-af86-c309451507d8" type="FILE:CONNECTIVITY">
+				<set-payload value="FILE: CONNECTIVITY" doc:name="FILE: CONNECTIVITY" doc:id="83df87c0-8b2c-409b-b8dc-e8faf176e453" />
+				<logger level="INFO" doc:name="Logger" doc:id="ff5009df-7b8d-486e-97ff-7bc8f7127945" />
+			</on-error-continue>
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="13088967-6a75-450b-9e0c-286ce2c7be04" type="AIRPORTS:NOT_CREATED">
+				<set-payload value="AIRPORTS:NOT_CREATED" doc:name="AIRPORTS:NOT_CREATED" doc:id="81f8a213-c55d-48a2-9cd6-969693affff3" />
+				<logger level="INFO" doc:name="Logger" doc:id="2765d14a-5a67-45d2-b9ef-366082e1326d" />
+			</on-error-continue>
+		</error-handler>
+	</flow>
+	<flow name="quiz-handling-errorsFlow1" doc:id="6a32ce71-b5b9-4d81-ab5a-c6c562b24d72" >
+		<http:listener doc:name="/GET" doc:id="54ee502b-25b5-49a9-91ff-873057fc4054" config-ref="HTTP_Listener_config" path="/check"/>
+		<set-payload value="my payload" doc:name="my payload" doc:id="0e25d061-a70f-494f-b782-e2817cdb4324" />
+		<validation:is-blank-string doc:name="Is blank string" doc:id="50723020-4936-43d6-8b57-46007cb9b5d2" config-ref="Validation_Config" value="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="c1e533d1-23b1-420c-b863-6be8664edbcd" />
+		<set-payload value="my payload 2" doc:name="my payload 2" doc:id="d092f6d2-5be8-46a4-baa7-fa3f84749af1" />
+	</flow>
+</mule>

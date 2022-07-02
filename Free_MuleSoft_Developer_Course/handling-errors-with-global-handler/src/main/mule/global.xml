@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<configuration doc:name="Configuration" doc:id="77173efa-62ea-4a04-93a9-2c19d297dbcb" defaultErrorHandler-ref="globalError_Handler" />
+	<error-handler name="globalError_Handler" doc:id="9e246a49-a276-4678-8b36-b92f87316234" >
+		<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="308bcc2f-c6ed-4ada-95b8-2522d05482eb">
+			<set-payload value="global error handler!" doc:name="Set Payload" doc:id="ef58f5a5-e794-4d10-ae10-af2596713a32" />
+		</on-error-continue>
+	</error-handler>
+</mule>

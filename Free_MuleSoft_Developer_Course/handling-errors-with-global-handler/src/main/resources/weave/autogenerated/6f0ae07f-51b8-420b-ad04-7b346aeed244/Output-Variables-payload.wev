@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_6f0ae07f_51b8_420b_ad04_7b346aeed244_Output_Variables_payload = Array<{|  empid: Number,   lastname: String,   firstname: String,   title?: String,   titleofcourtesy?: String,   birthdate?: Date,   hiredate?: Date,   address?: String,   city?: String,   region?: String,   postalcode?: String,   country?: String,   phone?: String,   extension?: String,   photo?: Binary,   notes?: String,   mgrid?: Number,   photopath?: String|} | {| territoryId: String |}>
+
