@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<db:config name="AWS-MySQL-Database_Config" doc:name="Database Config" doc:id="24664233-213c-4400-a3a0-9f9a13bbcc61" >
+		<db:my-sql-connection host="${mysql_aws.host}" port="${mysql_aws.port}" user="${mysql_aws.user}" password="${mysql_aws.password}" database="${mysql_aws.dbase}" />
+	</db:config>
+	<configuration-properties doc:name="Configuration properties" doc:id="3e24975a-ff0f-40e3-8e07-a7718b705d49" file="config.yaml" />
+	<db:config name="Local-MySQL-Database_Config" doc:name="Database Config" doc:id="23a7d711-f1e6-4d3d-8e99-e80f38841d00" >
+		<db:my-sql-connection host="${mysql_local.host}" port="${mysql_local.port}" user="${mysql_local.user}" password="${mysql_local.password}" database="${mysql_local.dbase}" />
+	</db:config>
+	<os:object-store name="Object_store" doc:name="Object store" doc:id="6b86e2ce-889a-481a-aeb0-1a82cbf32cf7" />
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="fe531912-5ccf-431d-8747-cf96e8cf9317" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="automatic-watermarkingFlow" doc:id="e4592c41-685f-4cee-9bd1-40776b657131" >
+		<db:listener doc:name="AWS MySQL" doc:id="7bd8fb5f-6b71-425d-aea4-14c71541743e" config-ref="AWS-MySQL-Database_Config" table="customers" watermarkColumn="CustomerID" idColumn="CustomerID">
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="HOURS" startDelay="10"/>
+			</scheduling-strategy>
+		</db:listener>
+		<ee:transform doc:name="to JSON" doc:id="bebcb1bb-3407-4a06-ae1d-016dce634e3c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="1bb6a9f7-afd5-4edf-bc8d-42ac0a086db0" message="#[payload]"/>
+		<db:insert doc:name="Local MySQL" doc:id="95087351-1deb-4783-a558-c5f816d28096" config-ref="Local-MySQL-Database_Config">
+			<db:sql ><![CDATA[INSERT INTO customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES (:CustomerID, :CustomerName, :ContactName, :Address, :City, :PostalCode, :Country);
+]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{
+CustomerID: payload.CustomerID, 
+CustomerName:payload.CustomerName, 
+ContactName:payload.CustomerName, 
+Address:payload.Address, 
+City:payload.City,
+PostalCode:payload.PostalCode,
+Country:payload.Country
+}]]]></db:input-parameters>
+		</db:insert>
+	</flow>
+	<flow name="manual-watermarkingFlow1" doc:id="f3b92221-d230-4aed-bbae-999896e97f6e" >
+		<scheduler doc:name="Scheduler" doc:id="d645fd3b-7538-401a-bcb8-920df31a2698" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<os:retrieve doc:name="maxID" doc:id="66dcb7a5-186d-44a2-bbea-68833ef8f9fd" key="maxID" objectStore="Object_store" target="maxID">
+			<os:default-value ><![CDATA[0]]></os:default-value>
+		</os:retrieve>
+		<db:select doc:name="AWS-MySQL" doc:id="55f511b3-ed79-4a1a-8277-d9f0319078df" config-ref="AWS-MySQL-Database_Config">
+			<db:sql ><![CDATA[SELECT * FROM suppliers
+where SupplierID > :ID and Country = 'USA']]></db:sql>
+			<db:input-parameters ><![CDATA[#[{'ID':vars.maxID}]]]></db:input-parameters>
+		</db:select>
+		<set-variable value="#[sizeOf(payload)]" doc:name="size of payload" doc:id="1868749e-93c7-4b1a-bafc-228053842bfd" variableName="size_var"/>
+		<logger level="INFO" doc:name="Logger" doc:id="bbb71081-4d0f-4611-8923-6b6df5eb1c6d" />
+		<choice doc:name="Choice" doc:id="197f6723-ceb8-4a73-b634-0a560d736237" >
+			<when expression="#[not isEmpty(payload)]">
+				<os:store doc:name="maxID" doc:id="e2288441-fff3-4496-82d8-60b3ea0ff1db" key="maxID" objectStore="Object_store">
+					<os:value ><![CDATA[#[max(payload.*SupplierID)]]]></os:value>
+				</os:store>
+				<db:bulk-insert doc:name="Bulk insert Local-MySQL" doc:id="36faf5ef-4302-4ac6-ae08-64e292eb420e" config-ref="Local-MySQL-Database_Config">
+					<db:sql ><![CDATA[insert into suppliers (SupplierID,SupplierName, ContactName, Address, City, PostalCode, Country, Phone)
+values(:SupplierID,:SupplierName,:ContactName,:Address,:City,:PostalCode,:Country,:Phone)]]></db:sql>
+				</db:bulk-insert>
+				<logger level="INFO" doc:name="Logger" doc:id="f3ccb777-d652-4da6-bb52-d526d5dc38be" message='#[{"message": vars.size_var as String ++ " imported into the local MySQL from AWS MySQL"}]' />
+			</when>
+			<otherwise >
+				<logger level="INFO" doc:name="Logger" doc:id="e308bd1d-72b7-40d7-8b61-91b0a9ff1072" message="No new data found!"/>
+			</otherwise>
+		</choice>
+	</flow>
+	<flow name="automatic-manual-watermarkingFlow" doc:id="1558c8db-1211-4506-95c6-28e9e77d41d1" >
+		<http:listener doc:name="Listener" doc:id="81c6bc7d-4333-44ca-a673-ac0552b52c02" config-ref="HTTP_Listener_config" path="/clear"/>
+		<os:clear doc:name="Clear" doc:id="6a089843-1ddd-40ca-94dd-b3ba3d43ab92" objectStore="Object_store"/>
+	</flow>
+</mule>
