@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="a937ec8f-1ab6-4802-81b7-86eb5f8d88b8" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="dataweave-functionsFlow" doc:id="a0bd6935-14fd-4c63-a172-d591026c25ad" >
+		<http:listener doc:name="Listener" doc:id="1f61c0d5-e049-497c-a255-bb2b6346f531" config-ref="HTTP_Listener_config" path="dataweave"/>
+		<file:read doc:name="Web log csv data" doc:id="5a7c7d40-6983-4727-a90b-6595bb145701" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\access_log_NASA_sample.csv" outputMimeType='application/csv; header=true; separator=","'/>
+		<ee:transform doc:name="Transform Message" doc:id="1bd1ff48-3f71-4dc8-9f2b-ec67918737c0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="mapping" doc:id="1b50d5ae-e4df-4c84-a574-95dafbe0c014" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload map (value, index) ->{
+	 "host": value.host,	
+	 "date_time":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} default '',		
+	 "time_zone":value.time_zone,		
+	 "endpoint":	value.endpoint,	
+	 "status_code":value.status_code,
+	 "size_returned":value.size_returned as Number default 0,
+	 "year":value.date_time as LocalDateTime {format:'d/MMM/y:H:m:s'} as String{format:'y'} default '',
+	 "month":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'M'} default '',
+	 "month_name":value.date_time as LocalDateTime {format:'d/MMM/y:H:m:s'} as String{format:'MMMM'} default '',
+	 "month_Abbreviated":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'MMM'} default '',
+	 "dayOfYear":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'D'} default '',
+	 "dayOfmonth":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'d'} default '',
+	 "dayOfweek":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'EEEE'} default '',
+	 "dayOfweek_Abbreviated":value.date_time as LocalDateTime {format:'d/MMM/y:HH:mm:ss'} as String{format:'EEEE'} default '',
+	
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="size statistics" doc:id="601a07e6-11f9-4409-81b1-b05d33f517e5" message="#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	&#10;	'max size': max(payload..size_returned),&#10;	 'min size': min(payload..size_returned),&#10;	 'average size': round(avg(payload..size_returned))&#10;}]"/>
+		<scatter-gather doc:name="Filtering" doc:id="f69a69f3-532a-4a47-8332-cc76b6d1038d" >
+			<route >
+				<ee:transform doc:name='status_code == "400"' doc:id="98cf148b-954e-4857-9644-9436925adfb1">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/csv
+---
+payload filter (value, index) -> value.status_code == "400"
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+				<file:write doc:name="statuscode400.csv" doc:id="321ccc0b-5b64-468b-9722-6f43920eea56" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode400.csv" />
+			</route>
+			<route >
+				<ee:transform doc:name='status_code startsWith("4")' doc:id="6c3d2266-1d77-4698-afaf-06c603e29e53" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload filter (value, index) -> value.status_code startsWith("4")]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<file:write doc:name="statuscode4xx.csv" doc:id="2cd5181a-4dca-4b63-b5d1-763c968c5289" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode4xx.csv"/>
+			</route>
+			<route >
+				<ee:transform doc:name='endpoint endsWith(".gif")' doc:id="a3b56ea6-4aff-41aa-bd49-a7bf5b1d3274" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload filter (value, index) -> value.endpoint endsWith(".gif")]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<file:write doc:name="gif_images.csv" doc:id="c6b2b001-6c7b-4c9b-8047-c02b204ba844" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\gif_images.csv"/>
+			</route>
+			<route >
+				<ee:transform doc:name='value.endpoint contains("USA")' doc:id="aa113b8a-6624-4642-9de7-b2e65400ef97" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload filter (value, index) -> value.endpoint contains("USA")]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<file:write doc:name="USA_endpoint.csv" doc:id="ba0edfa0-f77d-42f9-956a-8407788e263d" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\USA_endpoint.csv"/>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="Status Message" doc:id="e3ccb197-5377-4be1-97ed-f60c166adbb5" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": 'completed!'
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
