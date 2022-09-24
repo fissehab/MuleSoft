@@ -47,27 +47,27 @@ payload map (value, index) ->{
 		<logger level="INFO" doc:name="size statistics" doc:id="601a07e6-11f9-4409-81b1-b05d33f517e5" message="#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	&#10;	'max size': max(payload..size_returned),&#10;	 'min size': min(payload..size_returned),&#10;	 'average size': round(avg(payload..size_returned))&#10;}]"/>
 		<scatter-gather doc:name="Filtering" doc:id="f69a69f3-532a-4a47-8332-cc76b6d1038d" >
 			<route >
-				<ee:transform doc:name='status_code == "400"' doc:id="98cf148b-954e-4857-9644-9436925adfb1">
+				<ee:transform doc:name='status_code == "302"' doc:id="98cf148b-954e-4857-9644-9436925adfb1">
 			<ee:message>
 				<ee:set-payload><![CDATA[%dw 2.0
 output application/csv
 ---
-payload filter (value, index) -> value.status_code == "400"
+payload filter (value, index) -> value.status_code == "302"
 ]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-				<file:write doc:name="statuscode400.csv" doc:id="321ccc0b-5b64-468b-9722-6f43920eea56" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode400.csv" />
+				<file:write doc:name="statuscode302.csv" doc:id="321ccc0b-5b64-468b-9722-6f43920eea56" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode302.csv" />
 			</route>
 			<route >
-				<ee:transform doc:name='status_code startsWith("4")' doc:id="6c3d2266-1d77-4698-afaf-06c603e29e53" >
+				<ee:transform doc:name='status_code startsWith("3")' doc:id="6c3d2266-1d77-4698-afaf-06c603e29e53" >
 					<ee:message >
 						<ee:set-payload ><![CDATA[%dw 2.0
 output application/csv
 ---
-payload filter (value, index) -> value.status_code startsWith("4")]]></ee:set-payload>
+payload filter (value, index) -> value.status_code startsWith("3")]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
-				<file:write doc:name="statuscode4xx.csv" doc:id="2cd5181a-4dca-4b63-b5d1-763c968c5289" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode4xx.csv"/>
+				<file:write doc:name="statuscode3xx.csv" doc:id="2cd5181a-4dca-4b63-b5d1-763c968c5289" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data-transformation\output\statuscode3xx.csv"/>
 			</route>
 			<route >
 				<ee:transform doc:name='endpoint endsWith(".gif")' doc:id="a3b56ea6-4aff-41aa-bd49-a7bf5b1d3274" >
