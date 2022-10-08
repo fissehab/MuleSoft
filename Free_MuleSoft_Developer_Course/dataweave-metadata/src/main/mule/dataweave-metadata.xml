@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="xml-to-json" doc:id="89ed03c4-11f2-41fa-8c4d-dee7d0bb1b65" >
+		<ee:transform doc:name="xml to json" doc:id="7359196a-2ac0-4591-960a-e6829f2dda73" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload.bookstore.*book map ( book , indexOfBook ) -> {
+	category: book.@category default "",
+	title: book.title  ++ "-" ++ book.author default "",
+	year_publication: book.year default 0,
+	price: book.price default 0
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="xml-to-xlsx" doc:id="2989d6ac-222e-482e-b1c6-7848dbec2ea2" >
+		<ee:transform doc:name="xml to xlsx" doc:id="ea8bb600-4b87-4e15-a5ae-85c592b96ca2" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xlsx
+---
+{
+	Sheet1: payload.bookstore.*book map ( book , indexOfBook ) -> {
+		category: book.@category,
+		title: book.title,
+		lang: book.title.@lang,
+		author: book.author,
+		year: book.year,
+		price: book.price
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="xml-to-csv" doc:id="b9728662-eeb7-4a35-979c-f3b95656a768" >
+		<ee:transform doc:name="xml to csv" doc:id="1fd37acc-640d-4dda-bc33-4f0c20c7c650" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload.bookstore.*book map ( book , indexOfBook ) -> {
+	category: book.@category default "",
+	title: book.title default "",
+	lang: book.title.@lang default "",
+	author: book.author default "",
+	year: book.year as String default "",
+	price: book.price as String default ""
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="json-to-xml" doc:id="acd55a79-00c0-44d1-852d-1bafc418df2b" >
+		<ee:transform doc:name="json to xml" doc:id="90145c15-6855-4c31-835e-657d7e7bd860" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	bookstore: {
+		(payload map ( payload01 , indexOfPayload01 ) -> {
+			book @(category: payload01.category): {
+				title @(lang: payload01.lang): payload01.title,
+				author: payload01.author,
+				year: payload01.year,
+				price: payload01.price
+			}
+		})
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="json-to-csv" doc:id="69852a4e-0c0c-443d-a0d6-b5b14725ccb4" >
+		<ee:transform doc:name="json to csv" doc:id="dc712e69-15fa-4060-975a-3aaca7bf5e3b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload map ( payload01 , indexOfPayload01 ) -> {
+	category: payload01.category,
+	title: payload01.title,
+	lang: payload01.lang,
+	author: payload01.author,
+	year: payload01.year as String,
+	price: payload01.price as String
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="json to xlsx" doc:id="53518dc2-b495-47ee-a141-4251aca65195" >
+		<ee:transform doc:name="json to xlsx" doc:id="f578b1dc-2179-4b3b-b72f-92448f56536d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xlsx
+---
+{
+	Sheet1: payload map ( payload01 , indexOfPayload01 ) -> {
+		category: payload01.category,
+		title: payload01.title,
+		lang: payload01.lang,
+		author: payload01.author,
+		year: payload01.year,
+		price: payload01.price
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="xlsx-to-xml" doc:id="18d2dcc5-20cf-4c66-a23f-0267bffa81e3" >
+		<ee:transform doc:name="xlsx to xml" doc:id="5c8f8a44-9e1a-4b3d-b681-fed8c4f952c4" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	bookstore: {
+		(payload.Sheet1 map ( sheet1 , indexOfSheet1 ) -> {
+			book @(category: sheet1.category): {
+				title @(lang: sheet1.lang): sheet1.title,
+				author: sheet1.author,
+				year: sheet1.year,
+				price: sheet1.price
+			}
+		})
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="xlsx-to-json" doc:id="520e1ab0-4bb4-4c0c-bdef-811862e0442a" >
+		<ee:transform doc:name="xlsx to json" doc:id="c1bbb1a1-b867-496a-bd45-3496d186b04d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload.Sheet1 map ( sheet1 , indexOfSheet1 ) -> {
+	category: sheet1.category default "",
+	title: sheet1.title default "",
+	lang: sheet1.lang default "",
+	author: sheet1.author default "",
+	year: sheet1.year default 0,
+	price: sheet1.price default 0
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="xlsx-to-csv" doc:id="65cd4c75-fd7c-44c8-9250-2f69900ab752" >
+		<ee:transform doc:name="xlsx to csv" doc:id="21acdf17-7ffd-4ed4-bc0e-d5d6d2327d6d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload.Sheet1 map ( sheet1 , indexOfSheet1 ) -> {
+	category: sheet1.category default "",
+	title: sheet1.title default "",
+	lang: sheet1.lang default "",
+	author: sheet1.author default "",
+	year: sheet1.year as String default "",
+	price: sheet1.price as String default ""
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="csv-to-xml" doc:id="25f83911-ddec-4e8a-bb28-22d66b86b8a2" >
+		<ee:transform doc:name="csv to xml" doc:id="ddb72324-c2c7-4405-ab51-d3890c71b501" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	bookstore: {
+		(payload map ( payload01 , indexOfPayload01 ) -> {
+			book @(category: payload01.category): {
+				title @(lang: payload01.lang): payload01.title,
+				author: payload01.author,
+				year: payload01.year as Number,
+				price: payload01.price as Number
+			}
+		})
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="csv-to-json" doc:id="a1ac663a-0fbe-447d-8a81-fd95e4c1715e" >
+		<ee:transform doc:name="csv to json" doc:id="17bd645b-c3ac-4f03-81bd-bf51e07907f8" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload map ( payload01 , indexOfPayload01 ) -> {
+	category: payload01.category,
+	title: payload01.title,
+	lang: payload01.lang,
+	author: payload01.author,
+	year: payload01.year as Number,
+	price: payload01.price as Number
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="csv-to-xlsx" doc:id="d7079fe8-f3b5-4d92-8a33-d17cb98b8320" >
+		<ee:transform doc:name="csv to xlsx" doc:id="951727cc-beb5-4166-b3dd-93d00e20044c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xlsx
+---
+{
+	Sheet1: payload map ( payload01 , indexOfPayload01 ) -> {
+		category: payload01.category,
+		title: payload01.title,
+		lang: payload01.lang,
+		author: payload01.author,
+		year: payload01.year as Number,
+		price: payload01.price as Number
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	
+</mule>

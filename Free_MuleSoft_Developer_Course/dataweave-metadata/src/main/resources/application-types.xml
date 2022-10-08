@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="bookstoreXML" format="xml">
+      <types:example format="xml" element="bookstore" location="examples/bookstore.xml"/>
+    </types:type>
+    <types:type name="bookstoreJSON" format="json">
+      <types:shape format="weave" example="examples/bookstore.json"><![CDATA[%dw 2.0
+
+type bookstoreJSON = Array<{|  category: String,   title: String,   lang: String,   author: String,   year: Number {"typeId": "int"},   price: Number {"typeId": "int"}|}> {"example": "[{\\\"category\\\":\\\"cooking\\\",\\\"title\\\":\\\"Everyday Italian\\\",\\\"lang\\\":\\\"en\\\",\\\"author\\\":\\\"Giada De Laurentiis\\\",\\\"year\\\":2005,\\\"price\\\":30},{\\\"category\\\":\\\"children\\\",\\\"title\\\":\\\"Harry Potter\\\",\\\"lang\\\":\\\"en\\\",\\\"author\\\":\\\"J K. Rowling\\\",\\\"year\\\":2005,\\\"price\\\":29.99},{\\\"category\\\":\\\"web\\\",\\\"title\\\":\\\"Learning XML\\\",\\\"lang\\\":\\\"en\\\",\\\"author\\\":\\\"Erik T. Ray\\\",\\\"year\\\":2003,\\\"price\\\":39.95}]"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="bookstoreXLSX" format="excel">
+      <types:shape format="weave"><![CDATA[%dw 2.0
+
+type bookstoreXLSX = {|
+  Sheet1?: Array<{|    category: String,     title: String,     lang: String,     author: String,     year: Number,     price: Number  |}>
+|}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="bookstoreCSV" format="csv">
+      <types:shape format="weave" example="examples/bookstore-1.csv"><![CDATA[%dw 2.0
+
+type bookstoreCSV = Array<{|  category: String,   title: String,   lang: String,   author: String,   year: String,   price: String|}> {"isQuotedString": "false",
+"header": "true",
+"headerLineNumber": "0"}
+
+]]></types:shape>
+      <types:properties>
+        <types:property name="headerLineNumber" value="0"/>
+        <types:property name="header" value="true"/>
+        <types:property name="isQuotedString" value="false"/>
+      </types:properties>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#7359196a-2ac0-4591-960a-e6829f2dda73">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#ea8bb600-4b87-4e15-a5ae-85c592b96ca2">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#90145c15-6855-4c31-835e-657d7e7bd860">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#1fd37acc-640d-4dda-bc33-4f0c20c7c650">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#dc712e69-15fa-4060-975a-3aaca7bf5e3b">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#f578b1dc-2179-4b3b-b72f-92448f56536d">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#5c8f8a44-9e1a-4b3d-b681-fed8c4f952c4">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#c1bbb1a1-b867-496a-bd45-3496d186b04d">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#21acdf17-7ffd-4ed4-bc0e-d5d6d2327d6d">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#ddb72324-c2c7-4405-ab51-d3890c71b501">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXML"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#17bd645b-c3ac-4f03-81bd-bf51e07907f8">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreJSON"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#951727cc-beb5-4166-b3dd-93d00e20044c">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="bookstoreCSV"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="bookstoreXLSX"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
