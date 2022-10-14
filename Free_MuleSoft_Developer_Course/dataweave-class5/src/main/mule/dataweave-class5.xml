@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="dataweave-of-the-dayFlow10" doc:id="4efe94ba-d060-408d-9bf5-d47c460c0388" >
+		<ee:transform doc:name="placeholder" doc:id="c5185b90-3769-413d-bc66-eccabda221c7" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+ var carModel1 = 'Toyota'
+ var carModel2 = 'Honda'
+---
+'The provided car model is $(carModel1)']]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow11" doc:id="41ab16ab-4477-4bc7-bd70-69d8535fa16a">
+		<ee:transform doc:name="Change from one time zone to another" doc:id="3d55b005-8bbc-45e4-a9f0-2a1806c71a85">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'EST': now(),
+	'UTC': now() >> "UTC",
+	'CET': now() >> "CET",
+	'EST': |2022-11-10T12:10:10-04:00|,
+	'EST2Pacific': |2022-11-10T12:10:10-04:00| >> "-08",
+	'EST2Pacific': |2022-11-10T12:10:10-04:00| >> "America/Los_Angeles"
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow5" doc:id="ef2189ad-b934-442d-a9e7-2a650a457ba6" >
+		<ee:transform doc:name="period operations" doc:id="7f6ef800-e127-4108-bc5b-5cfd00a2c794" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'now': now(),
+	'yesterday': now() -|P1D|,
+	'tomorrow': now() + |P1D|,
+	'last month': |P1M| - now(),
+	'next month': |P1M| + now(),
+	'last year': now() - |P1Y|,
+	'next year': now() + |P1Y|,
+	'last minute': now() - |PT1M|,
+	'after 10 minutes': now() + |PT10M|,
+	'after 10 seconds': now() + |PT10S|,
+	'Before 10 minutes': now() - |PT10M|,
+	'Before 10 seconds': now() - |PT10S|,
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow7" doc:id="ad03af83-a766-49b9-8f45-ef49ecad15e0" >
+		<ee:transform doc:name="period operations with replacement" doc:id="ab7b64c9-6ebe-4bed-b71d-adc04e106342" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[output application/json
+var days_before = 5
+var months_before = 4
+var years_before = 2
+var minutes_after = 10
+var seconds_after = 5
+---
+{
+	'now': now(),
+	'days_before': now() -'P$(days_before)D',
+	'months_before': now()-'P$(months_before)M',
+	'years_before': now() - 'P$(years_before)Y',
+	'minutes_after': now() + 'PT$(minutes_after)M',
+	'seconds_after': now() + 'PT$(seconds_after)S'
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow8" doc:id="59682171-fc67-405e-a2ab-ab3640b042b9" >
+		<ee:transform doc:name="++ and + with arrays and objects" doc:id="b388a307-0b6f-4d97-a41d-3eec06d92dba" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var array1 = ['a', 'b', 3, 5, true]
+var array2 = 5 to 10
+var object1 = {name: "Hagos", age:24}
+var object2 = {occupation: "MuleSoft Developer", salary: 148000}
+---
+// array1 + array2
+
+// array1 ++ array2 
+
+// array1 + object1
+
+//  object1 ++ array1
+
+// array1 ++ object1
+
+ // object1 + object1
+ 
+  object1 ++ object2
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow6" doc:id="a57f4fdb-b587-4a50-a009-97f711be35a7" >
+		<ee:transform doc:name="-- and - with arrays and objects" doc:id="7ea1305c-13df-42df-850b-2a826dfc406d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var array1 = ['a', 'b', 3, 5, true]
+var array2 = 5 to 10
+var object1 = {name: "Hagos", age:24}
+var object2 = {occupation: "MuleSoft Developer", salary: 148000}
+---
+//array1 --[3,5]
+
+// array1 -3
+// array1 - [3]
+// array1 -[3,5]
+
+
+{ "yes" : "no", "good" : "bad", "old" : "new" } -- ["yes", "old"]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow12" doc:id="550f898e-265b-4ff1-9598-22a9885a8fc5" >
+		<ee:transform doc:name="zip, unzip, valuesOf and keysOf" doc:id="a46a0f6c-75fc-4991-aee0-c42980e75526" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var lat_lon = zip(payload map $.lat, payload map $.lon)
+---
+// payload
+
+// payload[0]
+
+// keysOf(payload[0])
+
+// valuesOf(payload[0])
+
+//zip(keysOf(payload[0]),valuesOf(payload[0]))
+
+//zip(payload map $.lat, payload map $.lon)
+
+unzip(lat_lon)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
