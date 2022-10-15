@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="dataweave-class6Flow2" doc:id="da62d3e2-b5db-4283-b735-cd1a407e13ca" >
+		<ee:transform doc:name="How many distinct OrderIDs do we have in the order_details W3Schools data?" doc:id="8069de9e-71aa-42e1-9690-7af8e60105d6" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var unique_orderIds = payload distinctBy $.OrderID
+---
+sizeOf(unique_orderIds)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow3" doc:id="5520a13b-dc6c-470e-993c-e78acabd3771" >
+		<ee:transform doc:name="from the employees data in the w3shools data, find the oldest and the youngest employees" doc:id="0859a7aa-6f99-4f56-a924-47b8efca9589" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var oldest = payload minBy $.BirthDate
+var youngest = payload maxBy $.BirthDate
+---
+
+{
+	oldest: oldest,
+	youngest: youngest
+}
+
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow" doc:id="bc3a4ebc-a4ea-4406-90b7-ab7f888daacc" >
+		<ee:transform doc:name="find the count of airports by time zone" doc:id="e7060721-2a3b-4752-a0a6-20ec9eae9603" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+(payload groupBy $.tzone) mapObject (value, key, index) -> {(key):sizeOf(value)}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow1" doc:id="5270a27b-f8f9-418c-8971-bcf4e779a106" >
+		<ee:transform doc:name="which products are ordered most frequently and which product are ordered the least" doc:id="b580d9df-c923-445e-a285-04b9ec7e4286" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var freq = (payload groupBy $.ProductID) mapObject(value, key) -> {(key):sizeOf(value)}
+var values = valuesOf(freq)
+var productIds = keysOf(freq)
+var zipped = zip(productIds, values)
+var max_quantity = max(values)
+var min_quantity = min(values)
+var most_ordered_products = zipped filter $[1] == max_quantity
+var least_ordered_products = zipped filter $[1] ==  min_quantity
+var most_ordered_products_object = most_ordered_products map (value, index) -> {(value[0]):value[1]}
+var least_ordered_products_object = least_ordered_products map (value, index) -> {(value[0]):value[1]}
+---
+ 
+{most_ordered:  most_ordered_products_object,
+ least_ordered: least_ordered_products_object
+}
+
+
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow7" doc:id="0f164b3c-f589-4599-9bbb-565f1f3b7939">
+		<ee:transform doc:name="how many products have price of more than 100, more than 50, more than 20 and less than 20?" doc:id="104c43ae-b8ed-45f2-ade2-a242d85fd234">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+
+var category_added = payload map (value, index) ->{
+	ProductID: value.ProductID,
+	ProductName: value.ProductName,
+	SupplierID: value.SupplierID,
+	CategoryID: value.CategoryID,
+	Unit: value.Unit,
+	Price: value.Price,
+	Category: if(value.Price > 100) "gt100" else if (value.Price > 50) 'gt50' else if (value.Price > 20) 'gt20' else 'lt20'
+}
+---
+
+(category_added groupBy $.Category) mapObject(value, key) ->{(key): sizeOf(value)}
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow8" doc:id="955e8ed5-7c9b-4e0e-a13e-274917ec3345" >
+		<ee:transform doc:name="functions" doc:id="1287e615-b33c-4844-9555-2ce8ae63e1b3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+fun add_my_numbers(a, b) = a + b
+
+fun is_it_odd_or_even(a) =
+ if(mod(a, 2) == 0) 'even' else 'odd'
+---
+//add_my_numbers(5, 7)
+
+is_it_odd_or_even(19)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow4" doc:id="0b7b531f-dfb5-4ba1-9530-9d31525ee3e8" >
+		<ee:transform doc:name="factorial" doc:id="cd0cfdcb-de02-4a8f-97c4-0c564be66482" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+fun get_functorial(x) = 
+   if (x == 1)
+      1
+    else
+      x * get_functorial(x-1)
+---
+//get_functorial(6)
+
+(1 to 6) reduce (element, accu) -> element * accu]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow5" doc:id="19947d26-3350-4946-837a-0811db3a1789" >
+		<ee:transform doc:name="sum of values in array using recursion" doc:id="d2a2aced-1e26-4721-8eb5-ad30d892cd2e" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+fun get_sum(x) = 
+   if (sizeOf(x) == 1)
+      x[0]
+    else x[0] + get_sum(x[1 to -1])
+ 
+---
+get_sum(1 to 10)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="reduce" doc:id="c11cb2a0-bc70-49e2-a047-4346fca0c23d" >
+		<ee:transform doc:name="reduce" doc:id="3e34e1ea-c9ae-4ab9-9c0e-f23875e787f2" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var myArray1 = 1 to 5
+var myArray2 = 1 to 10
+var myArray3 = [1,5,6, 'a', true, 10]
+---
+// product of the numbers
+//myArray1 reduce(element, accu) -> accu * element
+
+
+//combine numbers
+//myArray1 reduce(element, accu = '') ->  accu ++ element
+
+
+//reverse their order
+//myArray1 reduce(element, accu = '') ->  element ++ accu
+
+//product of even numbers
+
+//myArray2 reduce(element, accu = 1) -> accu * (if(mod(element, 2)== 0) element else 1)
+
+//sum of numeric values
+
+myArray3 reduce(element, accu = 0) -> accu + (if(typeOf(element) == Number) element else 0)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-class6Flow6" doc:id="49621d29-0058-4600-9e7d-54e65013a39d" >
+		<ee:transform doc:name="reverse order of keys in an object" doc:id="3709b67b-a4a2-46c2-bee4-889fc4b8940d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myData = {name: 'John',
+	         age: 45,
+	         occupation: 'IT',
+	         birth_year: 1995
+            }
+---
+myData plunk(value, key) ->{(key): value}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

@@ -1,0 +1,10 @@
+{
+  "sampleData": {
+    "b580d9df-c923-445e-a285-04b9ec7e4286": {
+      "payload": "sample_data/list_csv.csv"
+    },
+    "e7060721-2a3b-4752-a0a6-20ec9eae9603": {
+      "payload": "sample_data/list_json.json"
+    }
+  }
+}
