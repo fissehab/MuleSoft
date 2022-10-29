@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="dataweave-of-the-dayFlow27" doc:id="2c066864-9d64-4e8c-bf05-ca011c6a5921" >
+		<ee:transform doc:name="reverse array" doc:id="2db0f163-0a35-4920-98f7-d7c4a7c545ef">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+
+// How do you reverse the elements in the array below?
+
+var myArray = 1 to 5
+
+// Expected output: [5,4,3,2,1] 
+---
+
+// myArray[-1 to -5]
+
+// myArray[-1 to -sizeOf(myArray)]
+
+//myArray[-1 to 0]
+
+// myArray reduce (element, accumulator = []) ->  [element] ++ accumulator
+
+//myArray orderBy -$$
+myArray orderBy(vallue, index) -> -index]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow28" doc:id="bfb6c6bd-ec7f-44af-bb32-409b65b87072">
+		<ee:transform doc:name="reverse nested array" doc:id="91db053f-10cb-4609-a05c-10d38b19b2f4">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+var myInput = [1,2, 'a', 'b', [4,5]]
+
+// expected output [5, 4, "b", "a", 2, 1]
+---
+
+//flatten(myInput)[-1 to 0]
+flatten(myInput) reduce(element, accumulator = []) -> [element] ++ accumulator]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow30" doc:id="6b833f81-5976-4d5b-bac9-ad5025efd0b8">
+		<ee:transform doc:name="get unique names" doc:id="5482a4d4-1684-4c66-9a1a-805ef7d4866a">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+// get unique names
+var myInput = [[ 
+            {"name":"john"},
+             {"name":"leonardo"}
+            ],
+
+           [
+          {"name": "leonardo"},
+          {"name": "alicia"},
+          {"name": "jennifer"},
+          {"name": "john"}]
+		  ]
+---
+(myInput..name) distinctBy $]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow29" doc:id="c2b45a0d-2e46-4c9e-800d-866b29ab36df" >
+		<ee:transform doc:name="Country City" doc:id="a764e027-934d-4694-8a4a-c25d9deba8f2" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myInput = [
+           {
+
+        "Country": "USA",
+
+        "Capital": "DC"
+
+		    },
+		
+		    {
+		
+		        "Country": "France",
+		
+		        "Capital": "France"
+		
+		    }
+		   ]
+		   
+// Expected output
+
+/* 
+	{
+	  "USA": "DC",
+	  "France": "France"
+	}
+
+*/
+---
+//myInput reduce (obj, accu = {}) -> accu ++ {(valuesOf(obj)[0]): valuesOf(obj)[1]}
+
+myInput reduce (obj, accu = {}) -> accu ++ {(obj.Country): obj.Capital}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow9" doc:id="722ef5bb-a3b6-4b83-bf7e-20142ff2a90b" >
+		<ee:transform doc:name="OrderDate from purchase orders" doc:id="b325738d-8d86-4780-b04d-7c12a5bf9719" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+// data link: https://learn.microsoft.com/en-us/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders
+---
+payload.PurchaseOrders.*PurchaseOrder.@OrderDate]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow" doc:id="1a42d0c4-3774-4603-b932-5ad472298294" >
+		<ee:transform doc:name="airports in US East" doc:id="53788feb-1c47-42b6-9067-f70da4d8370b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+sizeOf(payload filter $.tzone =='America/New_York')]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow1" doc:id="c784ab68-c0a0-44fd-8f1c-488d5d93a083" >
+		<ee:transform doc:name="airports by timezone" doc:id="d5092f1c-cc5b-49fa-bde6-edd291f4b780" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload groupBy $.tz mapObject (value, key, index) -> {(key): sizeOf(value)}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="10-percent-discount" doc:id="2bb8e6fe-2e8e-4090-9b17-71f99e05ad14" >
+		<ee:transform doc:name="10% discount of product price" doc:id="e4d8e87f-fb2e-49da-ba1e-8b6d93b82826" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload map (value, index) -> {
+	ProductId: value.ProductID,
+	ProductName:value.ProductName,
+	SupplierID: value.SupplierID,
+	CategoryID: value.CategoryID,
+	Unit: value.Unit,
+	OldPrice:value.Price,
+	NewPrice: value.Price * 0.9, // 10% decrease
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow2" doc:id="65297bbe-0524-46f0-92eb-5bebdb620841" >
+		<ee:transform doc:name="Spell out Country Name" doc:id="e30c7e26-5890-4221-86ba-f5dfc1c28f17" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload map (value, index) ->{
+	CustomerID: value.CustomerID,
+	CustomerName: value.CustomerName,
+	ContactName: value.ContactName,
+	Address: value.Address,
+	City: value.City,
+	Country: value.Country replace('USA') with("United States of America ") replace('UK') with("United Kingdom")
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="transform" doc:id="5c983115-9ecd-43f0-b609-5f77cd18df1a" >
+		<ee:transform doc:name="change the first name to key and the last name to value" doc:id="d2e1d5aa-6b8b-44cc-9fd0-c2cc7b0c05dd" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myData = [
+			     {firstName:'Fisseha',lastName:'Hagos'},
+			     {firstName:'Solomon',lastName:'Mulu'},
+			     {firstName:'Helen',lastName:'Tesfay'}
+			 ]
+---
+
+
+
+myData map (value, index) -> {
+    (value.firstName): value.lastName
+}
+
+//zip(myData.lastName, myData.firstName)
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow3" doc:id="5dd7d148-33f9-472f-8041-6015d0f5ca3f" >
+		<ee:transform doc:name="file name from date and time" doc:id="8e2a8c80-89aa-4c85-bdec-ce20302acd9a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+now()[0 to 18] replace '-' with '_' replace 'T' with '_' replace ':' with '_']]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow4" doc:id="2e7e9eb3-4d23-49d5-b8a9-d39efcbae802">
+		<ee:transform doc:name="TDF age" doc:id="8d6e49d2-e4d3-4533-8dc9-5f26a2e0b325">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+daysBetween(|2020-11-04|, now())
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow10" doc:id="83316da4-6bf4-4663-b665-27197d2721d8" >
+		<ee:transform doc:name="placeholder" doc:id="0c55e415-010a-4a00-94d8-3ad9a020b7be" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+ var carModel1 = 'Toyota'
+ var carModel2 = 'Honda'
+---
+'The provided car model is $(carModel1)']]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow11" doc:id="f47546b9-ef3e-4378-bb38-bc7f38f2dc2a">
+		<ee:transform doc:name="Change from one time zone to another" doc:id="4a19af2f-776b-4e69-af4f-998b83915764">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'EST': now(),
+	'UTC': now() >> "UTC",
+	'CET': now() >> "CET",
+	'EST': |2022-11-10T12:10:10-04:00|,
+	'EST2Pacific': |2022-11-10T12:10:10-04:00| >> "-08",
+	'EST2Pacific': |2022-11-10T12:10:10-04:00| >> "America/Los_Angeles"
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow5" doc:id="8dd578bf-6011-473f-8d98-1b6eae3a9cde" >
+		<ee:transform doc:name="period operations" doc:id="726db7b0-3944-492c-a7ca-9acac8ea79af" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	'now': now(),
+	'yesterday': now() -|P1D|,
+	'tomorrow': now() + |P1D|,
+	'last month': |P1M| - now(),
+	'next month': |P1M| + now(),
+	'last year': now() - |P1Y|,
+	'next year': now() + |P1Y|,
+	'last minute': now() - |PT1M|,
+	'after 10 minutes': now() + |PT10M|,
+	'after 10 seconds': now() + |PT10S|,
+	'Before 10 minutes': now() - |PT10M|,
+	'Before 10 seconds': now() - |PT10S|,
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow7" doc:id="d67a1dcc-f3af-413c-8bec-7526a7e81d72" >
+		<ee:transform doc:name="period operations with replacement" doc:id="448ee091-c67d-41a4-8228-d2a2e9f5fd5d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[output application/json
+var days_before = 5
+var months_before = 4
+var years_before = 2
+var minutes_after = 10
+var seconds_after = 5
+---
+{
+	'now': now(),
+	'days_before': now() -'P$(days_before)D',
+	'months_before': now()-'P$(months_before)M',
+	'years_before': now() - 'P$(years_before)Y',
+	'minutes_after': now() + 'PT$(minutes_after)M',
+	'seconds_after': now() + 'PT$(seconds_after)S'
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow8" doc:id="a73bd71d-3469-4dd8-9f7a-6ddbb44ba425" >
+		<ee:transform doc:name="++ and + with arrays and objects" doc:id="fa3cc554-15db-4a46-85e1-e3b046e76179" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var array1 = ['a', 'b', 3, 5, true]
+var array2 = 5 to 10
+var object1 = {name: "Hagos", age:24}
+var object2 = {occupation: "MuleSoft Developer", salary: 148000}
+---
+// array1 + array2
+
+// array1 ++ array2 
+
+// array1 + object1
+
+//  object1 ++ array1
+
+// array1 ++ object1
+
+ // object1 + object1
+ 
+  object1 ++ object2
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow6" doc:id="2bfdbc96-dafd-469f-bf48-2192a5a8d598" >
+		<ee:transform doc:name="-- and - with arrays and objects" doc:id="aa9372c5-3b4c-4970-8b30-03743ba0da57" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var array1 = ['a', 'b', 3, 5, true]
+var array2 = 5 to 10
+var object1 = {name: "Hagos", age:24}
+var object2 = {occupation: "MuleSoft Developer", salary: 148000}
+---
+//array1 --[3,5]
+
+// array1 -3
+// array1 - [3]
+// array1 -[3,5]
+
+
+{ "yes" : "no", "good" : "bad", "old" : "new" } -- ["yes", "old"]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow12" doc:id="cebd87ab-883d-424e-9f56-0e00c86d566a" >
+		<ee:transform doc:name="zip, unzip, valuesOf and keysOf" doc:id="a88838d3-c867-4917-a8d4-cb1e1365a6dc" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var lat_lon = zip(payload map $.lat, payload map $.lon)
+---
+// payload
+
+// payload[0]
+
+// keysOf(payload[0])
+
+// valuesOf(payload[0])
+
+//zip(keysOf(payload[0]),valuesOf(payload[0]))
+
+//zip(payload map $.lat, payload map $.lon)
+
+unzip(lat_lon)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	
+	<flow name="dataweave-class6Flow6" doc:id="64b3276c-071b-4b60-ba3e-bbbd92b11c30" >
+		<ee:transform doc:name="reverse order of keys in an object" doc:id="bdd77366-08f0-47d4-89f0-8b789ca7d76f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+/*  Reverse the order of the key value pairs in the object below. 
+    birth_year: 1995 should be first and name: 'John' should be last
+ */
+ 
+var myData = 	{name: 'John',
+		         age: 45,
+		         occupation: 'IT',
+		         birth_year: 1995
+             	}
+             	
+ /*
+  print the output of the variables below step by step and understand what it is doing.
+  */  
+            	
+---
+
+//(myData pluck (value, key) ->{(key):value}) orderBy -$$  reduce(element, accu = {})-> accu ++ element 
+
+(myData pluck (value, key) ->{(key):value}) reduce(element, accu = {})-> element ++ accu 
+
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow13" doc:id="15471011-88ea-4ccb-89ca-d4027e430581" >
+		<ee:transform doc:name="reduce" doc:id="d49f0338-ccac-4bc2-bbbb-676604367c7f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+/*
+ Use reduce to transform the input array into the object below. Keep in mind that the concatenation 
+ * function ++ seen before for Strings also works between Objects as seen in the starting example, 
+ * where you can also see how dynamic keys are defined in an Object.
+ */
+ 
+ var myData = [
+			  {"id": "1", "name": "dev"},
+			  {"id": "2", "name": "test"},
+			  {"id": "3", "name": "uat"},
+			  {"id": "4", "name": "prod"}
+			]
+---
+myData reduce (element, accu = {}) -> accu ++ {(element.name): element.id}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow14" doc:id="53911b26-b98e-4347-94ef-0f3b4aeb8e14" >
+		<ee:transform doc:name="map filter and get dayOfWeek" doc:id="0ff210e5-333e-4bb3-8f26-a8d17a99f43d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// Get the output from the input
+
+var myData = [
+				  {
+				    "datetime": "2020-01-01T08:00:00",
+				    "event": "Breakfast @ Cafe",
+				    "organizer": "Phoebe"
+				  },
+				  {
+				    "datetime": "2020-01-02T18:00:00",
+				    "event": "Study for cert exam",
+				    "organizer": "Ross"
+				  },
+				  {
+				    "datetime": "2020-01-04T16:00:00",
+				    "event": "Drinks w/ friends",
+				    "organizer": "Monica"
+				  },
+				  {
+				    "datetime": "2020-01-08T08:00:00",
+				    "event": "Develop mule application",
+				    "organizer": "Ross"
+				  },
+				  {
+				    "datetime": "2020-01-05T08:00:00",
+				    "event": "Football game",
+				    "organizer": "Joey"
+				  }
+				]
+				
+var myOutput = [
+				  {
+				    "datetime": "2020-01-02T18:00:00",
+				    "event": "Study for cert exam",
+				    "organizer": "Ross",
+				    "day_of_week": 4
+				  },
+				  {
+				    "datetime": "2020-01-08T08:00:00",
+				    "event": "Develop mule application",
+				    "organizer": "Ross",
+				    "day_of_week": 3
+				  }
+				]
+---
+(myData filter $.organizer=='Ross') map (item , index) ->{
+  datetime: item.datetime,
+  event: item.event,
+  organizer: item.organizer,
+  day_of_week: (item.datetime as LocalDateTime).dayOfWeek
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow16" doc:id="d9fe07aa-0a98-43e2-aa1d-cb96353ea972" >
+		<ee:transform doc:name="filter multiple" doc:id="3bae9ec8-9451-41c2-9859-9b2e345239b3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// remove ["deleted", "processed"]
+
+var myInput = [
+  "starting", 
+  "waiting", 
+  "deleted", 
+  "processing", 
+  "processed"
+]
+---
+myInput filter not (($ =='deleted') or ($ =='processed'))]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow17" doc:id="648ed77f-2791-4978-8ea0-c396c36f7522" >
+		<ee:transform doc:name="exercise 8.2" doc:id="dad90f6e-d0a2-4905-9c57-b53183a775d3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+/*
+ Let's combine what we just learned with what we have also learned about arrays to 
+ * transform all objects in the following array, so their keys are lower case and
+ *  their values are upper case.
+
+ */
+ var myInput = [
+  {"First Name": "Max", "Last Name": "The Mule"},
+  {"First Name": "Albert", "Last Name": "Einstein"}
+]
+---
+
+myInput map (item, index1) ->  item mapObject (value, key, index2) -> {
+		(lower(key)): upper(value)}
+		
+		]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow15" doc:id="4675491b-0bbd-44cf-8655-f9fc72884446" >
+		<ee:transform doc:name="double map" doc:id="461bedb9-436b-40c2-8244-f1cc7fc38599" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myInput = [
+  { 
+    "name": "Archer",
+    "jobs": [
+      { "type": "developer" },
+      { "type": "investor"  },
+      { "type": "educator"  } 
+    ] 
+  },
+  {
+    "name": "Cyril",
+    "jobs": [
+      { "type": "developer"    },
+      { "type": "entrepreneur" },
+      { "type": "lion tamer"   }
+    ]
+  } 
+]
+
+/* 
+var required_output = [
+   { 
+    "num":  1
+    "name": "Archer",
+    "jobs": [
+      { "num": 1, "type": "developer" },
+      { "num": 2, "type": "investor"  },
+      { "num": 3, "type": "educator"  } 
+    ] 
+  },
+  {
+    "num":  2
+    "name": "Cyril",
+    "jobs": [
+      { "num": 1, "type": "developer"    },
+      { "num": 2, "type": "entrepreneur" },
+      { "num": 3, "type": "lion tamer"   }
+    ]
+  } 
+]
+
+*/
+---
+myInput map (value, index) -> {
+    num: index + 1,
+    name: value.name,
+    jobs: value.jobs.`type` map (value2, index2) ->{
+        num: index2 + 1,
+        `type`: value2
+    }
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow18" doc:id="f111333d-6323-4f42-8124-b3bfcc66a0ce" >
+		<ee:transform doc:name="text to object" doc:id="b290057d-3228-4015-a1e9-1aeff16d0cc3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myInput = "name=Lansdowne Airport;lat=41.1304722; lon=-80.6195833;alt=1044; tz=-5;tzone=America/New_York"
+---
+
+ splitBy(myInput, ";") reduce(element, accu = {})-> accu ++ {(splitBy(element, "=")[0]): splitBy(element, "=")[1]}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow19" doc:id="48a63e9e-b9ed-4cdd-99f6-3d9e5daa93a4" >
+		<ee:transform doc:name="remove the key if the value is null" doc:id="1ce112b7-36b6-4748-9c36-97b9a924651f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myData = [{
+		"name" : "Putnam County Airport",
+		"lat" : 39.6335556,
+		"lon" : null,
+		"alt" : 842,
+		"tz" : -5,
+		"tzone" : null
+	},
+	{
+		"name" : "Dell Flight Strip",
+		"lat" : 44.7357483,
+		"lon" : -112.7200133,
+		"alt" : null,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	}]  
+            	
+---
+
+myData map {name: $.name,
+           (lat: ($.lat)) if (($.lat != null) and  ($.lon != null)),
+           (lon: $.lon) if (($.lat != null) and  ($.lon != null)),
+           (alt: $.alt) if ($.alt != null),
+           (tz: $.tz) if ($.tz != null),
+           (tzone: $.tzone) if ($.tzone != null)}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow20" doc:id="1f129a26-5b41-4bef-b6a1-c84dcbe70592" >
+		<ee:transform doc:name="filter by reduce" doc:id="1ec21e0a-705a-4274-a6b7-ef5d623bbb5e" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// replace filter by reduce
+
+// 1 to 10 filter (($ mod 2) == 0) map ($*2)
+
+// [1, 2,3] +[] is just [1,2,3]: using this logic below
+---
+
+ 1 to 10 reduce(element, accu = []) -> 
+    accu ++ [(element * 2) if ((element mod 2) == 0)] ]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow21" doc:id="f2c99717-3887-4311-b5ce-b6cfa21b33b5" >
+		<ee:transform doc:name="reduce for map" doc:id="b0941145-00fc-43a0-8e43-05199da37ca4" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var cities = [
+	city1: { elevation: '10,361 ft',
+		    average_yearly_temperature: '32 °F',
+	      },
+	      
+	city2: {
+		    elevation: '10,312 ft',
+		    average_yearly_temperature: '212 °F',
+	       },
+	       
+    city3: {
+		    elevation: '10,151 ft',
+		    average_yearly_temperature: '-40 °F',
+	       },
+	
+      ]
+ 
+ fun cleanFeet(feet) = trim(feet replace 'ft' with '' replace ',' with '') as Number
+ fun cleandeegresF(degreesF) = trim(degreesF replace '°F' with '')
+ 
+ fun myMapObject(object) = object mapObject(value2, key2, index2)->
+     {(key2): {elevation: round(cleanFeet(value2.elevation) * 0.3048) ++ ' meteres', 
+	average_yearly_temperature:  1/1.8*(cleandeegresF(value2.average_yearly_temperature)-32) 
+	                              ++ '°C', 
+     }}
+---
+/* 
+cities map (value1, index1) -> value1 mapObject(value2, key2, index2)->
+{(key2): {elevation: round(cleanFeet(value2.elevation) * 0.3048) ++ ' meteres', 
+	average_yearly_temperature:  1/1.8*(cleandeegresF(value2.average_yearly_temperature)-32) 
+	                              ++ '°C', 
+}}
+*/
+cities reduce (object, accumulator = []) -> accumulator ++ [myMapObject(object)]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow22" doc:id="5d354fbc-13c2-41bc-a274-175d647a2a6a" >
+		<ee:transform doc:name="reduce for min and max" doc:id="70f79020-0c50-46e0-9fc1-2d41cc424c2f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// find the greatest and smallest values of an array using reduce
+
+var myArray = (1 to 5) ++ (-45 to -30) ++ (25 to 45)
+//var myMax = myArray reduce ((item, accumulator=startNumber) -> if(item>accumulator) item else accumulator)
+
+var Maxx = myArray reduce (element, accu) -> if(element > accu) element else accu
+var Minn = myArray reduce (element, accu) -> if(element > accu) accu else element
+---
+
+//{max: max(myArray), min: min(myArray)}
+
+{max: Maxx, min:Minn}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow23" doc:id="9512c08f-a03a-4dc2-8712-a584e51754d8" >
+		<ee:transform doc:name="Is prime number?" doc:id="f5fe21d8-10b8-4c63-b693-f60fe4fb1b8d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+// A prime number is a natural number greater than 1, and only divisible by 1 and itself
+
+// assume you are given a number, check if it is a prime number
+
+var givenNumber = 347  // change this value to test for various numbers
+
+// first generate an array of the numbers from 2 to the givenNumber minus 1
+// if the remainder is zero when we divide the givenNumber by any value in generatedArray, 
+// givenNumber is prime else givenNumber is not prime number.
+
+var generatedArray = 2 to givenNumber -1 
+---
+if ((generatedArray map (item, index) -> mod(givenNumber, item)) contains 0) 'Not prime' else 'Prime'
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow24" doc:id="06a92700-cbee-4c20-952f-e984a5d8ba3c" >
+		<ee:transform doc:name="xml to array" doc:id="29c0cb32-c39d-472d-9c38-610d3b283170" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// convert the xml the attached file to the output below.
+
+var expectedOutPut = [
+				  {
+				    "id": "501",
+				    "to": "Tove",
+				    "from": "Jani",
+				    "heading": "Reminder",
+				     "body": "Don't forget me this weekend!"
+				  },
+				  {
+				    "id": "502",
+				    "to": "Jani",
+				    "from": "Tove",
+				    "heading": "Re: Reminder",
+				    "body": "I will not"
+				  }
+				]
+---
+
+
+(payload.messages) pluck (value, key, index) -> {
+    id: value.@id,
+    to: value.to,
+    from: value.from,
+    heading: value.heading,
+    body: value.body
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow25" doc:id="4b95db31-f355-422b-b824-55f98e45e92a" >
+		<ee:transform doc:name="array to xml" doc:id="3c67f647-56e9-4235-b56a-259d48db47a9" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+
+// convert the input to the output shown
+
+var ages = [34, 56, 78]
+---
+
+
+ages:{(
+    ages map (value, index) ->
+    { age:{service_year: value}
+    }
+)}
+
+
+/*
+
+ages:{(ages reduce(element, accu = {})-> accu ++ {age: {service: element}}
+)}
+* 
+ */
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow26" doc:id="0f9f5c16-6c28-4c22-bc33-4d030973e397" >
+		<ee:transform doc:name="array to xml2" doc:id="edac54d9-da7b-4db5-b112-e8ce9deed76f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+
+var myInput = [
+	{
+		"name" : "Lansdowne Airport",
+		"lat" : 41.1304722,
+		"lon" : -80.6195833,
+		"alt" : 1044,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Moton Field Municipal Airport",
+		"lat" : 32.4605722,
+		"lon" : -85.6800278,
+		"alt" : 264,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	}
+ ]
+---
+employees:
+  employee @(firtName:myInput[0].employee1.firstName,
+	     lastName:myInput[0].employee1.lastName
+        ):null]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-of-the-dayFlow31" doc:id="a4c9cbd0-43fc-440e-9826-101fa4eb14d1" >
+		<ee:transform doc:name="Transform Message" doc:id="46cde207-793d-4a92-befe-1ec7ecd2a136" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+//sizeOf(payload filter $.tz == -5)
+
+sizeOf(payload filter $.tzone == 'America/New_York')]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
