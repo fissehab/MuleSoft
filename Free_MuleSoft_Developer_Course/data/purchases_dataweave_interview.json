@@ -1,0 +1,31 @@
+[{
+  "name": "product1",
+  "price":5,
+  "expires": "2022-10-07"
+  },
+  {
+  "name": "product2",
+   "price":20,
+   "expires": "2022-12-06"
+   },
+  {
+  "name": "product3",
+  "price":4,
+  "expires": "2021-11-09"
+  },
+  {
+  "name": "product4",
+  "price":5,
+  "expires": "2022-12-07"
+  },
+  {
+   "name": "product5",
+   "price":20,
+   "expires": "2022-11-06"
+   },
+  {
+  "name": "product5",
+  "price":4,
+  "expires": "2023-01-01"
+  }  
+]

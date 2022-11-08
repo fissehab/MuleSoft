@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="d7f5f4bf-c8a4-4033-b18f-67a9c701bda1" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="return-requested-w3schools-data" doc:id="a0f73cf5-d40c-406a-9b43-74ea537b90c2" >
+		<http:listener doc:name="/get" doc:id="63d5e09d-807b-4842-8bac-0e1244d9d80e" config-ref="HTTP_Listener_config" path="/w3schools"/>
+		<ee:transform doc:name="read data to JSON output" doc:id="a82bfebb-81fe-4d98-b03d-92b193a6f6b0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var requested_file = attributes.queryParams.data default ""
+var file_path = "classpath://w3schools/" ++ requested_file ++  ".csv"
+var data = readUrl(file_path, 'application/csv')	
+---
+data]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="return-requested-field-from-airports-dataset" doc:id="e6f59da6-1600-4b21-bb77-3dc0303cb527" >
+		<http:listener doc:name="/get" doc:id="b8d99d8e-a95b-48c8-98ae-53d56facf46f" config-ref="HTTP_Listener_config" path="/airports"/>
+		<ee:transform doc:name="get requested field" doc:id="3d098d30-d596-4119-a0af-dbbcd156e95b" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var requested_field = attributes.queryParams.field default ""
+
+var file_path = "classpath://airports/airports.json"
+var data = readUrl(file_path, 'application/json')
+---
+data[requested_field] distinctBy $ orderBy $ // returning ordered distinct values ]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
