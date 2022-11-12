@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="4001e0b9-35db-4bc0-9bc2-7e546c973dee" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="return-requested-w3schools-data" doc:id="c3f2b360-e71c-44f4-b539-bd3cf8844e88" >
+		<http:listener doc:name="/get" doc:id="7ed9d960-605d-4bdf-b5dc-850f84ce5ee2" config-ref="HTTP_Listener_config" path="/w3schools"/>
+		<ee:transform doc:name="read data to JSON output" doc:id="5a33ebf7-139b-4fbe-bab4-f89f7a396999" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var requested_file = attributes.queryParams.data default ""
+var file_path = "classpath://w3schools/" ++ requested_file ++  ".csv"
+---
+readUrl(file_path, 'application/csv')	]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="return-requested-field-from-airports-dataset" doc:id="11f4b04d-cf4f-4559-a37b-2eb9bda65ea4" >
+		<http:listener doc:name="/get" doc:id="317c83c5-0be7-45e2-bc8a-222d4f8f72b0" config-ref="HTTP_Listener_config" path="/airports"/>
+		<ee:transform doc:name="get requested field" doc:id="0a72d7ec-8abe-4443-a32b-e3b25bc260f7" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var requested_field = attributes.queryParams.field default ""
+
+var file_path = "classpath://airports/airports.json"
+var data = readUrl(file_path, 'application/json')
+---
+data[requested_field] distinctBy $ orderBy $ // returning ordered distinct values ]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	
+	
+	
+	<flow name="return-requested-w3schools-data2" doc:id="4ff6ab6c-b031-4ce0-8a4c-0c1df2c6339d" >
+		<http:listener doc:name="/get" doc:id="8d581d86-f2b6-49b6-966b-2c423c4fc3db" config-ref="HTTP_Listener_config" path="/w3schools2"/>
+		<ee:transform doc:name="read data to JSON output" doc:id="41979ca0-8bc8-45fa-a3d3-3127bc9f00f2" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+import * from dw::Runtime
+var requested_file = attributes.queryParams.data default ""
+var file_path = "classpath://w3schools/" ++ requested_file ++  ".csv"	
+---
+try(() -> readUrl(file_path, 'application/json'))
+orElseTry(() -> readUrl(file_path, 'application/xml'))
+orElseTry(() -> readUrl(file_path, 'application/csv'))
+orElse(() -> fail(requested_file ++ " was not found. Please try again!"))
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="return-airport-info" doc:id="b931d130-e7b1-488a-8033-6f6cadf165a9" >
+		<ee:transform doc:name="Transform Message" doc:id="bf24ef25-1618-4917-a8be-28b7c8073b98" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var data = readUrl("classpath://airports/airports.json", 'application/json')
+---
+data filter $.name == payload.airportName]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="1215db27-dd5c-4359-b68a-17285688f504" />
+	</flow>
+	<flow name="dataweave-lookup" doc:id="778f456f-3433-4676-99b5-001c00b7433c" >
+		<http:listener doc:name="Listener" doc:id="09675fe8-3146-428a-b08d-4ba89c415b83" config-ref="HTTP_Listener_config" path="/lookup"/>
+		<ee:transform doc:name="Transform Message" doc:id="88325fca-48ea-48f1-84a1-605fba0924e3" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+lookup("return-airport-info", payload, 200000)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="c136041d-e005-4913-abbb-5759c6d1eb9a" />
+	</flow>
+	
+	
+</mule>

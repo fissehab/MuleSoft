@@ -850,4 +850,282 @@ sizeOf(payload filter $.tzone == 'America/New_York')]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>
+	<flow name="dataweave-interview-questionsFlow" doc:id="48b52959-9d2f-4dc2-b6c6-d7faf718d952" >
+		<ee:transform doc:name="extraction" doc:id="997b3e11-c9e1-4d6f-a564-07b3ce935011" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// create the output from the input
+
+var myInput = {name: "John Harvey",
+	           "AddressLine1": "1234 NW Peace St",
+	           "AddressLine2": "Apt. 4578",
+	           "zip": 23456
+}
+
+---
+
+
+{
+	name: myInput.name,
+	streetName: (myInput.AddressLine1 splitBy(" "))[1 to -1] reduce(a, b) -> b ++ " " ++ a,
+	houseNumber: (myInput.AddressLine1 splitBy(" "))[0],
+	apartmentNumber: splitBy(myInput.AddressLine2, " ")[1],
+	zipcode: myInput.zip
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow1" doc:id="9da435de-ed74-4554-a1f7-cb23568fa7e8" >
+		<ee:transform doc:name="shopping list" doc:id="079fc43e-4010-487c-b8cc-d0e5a0649f84" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var mulusoftGrus = {
+			  manager: 'Roman',
+			  groupLions: {
+				    name: 'Feven',
+				    name: 'Letay',
+				    groupTigers: {
+					      name: 'Helen',
+					      name: 'Rahel',
+					      groupAcers:{
+					      	name: 'Lily',
+					      	name: 'Hope'
+					      }
+			    }
+			  }
+           }
+---
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "first_id_from_each_level": myInput..id,
+    "all_ids_from_first_level":myInput.*id,
+    "all_ids_from_second_level": myInput.secondLevel.*id,
+    "all_ids_from_third_level": myInput.secondLevel.thirdLevel.*id ,
+    "all_ids": myInput..*id
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow2" doc:id="9f2be92c-6f18-4715-a01d-f82fa59015ed" >
+		<ee:transform doc:name="check if a numbe is composite number" doc:id="e3ae05e8-0a68-48c8-998c-1f62ae870692" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+fun checkIfComposite(givenNumber) = do {
+		var arrayOfNumbers = 2 to givenNumber - 1
+		var remainders = arrayOfNumbers map (value, index) -> mod(givenNumber, value)
+	    ---
+	    if (!isInteger(givenNumber)  or (givenNumber < 3))  'Incorrect Input'
+	    	
+	    else if (remainders contains 0) 'Composite Number' 
+	    else 'Not Composite Number'
+ }
+---
+ 
+checkIfComposite(51)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow3" doc:id="ca133ac2-04e9-4575-a95c-2f217d7f5792" >
+		<ee:transform doc:name="two arrays: common and not common" doc:id="854b3ecd-47f1-41d0-8b35-0868667c6cbf" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+// Given two arrays below, find (a): common values, 
+//  (b) values only in either of them
+
+var v1 = [2,3,8, 7, 10, 15]
+var v2 = [4, 7, 3, 25, -10]
+var common = v1 filter (value, index) -> v2 contains value
+var common2 = v1 -- (v1 -- v2)
+var only_v1 = v1 filter (value, index) -> !(v2 contains value)
+var only_v1_2 = v1 -- v2
+var only_v2 = v2 filter (value, index) -> !(v1 contains value)
+var only_v2_2 = v2 -- v1
+var only_in_either = only_v1 ++ only_v2
+var only_in_either2 = only_v1_2 ++  only_v2_2
+---
+{only_v1: only_v1,
+ only_v2: only_v2,
+ common: common,
+ only_in_either: only_in_either,
+ common2: common2,
+ only_v1_2: only_v1_2,
+ only_v2_2: only_v2_2,
+ only_in_either2: only_in_either2
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow4" doc:id="b3c6ed29-a065-4bc5-840b-8bb5485e3c88" >
+		<ee:transform doc:name="groupBy and pluck" doc:id="0b75eed0-ee90-4c60-a403-2bb69f89c818" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var myInput = [
+	 {id: 1,
+	 name: 'John',
+	 lastName: 'Mark',
+	 state: 'MD',
+	 city: 'Columbia'
+	},
+	
+	{id: 2,
+	 name: 'Luke',
+	 lastName: 'Mark',
+	 state: 'MD',
+	 city: 'Baltimore'
+	},
+	
+	
+	{id: 3,
+	 name: 'Mathew',
+	 lastName: 'Mark',
+	 state: 'VA',
+	 city: 'Alexandria'
+	}
+	
+]
+---
+
+
+
+myInput  groupBy ((item, index) ->  item.id) 
+pluck ((value, key, index) -> {id: key, name: 
+	                           value.name[0], lastName: value.lastName[0], 
+	                           location: {state: value.state[0], city: value.city[0]}
+} )
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow5" doc:id="3e8d7e3d-d937-479a-9f26-25301d119d95" >
+		<ee:transform doc:name="find min, max, mean and median" doc:id="1f7f13c6-7172-47f0-9f91-fcd7294513b0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+import isNumeric from dw::core::Strings
+var myArray = [1,"a",2,"b",3,"c",4,"d",5,"e",6,"f",7,"g",8,"h", 9,"i", 10, "j"]
+
+var numbersOnly = (myArray filter isNumeric($)) map $ as Number
+var numberOnly2 = myArray filter typeOf($) == Number
+var sizeArray = sizeOf(numbersOnly)
+var medianIndex = if(mod(sizeArray, 2) == 0) numbersOnly[sizeArray/2 -1 to sizeArray/2]
+                  else [numbersOnly[sizeOf(numbersOnly)/2 - 0.5]]
+
+                 
+var median = avg(medianIndex)
+              
+           
+             
+var myAnswer = {min: min(numbersOnly),
+	            max: max(numbersOnly),
+	            mean: avg(numbersOnly),
+	            median: median
+                    }
+                    
+---
+ myAnswer]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow6" doc:id="46a07c20-d38a-4ee7-953c-ca3cc6996ec9" >
+		<ee:transform doc:name="filterObject" doc:id="5c67b9c0-086a-4d3f-8140-c6d919cc328e" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+// return only the keys:value pairs where the value is a string.
+
+var myObj = {
+    "key1":"hello world!",
+    "key2": "fish is healthy food",
+    "key3": 45,
+    "key4": true
+}
+---
+myObj filterObject ((value, key, index) -> 
+	typeOf(value) == String
+)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow7" doc:id="7afe49a9-b607-462d-b171-3c02bf299675" >
+		<ee:transform doc:name="Transform Message" doc:id="92e08311-28ad-49fd-a29a-45346afaa0e5" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+//Get the output from the input
+
+var myKids = [
+	        {
+            name: 'noah',
+            favorites: [
+                        {food: "pizza"},
+                        {fruit:"apple"}
+                        ]
+             },
+             {
+            name:'jacob',
+            favorites: [
+                {food: "pizza"},
+                {fruit:"banana"}
+            ]}]
+---
+
+myKids map ((item, index) -> {nameID: index + 100,
+                              name: item.name,
+                             favorites: item.favorites map ((item2, index2) -> 
+                             		               {favoriteID: index2 + 200,
+                             		           	    (item2)
+                             		           	   }
+                             		           	)
+                      })]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="dataweave-interview-questionsFlow8" doc:id="bc74f7c2-aa43-4d47-bec4-4eab98e7efd4" >
+		<ee:transform doc:name="create an array of dates" doc:id="c371ba9f-6bc2-42f1-a1b7-c63fdb6bd7d7" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// create an array of dates between given start_date and end date
+
+fun createArrayOfDates(start_date, end_date) = do {
+	var myDates = []
+	var startDate = start_date as Date
+	var endDate = end_date as Date
+	---
+	if (endDate < startDate) myDates
+	else if (endDate  == startDate) myDates ++ [startDate]
+	else if (endDate  > startDate) do(
+		var
+	)
+}
+---
+{
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
 </mule>
