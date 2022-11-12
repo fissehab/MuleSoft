@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="dataweave-class10Flow" doc:id="008104b5-d0c4-4874-8c19-819abed1a574" >
+		<ee:transform doc:name="using update operator with array" doc:id="cc603943-5dcf-4862-a008-9a8bccfae11f" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// round off lat and lon to two decimal places and change the time zone offset for the US East to -4
+var myInput = readUrl("classpath://airports/airports.json", 'application/json')
+---
+
+myInput map(item, index) -> item update {
+	case l at .lat -> l as String {format:".00"}
+	case m at .lon -> m as String {format:".00"}
+	case t at .tz if(t == -5) -> -4
+	case airport at .name if(airport == 'Schaumburg Regional') -> 'abc'
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="string-replace-using-regex" doc:id="7de9b307-d618-480d-8d81-49387c0305e7" >
+		<ee:transform doc:name="Transform Message" doc:id="77f8f06d-9971-4be0-ad9f-7fd7d9daaaad" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var address = '3400 peace st, MD, USA 21067'
+---
+ {'zipped code masked': address replace  /[0-9]{5}$/ with "zipcode masked",
+ 'house number masked': address replace  /^[0-9]{4}/ with "house number masked",
+ 'state masked': address replace /[A-Z]{2},/ with "state masked" }]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="mask-five-digits-ssn" doc:id="5ff92ca5-8d6b-47f1-ac4f-7fe8d69db21c" >
+		<ee:transform doc:name="Transform Message" doc:id="d871435c-2645-4750-bcdf-fd829fd940c0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+// mask the first five digits of ssn
+---
+'777-77-9999' replace /[0-9]{3}-[0-9]{2}/ with "***-**"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="various-ways-of-masking-data" doc:id="684b602d-700c-4840-9847-1f57db739b1b" >
+		<ee:transform doc:name="check the variables as well" doc:id="100cacc3-2c0b-48da-ace5-884dc59fe46c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+//mask age and the last five digits of the SSN
+var myData = {
+	          fname: 'mule',
+	          lname: 'max',
+	          age: 45,
+	          ssn: '048-15-8876'
+              }
+---
+myData mapObject ((value, key, index) ->
+	if( key as String == 'age') {(key): "**"}
+	else if (key as String == "ssn") 
+	    {(key): value replace /[0-9]{3}-[0-9]{2}/ with "***-**"}
+	else {(key): value}
+)]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="using_update" ><![CDATA[%dw 2.0
+output application/json
+//mask age and the last five digits of the SSN
+var myData = {
+	          fname: 'mule',
+	          lname: 'max',
+	          age: 45,
+	          ssn: '048-15-8876'
+              }
+---
+myData update {
+	case age at .age -> "**"
+	case ssn at .ssn -> ssn replace /[0-9]{3}-[0-9]{2}/ with "***-**"
+	case address at .address! -> '1234 my address '
+}]]></ee:set-variable>
+				<ee:set-variable variableName="using_util" ><![CDATA[%dw 2.0
+output application/json
+//mask age and the last five digits of the SSN
+import * from dw::util::Values
+var myData = {
+	          fname: 'mule',
+	          lname: 'max',
+	          age: 45,
+	          ssn: '048-15-8876'
+              }
+---
+myData mask "age" with "**" mask 'ssn' with "***-**-****"]]></ee:set-variable>
+				<ee:set-variable variableName="using_util2" ><![CDATA[%dw 2.0
+output application/json
+//mask age and the last five digits of the SSN
+import * from dw::util::Values
+var myData = {
+	          fname: 'mule',
+	          lname: 'max',
+	          age: 45,
+	          ssn: '048-15-8876'
+              }
+---
+myData mask 'age' with '**'
+ mask 'ssn' with ($ replace /^[0-9]{3}-[0-9]{2}/ with "***-**")]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+	</flow>
+	
+	<flow name="get-array-of-dates" doc:id="79114607-cc5c-4416-882c-e8645e5c161c">
+		<ee:transform doc:name="get array of dates between two dates" doc:id="fefe8328-fd15-4b89-89ab-0713cd06f86a">
+			<ee:message>
+				<ee:set-payload><![CDATA[
+%dw 2.0
+output application/json
+fun getDatesFromTo(start_date:Date, end_date:Date)= 
+   if (start_date > end_date) []
+   else if (start_date == end_date)  [start_date]
+   else [start_date] ++ getDatesFromTo((start_date +|P1D|), end_date)
+---
+getDatesFromTo(|2022-01-01|, |2022-01-05|)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

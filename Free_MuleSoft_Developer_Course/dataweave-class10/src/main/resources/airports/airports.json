@@ -1,0 +1,8002 @@
+[
+	{
+		"name" : "Lansdowne Airport",
+		"lat" : 41.1304722,
+		"lon" : -80.6195833,
+		"alt" : 1044,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Moton Field Municipal Airport",
+		"lat" : 32.4605722,
+		"lon" : -85.6800278,
+		"alt" : 264,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Schaumburg Regional",
+		"lat" : 41.9893408,
+		"lon" : -88.1012428,
+		"alt" : 801,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Randall Airport",
+		"lat" : 41.431912,
+		"lon" : -74.3915611,
+		"alt" : 523,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jekyll Island Airport",
+		"lat" : 31.0744722,
+		"lon" : -81.4277778,
+		"alt" : 11,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Elizabethton Municipal Airport",
+		"lat" : 36.3712222,
+		"lon" : -82.1734167,
+		"alt" : 1593,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Williams County Airport",
+		"lat" : 41.4673056,
+		"lon" : -84.5067778,
+		"alt" : 730,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Finger Lakes Regional Airport",
+		"lat" : 42.8835647,
+		"lon" : -76.7812318,
+		"alt" : 492,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Shoestring Aviation Airfield",
+		"lat" : 39.7948244,
+		"lon" : -76.6471914,
+		"alt" : 1000,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jefferson County Intl",
+		"lat" : 48.0538086,
+		"lon" : -122.8106436,
+		"alt" : 108,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Harford County Airport",
+		"lat" : 39.5668378,
+		"lon" : -76.2024028,
+		"alt" : 409,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Galt Field Airport",
+		"lat" : 42.4028889,
+		"lon" : -88.3751111,
+		"alt" : 875,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Port Bucyrus-Crawford County Airport",
+		"lat" : 40.7815556,
+		"lon" : -82.9748056,
+		"alt" : 1003,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jackson County Airport",
+		"lat" : 34.1758638,
+		"lon" : -83.5615972,
+		"alt" : 951,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Martin Campbell Field Airport",
+		"lat" : 35.0158056,
+		"lon" : -84.3468333,
+		"alt" : 1789,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mansfield Municipal",
+		"lat" : 42.0001331,
+		"lon" : -71.1967714,
+		"alt" : 122,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Frazier Lake Airpark",
+		"lat" : 54.0133333333333,
+		"lon" : -124.768333333333,
+		"alt" : 152,
+		"tz" : -8,
+		"tzone" : "America/Vancouver"
+	},
+	{
+		"name" : "Clow International Airport",
+		"lat" : 41.6959744,
+		"lon" : -88.1292306,
+		"alt" : 670,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kent State Airport",
+		"lat" : 41.1513889,
+		"lon" : -81.4151111,
+		"alt" : 1134,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Grand Canyon West Airport",
+		"lat" : 35.899904,
+		"lon" : -113.815674,
+		"alt" : 4813,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Effingham Memorial Airport",
+		"lat" : 39.07,
+		"lon" : -88.534,
+		"alt" : 585,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fortman Airport",
+		"lat" : 40.5553253,
+		"lon" : -84.3866186,
+		"alt" : 885,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Point Roberts Airpark",
+		"lat" : 48.9797222,
+		"lon" : -123.0788889,
+		"alt" : 10,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Clarke CO",
+		"lat" : 32.0517,
+		"lon" : -88.4434,
+		"alt" : 320,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lowell City Airport",
+		"lat" : 42.95392,
+		"lon" : -85.3439058,
+		"alt" : 681,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Suwannee County Airport",
+		"lat" : 30.300125,
+		"lon" : -83.0246944,
+		"alt" : 104,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Forest Lake Airport",
+		"lat" : 45.2477456,
+		"lon" : -92.9943853,
+		"alt" : 925,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grove City Airport",
+		"lat" : 41.1460278,
+		"lon" : -80.16775,
+		"alt" : 1371,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mark Anton Airport",
+		"lat" : 35.48625,
+		"lon" : -84.9310833,
+		"alt" : 718,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Plum Island Airport",
+		"lat" : 42.7953611,
+		"lon" : -70.8394444,
+		"alt" : 11,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jefferson County Airpark",
+		"lat" : 40.3602179,
+		"lon" : -80.7008742,
+		"alt" : 1196,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Somerset County Airport",
+		"lat" : 40.0388708,
+		"lon" : -79.0149951,
+		"alt" : 2275,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Shelby County Airport",
+		"lat" : 39.410556,
+		"lon" : -88.845556,
+		"alt" : 550,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Quincy Municipal Airport",
+		"lat" : 30.5978708,
+		"lon" : -84.557425,
+		"alt" : 225,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Atmautluak Airport",
+		"lat" : 60.866667,
+		"lon" : -162.273056,
+		"alt" : 18,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Heber City Municipal Airport",
+		"lat" : 40.4818056,
+		"lon" : -111.4288056,
+		"alt" : 5637,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Lynden Airport",
+		"lat" : 48.9558961,
+		"lon" : -122.4581183,
+		"alt" : 106,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Ephraim-Gibraltar Airport",
+		"lat" : 45.1354167,
+		"lon" : -87.1879444,
+		"alt" : 773,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wadsworth Municipal",
+		"lat" : 41.0031572,
+		"lon" : -81.7564401,
+		"alt" : 974,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ashland County Airport",
+		"lat" : 40.9029722,
+		"lon" : -82.2556389,
+		"alt" : 1206,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ridgeland Airport",
+		"lat" : 32.4934167,
+		"lon" : -80.99175,
+		"alt" : 79,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Put-in-Bay Airport",
+		"lat" : 41.3521,
+		"lon" : -82.497,
+		"alt" : 595,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Perry-Foley Airport",
+		"lat" : 30.0692778,
+		"lon" : -83.5805833,
+		"alt" : 44,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Braceville Airport",
+		"lat" : 41.2111675,
+		"lon" : -80.9692572,
+		"alt" : 900,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cherokee County Airport",
+		"lat" : 34.3122175,
+		"lon" : -84.4221556,
+		"alt" : 1219,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Gilmer County Airport",
+		"lat" : 34.6282222,
+		"lon" : -84.5265833,
+		"alt" : 1486,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chemehuevi Valley",
+		"lat" : 34.528889,
+		"lon" : -114.431971,
+		"alt" : 638,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Polk County Airport - Cornelius Moore Field",
+		"lat" : 34.0186944,
+		"lon" : -85.1464722,
+		"alt" : 974,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Clayton County Tara Field",
+		"lat" : 33.389099,
+		"lon" : -84.332397,
+		"alt" : 874,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Isbell Field Airport",
+		"lat" : 34.4736944,
+		"lon" : -85.7213889,
+		"alt" : 877,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Robertson Field",
+		"lat" : 41.6893333,
+		"lon" : -72.8646944,
+		"alt" : 202,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Pittsburgh-Monroeville Airport",
+		"lat" : 40.4526389,
+		"lon" : -79.7749167,
+		"alt" : 1187,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hamburg Inc Airport",
+		"lat" : 42.7008925,
+		"lon" : -78.9147569,
+		"alt" : 751,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Youngstown Elser Metro Airport",
+		"lat" : 40.9617953,
+		"lon" : -80.6773264,
+		"alt" : 1070,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Putnam County Airport",
+		"lat" : 39.6335556,
+		"lon" : -86.8138056,
+		"alt" : 842,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dell Flight Strip",
+		"lat" : 44.7357483,
+		"lon" : -112.7200133,
+		"alt" : 6007,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Madison GA Municipal Airport",
+		"lat" : 33.612125,
+		"lon" : -83.4604444,
+		"alt" : 694,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "DeFuniak Springs Airport",
+		"lat" : 30.7311111,
+		"lon" : -86.1537778,
+		"alt" : 289,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fernandina Beach Municipal Airport",
+		"lat" : 30.6118333,
+		"lon" : -81.4611944,
+		"alt" : 16,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Packwood",
+		"lat" : 46.3625,
+		"lon" : -121.4067,
+		"alt" : 1057,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "East Troy Municipal Airport",
+		"lat" : 42.7971667,
+		"lon" : -88.3726111,
+		"alt" : 860,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Saratoga County Airport",
+		"lat" : 43.050722,
+		"lon" : -73.861638,
+		"alt" : 433,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ocean Isle Beach Airport",
+		"lat" : 33.9085056,
+		"lon" : -78.4366722,
+		"alt" : 32,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Griffin-Spalding County Airport",
+		"lat" : 33.2269722,
+		"lon" : -84.2749444,
+		"alt" : 958,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Saluda County",
+		"lat" : 33.5561,
+		"lon" : -81.4768,
+		"alt" : 539,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Tok Junction Airport",
+		"lat" : 63.329444,
+		"lon" : -142.953611,
+		"alt" : 1639,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Big Timber Airport",
+		"lat" : 45.8063889,
+		"lon" : -109.9811111,
+		"alt" : 4492,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Florence",
+		"lat" : 43.9828168,
+		"lon" : -124.1113687,
+		"alt" : 51,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Welke Airport",
+		"lat" : 45.721111,
+		"lon" : -85.520278,
+		"alt" : 664,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cairo-Grady County Airport",
+		"lat" : 30.8879767,
+		"lon" : -84.1547353,
+		"alt" : 265,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Spring Hill Airport",
+		"lat" : 41.3473569,
+		"lon" : -75.4158972,
+		"alt" : 1729,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Foster Field",
+		"lat" : 42.4664444,
+		"lon" : -90.1693889,
+		"alt" : 990,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Germack Airport",
+		"lat" : 41.7778322,
+		"lon" : -80.9039797,
+		"alt" : 820,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Spitfire Aerodrome",
+		"lat" : 39.7355633,
+		"lon" : -75.3977211,
+		"alt" : 40,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Garland Airport",
+		"lat" : 44.8065278,
+		"lon" : -84.2761944,
+		"alt" : 1218,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Richland Airport",
+		"lat" : 43.2833575,
+		"lon" : -90.2982819,
+		"alt" : 742,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bamberg County Airport",
+		"lat" : 33.3045278,
+		"lon" : -81.1084167,
+		"alt" : 231,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Covington Municipal Airport",
+		"lat" : 33.6323083,
+		"lon" : -83.8474472,
+		"alt" : 809,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Barwick Lafayette Airport",
+		"lat" : 34.6884792,
+		"lon" : -85.2903319,
+		"alt" : 777,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Rock Airport",
+		"lat" : 40.6035463,
+		"lon" : -79.8261189,
+		"alt" : 1063,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Phoenix Regional Airport",
+		"lat" : 32.99169921875,
+		"lon" : -111.920997619629,
+		"alt" : 1300,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Colorado Springs East",
+		"lat" : 38.87,
+		"lon" : -104.41,
+		"alt" : 6145,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Apalachicola Regional Airport",
+		"lat" : 29.7276066,
+		"lon" : -85.0274416,
+		"alt" : 20,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Andrau Airport",
+		"lat" : 29.43,
+		"lon" : -95.35,
+		"alt" : 80,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lehigh Valley Intl",
+		"lat" : 40.652083,
+		"lon" : -75.440806,
+		"alt" : 393,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Abilene Rgnl",
+		"lat" : 32.411319,
+		"lon" : -99.681897,
+		"alt" : 1791,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ambler Airport",
+		"lat" : 67.106389,
+		"lon" : -157.8575,
+		"alt" : 334,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Albuquerque International Sunport",
+		"lat" : 35.0402222,
+		"lon" : -106.6091944,
+		"alt" : 5355,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Aberdeen Regional Airport",
+		"lat" : 45.4491,
+		"lon" : -98.4218,
+		"alt" : 1302,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Southwest Georgia Regional Airport",
+		"lat" : 31.5355,
+		"lon" : -84.1945,
+		"alt" : 197,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jimmy Carter Regional",
+		"lat" : 32.0665,
+		"lon" : -84.1133,
+		"alt" : 468,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Nantucket Mem",
+		"lat" : 41.253053,
+		"lon" : -70.060181,
+		"alt" : 48,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Waco Rgnl",
+		"lat" : 31.611289,
+		"lon" : -97.230519,
+		"alt" : 516,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Arcata",
+		"lat" : 40.978111,
+		"lon" : -124.108611,
+		"alt" : 221,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Atlantic City Intl",
+		"lat" : 39.457583,
+		"lon" : -74.577167,
+		"alt" : 75,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Adak Airport",
+		"lat" : 51.878,
+		"lon" : -176.646,
+		"alt" : 18,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Ardmore Muni",
+		"lat" : 34.300833,
+		"lon" : -97.008889,
+		"alt" : 762,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kodiak",
+		"lat" : 57.749967,
+		"lon" : -152.493856,
+		"alt" : 78,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Addison",
+		"lat" : 32.9685594,
+		"lon" : -96.8364478,
+		"alt" : 644,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Andrews Afb",
+		"lat" : 38.810806,
+		"lon" : -76.867028,
+		"alt" : 280,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Allakaket Airport",
+		"lat" : 66.5519,
+		"lon" : -152.6222,
+		"alt" : 441,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Alexandria Intl",
+		"lat" : 31.3274,
+		"lon" : -92.549833,
+		"alt" : 89,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kake Airport",
+		"lat" : 56.961389,
+		"lon" : -133.910278,
+		"alt" : 172,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Fort Worth Alliance Airport",
+		"lat" : 32.987778,
+		"lon" : -97.318889,
+		"alt" : 722,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Allegheny County Airport",
+		"lat" : 40.3544,
+		"lon" : -79.9302,
+		"alt" : 1252,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Angoon Seaplane Base",
+		"lat" : 57.503611,
+		"lon" : -134.585,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Augusta Rgnl At Bush Fld",
+		"lat" : 33.369944,
+		"lon" : -81.9645,
+		"alt" : 144,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Athens Ben Epps Airport",
+		"lat" : 33.9486,
+		"lon" : -83.3263,
+		"alt" : 808,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alliance Municipal Airport",
+		"lat" : 42.053333,
+		"lon" : -102.803889,
+		"alt" : 3931,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Municipal Airport",
+		"lat" : 33.6493889,
+		"lon" : -81.6850278,
+		"alt" : 529,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wainwright Airport",
+		"lat" : 70.638056,
+		"lon" : -159.994722,
+		"alt" : 41,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lee C Fine Memorial Airport",
+		"lat" : 38.096035,
+		"lon" : -92.5494875,
+		"alt" : 869,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Atka Airport",
+		"lat" : 52.220278,
+		"lon" : -174.206389,
+		"alt" : 56,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Akron Fulton Intl",
+		"lat" : 41.0375,
+		"lon" : -81.466917,
+		"alt" : 1067,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Akiak Airport",
+		"lat" : 60.902778,
+		"lon" : -161.230556,
+		"alt" : 30,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Akhiok Airport",
+		"lat" : 56.938611,
+		"lon" : -154.1825,
+		"alt" : 44,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "King Salmon",
+		"lat" : 58.676778,
+		"lon" : -156.649278,
+		"alt" : 68,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Anaktuvuk Pass Airport",
+		"lat" : 68.1336,
+		"lon" : -151.743,
+		"alt" : 2103,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Albany Intl",
+		"lat" : 42.748267,
+		"lon" : -73.801692,
+		"alt" : 285,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alice Intl",
+		"lat" : 27.740889,
+		"lon" : -98.026944,
+		"alt" : 178,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Alamogordo White Sands Regional Airport",
+		"lat" : 32.8399,
+		"lon" : -105.991,
+		"alt" : 4200,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Waterloo Regional Airport",
+		"lat" : 42.5571,
+		"lon" : -92.4003,
+		"alt" : 873,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "San Luis Valley Regional Airport",
+		"lat" : 37.435,
+		"lon" : -105.866667,
+		"alt" : 7539,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Walla Walla Regional Airport",
+		"lat" : 46.0949,
+		"lon" : -118.288,
+		"alt" : 1191,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Alexandria",
+		"lat" : 38.806346,
+		"lon" : -77.0621,
+		"alt" : 1,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alitak Seaplane Base",
+		"lat" : 56.899444,
+		"lon" : -154.247778,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Rick Husband Amarillo Intl",
+		"lat" : 35.219369,
+		"lon" : -101.705931,
+		"alt" : 3607,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Anniston Metro",
+		"lat" : 33.588167,
+		"lon" : -85.858111,
+		"alt" : 612,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ted Stevens Anchorage Intl",
+		"lat" : 61.174361,
+		"lon" : -149.996361,
+		"alt" : 152,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Anderson Rgnl",
+		"lat" : 34.494583,
+		"lon" : -82.709389,
+		"alt" : 782,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Aniak Airport",
+		"lat" : 61.5816,
+		"lon" : -159.543,
+		"alt" : 88,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Annette Island",
+		"lat" : 55.042436,
+		"lon" : -131.572233,
+		"alt" : 119,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lee Airport",
+		"lat" : 38.942778,
+		"lon" : -76.568333,
+		"alt" : 34,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Tri-State Steuben County Airport",
+		"lat" : 41.6396983,
+		"lon" : -85.0834933,
+		"alt" : 995,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Anvik Airport",
+		"lat" : 62.6467,
+		"lon" : -160.191,
+		"alt" : 309,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lima Allen County Airport",
+		"lat" : 40.707478,
+		"lon" : -84.0270781,
+		"alt" : 975,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Altoona Blair Co",
+		"lat" : 40.296372,
+		"lon" : -78.320022,
+		"alt" : 1504,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Amook Bay Seaplane Base",
+		"lat" : 57.471389,
+		"lon" : -153.815278,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Centennial",
+		"lat" : 39.570129,
+		"lon" : -104.849294,
+		"alt" : 5883,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Napa County Airport",
+		"lat" : 38.2131944,
+		"lon" : -122.2806944,
+		"alt" : 35,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Naples Muni",
+		"lat" : 26.152619,
+		"lon" : -81.775294,
+		"alt" : 8,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Phillips Aaf",
+		"lat" : 39.466219,
+		"lon" : -76.168808,
+		"alt" : 57,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alpena County Regional Airport",
+		"lat" : 45.0781,
+		"lon" : -83.5603,
+		"alt" : 689,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Klawock Seaplane Base",
+		"lat" : 55.554658,
+		"lon" : -133.101693,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Acadiana Rgnl",
+		"lat" : 30.037758,
+		"lon" : -91.883896,
+		"alt" : 24,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ann Arbor Municipal Airport",
+		"lat" : 42.132274,
+		"lon" : -83.444418,
+		"alt" : 839,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Arctic Village Airport",
+		"lat" : 68.1147,
+		"lon" : -145.579,
+		"alt" : 2092,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Watertown Intl",
+		"lat" : 43.991922,
+		"lon" : -76.021739,
+		"alt" : 325,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lakeland",
+		"lat" : 45.927778,
+		"lon" : -89.730833,
+		"alt" : 1629,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Aspen Pitkin County Sardy Field",
+		"lat" : 39.2232,
+		"lon" : -106.869,
+		"alt" : 7820,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Boire Field Airport",
+		"lat" : 42.78175,
+		"lon" : -71.5147778,
+		"alt" : 199,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Astoria Regional Airport",
+		"lat" : 46.157972,
+		"lon" : -123.878694,
+		"alt" : 15,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Atqasuk Edward Burnell Sr Memorial Airport",
+		"lat" : 70.4673,
+		"lon" : -157.436,
+		"alt" : 96,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hartsfield Jackson Atlanta Intl",
+		"lat" : 33.636719,
+		"lon" : -84.428067,
+		"alt" : 1026,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Camp Mabry Austin City",
+		"lat" : 30.31666,
+		"lon" : -97.7666,
+		"alt" : 0,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Appleton",
+		"lat" : 44.257526,
+		"lon" : -88.507576,
+		"alt" : 680,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Watertown Regional Airport",
+		"lat" : 44.914,
+		"lon" : -97.1547,
+		"alt" : 1748,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Augusta State",
+		"lat" : 44.320647,
+		"lon" : -69.797317,
+		"alt" : 352,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alakanuk Airport",
+		"lat" : 62.68,
+		"lon" : -164.66,
+		"alt" : 10,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Auburn University Regional",
+		"lat" : 32.3691,
+		"lon" : -85.2604,
+		"alt" : 777,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Austin Bergstrom Intl",
+		"lat" : 30.194528,
+		"lon" : -97.669889,
+		"alt" : 542,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wausau Downtown Airport",
+		"lat" : 44.9262845,
+		"lon" : -89.6270018,
+		"alt" : 1201,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Asheville Regional Airport",
+		"lat" : 35.436194,
+		"lon" : -82.541806,
+		"alt" : 2165,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Executive",
+		"lat" : 27.591389,
+		"lon" : -81.528889,
+		"alt" : 160,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wilkes Barre Scranton Intl",
+		"lat" : 41.338478,
+		"lon" : -75.723403,
+		"alt" : 962,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Marana Regional",
+		"lat" : 32.409556,
+		"lon" : -111.218388,
+		"alt" : 2031,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Avalon",
+		"lat" : 33.405,
+		"lon" : -118.415833,
+		"alt" : 1602,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Phoenix-Mesa Gateway",
+		"lat" : 33.307833,
+		"lon" : -111.655,
+		"alt" : 1382,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Kalamazoo",
+		"lat" : 42.234875,
+		"lon" : -85.552058,
+		"alt" : 874,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Beale Afb",
+		"lat" : 39.136089,
+		"lon" : -121.436567,
+		"alt" : 113,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Barksdale Afb",
+		"lat" : 32.50182,
+		"lon" : -93.662674,
+		"alt" : 166,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Barnes Municipal",
+		"lat" : 42.1579472,
+		"lon" : -72.715875,
+		"alt" : 270,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wings Field",
+		"lat" : 40.1375,
+		"lon" : -75.265,
+		"alt" : 302,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bryce Canyon",
+		"lat" : 37.706444,
+		"lon" : -112.145806,
+		"alt" : 7590,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Boca Raton",
+		"lat" : 26.3785,
+		"lon" : -80.107694,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Baudette Intl",
+		"lat" : 48.728444,
+		"lon" : -94.612222,
+		"alt" : 1086,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bradley Intl",
+		"lat" : 41.938889,
+		"lon" : -72.683222,
+		"alt" : 173,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Igor I Sikorsky Mem",
+		"lat" : 41.163472,
+		"lon" : -73.126167,
+		"alt" : 9,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Beech Factory Airport",
+		"lat" : 37.6939167,
+		"lon" : -97.2149167,
+		"alt" : 1409,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Laurence G Hanscom Fld",
+		"lat" : 42.469953,
+		"lon" : -71.289031,
+		"alt" : 133,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Southwest Michigan Regional Airport",
+		"lat" : 42.1285833,
+		"lon" : -86.4285,
+		"alt" : 643,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bethel",
+		"lat" : 60.779778,
+		"lon" : -161.838,
+		"alt" : 121,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Bradford Regional Airport",
+		"lat" : 41.8031,
+		"lon" : -78.6401,
+		"alt" : 2143,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Western Nebraska Regional Airport",
+		"lat" : 41.874,
+		"lon" : -103.596,
+		"alt" : 3967,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Boeing Fld King Co Intl",
+		"lat" : 47.53,
+		"lon" : -122.301947,
+		"alt" : 21,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Meadows Fld",
+		"lat" : 35.433598,
+		"lon" : -119.05677,
+		"alt" : 507,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Mobile Downtown",
+		"lat" : 30.626783,
+		"lon" : -88.068092,
+		"alt" : 26,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Beaver Falls",
+		"lat" : 40.7724722,
+		"lon" : -80.3914444,
+		"alt" : 1253,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Beaufort",
+		"lat" : 32.477411,
+		"lon" : -80.723161,
+		"alt" : 37,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Decatur County Industrial Air Park",
+		"lat" : 30.9715981,
+		"lon" : -84.6369278,
+		"alt" : 141,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Greater Binghamton Edwin A Link Fld",
+		"lat" : 42.208689,
+		"lon" : -75.979839,
+		"alt" : 1636,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bangor Intl",
+		"lat" : 44.807444,
+		"lon" : -68.828139,
+		"alt" : 192,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hancock County - Bar Harbor",
+		"lat" : 44.4497689,
+		"lon" : -68.3615653,
+		"alt" : 83,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Birmingham Intl",
+		"lat" : 33.562942,
+		"lon" : -86.75355,
+		"alt" : 644,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Block Island State Airport",
+		"lat" : 41.168056,
+		"lon" : -71.577778,
+		"alt" : 108,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Biggs Aaf",
+		"lat" : 31.849528,
+		"lon" : -106.380039,
+		"alt" : 3948,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Allen Aaf",
+		"lat" : 63.994547,
+		"lon" : -145.721642,
+		"alt" : 1291,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Billings Logan International Airport",
+		"lat" : 45.80921,
+		"lon" : -108.537654,
+		"alt" : 3652,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Bismarck Municipal Airport",
+		"lat" : 46.775842,
+		"lon" : -100.757931,
+		"alt" : 1661,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Tulip City Airport",
+		"lat" : 42.7427778,
+		"lon" : -86.1078333,
+		"alt" : 698,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Keesler Afb",
+		"lat" : 30.410425,
+		"lon" : -88.924433,
+		"alt" : 33,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Rocky Mountain Metropolitan Airport",
+		"lat" : 39.90888888,
+		"lon" : -105.11722222,
+		"alt" : 5670,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Bemidji Regional Airport",
+		"lat" : 47.510722,
+		"lon" : -94.934722,
+		"alt" : 1391,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Buckland Airport",
+		"lat" : 65.981667,
+		"lon" : -161.149167,
+		"alt" : 31,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Stephens Co",
+		"lat" : 32.719047,
+		"lon" : -98.891,
+		"alt" : 1284,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Buckley Afb",
+		"lat" : 39.701668,
+		"lon" : -104.75166,
+		"alt" : 5662,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Branson LLC",
+		"lat" : 36.531994,
+		"lon" : -93.200556,
+		"alt" : 1302,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Barking Sands Pmrf",
+		"lat" : 22.022833,
+		"lon" : -159.785,
+		"alt" : 23,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Burke Lakefront Airport",
+		"lat" : 41.5175,
+		"lon" : -81.683333,
+		"alt" : 583,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Raleigh County Memorial Airport",
+		"lat" : 37.7873,
+		"lon" : -81.1242,
+		"alt" : 2504,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Brookings Regional Airport",
+		"lat" : 44.3048,
+		"lon" : -96.8169,
+		"alt" : 1648,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Boulder City Municipal Airport",
+		"lat" : 35.5651,
+		"lon" : -114.514,
+		"alt" : 2201,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Mercer County Airport",
+		"lat" : 37.2958,
+		"lon" : -81.2077,
+		"alt" : 2857,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Blythe Airport",
+		"lat" : 33.619167,
+		"lon" : -114.716889,
+		"alt" : 399,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Bellingham Intl",
+		"lat" : 48.792694,
+		"lon" : -122.537528,
+		"alt" : 170,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Scott Afb Midamerica",
+		"lat" : 38.545178,
+		"lon" : -89.835183,
+		"alt" : 459,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Brigham City",
+		"lat" : 41.552,
+		"lon" : -112.062,
+		"alt" : 4229,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Monroe County Airport",
+		"lat" : 39.1460208,
+		"lon" : -86.6166805,
+		"alt" : 846,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Central Illinois Rgnl",
+		"lat" : 40.477111,
+		"lon" : -88.915917,
+		"alt" : 871,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Beaumont Municipal",
+		"lat" : 30.0702044,
+		"lon" : -94.2150967,
+		"alt" : 32,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Big Mountain Afs",
+		"lat" : 59.361247,
+		"lon" : -155.258822,
+		"alt" : 663,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Nashville Intl",
+		"lat" : 36.124472,
+		"lon" : -86.678194,
+		"alt" : 599,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Boise Air Terminal",
+		"lat" : 43.564361,
+		"lon" : -116.222861,
+		"alt" : 2871,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "General Edward Lawrence Logan Intl",
+		"lat" : 42.364347,
+		"lon" : -71.005181,
+		"alt" : 19,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bartow Municipal Airport",
+		"lat" : 27.9434,
+		"lon" : -81.7834,
+		"alt" : 125,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Southeast Texas Rgnl",
+		"lat" : 29.950833,
+		"lon" : -94.020694,
+		"alt" : 15,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Brunswick Golden Isles Airport",
+		"lat" : 31.2588,
+		"lon" : -81.4665,
+		"alt" : 26,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Brainerd Lakes Rgnl",
+		"lat" : 46.398308,
+		"lon" : -94.138078,
+		"alt" : 1226,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Southeast Iowa Regional Airport",
+		"lat" : 40.7832,
+		"lon" : -91.1255,
+		"alt" : 698,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Brownsville South Padre Island Intl",
+		"lat" : 25.906833,
+		"lon" : -97.425861,
+		"alt" : 22,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wiley Post Will Rogers Mem",
+		"lat" : 71.285446,
+		"lon" : -156.766003,
+		"alt" : 44,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Bradshaw Aaf",
+		"lat" : 19.760056,
+		"lon" : -155.553717,
+		"alt" : 6190,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Barter Island Lrrs",
+		"lat" : 70.133989,
+		"lon" : -143.581867,
+		"alt" : 2,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Bert Mooney Airport",
+		"lat" : 45.954806,
+		"lon" : -112.497472,
+		"alt" : 5550,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Baton Rouge Metro Ryan Fld",
+		"lat" : 30.533167,
+		"lon" : -91.149639,
+		"alt" : 70,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bettles",
+		"lat" : 66.913944,
+		"lon" : -151.529056,
+		"alt" : 644,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Burlington Intl",
+		"lat" : 44.471861,
+		"lon" : -73.153278,
+		"alt" : 335,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Buffalo Niagara Intl",
+		"lat" : 42.940525,
+		"lon" : -78.732167,
+		"alt" : 724,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bob Hope",
+		"lat" : 34.200667,
+		"lon" : -118.358667,
+		"alt" : 778,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Municipal Airport",
+		"lat" : 42.6907171,
+		"lon" : -88.3046825,
+		"alt" : 780,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Burlington-Alamance Regional Airport",
+		"lat" : 36.0485433,
+		"lon" : -79.4748892,
+		"alt" : 617,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Beverly Municipal Airport",
+		"lat" : 42.584141,
+		"lon" : -70.9161444,
+		"alt" : 107,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "KBWD",
+		"lat" : 31.7936111,
+		"lon" : -98.9565,
+		"alt" : 1387,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bowling Green-Warren County Regional Airport",
+		"lat" : 36.9645278,
+		"lon" : -86.4196667,
+		"alt" : 547,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Baltimore Washington Intl",
+		"lat" : 39.175361,
+		"lon" : -76.668333,
+		"alt" : 146,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Buckeye Municipal Airport",
+		"lat" : 33.420417,
+		"lon" : -112.68618,
+		"alt" : 1033,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Borrego Valley Airport",
+		"lat" : 33.2590278,
+		"lon" : -116.3209722,
+		"alt" : 520,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Arkansas Intl",
+		"lat" : 35.964347,
+		"lon" : -89.943956,
+		"alt" : 254,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bicycle Lake Aaf",
+		"lat" : 35.280531,
+		"lon" : -116.630031,
+		"alt" : 2350,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Blakely Island Airport",
+		"lat" : 48.56025,
+		"lon" : -122.80243,
+		"alt" : 0,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Gallatin Field",
+		"lat" : 45.777643,
+		"lon" : -111.160151,
+		"alt" : 4500,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Grand Geneva Resort Airport",
+		"lat" : 42.6149167,
+		"lon" : -88.3895833,
+		"alt" : 835,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Frasca Field",
+		"lat" : 40.144979,
+		"lon" : -88.200197,
+		"alt" : 735,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Portage Municipal Airport",
+		"lat" : 43.5603136,
+		"lon" : -89.4828607,
+		"alt" : 825,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Plymouth Municipal Airport",
+		"lat" : 41.3651307,
+		"lon" : -86.3002574,
+		"alt" : 800,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sylvania Airport",
+		"lat" : 42.70325,
+		"lon" : -87.9589722,
+		"alt" : 785,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dowagiac Municipal Airport",
+		"lat" : 41.9929342,
+		"lon" : -86.1280125,
+		"alt" : 748,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Columbia Metropolitan",
+		"lat" : 33.938833,
+		"lon" : -81.119528,
+		"alt" : 236,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Akron Canton Regional Airport",
+		"lat" : 40.9160833,
+		"lon" : -81.4421944,
+		"alt" : 1228,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Caribou Muni",
+		"lat" : 46.8715,
+		"lon" : -68.017917,
+		"alt" : 626,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Greater Cumberland Rgnl.",
+		"lat" : 39.615278,
+		"lon" : -78.760556,
+		"alt" : 775,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Columbus Afb",
+		"lat" : 33.643833,
+		"lon" : -88.443833,
+		"alt" : 219,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Coweta County Airport",
+		"lat" : 33.3115656,
+		"lon" : -84.7697554,
+		"alt" : 970,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Buchanan Field Airport",
+		"lat" : 37.9896667,
+		"lon" : -122.0568889,
+		"alt" : 26,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Cold Bay",
+		"lat" : 55.206061,
+		"lon" : -162.725436,
+		"alt" : 96,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Cedar City Rgnl",
+		"lat" : 37.700967,
+		"lon" : -113.098847,
+		"alt" : 5622,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Cambridge Municipal Airport",
+		"lat" : 39.9750278,
+		"lon" : -81.5775833,
+		"alt" : 799,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "CedarKey",
+		"lat" : 29.1342222,
+		"lon" : -83.0504722,
+		"alt" : 11,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Woodward Field",
+		"lat" : 34.2835833,
+		"lon" : -80.5648611,
+		"alt" : 302,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chadron Municipal Airport",
+		"lat" : 42.8375,
+		"lon" : -103.095556,
+		"alt" : 3297,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Childress Muni",
+		"lat" : 34.433781,
+		"lon" : -100.287992,
+		"alt" : 1954,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Merle K Mudhole Smith",
+		"lat" : 60.491778,
+		"lon" : -145.477556,
+		"alt" : 48,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Caldwell Essex County Airport",
+		"lat" : 40.8752222,
+		"lon" : -74.2813611,
+		"alt" : 172,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Del Norte County Airport",
+		"lat" : 41.7802,
+		"lon" : -124.237,
+		"alt" : 57,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Westover Arb Metropolitan",
+		"lat" : 42.194014,
+		"lon" : -72.534783,
+		"alt" : 241,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Central Airport",
+		"lat" : 65.573889,
+		"lon" : -144.780833,
+		"alt" : 937,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Clemson",
+		"lat" : 34.6722222,
+		"lon" : -82.8858889,
+		"alt" : 891,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bob Sikes",
+		"lat" : 30.778833,
+		"lon" : -86.522111,
+		"alt" : 213,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Cortez Muni",
+		"lat" : 37.303,
+		"lon" : -108.628056,
+		"alt" : 5918,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Coulter Fld",
+		"lat" : 30.715694,
+		"lon" : -96.331361,
+		"alt" : 367,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Craig Seaplane Base",
+		"lat" : 55.478889,
+		"lon" : -133.147778,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Crystal River",
+		"lat" : 28.8676111,
+		"lon" : -82.5741111,
+		"alt" : 9,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cuyahoga County",
+		"lat" : 41.565124,
+		"lon" : -81.4863555,
+		"alt" : 879,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cape Girardeau Regional Airport",
+		"lat" : 37.2253,
+		"lon" : -89.5708,
+		"alt" : 342,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Meigs Field",
+		"lat" : 41.860278,
+		"lon" : -87.609722,
+		"alt" : 585,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Casa Grande Municipal Airport",
+		"lat" : 32.954889,
+		"lon" : -111.766832,
+		"alt" : 1464,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Lovell Fld",
+		"lat" : 35.035278,
+		"lon" : -85.203808,
+		"alt" : 683,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "All Airports",
+		"lat" : 41.883611,
+		"lon" : -87.631667,
+		"alt" : 596,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Charlottesville-Albemarle",
+		"lat" : 38.138639,
+		"lon" : -78.452861,
+		"alt" : 639,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Charleston Afb Intl",
+		"lat" : 32.898647,
+		"lon" : -80.040528,
+		"alt" : 45,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chuathbaluk Airport",
+		"lat" : 61.579167,
+		"lon" : -159.215556,
+		"alt" : 243,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chico Muni",
+		"lat" : 39.795383,
+		"lon" : -121.858422,
+		"alt" : 238,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Cedar Rapids",
+		"lat" : 41.884694,
+		"lon" : -91.710806,
+		"alt" : 869,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Chalkyitsik Airport",
+		"lat" : 66.645,
+		"lon" : -143.74,
+		"alt" : 544,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Council Airport",
+		"lat" : 64.897778,
+		"lon" : -163.703333,
+		"alt" : 85,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chippewa County International Airport",
+		"lat" : 46.2508,
+		"lon" : -84.4724,
+		"alt" : 800,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Harrison Marion Regional Airport",
+		"lat" : 39.2966,
+		"lon" : -80.2281,
+		"alt" : 1217,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Crooked Creek Airport",
+		"lat" : 61.867778,
+		"lon" : -158.135,
+		"alt" : 178,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Crisp County Cordele Airport",
+		"lat" : 31.9888333,
+		"lon" : -83.7739167,
+		"alt" : 310,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Clarksville-Montgomery County Regional Airport",
+		"lat" : 36.621944,
+		"lon" : -87.415,
+		"alt" : 550,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Clear Lake Metroport",
+		"lat" : 29.5569,
+		"lon" : -95.137497,
+		"alt" : 35,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "McClellan-Palomar Airport",
+		"lat" : 33.0742,
+		"lon" : -117.1648,
+		"alt" : 328,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Cleveland Hopkins Intl",
+		"lat" : 41.411689,
+		"lon" : -81.849794,
+		"alt" : 791,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Easterwood Fld",
+		"lat" : 30.588583,
+		"lon" : -96.363833,
+		"alt" : 321,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "William R Fairchild International Airport",
+		"lat" : 48.1202,
+		"lon" : -123.5,
+		"alt" : 291,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Chehalis-Centralia",
+		"lat" : 46.4062,
+		"lon" : -122.5897,
+		"alt" : 177,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Charlotte Douglas Intl",
+		"lat" : 35.214,
+		"lon" : -80.943139,
+		"alt" : 748,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Clearwater Air Park",
+		"lat" : 27.9764722,
+		"lon" : -82.7586667,
+		"alt" : 70,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Port Columbus Intl",
+		"lat" : 39.997972,
+		"lon" : -82.891889,
+		"alt" : 815,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Champaign",
+		"lat" : 40.03925,
+		"lon" : -88.278056,
+		"alt" : 754,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Houghton County Memorial Airport",
+		"lat" : 47.1684,
+		"lon" : -88.4891,
+		"alt" : 1095,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cavern City Air Terminal",
+		"lat" : 32.337472,
+		"lon" : -104.263278,
+		"alt" : 3295,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Tstc Waco",
+		"lat" : 31.637831,
+		"lon" : -97.074139,
+		"alt" : 470,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Canyonlands Field",
+		"lat" : 38.755,
+		"lon" : -109.754722,
+		"alt" : 4555,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Yellowstone Rgnl",
+		"lat" : 44.520194,
+		"lon" : -109.023806,
+		"alt" : 5102,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Pappy Boyington",
+		"lat" : 47.7743056,
+		"lon" : -116.8195833,
+		"alt" : 2320,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Patrick Afb",
+		"lat" : 28.234922,
+		"lon" : -80.610125,
+		"alt" : 8,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Merritt Island Airport",
+		"lat" : 28.3416111,
+		"lon" : -80.6854722,
+		"alt" : 6,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Concord Municipal",
+		"lat" : 43.20267,
+		"lon" : -71.50233,
+		"alt" : 342,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "City Of Colorado Springs Muni",
+		"lat" : 38.805805,
+		"lon" : -104.700778,
+		"alt" : 6187,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Cotulla Lasalle Co",
+		"lat" : 28.456694,
+		"lon" : -99.220294,
+		"alt" : 474,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Columbia Rgnl",
+		"lat" : 38.818094,
+		"lon" : -92.219631,
+		"alt" : 889,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Natrona Co Intl",
+		"lat" : 42.908,
+		"lon" : -106.464417,
+		"alt" : 5347,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "St. Louis Downtown Airport",
+		"lat" : 38.5707244,
+		"lon" : -90.1562211,
+		"alt" : 413,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grand Strand Airport",
+		"lat" : 33.81175,
+		"lon" : -78.7239444,
+		"alt" : 31,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Corpus Christi Intl",
+		"lat" : 27.770361,
+		"lon" : -97.501222,
+		"alt" : 44,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Yeager",
+		"lat" : 38.373147,
+		"lon" : -81.593189,
+		"alt" : 981,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Columbus Metropolitan Airport",
+		"lat" : 32.5163333,
+		"lon" : -84.9388611,
+		"alt" : 397,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cut Bank Muni",
+		"lat" : 48.608353,
+		"lon" : -112.376144,
+		"alt" : 3854,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Chester County G O Carlson Airport",
+		"lat" : 39.9789,
+		"lon" : -75.8654,
+		"alt" : 660,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "West Georgia Regional Airport - O V Gray Field",
+		"lat" : 33.6316964,
+		"lon" : -85.1522641,
+		"alt" : 1165,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cross City",
+		"lat" : 29.6355278,
+		"lon" : -83.10475,
+		"alt" : 42,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cincinnati Northern Kentucky Intl",
+		"lat" : 39.048836,
+		"lon" : -84.667822,
+		"alt" : 896,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Clovis Muni",
+		"lat" : 34.425139,
+		"lon" : -103.079278,
+		"alt" : 4216,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Corvallis Muni",
+		"lat" : 44.5067,
+		"lon" : -123.2915,
+		"alt" : 250,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Cannon Afb",
+		"lat" : 34.382775,
+		"lon" : -103.322147,
+		"alt" : 4295,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Charlevoix Municipal Airport",
+		"lat" : 45.3047778,
+		"lon" : -85.2753333,
+		"alt" : 669,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Central Wisconsin",
+		"lat" : 44.772726,
+		"lon" : -89.646635,
+		"alt" : 840,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Clinton Municipal",
+		"lat" : 41.83075,
+		"lon" : -90.3289722,
+		"alt" : 708,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Chatsworth Station",
+		"lat" : 34.256944,
+		"lon" : -118.598889,
+		"alt" : 978,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Coldfoot Airport",
+		"lat" : 67.251389,
+		"lon" : -150.176111,
+		"alt" : 1014,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Calexico Intl",
+		"lat" : 32.669502,
+		"lon" : -115.51333,
+		"alt" : 4,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lone Star Executive",
+		"lat" : 30.351833,
+		"lon" : -95.414467,
+		"alt" : 245,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Capital City Airport",
+		"lat" : 40.2171389,
+		"lon" : -76.8513611,
+		"alt" : 347,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chefornak Airport",
+		"lat" : 60.149167,
+		"lon" : -164.285556,
+		"alt" : 40,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chatham Seaplane Base",
+		"lat" : 57.515,
+		"lon" : -134.946111,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Cheyenne Rgnl Jerry Olson Fld",
+		"lat" : 41.155722,
+		"lon" : -104.811839,
+		"alt" : 6156,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Yakataga Airport",
+		"lat" : 60.081901,
+		"lon" : -142.493611,
+		"alt" : 12,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Cape Romanzof Lrrs",
+		"lat" : 61.780297,
+		"lon" : -166.038747,
+		"alt" : 457,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Tri-Cities",
+		"lat" : 42.0471,
+		"lon" : -76.0578,
+		"alt" : 833,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chisana Airport",
+		"lat" : 62.071111,
+		"lon" : -142.048333,
+		"alt" : 1011,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Daytona Beach Intl",
+		"lat" : 29.179917,
+		"lon" : -81.058056,
+		"alt" : 34,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dallas Love Fld",
+		"lat" : 32.847111,
+		"lon" : -96.851778,
+		"alt" : 487,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Skyhaven Airport",
+		"lat" : 43.2840556,
+		"lon" : -70.9292778,
+		"alt" : 321,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "James M Cox Dayton Intl",
+		"lat" : 39.902375,
+		"lon" : -84.219375,
+		"alt" : 1009,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "W H Barron Field",
+		"lat" : 32.3388,
+		"lon" : -82.591,
+		"alt" : 311,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dubuque Rgnl",
+		"lat" : 42.402,
+		"lon" : -90.709472,
+		"alt" : 1076,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ronald Reagan Washington Natl",
+		"lat" : 38.852083,
+		"lon" : -77.037722,
+		"alt" : 15,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dodge City Regional Airport",
+		"lat" : 37.7634,
+		"lon" : -99.9656,
+		"alt" : 2594,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Decatur",
+		"lat" : 39.834564,
+		"lon" : -88.865689,
+		"alt" : 682,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Denver Intl",
+		"lat" : 39.861656,
+		"lon" : -104.673178,
+		"alt" : 5431,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Coleman A Young Muni",
+		"lat" : 42.409195,
+		"lon" : -83.009861,
+		"alt" : 626,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dallas Fort Worth Intl",
+		"lat" : 32.896828,
+		"lon" : -97.037997,
+		"alt" : 607,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Douglas Municipal Airport",
+		"lat" : 31.3426028,
+		"lon" : -109.5064544,
+		"alt" : 4173,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Deer Harbor Seaplane",
+		"lat" : 48.618397,
+		"lon" : -123.00596,
+		"alt" : 0,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Dothan Rgnl",
+		"lat" : 31.321339,
+		"lon" : -85.449628,
+		"alt" : 401,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dalhart Muni",
+		"lat" : 36.022586,
+		"lon" : -102.547278,
+		"alt" : 3991,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dickinson Theodore Roosevelt Regional Airport",
+		"lat" : 46.7975,
+		"lon" : -102.801944,
+		"alt" : 2592,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "De Kalb Taylor Municipal Airport",
+		"lat" : 41.9338342,
+		"lon" : -88.7056864,
+		"alt" : 914,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Chautauqua County-Dunkirk Airport",
+		"lat" : 42.4933353,
+		"lon" : -79.2720417,
+		"alt" : 693,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Knoxville Downtown Island Airport",
+		"lat" : 35.9638333,
+		"lon" : -83.8736667,
+		"alt" : 833,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Laughlin Afb",
+		"lat" : 29.359486,
+		"lon" : -100.777975,
+		"alt" : 1082,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dillingham",
+		"lat" : 59.044667,
+		"lon" : -158.5055,
+		"alt" : 74,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Duluth Intl",
+		"lat" : 46.842091,
+		"lon" : -92.193649,
+		"alt" : 1428,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Baraboo Wisconsin Dells Airport",
+		"lat" : 43.5217843,
+		"lon" : -89.7709266,
+		"alt" : 979,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Davis Monthan Afb",
+		"lat" : 32.166467,
+		"lon" : -110.883144,
+		"alt" : 2704,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Daniel Field Airport",
+		"lat" : 33.4665028,
+		"lon" : -82.0393808,
+		"alt" : 423,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dalton Municipal Airport",
+		"lat" : 34.7229444,
+		"lon" : -84.87025,
+		"alt" : 709,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Vermilion Regional",
+		"lat" : 40.1996944,
+		"lon" : -87.5955278,
+		"alt" : 696,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dover Afb",
+		"lat" : 39.129539,
+		"lon" : -75.465958,
+		"alt" : 28,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dupage",
+		"lat" : 41.907778,
+		"lon" : -88.248611,
+		"alt" : 758,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Douglas Municipal Airport",
+		"lat" : 31.4767385,
+		"lon" : -82.8605664,
+		"alt" : 257,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Deering Airport",
+		"lat" : 66.0696,
+		"lon" : -162.766,
+		"alt" : 21,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Beauregard Rgnl",
+		"lat" : 30.831722,
+		"lon" : -93.339917,
+		"alt" : 202,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Drummond Island Airport",
+		"lat" : 46.0093114,
+		"lon" : -83.7439342,
+		"alt" : 668,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Durango La Plata Co",
+		"lat" : 37.151516,
+		"lon" : -107.75377,
+		"alt" : 6685,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Del Rio Intl",
+		"lat" : 29.374208,
+		"lon" : -100.927158,
+		"alt" : 1002,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Des Moines Intl",
+		"lat" : 41.533972,
+		"lon" : -93.663083,
+		"alt" : 958,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Delta Municipal Airport",
+		"lat" : 39.3806386,
+		"lon" : -112.5077147,
+		"alt" : 4759,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Destin",
+		"lat" : 30.4000611,
+		"lon" : -86.4714772,
+		"alt" : 23,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Detroit Metro Wayne Co",
+		"lat" : 42.212444,
+		"lon" : -83.353389,
+		"alt" : 645,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Halliburton Field Airport",
+		"lat" : 34.4713056,
+		"lon" : -97.9598611,
+		"alt" : 1114,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bisbee Douglas Intl",
+		"lat" : 31.469028,
+		"lon" : -109.603667,
+		"alt" : 4154,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "DuBois Regional Airport",
+		"lat" : 41.1783,
+		"lon" : -78.8987,
+		"alt" : 1817,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Unalaska",
+		"lat" : 53.900139,
+		"lon" : -166.5435,
+		"alt" : 22,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Devils Lake Regional Airport",
+		"lat" : 48.114444,
+		"lon" : -98.908611,
+		"alt" : 1445,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Deer Valley Municipal Airport",
+		"lat" : 33.4117,
+		"lon" : 112.457,
+		"alt" : 1478,
+		"tz" : 8,
+		"tzone" : "Asia/Chongqing"
+	},
+	{
+		"name" : "Yolo County Airport",
+		"lat" : 38.5793889,
+		"lon" : -121.8569444,
+		"alt" : 100,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "David Wayne Hooks Field",
+		"lat" : 30.063746,
+		"lon" : -95.554276,
+		"alt" : 152,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Orlando",
+		"lat" : 28.398,
+		"lon" : -81.57,
+		"alt" : 340,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Danbury Municipal Airport",
+		"lat" : 41.3715353,
+		"lon" : -73.4821906,
+		"alt" : 458,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dyess Afb",
+		"lat" : 32.420756,
+		"lon" : -99.8546,
+		"alt" : 1789,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wickenburg Municipal Airport",
+		"lat" : 33.96889877,
+		"lon" : -112.7990036,
+		"alt" : 2377,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Bagdad Airport",
+		"lat" : 34.5958528,
+		"lon" : -113.170195,
+		"alt" : 4183,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Ocean Ridge Airport",
+		"lat" : 38.8016111,
+		"lon" : -123.5306389,
+		"alt" : 940,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Gila Bend Municipal Airport",
+		"lat" : 32.960169,
+		"lon" : -112.673636,
+		"alt" : 789,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Chinle Municipal Airport",
+		"lat" : 36.1108806,
+		"lon" : -109.5754222,
+		"alt" : 5547,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Eagle Airport",
+		"lat" : 64.778056,
+		"lon" : -141.149722,
+		"alt" : 908,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kearney Municipal Airport",
+		"lat" : 40.727,
+		"lon" : -99.0068,
+		"alt" : 2131,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Pangborn Field",
+		"lat" : 47.398,
+		"lon" : -120.206,
+		"alt" : 1249,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Chippewa Valley Regional Airport",
+		"lat" : 44.8658,
+		"lon" : -91.4843,
+		"alt" : 913,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Iosco County",
+		"lat" : 44.311,
+		"lon" : -83.422,
+		"alt" : 606,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Elizabeth City Cgas Rgnl",
+		"lat" : 36.260581,
+		"lon" : -76.174572,
+		"alt" : 12,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Panama City-NW Florida Bea.",
+		"lat" : 30.3417,
+		"lon" : -85.7973,
+		"alt" : 69,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Elmendorf Afb",
+		"lat" : 61.250986,
+		"lon" : -149.806503,
+		"alt" : 212,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Edwards Afb",
+		"lat" : 34.905417,
+		"lon" : -117.883739,
+		"alt" : 2302,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Eek Airport",
+		"lat" : 60.213611,
+		"lon" : -162.043889,
+		"alt" : 15,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Dillant Hopkins Airport",
+		"lat" : 72.270833,
+		"lon" : 42.898333,
+		"alt" : 149,
+		"tz" : -5,
+		"tzone" : "\\N"
+	},
+	{
+		"name" : "Shelby County Airport",
+		"lat" : 33.1777778,
+		"lon" : -86.7832222,
+		"alt" : 586,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ellington Fld",
+		"lat" : 29.607333,
+		"lon" : -95.15875,
+		"alt" : 32,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Eagle County Airport",
+		"lat" : 39.6427611,
+		"lon" : -106.9159347,
+		"alt" : 6548,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Eagle Co Rgnl",
+		"lat" : 39.642556,
+		"lon" : -106.917694,
+		"alt" : 6540,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Wellington Municipal",
+		"lat" : 37.39411,
+		"lon" : -97.423225,
+		"alt" : 1277,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Eagle River",
+		"lat" : 45.932333,
+		"lon" : -89.268283,
+		"alt" : 1642,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Egegik Airport",
+		"lat" : 58.185556,
+		"lon" : -157.375556,
+		"alt" : 92,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Cape Newenham Lrrs",
+		"lat" : 58.646428,
+		"lon" : -162.062778,
+		"alt" : 541,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Eielson Afb",
+		"lat" : 64.665667,
+		"lon" : -147.1015,
+		"alt" : 548,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Elkhart Municipal",
+		"lat" : 41.719444,
+		"lon" : -86.003333,
+		"alt" : 778,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Elkins Randolph Co Jennings Randolph",
+		"lat" : 38.889444,
+		"lon" : -79.857139,
+		"alt" : 1987,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Elko Regional Airport",
+		"lat" : 40.8249,
+		"lon" : -115.792,
+		"alt" : 5140,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Bessemer",
+		"lat" : 33.1876,
+		"lon" : -86.5558,
+		"alt" : 700,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "South Arkansas Rgnl At Goodwin Fld",
+		"lat" : 33.220972,
+		"lon" : -92.813278,
+		"alt" : 277,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Elim Airport",
+		"lat" : 64.615,
+		"lon" : -162.270556,
+		"alt" : 162,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Elmira Corning Rgnl",
+		"lat" : 42.159889,
+		"lon" : -76.891611,
+		"alt" : 954,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "El Paso Intl",
+		"lat" : 31.80725,
+		"lon" : -106.377583,
+		"alt" : 3958,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Elfin Cove Seaplane Base",
+		"lat" : 58.195278,
+		"lon" : -136.3475,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Ely Airport",
+		"lat" : 39.299722,
+		"lon" : -114.841944,
+		"alt" : 6259,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Emmonak Airport",
+		"lat" : 62.786111,
+		"lon" : -164.490833,
+		"alt" : 13,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Emporia Municipal Airport",
+		"lat" : 38.3321,
+		"lon" : -96.1912,
+		"alt" : 1208,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kenai Muni",
+		"lat" : 60.573111,
+		"lon" : -151.245,
+		"alt" : 99,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Vance Afb",
+		"lat" : 36.339167,
+		"lon" : -97.9165,
+		"alt" : 1307,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wendover",
+		"lat" : 40.718694,
+		"lon" : -114.030889,
+		"alt" : 4237,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Kenosha Regional Airport",
+		"lat" : 42.5956944,
+		"lon" : -87.9278056,
+		"alt" : 742,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Keokuk Municipal Airport",
+		"lat" : 40.4599078,
+		"lon" : -91.4285011,
+		"alt" : 671,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Eastport Municipal Airport",
+		"lat" : 44.9101111,
+		"lon" : -67.0126944,
+		"alt" : 45,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Monroe Reqional Airport",
+		"lat" : 35.01833,
+		"lon" : -80.62001,
+		"alt" : 679,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Erie Intl Tom Ridge Fld",
+		"lat" : 42.082022,
+		"lon" : -80.176217,
+		"alt" : 733,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Kerrville Municipal Airport",
+		"lat" : 29.9766667,
+		"lon" : -99.0854722,
+		"alt" : 1617,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Luce County Airport",
+		"lat" : 46.311199,
+		"lon" : -85.457298,
+		"alt" : 869,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Delta County Airport",
+		"lat" : 45.722778,
+		"lon" : -87.093611,
+		"alt" : 609,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Orcas Island Airport",
+		"lat" : 48.708056,
+		"lon" : -122.910556,
+		"alt" : 31,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Esler Rgnl",
+		"lat" : 31.394903,
+		"lon" : -92.295772,
+		"alt" : 112,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Easton-Newnam Field Airport",
+		"lat" : 38.8041667,
+		"lon" : -76.069,
+		"alt" : 72,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Weedon Field",
+		"lat" : 31.5708,
+		"lon" : -85.0774,
+		"alt" : 285,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Mahlon Sweet Fld",
+		"lat" : 44.124583,
+		"lon" : -123.211972,
+		"alt" : 374,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Evansville Regional",
+		"lat" : 38.036997,
+		"lon" : -87.532364,
+		"alt" : 418,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Evanston-Uinta CO Burns Fld",
+		"lat" : 41.1649,
+		"lon" : -111.0208,
+		"alt" : 7143,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "New Bedford Regional Airport",
+		"lat" : 41.6761,
+		"lon" : -70.9569,
+		"alt" : 80,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Newton City-County Airport",
+		"lat" : 38.0570785,
+		"lon" : -97.2752278,
+		"alt" : 1533,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Craven Co Rgnl",
+		"lat" : 35.072972,
+		"lon" : -77.042944,
+		"alt" : 18,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Newark Liberty Intl",
+		"lat" : 40.6925,
+		"lon" : -74.168667,
+		"alt" : 18,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Excursion Inlet Seaplane Base",
+		"lat" : 58.420556,
+		"lon" : -135.449167,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Key West Intl",
+		"lat" : 24.556111,
+		"lon" : -81.759556,
+		"alt" : 3,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Seaplane Base",
+		"lat" : 28.0575,
+		"lon" : -81.7628056,
+		"alt" : 140,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Felker Aaf",
+		"lat" : 37.1325,
+		"lon" : -76.608841,
+		"alt" : 12,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fairbanks Intl",
+		"lat" : 64.815114,
+		"lon" : -147.856267,
+		"alt" : 434,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hector International Airport",
+		"lat" : 46.92065,
+		"lon" : -96.8157639,
+		"alt" : 902,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fresno Yosemite Intl",
+		"lat" : 36.776194,
+		"lon" : -119.71814,
+		"alt" : 336,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Fayetteville Regional Grannis Field",
+		"lat" : 34.9912,
+		"lon" : -78.8803,
+		"alt" : 189,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fredericksburg Amtrak Station",
+		"lat" : 38.298416,
+		"lon" : -77.456875,
+		"alt" : 130,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ladd Aaf",
+		"lat" : 64.8375,
+		"lon" : -147.614444,
+		"alt" : 454,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Fort Bridger",
+		"lat" : 41.236,
+		"lon" : -110.2436,
+		"alt" : 7038,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Friday Harbor Seaplane Base",
+		"lat" : 48.537222,
+		"lon" : -123.009722,
+		"alt" : 0,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Glacier Park Intl",
+		"lat" : 48.310472,
+		"lon" : -114.256,
+		"alt" : 2977,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Flying Cloud Airport",
+		"lat" : 44.4938,
+		"lon" : -93.2726,
+		"alt" : 906,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Butts Aaf",
+		"lat" : 38.678394,
+		"lon" : -104.756581,
+		"alt" : 5838,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Fairfield County Airport",
+		"lat" : 34.315472,
+		"lon" : -81.108806,
+		"alt" : 577,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Findlay Airport",
+		"lat" : 41.0120278,
+		"lon" : -83.6686111,
+		"alt" : 819,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "First Flight Airport",
+		"lat" : 36.02,
+		"lon" : -75.67,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Atlanta Regional Airport - Falcon Field",
+		"lat" : 33.35725,
+		"lon" : -84.5718333,
+		"alt" : 808,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wright Patterson Afb",
+		"lat" : 39.826111,
+		"lon" : -84.048332,
+		"alt" : 823,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Capital City Airport",
+		"lat" : 38.1819722,
+		"lon" : -84.9061389,
+		"alt" : 812,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mesa Falcon Field",
+		"lat" : 33.4608001708984,
+		"lon" : -111.727996826172,
+		"alt" : 1394,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Sierra Vista Muni Libby Aaf",
+		"lat" : 31.588472,
+		"lon" : -110.344389,
+		"alt" : 4719,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Fitchburg Municipal Airport",
+		"lat" : 42.5541111,
+		"lon" : -71.7589722,
+		"alt" : 348,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Franklin",
+		"lat" : 41.377874,
+		"lon" : -79.860362,
+		"alt" : 1540,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fond Du Lac County Airport",
+		"lat" : 43.7711667,
+		"lon" : -88.4884167,
+		"alt" : 808,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Flagstaff Pulliam Airport",
+		"lat" : 35.140318,
+		"lon" : -111.6692392,
+		"alt" : 7015,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Fort Lauderdale Hollywood Intl",
+		"lat" : 26.072583,
+		"lon" : -80.15275,
+		"alt" : 9,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Florence Rgnl",
+		"lat" : 34.185361,
+		"lon" : -79.723889,
+		"alt" : 146,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sherman Aaf",
+		"lat" : 39.368332,
+		"lon" : -94.914686,
+		"alt" : 772,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Tipton",
+		"lat" : 39.085386,
+		"lon" : -76.759414,
+		"alt" : 150,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Otis Angb",
+		"lat" : 41.658439,
+		"lon" : -70.521417,
+		"alt" : 131,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Four Corners Rgnl",
+		"lat" : 36.74125,
+		"lon" : -108.229944,
+		"alt" : 5506,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Page Fld",
+		"lat" : 26.586611,
+		"lon" : -81.86325,
+		"alt" : 17,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fort Collins Loveland Muni",
+		"lat" : 40.451828,
+		"lon" : -105.011336,
+		"alt" : 5016,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Funter Bay Seaplane Base",
+		"lat" : 58.254444,
+		"lon" : -134.897778,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Bishop International",
+		"lat" : 42.965424,
+		"lon" : -83.743629,
+		"alt" : 782,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fort Dodge Rgnl",
+		"lat" : 42.5512,
+		"lon" : -94.191842,
+		"alt" : 1157,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Forbes Fld",
+		"lat" : 38.950944,
+		"lon" : -95.663611,
+		"alt" : 1078,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Francis S Gabreski",
+		"lat" : 40.843656,
+		"lon" : -72.631789,
+		"alt" : 67,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Friday Harbor Airport",
+		"lat" : 48.521944,
+		"lon" : -123.024444,
+		"alt" : 113,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Marshall Aaf",
+		"lat" : 39.055275,
+		"lon" : -96.764453,
+		"alt" : 1063,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bryant Ahp",
+		"lat" : 61.266381,
+		"lon" : -149.653119,
+		"alt" : 378,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "St Lucie County International Airport",
+		"lat" : 27.497472,
+		"lon" : -80.372638,
+		"alt" : 23,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sioux Falls",
+		"lat" : 43.582014,
+		"lon" : -96.741914,
+		"alt" : 1429,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Henry Post Aaf",
+		"lat" : 34.649833,
+		"lon" : -98.402167,
+		"alt" : 1189,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fort Smith Rgnl",
+		"lat" : 35.336583,
+		"lon" : -94.367444,
+		"alt" : 469,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fort Stockton Pecos Co",
+		"lat" : 30.915667,
+		"lon" : -102.916139,
+		"alt" : 3011,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Godman Aaf",
+		"lat" : 37.907058,
+		"lon" : -85.972106,
+		"alt" : 756,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fort Worth Meacham Intl",
+		"lat" : 32.819778,
+		"lon" : -97.362444,
+		"alt" : 710,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fulton County Airport Brown Field",
+		"lat" : 33.7791,
+		"lon" : -84.5214,
+		"alt" : 841,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fullerton Municipal Airport",
+		"lat" : 33.521925,
+		"lon" : -117.584722,
+		"alt" : 96,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Fort Wayne",
+		"lat" : 40.978472,
+		"lon" : -85.195139,
+		"alt" : 815,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fort Lauderdale Executive",
+		"lat" : 26.197281,
+		"lon" : -80.170706,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fort Yukon",
+		"lat" : 66.571492,
+		"lon" : -145.250417,
+		"alt" : 433,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Drake Fld",
+		"lat" : 36.005094,
+		"lon" : -94.170059,
+		"alt" : 1251,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fitzgerald Municipal Airport",
+		"lat" : 31.6839046,
+		"lon" : -83.2709036,
+		"alt" : 365,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Fostoria Metropolitan Airport",
+		"lat" : 41.1908333,
+		"lon" : -83.3930833,
+		"alt" : 752,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Northeast Alabama Regional Airport",
+		"lat" : 33.9726489,
+		"lon" : -86.0890834,
+		"alt" : 569,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Montgomery County Airpark",
+		"lat" : 39.1006,
+		"lon" : -77.09576,
+		"alt" : 0,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Edward G Pitka Sr",
+		"lat" : 64.736178,
+		"lon" : -156.937417,
+		"alt" : 152,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Gambell Airport",
+		"lat" : 63.7668,
+		"lon" : -171.733,
+		"alt" : 27,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Great Bend Municipal",
+		"lat" : 38.344167,
+		"lon" : -98.859167,
+		"alt" : 1887,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gillette-Campbell County Airport",
+		"lat" : 44.3489167,
+		"lon" : -105.5393611,
+		"alt" : 4365,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Garden City Rgnl",
+		"lat" : 37.927528,
+		"lon" : -100.724417,
+		"alt" : 2891,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grand Canyon National Park Airport",
+		"lat" : 35.9523611,
+		"lon" : -112.1469722,
+		"alt" : 6609,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Grand Canyon West Airport",
+		"lat" : 35.5925,
+		"lon" : -113.4859,
+		"alt" : 4825,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Dawson Community Airport",
+		"lat" : 47.138611,
+		"lon" : -104.807222,
+		"alt" : 749,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Gladwin Zettel Memorial Airport",
+		"lat" : 43.9705893,
+		"lon" : -84.47502,
+		"alt" : 774,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sussex Co",
+		"lat" : 38.689194,
+		"lon" : -75.358889,
+		"alt" : 50,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Spokane Intl",
+		"lat" : 47.619861,
+		"lon" : -117.533833,
+		"alt" : 2376,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Glendale Municipal Airport",
+		"lat" : 33.5269167,
+		"lon" : -112.2951389,
+		"alt" : 1071,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Grand Forks Intl",
+		"lat" : 47.949256,
+		"lon" : -97.176111,
+		"alt" : 845,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Floyd Bennett Memorial Airport",
+		"lat" : 43.341222,
+		"lon" : -73.610305,
+		"alt" : 328,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Georgetown County Airport",
+		"lat" : 33.3114018,
+		"lon" : -79.3203139,
+		"alt" : 40,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "East Texas Rgnl",
+		"lat" : 32.384014,
+		"lon" : -94.711486,
+		"alt" : 365,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Wokal Field Glasgow International Airport",
+		"lat" : 48.2125,
+		"lon" : -106.615,
+		"alt" : 2296,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Marshfield Municipal Airport",
+		"lat" : 42.09825,
+		"lon" : -70.6721389,
+		"alt" : 9,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Gilbert Airport",
+		"lat" : 28.062778,
+		"lon" : -81.753333,
+		"alt" : 145,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Grand Junction Regional",
+		"lat" : 39.122413,
+		"lon" : -108.526735,
+		"alt" : 4858,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Gulkana",
+		"lat" : 62.154888,
+		"lon" : -145.456639,
+		"alt" : 1580,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Arlington Municipal",
+		"lat" : 32.6638611,
+		"lon" : -97.0942778,
+		"alt" : 628,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Renner Fld",
+		"lat" : 39.370621,
+		"lon" : -101.698992,
+		"alt" : 3656,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Mid Delta Regional Airport",
+		"lat" : 33.4829,
+		"lon" : -90.9856,
+		"alt" : 131,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Scholes Intl At Galveston",
+		"lat" : 29.265322,
+		"lon" : -94.860406,
+		"alt" : 6,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Golovin Airport",
+		"lat" : 64.550556,
+		"lon" : -163.007222,
+		"alt" : 59,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Grants Milan Muni",
+		"lat" : 35.167286,
+		"lon" : -107.901989,
+		"alt" : 6537,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Goodnews Airport",
+		"lat" : 59.1175,
+		"lon" : -161.5775,
+		"alt" : 15,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Gainesville Rgnl",
+		"lat" : 29.690056,
+		"lon" : -82.271778,
+		"alt" : 152,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Groton New London",
+		"lat" : 41.330056,
+		"lon" : -72.045139,
+		"alt" : 9,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Gulfport-Biloxi",
+		"lat" : 30.407278,
+		"lon" : -89.070111,
+		"alt" : 28,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grand Rapids Itasca County",
+		"lat" : 47.211111,
+		"lon" : -93.509722,
+		"alt" : 413,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Galion Municipal Airport",
+		"lat" : 40.7533889,
+		"lon" : -82.7238056,
+		"alt" : 1224,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Austin Straubel Intl",
+		"lat" : 44.485072,
+		"lon" : -88.129589,
+		"alt" : 695,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gray Aaf",
+		"lat" : 47.079217,
+		"lon" : -122.580783,
+		"alt" : 302,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Central Nebraska Regional Airport",
+		"lat" : 40.9675,
+		"lon" : -98.3096,
+		"alt" : 1847,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Robert Gray Aaf",
+		"lat" : 31.06725,
+		"lon" : -97.828917,
+		"alt" : 1015,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grand Marais Cook County Airport",
+		"lat" : 47.8383333,
+		"lon" : -90.3829444,
+		"alt" : 1799,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gerald R Ford Intl",
+		"lat" : 42.880833,
+		"lon" : -85.522806,
+		"alt" : 794,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Seymour Johnson Afb",
+		"lat" : 35.339383,
+		"lon" : -77.960589,
+		"alt" : 110,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Piedmont Triad",
+		"lat" : 36.09775,
+		"lon" : -79.937306,
+		"alt" : 925,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Greenville-Spartanburg International",
+		"lat" : 34.895556,
+		"lon" : -82.218889,
+		"alt" : 964,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Gustavus Airport",
+		"lat" : 58.4253,
+		"lon" : -135.707,
+		"alt" : 34,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Wheeler Sack Aaf",
+		"lat" : 44.055619,
+		"lon" : -75.719458,
+		"alt" : 690,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Great Falls Intl",
+		"lat" : 47.482,
+		"lon" : -111.370689,
+		"alt" : 3677,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Golden Triangle Regional Airport",
+		"lat" : 33.450333,
+		"lon" : -88.591361,
+		"alt" : 264,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Georgetown Municipal Airport",
+		"lat" : 30.678809,
+		"lon" : -97.6793837,
+		"alt" : 790,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gunnison - Crested Butte",
+		"lat" : 38.533889,
+		"lon" : -106.933056,
+		"alt" : 7678,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Gallup Muni",
+		"lat" : 35.511058,
+		"lon" : -108.789308,
+		"alt" : 6472,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Grissom Arb",
+		"lat" : 40.648094,
+		"lon" : -86.152119,
+		"alt" : 812,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lee Gilmer Memorial Airport",
+		"lat" : 34.272627,
+		"lon" : -83.8302233,
+		"alt" : 1276,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Genesee County Airport",
+		"lat" : 43.03175,
+		"lon" : -78.1696667,
+		"alt" : 914,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Majors",
+		"lat" : 33.067839,
+		"lon" : -96.065333,
+		"alt" : 535,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Greenwood Leflore",
+		"lat" : 33.494328,
+		"lon" : -90.084706,
+		"alt" : 162,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gary Chicago International Airport",
+		"lat" : 41.6163,
+		"lon" : -87.4128,
+		"alt" : 591,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hattiesburg Bobby L. Chain Municipal Airport",
+		"lat" : 31.2649444,
+		"lon" : -89.2528889,
+		"alt" : 151,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hobart Muni",
+		"lat" : 34.991308,
+		"lon" : -99.051353,
+		"alt" : 1564,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Columbia County",
+		"lat" : 42.2913,
+		"lon" : -73.7103,
+		"alt" : 198,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Holy Cross Airport",
+		"lat" : 62.1883,
+		"lon" : -159.775,
+		"alt" : 70,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Dillingham",
+		"lat" : 21.579475,
+		"lon" : -158.197281,
+		"alt" : 14,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Hardwick Field Airport",
+		"lat" : 35.2199994,
+		"lon" : -84.832369,
+		"alt" : 874,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Yampa Valley",
+		"lat" : 40.481181,
+		"lon" : -107.21766,
+		"alt" : 6602,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Hondo Municipal Airport",
+		"lat" : 29.3591,
+		"lon" : -99.1775,
+		"alt" : 930,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hartford Brainard",
+		"lat" : 41.736722,
+		"lon" : -72.649444,
+		"alt" : 18,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hagerstown Regional Richard A Henson Field",
+		"lat" : 39.7079,
+		"lon" : -77.7295,
+		"alt" : 704,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hilton Head",
+		"lat" : 32.216,
+		"lon" : -80.752,
+		"alt" : 10,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wheeler Aaf",
+		"lat" : 21.4835,
+		"lon" : -158.039667,
+		"alt" : 837,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Jack Northrop Fld Hawthorne Muni",
+		"lat" : 33.922839,
+		"lon" : -118.335186,
+		"alt" : 66,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Chisholm Hibbing",
+		"lat" : 47.3866,
+		"lon" : -92.838994,
+		"alt" : 1353,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hill Afb",
+		"lat" : 41.123939,
+		"lon" : -111.973039,
+		"alt" : 4789,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Lake Havasu City Airport",
+		"lat" : 34.5711111,
+		"lon" : -114.3582778,
+		"alt" : 783,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Portland Hillsboro",
+		"lat" : 45.540394,
+		"lon" : -122.949825,
+		"alt" : 204,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Healy River Airport",
+		"lat" : 63.8675,
+		"lon" : -148.968889,
+		"alt" : 1263,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hickory Rgnl",
+		"lat" : 35.741147,
+		"lon" : -81.38955,
+		"alt" : 1189,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wheeling Ohio County Airport",
+		"lat" : 40.175,
+		"lon" : -80.6463,
+		"alt" : 1195,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Helena Rgnl",
+		"lat" : 46.606806,
+		"lon" : -111.98275,
+		"alt" : 3877,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Hood Aaf",
+		"lat" : 31.138731,
+		"lon" : -97.714469,
+		"alt" : 924,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Holloman Afb",
+		"lat" : 32.852519,
+		"lon" : -106.106525,
+		"alt" : 4093,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Hoonah Airport",
+		"lat" : 58.096111,
+		"lon" : -135.409722,
+		"alt" : 19,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Honolulu Intl",
+		"lat" : 21.318681,
+		"lon" : -157.922428,
+		"alt" : 13,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Hana",
+		"lat" : 20.795636,
+		"lon" : -156.014439,
+		"alt" : 78,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Haines Airport",
+		"lat" : 59.2438,
+		"lon" : -135.524,
+		"alt" : 15,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lea Co Rgnl",
+		"lat" : 32.687528,
+		"lon" : -103.217028,
+		"alt" : 3661,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Homer",
+		"lat" : 59.645556,
+		"lon" : -151.476583,
+		"alt" : 84,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Huron Rgnl",
+		"lat" : 44.3852,
+		"lon" : -98.228542,
+		"alt" : 1289,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Campbell Aaf",
+		"lat" : 36.668567,
+		"lon" : -87.496183,
+		"alt" : 573,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Memorial Field",
+		"lat" : 34.478,
+		"lon" : -93.0962,
+		"alt" : 540,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "William P Hobby",
+		"lat" : 29.645419,
+		"lon" : -95.278889,
+		"alt" : 46,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hooper Bay Airport",
+		"lat" : 61.5239,
+		"lon" : -166.147,
+		"alt" : 7,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Westchester Co",
+		"lat" : 41.066959,
+		"lon" : -73.707575,
+		"alt" : 439,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Bowerman Field",
+		"lat" : 46.9711944,
+		"lon" : -123.9365556,
+		"alt" : 18,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "McDuffie County Airport",
+		"lat" : 33.5297315,
+		"lon" : -82.5169509,
+		"alt" : 501,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Valley Intl",
+		"lat" : 26.2285,
+		"lon" : -97.654389,
+		"alt" : 36,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Boone Co",
+		"lat" : 36.261519,
+		"lon" : -93.154728,
+		"alt" : 1365,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hurlburt Fld",
+		"lat" : 30.427803,
+		"lon" : -86.689278,
+		"alt" : 38,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Henderson Executive Airport",
+		"lat" : 35.972778,
+		"lon" : -115.134444,
+		"alt" : 1881,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Huslia Airport",
+		"lat" : 65.697778,
+		"lon" : -156.351389,
+		"alt" : 213,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Homestead Arb",
+		"lat" : 25.48855,
+		"lon" : -80.383567,
+		"alt" : 6,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Huntsville International Airport-Carl T Jones Field",
+		"lat" : 34.6371944,
+		"lon" : -86.7750556,
+		"alt" : 629,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Roscommon Co",
+		"lat" : 44.359806,
+		"lon" : -84.671112,
+		"alt" : 1150,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Tri State Milton J Ferguson Field",
+		"lat" : 38.3667,
+		"lon" : -82.558,
+		"alt" : 828,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Redstone Aaf",
+		"lat" : 34.678653,
+		"lon" : -86.684781,
+		"alt" : 685,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Terre Haute Intl Hulman Fld",
+		"lat" : 39.451464,
+		"lon" : -87.307561,
+		"alt" : 589,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Houlton Intl",
+		"lat" : 46.123083,
+		"lon" : -67.792056,
+		"alt" : 489,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hughes Airport",
+		"lat" : 66.039167,
+		"lon" : -154.264722,
+		"alt" : 299,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hutchinson Municipal Airport",
+		"lat" : 38.0655,
+		"lon" : -97.8606,
+		"alt" : 1543,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Tweed-New Haven Airport",
+		"lat" : 41.26375,
+		"lon" : -72.886806,
+		"alt" : 14,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Havre City Co",
+		"lat" : 48.542983,
+		"lon" : -109.762342,
+		"alt" : 2590,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Hayward Executive Airport",
+		"lat" : 37.6588888888889,
+		"lon" : -122.121666666667,
+		"alt" : 52,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "North Perry",
+		"lat" : 26.001222,
+		"lon" : -80.240722,
+		"alt" : 8,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hilton Head Airport",
+		"lat" : 32.2243611,
+		"lon" : -80.6974722,
+		"alt" : 19,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Barnstable Muni Boardman Polando Fld",
+		"lat" : 41.669336,
+		"lon" : -70.280356,
+		"alt" : 55,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hydaburg Seaplane Base",
+		"lat" : 55.206389,
+		"lon" : -132.828333,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hollis Seaplane Base",
+		"lat" : 55.481667,
+		"lon" : -132.646111,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Hays Regional Airport",
+		"lat" : 38.8422,
+		"lon" : -99.2732,
+		"alt" : 1998,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Hazleton Municipal",
+		"lat" : 40.989167,
+		"lon" : -76.0025,
+		"alt" : 1603,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mc Connell Afb",
+		"lat" : 37.621853,
+		"lon" : -97.268192,
+		"alt" : 1371,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Washington Dulles Intl",
+		"lat" : 38.944533,
+		"lon" : -77.455811,
+		"alt" : 313,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Niagara Falls Intl",
+		"lat" : 43.107333,
+		"lon" : -78.946194,
+		"alt" : 589,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "George Bush Intercontinental",
+		"lat" : 29.984433,
+		"lon" : -95.341442,
+		"alt" : 97,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bob Baker Memorial Airport",
+		"lat" : 66.975833,
+		"lon" : -160.436667,
+		"alt" : 166,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Wichita Mid Continent",
+		"lat" : 37.649944,
+		"lon" : -97.433056,
+		"alt" : 1333,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Icy Bay Airport",
+		"lat" : 59.968889,
+		"lon" : -141.661667,
+		"alt" : 50,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Idaho Falls Rgnl",
+		"lat" : 43.514556,
+		"lon" : -112.07075,
+		"alt" : 4744,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Idlewild Intl",
+		"lat" : 40.639751,
+		"lon" : -73.778924,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Laughlin-Bullhead Intl",
+		"lat" : 35.1574,
+		"lon" : -114.56,
+		"alt" : 695,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Igiugig Airport",
+		"lat" : 59.324,
+		"lon" : -155.902,
+		"alt" : 90,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kingman Airport",
+		"lat" : 35.2595,
+		"lon" : -113.938,
+		"alt" : 3449,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Lansing Municipal",
+		"lat" : 41.5349167,
+		"lon" : -87.5295278,
+		"alt" : 620,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Windham Airport",
+		"lat" : 41.7440278,
+		"lon" : -72.1802222,
+		"alt" : 246,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Greater Kankakee",
+		"lat" : 41.071389,
+		"lon" : -87.846278,
+		"alt" : 630,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Nikolski Air Station",
+		"lat" : 52.941667,
+		"lon" : -168.848889,
+		"alt" : 77,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kirtland Air Force Base",
+		"lat" : 35.040222,
+		"lon" : -106.609194,
+		"alt" : 5355,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Ankeny Regl Airport",
+		"lat" : 41.691389,
+		"lon" : -93.566389,
+		"alt" : 910,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "New Castle",
+		"lat" : 39.678722,
+		"lon" : -75.606528,
+		"alt" : 79,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Iliamna",
+		"lat" : 59.754356,
+		"lon" : -154.910961,
+		"alt" : 186,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Wilmington Intl",
+		"lat" : 34.270615,
+		"lon" : -77.902569,
+		"alt" : 32,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wilmington Airborne Airpark",
+		"lat" : 39.42792,
+		"lon" : -83.792118,
+		"alt" : 1077,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Immokalee",
+		"lat" : 26.433889,
+		"lon" : -81.401389,
+		"alt" : 37,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ford Airport",
+		"lat" : 45.8183611,
+		"lon" : -88.1145556,
+		"alt" : 1182,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Indianapolis Intl",
+		"lat" : 39.717331,
+		"lon" : -86.294383,
+		"alt" : 797,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hillsboro Muni",
+		"lat" : 32.083486,
+		"lon" : -97.097228,
+		"alt" : 685,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Winkler Co",
+		"lat" : 31.779628,
+		"lon" : -103.201361,
+		"alt" : 2822,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Falls Intl",
+		"lat" : 48.566186,
+		"lon" : -93.403067,
+		"alt" : 1185,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Creech Afb",
+		"lat" : 36.587183,
+		"lon" : -115.673353,
+		"alt" : 3133,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Smith Reynolds",
+		"lat" : 36.133722,
+		"lon" : -80.222,
+		"alt" : 969,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Winslow-Lindbergh Regional Airport",
+		"lat" : 35.0219167,
+		"lon" : -110.7225278,
+		"alt" : 4941,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Iowa City Municipal Airport",
+		"lat" : 41.639244,
+		"lon" : -91.546503,
+		"alt" : 668,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Imperial Co",
+		"lat" : 32.834219,
+		"lon" : -115.578744,
+		"alt" : -54,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Williamsport Rgnl",
+		"lat" : 41.241836,
+		"lon" : -76.921094,
+		"alt" : 529,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Circle City Airport",
+		"lat" : 65.827778,
+		"lon" : -144.076111,
+		"alt" : 613,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kirksville Regional Airport",
+		"lat" : 40.0935,
+		"lon" : -92.5449,
+		"alt" : 966,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kissimmee Gateway Airport",
+		"lat" : 28.289806,
+		"lon" : -81.437083,
+		"alt" : 82,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sloulin Fld Intl",
+		"lat" : 48.177939,
+		"lon" : -103.642347,
+		"alt" : 1982,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kinston Regional Jetport",
+		"lat" : 35.331389,
+		"lon" : -77.608889,
+		"alt" : 94,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Long Island Mac Arthur",
+		"lat" : 40.79525,
+		"lon" : -73.100222,
+		"alt" : 99,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Alexander Field South Wood County Airport",
+		"lat" : 44.3606456,
+		"lon" : -89.8381412,
+		"alt" : 1021,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Ithaca Tompkins Rgnl",
+		"lat" : 42.491028,
+		"lon" : -76.458444,
+		"alt" : 1099,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Hilo Intl",
+		"lat" : 19.721375,
+		"lon" : -155.048469,
+		"alt" : 38,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Gogebic Iron County Airport",
+		"lat" : 46.5274747,
+		"lon" : -90.1313967,
+		"alt" : 1230,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "West Houston",
+		"lat" : 29.818194,
+		"lon" : -95.672611,
+		"alt" : 111,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Inyokern Airport",
+		"lat" : 35.658889,
+		"lon" : -117.829444,
+		"alt" : 2455,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Eastern Slopes Regional",
+		"lat" : 43.9911389,
+		"lon" : -70.9478889,
+		"alt" : 455,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jackson Hole Airport",
+		"lat" : 43.607333333,
+		"lon" : -110.73775,
+		"alt" : 6451,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Jackson Evers Intl",
+		"lat" : 32.311167,
+		"lon" : -90.075889,
+		"alt" : 346,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Jacksonville Intl",
+		"lat" : 30.494056,
+		"lon" : -81.687861,
+		"alt" : 30,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jonesboro Muni",
+		"lat" : 35.831708,
+		"lon" : -90.646417,
+		"alt" : 262,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "New Century AirCenter Airport",
+		"lat" : 38.8309167,
+		"lon" : -94.8903056,
+		"alt" : 1087,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Jefferson City Memorial Airport",
+		"lat" : 38.5912,
+		"lon" : -92.1561,
+		"alt" : 549,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Jesup-Wayne County Airport",
+		"lat" : 31.553889,
+		"lon" : -81.8825,
+		"alt" : 107,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "John F Kennedy Intl",
+		"lat" : 40.639751,
+		"lon" : -73.778925,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Grand Canyon Heliport",
+		"lat" : 35.96666666,
+		"lon" : -112.13333333,
+		"alt" : 2500,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Kapalua",
+		"lat" : 20.962936,
+		"lon" : -156.673031,
+		"alt" : 256,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Chautauqua County-Jamestown",
+		"lat" : 42.153333,
+		"lon" : -79.258056,
+		"alt" : 525,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Jack Edwards Airport",
+		"lat" : 30.2896389,
+		"lon" : -87.6717778,
+		"alt" : 17,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Joplin Rgnl",
+		"lat" : 37.151814,
+		"lon" : -94.498269,
+		"alt" : 981,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Jamestown Regional Airport",
+		"lat" : 46.9297,
+		"lon" : -98.6782,
+		"alt" : 1498,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Juneau Intl",
+		"lat" : 58.354972,
+		"lon" : -134.576278,
+		"alt" : 21,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Regional Airport",
+		"lat" : 41.517778,
+		"lon" : -88.175556,
+		"alt" : 582,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "West 30th St. Heliport",
+		"lat" : 40.7545,
+		"lon" : -74.0071,
+		"alt" : 7,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wall Street Heliport",
+		"lat" : 40.701214,
+		"lon" : -74.009028,
+		"alt" : 7,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "John Murtha Johnstown-Cambria County Airport",
+		"lat" : 40.316111,
+		"lon" : -78.833889,
+		"alt" : 2284,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Southern Wisconsin Regional Airport",
+		"lat" : 42.62025,
+		"lon" : -89.0415556,
+		"alt" : 808,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Reynolds Field",
+		"lat" : 42.260556,
+		"lon" : -84.460556,
+		"alt" : 1001,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Plantation Airpark",
+		"lat" : 32.6452778,
+		"lon" : -81.5971111,
+		"alt" : 188,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Leesburg Executive Airport",
+		"lat" : 39.078,
+		"lon" : -77.558,
+		"alt" : 389,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Pickens County Airport",
+		"lat" : 34.4534722,
+		"lon" : -84.4572222,
+		"alt" : 1535,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Wainwright As",
+		"lat" : 70.613378,
+		"lon" : -159.86035,
+		"alt" : 35,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Burrello-Mechanicville Airport",
+		"lat" : 42.893133,
+		"lon" : -73.66845,
+		"alt" : 195,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sabetha Municipal",
+		"lat" : 39.5425,
+		"lon" : -95.4677,
+		"alt" : 1330,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kake Seaplane Base",
+		"lat" : 56.973056,
+		"lon" : -133.945556,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kaltag Airport",
+		"lat" : 64.3191,
+		"lon" : -158.741,
+		"alt" : 187,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Birch Creek Airport",
+		"lat" : 66.256708,
+		"lon" : -145.815319,
+		"alt" : 450,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chignik Bay Seaplane Base",
+		"lat" : 56.295556,
+		"lon" : -158.401398,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Coffman Cove Seaplane Base",
+		"lat" : 56.014722,
+		"lon" : -132.833889,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chignik Lagoon Airport",
+		"lat" : 56.311111,
+		"lon" : -158.534167,
+		"alt" : 25,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Chignik Lake Airport",
+		"lat" : 56.255,
+		"lon" : -158.775278,
+		"alt" : 50,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kenmore Air Harbor Inc Seaplane Base",
+		"lat" : 47.7548,
+		"lon" : -122.259,
+		"alt" : 14,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Ekwok Airport",
+		"lat" : 59.356944,
+		"lon" : -157.471111,
+		"alt" : 135,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "False Pass Airport",
+		"lat" : 54.8475,
+		"lon" : -163.410278,
+		"alt" : 20,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Koliganek Airport",
+		"lat" : 59.726667,
+		"lon" : -157.259444,
+		"alt" : 269,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Grayling Airport",
+		"lat" : 62.894444,
+		"lon" : -160.065,
+		"alt" : 99,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Koyuk Alfred Adams Airport",
+		"lat" : 64.939444,
+		"lon" : -161.154167,
+		"alt" : 154,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kitoi Bay Seaplane Base",
+		"lat" : 58.190833,
+		"lon" : -152.370556,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kongiganak Airport",
+		"lat" : 59.960833,
+		"lon" : -162.881111,
+		"alt" : 30,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kalskag Airport",
+		"lat" : 61.5363,
+		"lon" : -160.341,
+		"alt" : 55,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Levelock Airport",
+		"lat" : 59.128056,
+		"lon" : -156.858611,
+		"alt" : 39,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Larsen Bay Airport",
+		"lat" : 57.535,
+		"lon" : -153.976667,
+		"alt" : 87,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kelso Longview",
+		"lat" : 46.118,
+		"lon" : -122.898389,
+		"alt" : 20,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Klawock Airport",
+		"lat" : 55.579167,
+		"lon" : -133.076111,
+		"alt" : 80,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Manokotak Airport",
+		"lat" : 58.990278,
+		"lon" : -159.05,
+		"alt" : 51,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Moser Bay Seaplane Base",
+		"lat" : 57.025556,
+		"lon" : -154.145833,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "New Stuyahok Airport",
+		"lat" : 59.4499,
+		"lon" : -157.328,
+		"alt" : 302,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kona Intl At Keahole",
+		"lat" : 19.738767,
+		"lon" : -156.045631,
+		"alt" : 47,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Kotlik Airport",
+		"lat" : 63.030556,
+		"lon" : -163.532778,
+		"alt" : 15,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Olga Bay Seaplane Base",
+		"lat" : 57.161389,
+		"lon" : -154.229722,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Ouzinkie Airport",
+		"lat" : 57.922876,
+		"lon" : -152.500511,
+		"alt" : 55,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Point Baker Seaplane Base",
+		"lat" : 56.351944,
+		"lon" : -133.6225,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Port Clarence Coast Guard Station",
+		"lat" : 65.2537,
+		"lon" : -166.859,
+		"alt" : 10,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kipnuk Airport",
+		"lat" : 59.933056,
+		"lon" : -164.030556,
+		"alt" : 11,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Port Williams Seaplane Base",
+		"lat" : 58.49,
+		"lon" : -152.582222,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Perryville Airport",
+		"lat" : 55.906667,
+		"lon" : -159.160833,
+		"alt" : 29,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Port Bailey Seaplane Base",
+		"lat" : 57.93,
+		"lon" : -153.040556,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Akutan Seaplane Base",
+		"lat" : 54.1325,
+		"lon" : -165.785,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "St Marys Airport",
+		"lat" : 62.0605,
+		"lon" : -163.302,
+		"alt" : 311,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Thorne Bay Seaplane Base",
+		"lat" : 55.688056,
+		"lon" : -132.536667,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Ketchikan Intl",
+		"lat" : 55.355556,
+		"lon" : -131.71375,
+		"alt" : 88,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Brevig Mission Airport",
+		"lat" : 65.331389,
+		"lon" : -166.465833,
+		"alt" : 35,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kasigluk Airport",
+		"lat" : 60.873333,
+		"lon" : -162.524444,
+		"alt" : 40,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "King Cove Airport",
+		"lat" : 55.1163,
+		"lon" : -162.266,
+		"alt" : 155,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kivalina Airport",
+		"lat" : 67.7362,
+		"lon" : -164.563,
+		"alt" : 13,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kwigillingok Airport",
+		"lat" : 59.876389,
+		"lon" : -163.168611,
+		"alt" : 18,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Quinhagak Airport",
+		"lat" : 59.755,
+		"lon" : -161.845278,
+		"alt" : 42,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "West Point Village Seaplane Base",
+		"lat" : 57.77,
+		"lon" : -153.548889,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kwethluk Airport",
+		"lat" : 60.790278,
+		"lon" : -161.443611,
+		"alt" : 30,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Karuluk Airport",
+		"lat" : 57.566944,
+		"lon" : -154.450278,
+		"alt" : 137,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Koyukuk Airport",
+		"lat" : 64.875833,
+		"lon" : -157.730556,
+		"alt" : 149,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Zachar Bay Seaplane Base",
+		"lat" : 57.55,
+		"lon" : -153.75,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Furnace Creek",
+		"lat" : 36.273,
+		"lon" : -116.515,
+		"alt" : 0,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Big Bear City",
+		"lat" : 34.2637778,
+		"lon" : -116.8560278,
+		"alt" : 6725,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Oceano County Airport",
+		"lat" : 35.10147222,
+		"lon" : -120.62236111,
+		"alt" : 14,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lamar Muni",
+		"lat" : 38.069694,
+		"lon" : -102.6885,
+		"alt" : 3706,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Purude University Airport",
+		"lat" : 40.4123056,
+		"lon" : -86.9368889,
+		"alt" : 606,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lakeland Linder Regional Airport",
+		"lat" : 27.9889167,
+		"lon" : -82.0185556,
+		"alt" : 142,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Los Alamos Airport",
+		"lat" : 35.8798019,
+		"lon" : -106.2694153,
+		"alt" : 7171,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Capital City",
+		"lat" : 42.7787,
+		"lon" : -84.587357,
+		"alt" : 861,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Laramie Regional Airport",
+		"lat" : 41.3121,
+		"lon" : -105.675,
+		"alt" : 7284,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Mc Carran Intl",
+		"lat" : 36.080056,
+		"lon" : -115.15225,
+		"alt" : 2141,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lawton-Fort Sill Regional Airport",
+		"lat" : 34.5677144,
+		"lon" : -98.4166367,
+		"alt" : 1110,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Los Angeles Intl",
+		"lat" : 33.942536,
+		"lon" : -118.408075,
+		"alt" : 126,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lubbock Preston Smith Intl",
+		"lat" : 33.663639,
+		"lon" : -101.822778,
+		"alt" : 3282,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Arnold Palmer Regional Airport",
+		"lat" : 40.2759,
+		"lon" : -79.4048,
+		"alt" : 1185,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "North Platte Regional Airport Lee Bird Field",
+		"lat" : 41.1262,
+		"lon" : -100.684,
+		"alt" : 2776,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Liberal Muni",
+		"lat" : 37.044222,
+		"lon" : -100.95986,
+		"alt" : 2885,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Municipal Airport",
+		"lat" : 34.6098056,
+		"lon" : -79.0595556,
+		"alt" : 125,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lake Charles Rgnl",
+		"lat" : 30.126112,
+		"lon" : -93.223335,
+		"alt" : 15,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Rickenbacker Intl",
+		"lat" : 39.813786,
+		"lon" : -82.927822,
+		"alt" : 744,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lake City Municipal Airport",
+		"lat" : 30.181944,
+		"lon" : -82.576944,
+		"alt" : 201,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Linden Airport",
+		"lat" : 40.6174472,
+		"lon" : -74.2445942,
+		"alt" : 23,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lebanon Municipal Airport",
+		"lat" : 43.6261,
+		"lon" : -72.3042,
+		"alt" : 603,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lewiston Maine",
+		"lat" : 44.0484728,
+		"lon" : -70.2835075,
+		"alt" : 288,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Blue Grass",
+		"lat" : 38.0365,
+		"lon" : -84.605889,
+		"alt" : 979,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Langley Afb",
+		"lat" : 37.082881,
+		"lon" : -76.360547,
+		"alt" : 11,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Angelina Co",
+		"lat" : 31.234014,
+		"lon" : -94.75,
+		"alt" : 296,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lafayette Rgnl",
+		"lat" : 30.205278,
+		"lon" : -91.987611,
+		"alt" : 43,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "La Guardia",
+		"lat" : 40.777245,
+		"lon" : -73.872608,
+		"alt" : 22,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Long Beach",
+		"lat" : 33.817722,
+		"lon" : -118.151611,
+		"alt" : 60,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "LaGrange-Callaway Airport",
+		"lat" : 33.0088611,
+		"lon" : -85.0726111,
+		"alt" : 694,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Logan-Cache",
+		"lat" : 41.791,
+		"lon" : -111.852,
+		"alt" : 4457,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Lake Hood Seaplane Base",
+		"lat" : 61.1866382,
+		"lon" : -149.9653918,
+		"alt" : 71,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lincoln Regional Airport Karl Harder Field",
+		"lat" : 38.9091667,
+		"lon" : -121.3513333,
+		"alt" : 121,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "William T. Piper Mem.",
+		"lat" : 41.1357778,
+		"lon" : -77.4223056,
+		"alt" : 556,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "La Junta Muni",
+		"lat" : 38.049719,
+		"lon" : -103.509431,
+		"alt" : 4238,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Lihue",
+		"lat" : 21.975983,
+		"lon" : -159.338958,
+		"alt" : 153,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Adams Fld",
+		"lat" : 34.729444,
+		"lon" : -92.224306,
+		"alt" : 262,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Livingood Airport",
+		"lat" : 65.531111,
+		"lon" : -148.541111,
+		"alt" : 696,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kenmore Air Harbor Seaplane Base",
+		"lat" : 47.629,
+		"lon" : -122.339,
+		"alt" : 14,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Kulik Lake Airport",
+		"lat" : 58.96591,
+		"lon" : -155.108089,
+		"alt" : 1000,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lake Placid Airport",
+		"lat" : 44.264444,
+		"lon" : -73.961944,
+		"alt" : 1747,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Klamath Falls Airport",
+		"lat" : 42.1561,
+		"lon" : -121.733,
+		"alt" : 4095,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Palm Beach Co Park",
+		"lat" : 26.593,
+		"lon" : -80.085056,
+		"alt" : 14,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lincoln",
+		"lat" : 40.850971,
+		"lon" : -96.75925,
+		"alt" : 1219,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lost Nation Municipal Airport",
+		"lat" : 41.6840278,
+		"lon" : -81.38975,
+		"alt" : 626,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Tri-County Regional Airport",
+		"lat" : 43.211667,
+		"lon" : -90.181667,
+		"alt" : 718,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lancaster Airport",
+		"lat" : 40.1217,
+		"lon" : -76.2961,
+		"alt" : 403,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lanai",
+		"lat" : 20.785611,
+		"lon" : -156.951419,
+		"alt" : 1308,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Lewis University Airport",
+		"lat" : 41.606326,
+		"lon" : -88.083003,
+		"alt" : 680,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Bowman Fld",
+		"lat" : 38.228,
+		"lon" : -85.663722,
+		"alt" : 546,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "London-Corbin Airport-MaGee Field",
+		"lat" : 37.0868889,
+		"lon" : -84.0773889,
+		"alt" : 1212,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lompoc Airport",
+		"lat" : 34.6656,
+		"lon" : -120.4675,
+		"alt" : 88,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lorain County Regional Airport",
+		"lat" : 41.3442778,
+		"lon" : -82.1776389,
+		"alt" : 793,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lopez Island Airport",
+		"lat" : 48.4839,
+		"lon" : -122.938,
+		"alt" : 209,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Laredo Intl",
+		"lat" : 27.54375,
+		"lon" : -99.461556,
+		"alt" : 508,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Little Rock Afb",
+		"lat" : 34.916944,
+		"lon" : -92.149722,
+		"alt" : 311,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Mount Pleasant Regional-Faison Field",
+		"lat" : 32.5387,
+		"lon" : -79.4697,
+		"alt" : 12,
+		"tz" : -5,
+		"tzone" : "\\N"
+	},
+	{
+		"name" : "Las Cruces Intl",
+		"lat" : 32.289417,
+		"lon" : -106.921972,
+		"alt" : 4456,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "La Crosse Municipal",
+		"lat" : 43.878986,
+		"lon" : -91.256711,
+		"alt" : 654,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lawson Aaf",
+		"lat" : 32.337322,
+		"lon" : -84.991283,
+		"alt" : 232,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Nellis Afb",
+		"lat" : 36.236197,
+		"lon" : -115.034253,
+		"alt" : 1870,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Altus Afb",
+		"lat" : 34.667067,
+		"lon" : -99.266681,
+		"alt" : 1382,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Luke Afb",
+		"lat" : 33.535,
+		"lon" : -112.38306,
+		"alt" : 1085,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Cincinnati Muni Lunken Fld",
+		"lat" : 39.103333,
+		"lon" : -84.418611,
+		"alt" : 483,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Kalaupapa Airport",
+		"lat" : 21.211,
+		"lon" : -156.974,
+		"alt" : 24,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Cape Lisburne Lrrs",
+		"lat" : 68.875133,
+		"lon" : -166.110022,
+		"alt" : 12,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Livermore Municipal",
+		"lat" : 37.41362,
+		"lon" : -121.49133,
+		"alt" : 400,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Mission Field Airport",
+		"lat" : 45.6993889,
+		"lon" : -110.4483056,
+		"alt" : 4660,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Las Vegas Muni",
+		"lat" : 35.654222,
+		"lon" : -105.142389,
+		"alt" : 6877,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "South Haven Area Regional Airport",
+		"lat" : 42.3511944,
+		"lon" : -86.2556389,
+		"alt" : 666,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Greenbrier Valley Airport",
+		"lat" : 37.858333,
+		"lon" : -80.399444,
+		"alt" : 2302,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lawrence Municipal",
+		"lat" : 39.009167,
+		"lon" : -95.2175,
+		"alt" : 833,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lawrence Municipal Airport",
+		"lat" : 42.7171944,
+		"lon" : -71.1234167,
+		"alt" : 148,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lewiston Nez Perce Co",
+		"lat" : 46.3745,
+		"lon" : -117.015389,
+		"alt" : 1442,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lewistown Municipal Airport",
+		"lat" : 47.0493,
+		"lon" : -109.467,
+		"alt" : 4170,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Mexia - Limestone County Airport",
+		"lat" : 31.6411783,
+		"lon" : -96.5144594,
+		"alt" : 544,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lynchburg Regional Preston Glenn Field",
+		"lat" : 37.3267,
+		"lon" : -79.2004,
+		"alt" : 938,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Ely Municipal",
+		"lat" : 47.824444,
+		"lon" : -91.830833,
+		"alt" : 1456,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Gwinnett County Airport-Briscoe Field",
+		"lat" : 33.9780761,
+		"lon" : -83.9623772,
+		"alt" : 1061,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Desert Aire",
+		"lat" : 46.4124,
+		"lon" : -119.5518,
+		"alt" : 586,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Madera Municipal Airport",
+		"lat" : 36.9886111,
+		"lon" : -120.1124444,
+		"alt" : 255,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Midland Intl",
+		"lat" : 31.942528,
+		"lon" : -102.201914,
+		"alt" : 2871,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Manistee County-Blacker Airport",
+		"lat" : 44.2725,
+		"lon" : -86.246944,
+		"alt" : 621,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mbs Intl",
+		"lat" : 43.532913,
+		"lon" : -84.079647,
+		"alt" : 668,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mc Clellan Afld",
+		"lat" : 38.667639,
+		"lon" : -121.400611,
+		"alt" : 75,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Mackinac Island Airport",
+		"lat" : 45.8649344,
+		"lon" : -84.637344,
+		"alt" : 740,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Merced Municipal Airport",
+		"lat" : 37.284722,
+		"lon" : -120.513889,
+		"alt" : 156,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Macdill Afb",
+		"lat" : 27.849339,
+		"lon" : -82.521214,
+		"alt" : 14,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "McGrath Airport",
+		"lat" : 62.9529,
+		"lon" : -155.606,
+		"alt" : 338,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Kansas City Intl",
+		"lat" : 39.297606,
+		"lon" : -94.713905,
+		"alt" : 1026,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "McCook Regional Airport",
+		"lat" : 40.206389,
+		"lon" : -100.592222,
+		"alt" : 2583,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "McKinley National Park Airport",
+		"lat" : 63.732757,
+		"lon" : -148.91129,
+		"alt" : 1720,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Middle Georgia Rgnl",
+		"lat" : 32.69285,
+		"lon" : -83.649211,
+		"alt" : 354,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Orlando Intl",
+		"lat" : 28.429394,
+		"lon" : -81.308994,
+		"alt" : 96,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mason City Municipal",
+		"lat" : 43.2247,
+		"lon" : -93.4067,
+		"alt" : 1243,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Harrisburg Intl",
+		"lat" : 40.193494,
+		"lon" : -76.763403,
+		"alt" : 310,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Chicago Midway Intl",
+		"lat" : 41.785972,
+		"lon" : -87.752417,
+		"alt" : 620,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Banks Airport",
+		"lat" : 44.1653889,
+		"lon" : -68.4281667,
+		"alt" : 100,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Key Field",
+		"lat" : 32.332624,
+		"lon" : -88.751868,
+		"alt" : 297,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Memphis Intl",
+		"lat" : 35.042417,
+		"lon" : -89.976667,
+		"alt" : 341,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Castle",
+		"lat" : 37.380481,
+		"lon" : -120.568189,
+		"alt" : 189,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Mansfield Lahm Regional",
+		"lat" : 40.8214167,
+		"lon" : -82.5166389,
+		"alt" : 1297,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mc Allen Miller Intl",
+		"lat" : 26.175833,
+		"lon" : -98.238611,
+		"alt" : 107,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Marshfield Municipal Airport",
+		"lat" : 44.6368797,
+		"lon" : -90.1893267,
+		"alt" : 1278,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Rogue Valley Intl Medford",
+		"lat" : 42.374228,
+		"lon" : -122.8735,
+		"alt" : 1335,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Michigan City Municipal Airport",
+		"lat" : 41.7033,
+		"lon" : -86.8211,
+		"alt" : 500,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dobbins Arb",
+		"lat" : 33.915382,
+		"lon" : -84.516319,
+		"alt" : 1068,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Orange County Airport",
+		"lat" : 41.5099884,
+		"lon" : -74.2646444,
+		"alt" : 364,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Montgomery Regional Airport",
+		"lat" : 32.3006389,
+		"lon" : -86.3939722,
+		"alt" : 221,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Moultrie Municipal Airport",
+		"lat" : 31.0849167,
+		"lon" : -83.80325,
+		"alt" : 294,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Morgantown Muni Walter L Bill Hart Fld",
+		"lat" : 39.642908,
+		"lon" : -79.916314,
+		"alt" : 1248,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Dayton-Wright Brothers Airport",
+		"lat" : 39.5889722,
+		"lon" : -84.2248611,
+		"alt" : 957,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Manhattan Reigonal",
+		"lat" : 39.140972,
+		"lon" : -96.670833,
+		"alt" : 1057,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Minchumina Airport",
+		"lat" : 63.886111,
+		"lon" : -152.301944,
+		"alt" : 678,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Sacramento Mather",
+		"lat" : 38.553897,
+		"lon" : -121.297592,
+		"alt" : 96,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Manchester Regional Airport",
+		"lat" : 42.932556,
+		"lon" : -71.435667,
+		"alt" : 266,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mojave",
+		"lat" : 35.059364,
+		"lon" : -118.151856,
+		"alt" : 2791,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Miami Intl",
+		"lat" : 25.79325,
+		"lon" : -80.290556,
+		"alt" : 8,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Minot Afb",
+		"lat" : 48.415572,
+		"lon" : -101.357661,
+		"alt" : 1668,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Crystal Airport",
+		"lat" : 45.0343,
+		"lon" : -93.2114,
+		"alt" : 869,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Delaware County Airport",
+		"lat" : 40.2424722,
+		"lon" : -85.39575,
+		"alt" : 937,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Millville Muni",
+		"lat" : 39.367806,
+		"lon" : -75.072222,
+		"alt" : 85,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Downtown",
+		"lat" : 39.1275,
+		"lon" : -94.598889,
+		"alt" : 759,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "General Mitchell Intl",
+		"lat" : 42.947222,
+		"lon" : -87.896583,
+		"alt" : 723,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Muskegon County Airport",
+		"lat" : 43.1695,
+		"lon" : -86.2382,
+		"alt" : 628,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Molokai",
+		"lat" : 21.152886,
+		"lon" : -157.096256,
+		"alt" : 454,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Mc Kellar Sipes Rgnl",
+		"lat" : 35.599889,
+		"lon" : -88.915611,
+		"alt" : 434,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Davis Fld",
+		"lat" : 35.656489,
+		"lon" : -95.366656,
+		"alt" : 612,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Melbourne Intl",
+		"lat" : 28.102753,
+		"lon" : -80.645258,
+		"alt" : 33,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mc Alester Rgnl",
+		"lat" : 34.882403,
+		"lon" : -95.783463,
+		"alt" : 770,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Malad City",
+		"lat" : 42.17,
+		"lon" : -112.289,
+		"alt" : 4503,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Quad City Intl",
+		"lat" : 41.448528,
+		"lon" : -90.507539,
+		"alt" : 590,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Baldwin County Airport",
+		"lat" : 33.154225,
+		"lon" : -83.2414139,
+		"alt" : 385,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Marshall Don Hunter Sr. Airport",
+		"lat" : 61.8646418,
+		"lon" : -162.026111,
+		"alt" : 103,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Frank Wiley Field",
+		"lat" : 46.428,
+		"lon" : -105.886,
+		"alt" : 2630,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Millinocket Muni",
+		"lat" : 45.647836,
+		"lon" : -68.685561,
+		"alt" : 408,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Monroe Rgnl",
+		"lat" : 32.510864,
+		"lon" : -92.037689,
+		"alt" : 79,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Manley Hot Springs Airport",
+		"lat" : 64.9975,
+		"lon" : -150.644167,
+		"alt" : 270,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Mammoth Yosemite Airport",
+		"lat" : 37.624049,
+		"lon" : -118.837772,
+		"alt" : 7128,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "McMinn Co",
+		"lat" : 35.39919,
+		"lon" : -84.56177,
+		"alt" : 874,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Morristown Municipal Airport",
+		"lat" : 40.79935,
+		"lon" : -74.4148747,
+		"alt" : 187,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mc Minnville Muni",
+		"lat" : 45.194444,
+		"lon" : -123.135944,
+		"alt" : 163,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Menominee Marinette Twin Co",
+		"lat" : 45.12665,
+		"lon" : -87.638443,
+		"alt" : 625,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Minto Airport",
+		"lat" : 65.143611,
+		"lon" : -149.37,
+		"alt" : 460,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Manassas",
+		"lat" : 38.721389,
+		"lon" : -77.515556,
+		"alt" : 192,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mobile Rgnl",
+		"lat" : 30.691231,
+		"lon" : -88.242814,
+		"alt" : 219,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Modesto City Co Harry Sham",
+		"lat" : 37.625817,
+		"lon" : -120.954422,
+		"alt" : 97,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Minot Intl",
+		"lat" : 48.259378,
+		"lon" : -101.280333,
+		"alt" : 1716,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Mountain Village Airport",
+		"lat" : 62.0954,
+		"lon" : -163.682,
+		"alt" : 337,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Miami Seaplane Base",
+		"lat" : 25.7783,
+		"lon" : -80.1703,
+		"alt" : 0,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "MariposaYosemite",
+		"lat" : 37.3039,
+		"lon" : -120.0222,
+		"alt" : 2454,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Edward F Knapp State",
+		"lat" : 44.203503,
+		"lon" : -72.562328,
+		"alt" : 1165,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Macomb Municipal Airport",
+		"lat" : 40.5200833,
+		"lon" : -90.6523889,
+		"alt" : 707,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dare County Regional",
+		"lat" : 35.5514,
+		"lon" : -75.4173,
+		"alt" : 13,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Sawyer International Airport",
+		"lat" : 46.353611,
+		"lon" : -87.395278,
+		"alt" : 1221,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Eastern WV Regional Airport",
+		"lat" : 39.2407,
+		"lon" : -77.591,
+		"alt" : 554,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Merrill Fld",
+		"lat" : 61.213544,
+		"lon" : -149.844447,
+		"alt" : 137,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Marco Islands",
+		"lat" : 25.9950278,
+		"lon" : -81.6725278,
+		"alt" : 5,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Foothills Regional Airport",
+		"lat" : 35.8202336,
+		"lon" : -81.6115119,
+		"alt" : 1270,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Monterey Peninsula",
+		"lat" : 36.587,
+		"lon" : -121.842944,
+		"alt" : 257,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Northwest Alabama Regional Airport",
+		"lat" : 34.7453,
+		"lon" : -87.6102,
+		"alt" : 550,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Dane Co Rgnl Truax Fld",
+		"lat" : 43.139858,
+		"lon" : -89.337514,
+		"alt" : 887,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Missoula Intl",
+		"lat" : 46.916306,
+		"lon" : -114.090556,
+		"alt" : 3205,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Minneapolis St Paul Intl",
+		"lat" : 44.881956,
+		"lon" : -93.221767,
+		"alt" : 841,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Massena Intl Richards Fld",
+		"lat" : 44.935833,
+		"lon" : -74.845547,
+		"alt" : 215,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Louis Armstrong New Orleans Intl",
+		"lat" : 29.993389,
+		"lon" : -90.258028,
+		"alt" : 4,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Selfridge Angb",
+		"lat" : 42.608333,
+		"lon" : -82.8355,
+		"alt" : 580,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Florida Keys Marathon Airport",
+		"lat" : 24.726111,
+		"lon" : -81.051389,
+		"alt" : 7,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Montrose Regional Airport",
+		"lat" : 38.509794,
+		"lon" : -107.894242,
+		"alt" : 5759,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Metlakatla Seaplane Base",
+		"lat" : 55.131111,
+		"lon" : -131.578056,
+		"alt" : 0,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Martin State",
+		"lat" : 39.3256667,
+		"lon" : -76.4137778,
+		"alt" : 22,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Waimea Kohala",
+		"lat" : 20.001328,
+		"lon" : -155.668108,
+		"alt" : 2671,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Muir Aaf",
+		"lat" : 40.434811,
+		"lon" : -76.569411,
+		"alt" : 489,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mountain Home Afb",
+		"lat" : 43.043603,
+		"lon" : -115.872431,
+		"alt" : 2996,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Morrisville Stowe State Airport",
+		"lat" : 44.535,
+		"lon" : -72.614,
+		"alt" : 732,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Martha\\\\'s Vineyard",
+		"lat" : 41.391667,
+		"lon" : -70.615278,
+		"alt" : 67,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Williamson Country Regional Airport",
+		"lat" : 37.7549569,
+		"lon" : -89.0110936,
+		"alt" : 472,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Lawrence J Timmerman Airport",
+		"lat" : 43.1103889,
+		"lon" : -88.0344167,
+		"alt" : 745,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Grant Co Intl",
+		"lat" : 47.207708,
+		"lon" : -119.32019,
+		"alt" : 1185,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Mineral Wells",
+		"lat" : 32.781606,
+		"lon" : -98.060175,
+		"alt" : 974,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Windom Municipal Airport",
+		"lat" : 43.9134017,
+		"lon" : -95.1094083,
+		"alt" : 1410,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Maxwell Afb",
+		"lat" : 32.382944,
+		"lon" : -86.365778,
+		"alt" : 171,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "McCarthy Airport",
+		"lat" : 61.4370608,
+		"lon" : -142.90307372,
+		"alt" : 1531,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Montgomery Field",
+		"lat" : 32.4759,
+		"lon" : 117.759,
+		"alt" : 17,
+		"tz" : 8,
+		"tzone" : "Asia/Chongqing"
+	},
+	{
+		"name" : "McCall Municipal Airport",
+		"lat" : 44.889722,
+		"lon" : -116.101389,
+		"alt" : 5021,
+		"tz" : -7,
+		"tzone" : "America/Denver"
+	},
+	{
+		"name" : "Myrtle Beach Intl",
+		"lat" : 33.67975,
+		"lon" : -78.928333,
+		"alt" : 25,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Mekoryuk Airport",
+		"lat" : 60.3714,
+		"lon" : -166.271,
+		"alt" : 48,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Yuba County Airport",
+		"lat" : 39.0553,
+		"lon" : -121.3411,
+		"alt" : 62,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Pinal Airpark",
+		"lat" : 32.509722,
+		"lon" : -111.325278,
+		"alt" : 1893,
+		"tz" : -7,
+		"tzone" : "America/Phoenix"
+	},
+	{
+		"name" : "Stroudsburg-Pocono Airport",
+		"lat" : 41.0358717,
+		"lon" : -75.1606789,
+		"alt" : 480,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Stormville Airport",
+		"lat" : 41.5769708,
+		"lon" : -73.7323514,
+		"alt" : 358,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Trenton-Robbinsville Airport",
+		"lat" : 40.2139444,
+		"lon" : -74.6017778,
+		"alt" : 118,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "New Orleans Nas Jrb",
+		"lat" : 29.825333,
+		"lon" : -90.035,
+		"alt" : 3,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Naval Air Station",
+		"lat" : 42.090556,
+		"lon" : -87.8225,
+		"alt" : 653,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Chenega Bay Airport",
+		"lat" : 60.077222,
+		"lon" : -147.991944,
+		"alt" : 72,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Lakehurst Naes",
+		"lat" : 40.033333,
+		"lon" : -74.353333,
+		"alt" : 103,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Lakefront",
+		"lat" : 30.0424167,
+		"lon" : -90.02825,
+		"alt" : 7,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Fallon Nas",
+		"lat" : 39.416584,
+		"lon" : -118.70098,
+		"alt" : 3934,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Kaneohe Bay Mcaf",
+		"lat" : 21.450453,
+		"lon" : -157.768,
+		"alt" : 24,
+		"tz" : -10,
+		"tzone" : "Pacific/Honolulu"
+	},
+	{
+		"name" : "Corpus Christi NAS",
+		"lat" : 27.692701,
+		"lon" : -97.290376,
+		"alt" : 18,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Norfolk Ns",
+		"lat" : 36.937644,
+		"lon" : -76.289289,
+		"alt" : 15,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "NAS Alameda",
+		"lat" : 37.7861,
+		"lon" : -122.3186,
+		"alt" : 10,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Patuxent River Nas",
+		"lat" : 38.285981,
+		"lon" : -76.411781,
+		"alt" : 39,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Nikolai Airport",
+		"lat" : 63.010833,
+		"lon" : -154.383889,
+		"alt" : 427,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "China Lake Naws",
+		"lat" : 35.685422,
+		"lon" : -117.692039,
+		"alt" : 2283,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Jacksonville Nas",
+		"lat" : 30.235834,
+		"lon" : -81.680556,
+		"alt" : 22,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "El Centro Naf",
+		"lat" : 32.829222,
+		"lon" : -115.671667,
+		"alt" : -42,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Cherry Point Mcas",
+		"lat" : 34.900872,
+		"lon" : -76.880733,
+		"alt" : 29,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Miramar Mcas",
+		"lat" : 32.867694,
+		"lon" : -117.14175,
+		"alt" : 478,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Lemoore Nas",
+		"lat" : 36.333012,
+		"lon" : -119.95208,
+		"alt" : 234,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Nelson Lagoon",
+		"lat" : 56.0075,
+		"lon" : -161.160278,
+		"alt" : 14,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Nightmute Airport",
+		"lat" : 60.471111,
+		"lon" : -164.700833,
+		"alt" : 4,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Meridian Nas",
+		"lat" : 32.552083,
+		"lon" : -88.555557,
+		"alt" : 317,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Nondalton Airport",
+		"lat" : 59.966944,
+		"lon" : -154.851667,
+		"alt" : 262,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Port Angeles Cgas",
+		"lat" : 48.141481,
+		"lon" : -123.414075,
+		"alt" : 13,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Pensacola Nas",
+		"lat" : 30.352656,
+		"lon" : -87.318647,
+		"alt" : 28,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Porter County Municipal Airport",
+		"lat" : 41.4539722,
+		"lon" : -87.0070833,
+		"alt" : 770,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Millington Rgnl Jetport",
+		"lat" : 35.356667,
+		"lon" : -89.870278,
+		"alt" : 320,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Kingsville Nas",
+		"lat" : 27.507223,
+		"lon" : -97.809723,
+		"alt" : 50,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Key West Nas",
+		"lat" : 24.575834,
+		"lon" : -81.688889,
+		"alt" : 6,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Whiting Fld Nas North",
+		"lat" : 30.724167,
+		"lon" : -87.021944,
+		"alt" : 199,
+		"tz" : -6,
+		"tzone" : "America/Chicago"
+	},
+	{
+		"name" : "Point Mugu Nas",
+		"lat" : 34.120285,
+		"lon" : -119.12094,
+		"alt" : 13,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Oceana Nas",
+		"lat" : 36.820703,
+		"lon" : -76.033542,
+		"alt" : 22,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Nuiqsut Airport",
+		"lat" : 70.21,
+		"lon" : -151.005556,
+		"alt" : 38,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Nulato Airport",
+		"lat" : 64.729444,
+		"lon" : -158.074167,
+		"alt" : 399,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Nunapitchuk Airport",
+		"lat" : 60.905833,
+		"lon" : -162.439167,
+		"alt" : 12,
+		"tz" : -9,
+		"tzone" : "America/Anchorage"
+	},
+	{
+		"name" : "Moffett Federal Afld",
+		"lat" : 37.416142,
+		"lon" : -122.049139,
+		"alt" : 32,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Whidbey Island Nas",
+		"lat" : 48.351803,
+		"lon" : -122.655906,
+		"alt" : 47,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Twentynine Palms Eaf",
+		"lat" : 34.296161,
+		"lon" : -116.162203,
+		"alt" : 2051,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Willow Grove Nas Jrb",
+		"lat" : 40.199833,
+		"lon" : -75.148167,
+		"alt" : 358,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Long Lake",
+		"lat" : 43.9750617,
+		"lon" : -74.42044,
+		"alt" : 1629,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "All Airports",
+		"lat" : 40.714167,
+		"lon" : -74.005833,
+		"alt" : 31,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Quantico Mcaf",
+		"lat" : 38.501683,
+		"lon" : -77.305333,
+		"alt" : 11,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Cecil Field",
+		"lat" : 30.2187,
+		"lon" : -81.8767,
+		"alt" : 81,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "El Toro",
+		"lat" : 33.676132,
+		"lon" : -117.731164,
+		"alt" : 383,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "North Island Nas",
+		"lat" : 32.699219,
+		"lon" : -117.21531,
+		"alt" : 26,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Morgantown Airport",
+		"lat" : 40.1570414,
+		"lon" : -75.8704892,
+		"alt" : 600,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Oakdale Airport",
+		"lat" : 37.7563333,
+		"lon" : -120.8001944,
+		"alt" : 237,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Albert J Ellis",
+		"lat" : 34.829164,
+		"lon" : -77.612139,
+		"alt" : 94,
+		"tz" : -5,
+		"tzone" : "America/New_York"
+	},
+	{
+		"name" : "Metropolitan Oakland Intl",
+		"lat" : 37.721278,
+		"lon" : -122.220722,
+		"alt" : 9,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	},
+	{
+		"name" : "Marina Muni",
+		"lat" : 36.681878,
+		"lon" : -121.762347,
+		"alt" : 134,
+		"tz" : -8,
+		"tzone" : "America/Los_Angeles"
+	}
+]
