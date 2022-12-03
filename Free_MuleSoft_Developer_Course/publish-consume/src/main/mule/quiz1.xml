@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	
+	<flow name="main1" doc:id="2bcc2f9d-da70-47ff-b531-8045fc0b79cb" >
+		<http:listener doc:name="HTTP: POST/JMS" doc:id="69d4d520-44d4-4b94-97d1-be580ee20256" config-ref="HTTP_Listener_config" path="/jms1" allowedMethods="POST"/>
+		<vm:publish doc:name="JMS: one" doc:id="7e0012ce-bbfe-4594-b4d6-f3a9528a9b38" config-ref="VM_Config" sendCorrelationId="ALWAYS" queueName="one" timeout="500"/>
+		<http:request method="POST" doc:name="HTPP: POST /data" doc:id="e0eeab8d-a8c2-4e00-9a1c-058fb6037d18" config-ref="HTTP_Request_configuration" path="/data"/>
+		<vm:publish-consume queueName="two" doc:name="JMS: two" doc:id="df94d2ff-9a39-4e4e-a28d-cdc35b2fa2b1" config-ref="VM_Config" timeout="500"/>
+		<set-payload value='#[payload as String ++ "well today!"]' doc:name='payload as String ++ " well today!"' doc:id="3899865c-c395-4822-bbd6-e02d1980a0eb" />
+		<logger level="INFO" doc:name="Logger" doc:id="72f71f6a-233e-4152-83d8-c7a59e08ad05" />
+	
+</flow>
+	<flow name="http1" doc:id="d03e35de-acde-43b3-8892-56e83dccc74b">
+		<http:listener doc:name="HTTP: POST /data" doc:id="d51279ef-c00e-4c53-8527-315979ce2d9d" config-ref="HTTP_Listener_config" path="/data" allowedMethods="POST"/>
+		<set-payload value='#["Howdy " ++ payload as String ++ ","]' doc:name='"Howdy  " ++ payload as String ++ ","' doc:id="af1728a7-551e-4000-ae93-f13b4b5cbaf5" />
+	</flow>
+	<flow name="oneJSMQUEListner1" doc:id="5bb55ddd-2cbe-484d-8f5c-2f919b92f3f3" >
+		<vm:listener doc:name="JMS: one" doc:id="c44f7024-d364-4d02-8b57-d027181dfd5d" config-ref="VM_Config" queueName="one" timeout="500"/>
+		<set-payload value='#[payload as String ++ " I hope you are doing "]' doc:name='payload as String ++ " I hope you are doing "' doc:id="7c67da69-42e1-4b1f-bfd6-998d47874ff4" />
+	</flow>
+	<flow name="twoJMSQueListner1" doc:id="38d15a44-19fb-416b-807d-88044396bd49" >
+		<vm:listener doc:name="JMS: two" doc:id="03b512df-0ced-4684-902c-5d03fcacf909" config-ref="VM_Config" queueName="two" timeout="500"/>
+		<set-payload value='#[payload as String ++ " I hope you are very "]' doc:name='payload as String ++ " I hope you are very "' doc:id="6d4c2ed5-1a26-4b75-8abf-c7ab338da993" />
+	</flow>
+	
+	
+	</mule>

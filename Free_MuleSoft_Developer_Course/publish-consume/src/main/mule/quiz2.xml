@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="main2" doc:id="7a6fba59-2b49-4366-8f06-8165cbf45ed3" >
+		<http:listener doc:name="HTTP: GET/" doc:id="8c465df5-258b-4b7a-b9c7-6107eed24fe3" config-ref="HTTP_Listener_config" path="/jms2" allowedMethods="GET"/>
+		<http:request method="POST" doc:name="HTPP: POST /data2" doc:id="34988d4f-1294-47e2-858d-bc6586494e83" config-ref="HTTP_Request_configuration" path="/data2"/>
+		<vm:publish-consume queueName="num1" doc:name="JMS: num1" doc:id="34b247bb-9f09-40c6-b8cb-4a3be1c36505" config-ref="VM_Config"/>
+		<vm:publish doc:name="JMS: num2" doc:id="4dea0aa0-0ba9-4afd-a505-4262bdbf13d5" config-ref="VM_Config" sendCorrelationId="ALWAYS" queueName="num2" />
+		<set-payload value='#[output application/json&#10;---&#10;payload + 1]' doc:name='payload +1' doc:id="42f61fc0-11dc-40a2-aa96-2b0a142d7357" />
+		<logger level="INFO" doc:name="Logger" doc:id="53a742f5-0266-4d36-b21c-a7dc3ec8d8fb" />
+	</flow>
+	<flow name="http2" doc:id="dcbe6d64-32ae-4266-90d6-aa65dcf7f22c">
+		<http:listener doc:name="HTTP: POST /data2" doc:id="d9207216-582c-4d83-b519-d546365e13c8" config-ref="HTTP_Listener_config" path="/data2" allowedMethods="POST"/>
+		<set-payload value='#[output application/json &#10;---&#10;1]' doc:name='1' doc:id="79266b7b-300b-434b-9ca5-cce4d256987c" />
+	</flow>
+	<flow name="jms1" doc:id="df569e1f-1630-4b71-aa1a-2449b94af7c8" >
+		<vm:listener doc:name="JMS: num1" doc:id="59b8c198-e708-45d7-9f00-0c7e74ad6e20" config-ref="VM_Config" queueName="num1" timeout="500"/>
+		<set-payload value='#[output application/json &#10;---&#10;payload + 1]' doc:name='payload + 1' doc:id="77e40c6e-fd62-4586-810b-bf63ab5c73d9" />
+	</flow>
+	<flow name="jms2" doc:id="26b48827-6a0f-47d8-b92c-e8bc168f5af0" >
+		<vm:listener doc:name="JMS: num2" doc:id="bd79a918-bc8e-433c-a0c8-27922c380252" config-ref="VM_Config" queueName="num2" timeout="500"/>
+		<set-payload value='#[output application/json &#10;---&#10;payload + 1]' doc:name='payload + 1' doc:id="a1dec15b-88f2-4b5b-a1bd-1fcd298e4a3e" />
+	</flow>
+</mule>
