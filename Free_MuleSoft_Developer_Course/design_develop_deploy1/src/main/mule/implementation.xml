@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="implementation-flow" doc:id="f9c960ea-b894-4262-9164-28b3205c5789">
+	
+	<ee:transform>
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+
+var requested_file = attributes.queryParams.data default ""
+
+// available datasets:customers, orders, products, suppliers, shippers
+// order_details, employees, categories
+
+var file_path = "classpath://w3schools/" ++ requested_file ++  ".csv"
+---
+readUrl(file_path, 'application/csv')	]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+	</flow>
+
+	
+	
+	
+	</mule>
