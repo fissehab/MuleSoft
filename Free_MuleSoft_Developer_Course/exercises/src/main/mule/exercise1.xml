@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="5ef76fbb-f943-4d71-83e0-4224b1ce5ad8" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<file:config name="File_Config" doc:name="File Config" doc:id="1b749154-fb0f-4ba4-a1b4-23caed74e394" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders" />
+	</file:config>
+	<file:config name="File_Config1" doc:name="File Config" doc:id="7858d2ae-3ea7-4bf9-bacc-494d5e424976" >
+		<file:connection workingDir="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders" />
+	</file:config>
+	<flow name="exercise1Flow" doc:id="ddfc29a1-b8e4-4c1d-83e2-a8b9944d0bbb" >
+		<http:listener doc:name="GET Data by month" doc:id="15a90e6c-fd00-4c40-b24c-15be90d8bb0c" config-ref="HTTP_Listener_config" path="/data/{month}"/>
+		<set-variable value="#[attributes.uriParams.month]" doc:name="month" doc:id="830a2899-2233-4510-a44d-bd7aefef7c10" variableName="month"/>
+		<set-variable value="#[attributes.queryParams.format]" doc:name="format" doc:id="278f25cc-591e-4102-8bbe-e72129751678" variableName="format"/>
+		<file:read doc:name="Read" doc:id="774eee26-d364-4e43-8610-3434e0567a06" config-ref="File_Config" path='#[vars.month ++ ".csv"]' outputMimeType="application/csv"/>
+		<choice doc:name="Choice" doc:id="91102c48-a5f5-4e71-959c-2a5713cf4b43" >
+			<when expression='#[vars.format == "json"]'>
+				<ee:transform doc:name="to JSON" doc:id="d896e77d-4cdc-494f-b440-2b3f9e626a90" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression='#[vars.format == "csv"]'>
+				<ee:transform doc:name="to CSV" doc:id="9a46a2a7-d60c-4aed-84e9-1fd641610800" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<when expression='#[vars.format == "xml"]'>
+				<ee:transform doc:name="to xml" doc:id="3ef7e467-af85-438a-b619-b798c6bd8b79" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+data: {(payload)}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="error message" doc:id="fd4888a6-91b7-4a2b-9618-f22eab9a48d9" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": vars.format default "" ++ " not supported as a valid data type"
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+	</flow>
+	<flow name="exercise1Flow1" doc:id="19926546-3c51-43e3-98e6-43dea7e79620" >
+		<http:listener doc:name="GET data for all months" doc:id="76defb16-03ee-4566-a614-8d29ed4f4b11" config-ref="HTTP_Listener_config" path="/data_all_months"/>
+		<scatter-gather doc:name="Scatter-Gather" doc:id="9a6cc74d-28c1-4754-a76a-4668068ffebb" >
+			<route >
+				<file:read doc:name="jan" doc:id="5053e667-c59b-4fc6-8ee3-e0897251e8c1" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\jan.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="feb" doc:id="4111c482-1010-4665-be9d-bb74d383a278" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\feb.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="mar" doc:id="9821dd82-b758-40b1-8c7a-42656657522c" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\mar.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="apr" doc:id="5ca628c5-ebe4-41a3-8db6-edbe0b3a03cb" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\apr.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="may" doc:id="5b60c71c-bde2-42c6-8527-b063050bc265" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\may.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="jun" doc:id="97b99431-98e8-425b-ba3b-e3c22307c03e" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\jun.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="jul" doc:id="eb95f34b-3ab0-410b-8b5e-3100cf566cfb" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\jul.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="aug" doc:id="35bb5c7f-0635-4887-bbac-80636d82d153" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\aug.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="sep" doc:id="b5f173b1-f9be-4f8f-8e40-568a38e24dad" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\sep.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="oct" doc:id="896b3f77-ad1e-47d7-b7b1-d8bd5517fdb8" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\oct.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="nov" doc:id="a3e1b1d3-61ec-4e7b-82f6-bd485b813bc8" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\nov.csv"/>
+			</route>
+			<route >
+				<file:read doc:name="dec" doc:id="34b23577-a825-4b0c-bcd4-7b049c2a0595" path="C:\Fish\fish\MuleSoft\MuleSoftDeveloperCourse\data\w3schools\monthly_orders\dec.csv"/>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="concatenate" doc:id="2190c84f-34ba-412d-ba8f-7d76a3b59bad" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+flatten(payload..payload)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="exercise1Flow2" doc:id="142df7cf-8090-43f2-ae09-6c39e9e8464b" >
+		<http:listener doc:name="GET data for all months For EACH" doc:id="408d282e-1089-4729-a3d7-877016d9e1cc" config-ref="HTTP_Listener_config" path="data_all_months2"/>
+		<set-payload value='#[%dw 2.0&#10;output application/json&#10;---&#10;["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]]' doc:name="array of months" doc:id="f8137d4f-7288-4a8f-a0db-c5d1fba01097" />
+		<set-variable value="#[%dw 2.0&#10;output application/json&#10;---&#10;[]]" doc:name="data" doc:id="81fa3779-796e-4886-98fa-b2e9320935d8" variableName="data"/>
+		<foreach doc:name="For Each" doc:id="ecce69f4-f0bf-4ba7-a21e-2bd0b6cf3fbd">
+			<file:read doc:name="Read" doc:id="9671dd79-0279-4fd4-aa58-fafc7b7c5762" path='#[payload ++ ".csv"]' config-ref="File_Config1"/>
+			<ee:transform doc:name="concatenate" doc:id="4185f3bd-3794-4066-99fb-b1e541861b72" >
+				<ee:message >
+				</ee:message>
+				<ee:variables >
+					<ee:set-variable variableName="data" ><![CDATA[%dw 2.0
+output application/json
+---
+vars.data ++ payload]]></ee:set-variable>
+				</ee:variables>
+			</ee:transform>
+		</foreach>
+		<ee:transform doc:name="return concatenated data" doc:id="b4bf797c-e325-43d5-a3e4-843f995b2e75" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+vars.data]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
