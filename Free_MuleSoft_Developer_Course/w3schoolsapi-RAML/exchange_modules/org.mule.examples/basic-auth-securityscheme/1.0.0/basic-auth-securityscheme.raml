@@ -1,0 +1,18 @@
+#%RAML 1.0 SecurityScheme
+type: Basic Authentication
+description: |
+  This API supports Basic authentication for authenticating
+  all API requests using client ID and secret key.
+describedBy:
+  headers:
+    Authorization:
+      description: |
+        Used to send base64-encoded client ID and secret key.
+        Use the following format when encoding,
+        <clientId>:<secretKey>.
+      type: string
+      example: Basic Y2xpZW50SWQ6c2VjcmV0S2V5
+  responses:
+    401:
+      description: |
+        Unauthorized.

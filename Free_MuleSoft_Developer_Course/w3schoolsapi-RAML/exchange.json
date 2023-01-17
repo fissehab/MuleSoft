@@ -1,0 +1,1 @@
+{"main":"w3schoolsapi.raml","name":"w3schoolsapi","classifier":"raml","tags":[],"groupId":"66c567be-da05-4b10-bb99-afa9ca24de70","assetId":"w3schoolsapi","version":"2.0.1","apiVersion":"v2","originalFormatVersion":"1.0","dependencies":[{"groupId":"org.mule.examples","assetId":"basic-auth-securityscheme","version":"1.0.0"}]}

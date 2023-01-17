@@ -1,0 +1,38 @@
+#%RAML 1.0
+title: w3schoolsAPI
+documentation:
+  - !include documentation/documentation.raml
+
+securitySchemes:
+  basicAuth: !include security-scheme/basicAuth.raml
+  clientIdEnforcement: !include security-scheme/clientIDEnforcement.raml
+ 
+securedBy:
+      - basicAuth
+/w3schools:
+  get:
+    displayName: get requested data
+    description: retrieves all the w3schools data for the requested data type in the requested format.
+    securedBy:
+      - clientIdEnforcement
+    queryParameters:
+      data:
+        enum:
+          - customers
+          - orders
+          - products
+          - suppliers
+          - shippers
+          - order_details
+          - employees
+          - categories
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+              "CategoryID" : 1,
+              "CategoryName" : "Beverages",
+              "Description" : "Soft drinks, coffees, teas, beers, and ales"
+             }         
