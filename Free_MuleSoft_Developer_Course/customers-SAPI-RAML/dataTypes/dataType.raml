@@ -1,0 +1,24 @@
+#%RAML 1.0 DataType
+type: object
+displayName: customer data type
+description: customer data details
+properties:
+  CustomerID? : integer
+  CustomerName :
+    type:  string
+    minLength: 3
+    maxLength: 25
+  ContactName : string
+  Address : string
+  City : string
+  PostalCode : integer
+  Country : 
+   type: string
+   default: France
+   enum:
+     - France
+     - USA
+     - Italy
+     - UK
+     - Canada 
+example: !include ../examples/customersExample.raml

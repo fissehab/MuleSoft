@@ -1,0 +1,1 @@
+{"main":"customers.raml","name":"customers","classifier":"raml","tags":[],"dependencies":[{"groupId":"66c567be-da05-4b10-bb99-afa9ca24de70","assetId":"basicauth","version":"1.0.0"},{"groupId":"66c567be-da05-4b10-bb99-afa9ca24de70","assetId":"clientidenforcement","version":"1.0.0"}]}

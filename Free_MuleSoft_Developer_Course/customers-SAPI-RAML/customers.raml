@@ -1,0 +1,79 @@
+#%RAML 1.0
+title: customers
+description: this api retrieves from/inserts into/deletes from data a database
+
+securitySchemes:
+  basicAuth: !include /exchange_modules/66c567be-da05-4b10-bb99-afa9ca24de70/basicauth/1.0.0/basicAuth.raml
+  clientIdEnforcement: !include /exchange_modules/66c567be-da05-4b10-bb99-afa9ca24de70/clientidenforcement/1.0.0/clientIDEnforcement.raml
+
+documentation:
+  - !include documentation/documentation.raml
+
+securedBy:
+      - basicAuth 
+types:
+  customerType: !include dataTypes/dataType.raml
+
+/customers:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: customerType[]
+           
+  post:
+    securedBy:
+      - clientIdEnforcement 
+    body:
+      application/json:
+        type: customerType[]
+       
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              message: data was inserted successfully (but not really)!
+  /{customerID}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: customerType
+    post:
+       securedBy:
+        - clientIdEnforcement
+       body:
+        application/json:
+          type: customerType
+          
+       responses:
+        201:
+          body:
+            application/json:
+              example:
+                message: data was inserted successfully!
+  
+    delete:
+      securedBy:
+      - clientIdEnforcement
+      body:
+        application/json:
+          example: {customerID:100}
+      responses:
+        201:
+          body:
+            application/json:
+              example:
+                message: customer with provided ID was deleted.
+            
+
+      
+                
+              
+
+          
+      
+              
